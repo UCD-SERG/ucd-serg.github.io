@@ -2,9 +2,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Software",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "serocalculator: https://ucd-serg.github.io/serocalculator/"
   },
   {
     "objectID": "team.html",
@@ -30,8 +30,15 @@
   {
     "objectID": "publications.html",
     "href": "publications.html",
-    "title": "Publications (%s)",
+    "title": "Publications",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Issued - Oldest\n        \n         \n          Issued - Newest\n        \n         \n          Title\n        \n         \n          Journal\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nIssued\n\n\nTitle\n\n\nJournal\n\n\n\n\n\n\nJuly,2022\n\n\nIncidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project\n\n\nThe Lancet Global Health\n\n\n\n\nJuly,2020\n\n\nThe surveillance for enteric fever in asia project (SEAP), severe typhoid fever surveillance in africa (SETA), surveillance of enteric fever in india (SEFI), and strategic typhoid alliance across africa and asia (STRATAA) population-based enteric fever studies: A review of methodological similarities and differences\n\n\nClinical Infectious Diseases\n\n\n\n\nMay,2019\n\n\nCross‐sectional HIV incidence estimation in an evolving epidemic\n\n\nStatistics in Medicine\n\n\n\n\n\nNo matching items"
+    "text": "Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project\n\n\n\n[object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]\n\n\nJuly,2022\n\n\n\n\n\nJournal\n\n\nThe Lancet Global Health\n\n\n\n\n\n\n\n\n\n\n\n\nThe surveillance for enteric fever in asia project (SEAP), severe typhoid fever surveillance in africa (SETA), surveillance of enteric fever in india (SEFI), and strategic typhoid alliance across africa and asia (STRATAA) population-based enteric fever studies: A review of methodological similarities and differences\n\n\n\n[object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object], [object Object]\n\n\nJuly,2020\n\n\n\n\n\nJournal\n\n\nClinical Infectious Diseases\n\n\n\n\n\n\n\n\n\n\n\n\nCross‐sectional HIV incidence estimation in an evolving epidemic\n\n\n\n[object Object], [object Object], [object Object]\n\n\nMay,2019\n\n\n\n\n\nJournal\n\n\nStatistics in Medicine\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\n\nHere is a list of publications generated from the BibTeX file.\n\n\n# If using R, list references using the `RefManageR` package\nlibrary(RefManageR)\nbib &lt;- ReadBib(\"publications.bib\")\nNoCite(bib = bib, \"*\")\nPrintBibliography(bib, .opts = list(style = \"text\"))\n\n[1] M. E. Carey, W. R. MacWright, J. Im, et al. \"The Surveillance for\nEnteric Fever in Asia Project (SEAP), Severe Typhoid Fever Surveillance\nin Africa (SETA), Surveillance of Enteric Fever in India (SEFI), and\nStrategic Typhoid Alliance Across Africa and Asia (STRATAA)\nPopulation-based Enteric Fever Studies: A Review of Methodological\nSimilarities and Differences\". In: _Clinical Infectious Diseases_\n71.Supplement_2 (Jul. 2020), p. S102–S110. ISSN: 1537-6591. DOI:\n10.1093/cid/ciaa367. &lt;http://dx.doi.org/10.1093/cid/ciaa367&gt;.\n\n[2] D. O. Garrett, A. T. Longley, K. Aiemjoy, et al. \"Incidence of\ntyphoid and paratyphoid fever in Bangladesh, Nepal, and Pakistan:\nresults of the Surveillance for Enteric Fever in Asia Project\". In:\n_The Lancet Global Health_ 10.7 (Jul. 2022), p. e978–e988. ISSN:\n2214-109X. DOI: 10.1016/s2214-109x(22)00119-x.\n&lt;http://dx.doi.org/10.1016/S2214-109X(22)00119-X&gt;.\n\n[3] D. Morrison, O. Laeyendecker, and R. Brookmeyer. \"Cross‐sectional\nHIV incidence estimation in an evolving epidemic\". In: _Statistics in\nMedicine_ 38.19 (May. 2019), p. 3614–3627. ISSN: 1097-0258. DOI:\n10.1002/sim.8196. &lt;http://dx.doi.org/10.1002/sim.8196&gt;."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "serocalculator: https://ucd-serg.github.io/serocalculator/"
   }
 ]

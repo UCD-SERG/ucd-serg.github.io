@@ -44,5 +44,12 @@ create_pub_listing <- function(bib = read_bib_file(bib_file),
   articles = mapply(FUN = function(x, h) c(x, paste("  highlight:", as.integer(h))),
                     articles, highlight)
   writeLines(text = unlist(articles), con = sub("\\.bib$", ".yml", bib_file))
+  
+  ## write each one as a separate file
+  # articles |> lapply(
+  #   FUN = function(x) {
+  #     writeLines()
+  #   }
+  # )
 }
 

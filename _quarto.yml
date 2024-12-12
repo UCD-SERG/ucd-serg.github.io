@@ -11,7 +11,8 @@ website:
         text: Team
       - href: publications.qmd
         text: Publications
-      - about.qmd
+      - href: software.qmd
+        text: Software
 
 format:
   html:
