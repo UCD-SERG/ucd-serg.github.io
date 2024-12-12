@@ -1,5 +1,5 @@
 ---
-title: 'Publications'
+title: 'Publications (%s)'
 page-layout: full
 title-block-banner: true
 image: /assets/images/social-profile.png
@@ -13,7 +13,7 @@ listing:
   categories: false
   sort-ui: [date, title, journal-title]
   filter-ui: [date, title, journal-title]
-  fields: [date, title, authors, journal-title]
+  fields: [date, title, journal-title]
   field-display-names:
     date: Issued
     journal-title: Journal

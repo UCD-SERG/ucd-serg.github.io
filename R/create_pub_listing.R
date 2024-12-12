@@ -2,7 +2,8 @@
 
 create_pub_listing <- function(bib = read_bib_file(bib_file),
                                bib_file = "publications.bib", 
-                               author = "Canouil"
+                               author = "Canouil",
+                               highlight = seq_along(bibtex_entries) < 3
                                  ) {
   
   articles <- lapply(
@@ -22,7 +23,7 @@ create_pub_listing <- function(bib = read_bib_file(bib_file),
         -3
       )
       
-      authors <- sub(".*- family: ", "", grep("- family:", article, value = TRUE))
+      # authors <- sub(".*- family: ", "", grep("- family:", article, value = TRUE))
       # if (isTRUE(grepl("first", grep("annote:", article, value = TRUE)))) {
       #   first <- "  first: '*As first or co-first*'"
       # } else {
@@ -40,6 +41,8 @@ create_pub_listing <- function(bib = read_bib_file(bib_file),
       article
     }
   )
+  articles = mapply(FUN = function(x, h) c(x, paste("  highlight:", as.integer(h))),
+                    articles, highlight)
   writeLines(text = unlist(articles), con = sub("\\.bib$", ".yml", bib_file))
 }
 
