@@ -2,7 +2,6 @@
 title: 'Publications'
 page-layout: full
 title-block-banner: true
-image: /assets/images/social-profile.png
 date-format: 'MMMM,<br>YYYY'
 include-back-link: false
 toc-location: right
@@ -11,32 +10,44 @@ listing:
   # template: papers/listing.qmd
   # template: papers/publications.js
   contents:
-    - publictaions.yml
+    - publications.yml
   # page-size: 10
   sort: 'issued desc'
   type: grid
   # categories: true
   # sort-ui: [date, title, journal-title]
   # filter-ui: [date, title, journal-title]
-  fields: [date, title, author, journal-title]
+  fields: [date, title, journal-title]
   field-display-names:
     date: Issued
     title: Title
     journal-title: Journal
-bibliography: publications.bib  # Path to your BibTeX file
+    
+- id: articles2
+  # template: papers/listing.qmd
+  # template: papers/publications.js
+  contents:
+    - publications.yml
+  # page-size: 10
+  sort: 'issued desc'
+  type: table
+  # categories: true
+  # sort-ui: [date, title, journal-title]
+  # filter-ui: [date, title, journal-title]
+  fields: [date, title, journal-title]
+  field-display-names:
+    date: Issued
+    title: Title
+    journal-title: Journal
+
 ---
+
+# Grid format: 
 
 :::{#articles}
 :::
 
-::: {#pubs}
-Here is a list of publications generated from the BibTeX file.
-:::
+# Table format:
 
-```{r}
-# If using R, list references using the `RefManageR` package
-library(RefManageR)
-bib <- ReadBib("publications.bib")
-NoCite(bib = bib, "*")
-PrintBibliography(bib, .opts = list(style = "text"))
-```
+:::{#articles2}
+:::

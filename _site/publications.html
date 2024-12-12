@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -112,13 +78,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-journal-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-journal-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-author","listing-container-title","listing-doi","listing-id","listing-issn","listing-issue","listing-issued","listing-page","listing-publisher","listing-title","listing-title-short","listing-type","listing-url","listing-volume","listing-journal-title","listing-date","listing-highlight"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-articles2 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-journal-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-author","listing-container-title","listing-doi","listing-id","listing-issn","listing-issue","listing-issued","listing-page","listing-publisher","listing-title","listing-title-short","listing-type","listing-url","listing-volume","listing-journal-title","listing-date","listing-highlight"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-articles2'] = new List('listing-articles2', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -208,13 +202,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Publications</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -225,59 +219,197 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#grid-format" id="toc-grid-format" class="nav-link active" data-scroll-target="#grid-format">Grid format:</a></li>
+  <li><a href="#table-format" id="toc-table-format" class="nav-link" data-scroll-target="#table-format">Table format:</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
+<section id="grid-format" class="level1">
+<h1>Grid format:</h1>
 <div id="listing-articles" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-
+<div class="g-col-1" data-index="0" data-listing-date-sort="1656658800000">
+<a href="https://doi.org/10.1016/s2214-109x(22)00119-x" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="grid-format">
+Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+July,<br>2022
+</div>
+</div>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Journal
+</td>
+<td class="journal-title">
+<em>The Lancet Global Health</em>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1593586800000">
+<a href="https://doi.org/10.1093/cid/ciaa367" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+The surveillance for enteric fever in asia project (SEAP), severe typhoid fever surveillance in africa (SETA), surveillance of enteric fever in india (SEFI), and strategic typhoid alliance across africa and asia (STRATAA) population-based enteric fever studies: A review of methodological similarities and differences
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+July,<br>2020
+</div>
+</div>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Journal
+</td>
+<td class="journal-title">
+<em>Clinical Infectious Diseases</em>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1556694000000">
+<a href="https://doi.org/10.1002/sim.8196" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Cross‐sectional HIV incidence estimation in an evolving epidemic
+</h5>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May,<br>2019
+</div>
+</div>
+<table class="card-other-values">
+<tbody><tr>
+<td>
+Journal
+</td>
+<td class="journal-title">
+<em>Statistics in Medicine</em>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
-<div id="pubs">
-<p>Here is a list of publications generated from the BibTeX file.</p>
+</section>
+<section id="table-format" class="level1">
+<h1>Table format:</h1>
+<div id="listing-articles2" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-articles2-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-articles2'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title-sort" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-journal-title" data-direction="asc">
+          Journal
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Issued - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Issued - Newest
+        </option>
+     </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># If using R, list references using the `RefManageR` package</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RefManageR)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>bib <span class="ot">&lt;-</span> <span class="fu">ReadBib</span>(<span class="st">"publications.bib"</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">NoCite</span>(<span class="at">bib =</span> bib, <span class="st">"*"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">PrintBibliography</span>(bib, <span class="at">.opts =</span> <span class="fu">list</span>(<span class="at">style =</span> <span class="st">"text"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] M. E. Carey, W. R. MacWright, J. Im, et al. "The Surveillance for
-Enteric Fever in Asia Project (SEAP), Severe Typhoid Fever Surveillance
-in Africa (SETA), Surveillance of Enteric Fever in India (SEFI), and
-Strategic Typhoid Alliance Across Africa and Asia (STRATAA)
-Population-based Enteric Fever Studies: A Review of Methodological
-Similarities and Differences". In: _Clinical Infectious Diseases_
-71.Supplement_2 (Jul. 2020), p. S102–S110. ISSN: 1537-6591. DOI:
-10.1093/cid/ciaa367. &lt;http://dx.doi.org/10.1093/cid/ciaa367&gt;.
-
-[2] D. O. Garrett, A. T. Longley, K. Aiemjoy, et al. "Incidence of
-typhoid and paratyphoid fever in Bangladesh, Nepal, and Pakistan:
-results of the Surveillance for Enteric Fever in Asia Project". In:
-_The Lancet Global Health_ 10.7 (Jul. 2022), p. e978–e988. ISSN:
-2214-109X. DOI: 10.1016/s2214-109x(22)00119-x.
-&lt;http://dx.doi.org/10.1016/S2214-109X(22)00119-X&gt;.
-
-[3] D. Morrison, O. Laeyendecker, and R. Brookmeyer. "Cross‐sectional
-HIV incidence estimation in an evolving epidemic". In: _Statistics in
-Medicine_ 38.19 (May. 2019), p. 3614–3627. ISSN: 1097-0258. DOI:
-10.1002/sim.8196. &lt;http://dx.doi.org/10.1002/sim.8196&gt;.</code></pre>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Issued</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+<th>
+<a class="sort" data-sort="listing-journal-title" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Journal</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-listing-date-sort="1656658800000" data-listing-title-sort="Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project">
+<td>
+<span class="listing-date">July,<br>2022</span>
+</td>
+<td>
+<a href="https://doi.org/10.1016/s2214-109x(22)00119-x" class="title listing-title">Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project</a>
+</td>
+<td>
+<span class="listing-journal-title"><em>The Lancet Global Health</em></span>
+</td>
+</tr>
+<tr data-index="1" data-listing-date-sort="1593586800000" data-listing-title-sort="The surveillance for enteric fever in asia project (SEAP), severe typhoid fever surveillance in africa (SETA), surveillance of enteric fever in india (SEFI), and strategic typhoid alliance across africa and asia (STRATAA) population-based enteric fever studies: A review of methodological similarities and differences">
+<td>
+<span class="listing-date">July,<br>2020</span>
+</td>
+<td>
+<a href="https://doi.org/10.1093/cid/ciaa367" class="title listing-title">The surveillance for enteric fever in asia project (SEAP), severe typhoid fever surveillance in africa (SETA), surveillance of enteric fever in india (SEFI), and strategic typhoid alliance across africa and asia (STRATAA) population-based enteric fever studies: A review of methodological similarities and differences</a>
+</td>
+<td>
+<span class="listing-journal-title"><em>Clinical Infectious Diseases</em></span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1556694000000" data-listing-title-sort="Cross‐sectional HIV incidence estimation in an evolving epidemic">
+<td>
+<span class="listing-date">May,<br>2019</span>
+</td>
+<td>
+<a href="https://doi.org/10.1002/sim.8196" class="title listing-title">Cross‐sectional HIV incidence estimation in an evolving epidemic</a>
+</td>
+<td>
+<span class="listing-journal-title"><em>Statistics in Medicine</em></span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
 </div>
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

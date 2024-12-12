@@ -1,6 +1,5 @@
-<!-- from https://github.com/andrewheiss/ath-quarto/blob/main/html/research/listing.ejs -->
+// from https://github.com/andrewheiss/ath-quarto/blob/main/html/research/listing.ejs
 
-```{=html}
 <div class="research project-list">
 <ul class="list">
     <% for (const item of items) { %>
@@ -54,4 +53,3 @@
         <% } %>
 </ul>
 </div>
-```
