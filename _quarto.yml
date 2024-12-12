@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "ucd.serg"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: team.qmd
+        text: Team
+      - href: publications.qmd
+        text: Publications
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: source
+

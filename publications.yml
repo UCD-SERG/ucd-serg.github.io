@@ -1,0 +1,234 @@
+- author:
+  - family: Garrett
+    given: Denise O
+  - family: Longley
+    given: Ashley T
+  - family: Aiemjoy
+    given: Kristen
+  - family: Yousafzai
+    given: Mohammad T
+  - family: Hemlock
+    given: Caitlin
+  - family: Yu
+    given: Alexander T
+  - family: Vaidya
+    given: Krista
+  - family: Tamrakar
+    given: Dipesh
+  - family: Saha
+    given: Shampa
+  - family: Bogoch
+    given: Isaac I
+  - family: Date
+    given: Kashmira
+  - family: Saha
+    given: Senjuti
+  - family: Islam
+    given: Mohammad Shahidul
+  - family: Sayeed
+    given: K M Ishtiaque
+  - family: Bern
+    given: Caryn
+  - family: Shakoor
+    given: Sadia
+  - family: Dehraj
+    given: Irum F
+  - family: Mehmood
+    given: Junaid
+  - family: Sajib
+    given: Mohammad S I
+  - family: Islam
+    given: Maksuda
+  - family: Thobani
+    given: Rozina S
+  - family: Hotwani
+    given: Aneeta
+  - family: Rahman
+    given: Najeeb
+  - family: Irfan
+    given: Seema
+  - family: Naga
+    given: Shiva R
+  - family: Memon
+    given: Ashraf M
+  - family: Pradhan
+    given: Sailesh
+  - family: Iqbal
+    given: Khalid
+  - family: Shrestha
+    given: Rajeev
+  - family: Rahman
+    given: Hafizur
+  - family: Hasan
+    given: Md Mahmudul
+  - family: Qazi
+    given: Saqib H
+  - family: Kazi
+    given: Abdul M
+  - family: Saddal
+    given: Nasir S
+  - family: Jamal
+    given: Raza
+  - family: Hunzai
+    given: Mohammed J
+  - family: Hossain
+    given: Tanvir
+  - family: Marks
+    given: Florian
+  - family: Carter
+    given: Alice S
+  - family: Seidman
+    given: Jessica C
+  - family: Qamar
+    given: Farah N
+  - family: Saha
+    given: Samir K
+  - family: Andrews
+    given: Jason R
+  - family: Luby
+    given: Stephen P
+  container-title: The Lancet Global Health
+  doi: 10.1016/s2214-109x(22)00119-x
+  id: Garrett_2022
+  issn: 2214-109X
+  issue: 7
+  issued: 2022-07
+  page: e978-e988
+  publisher: Elsevier BV
+  title: "Incidence of typhoid and paratyphoid fever in bangladesh,
+    nepal, and pakistan: Results of the surveillance for enteric fever
+    in asia project"
+  title-short: Incidence of typhoid and paratyphoid fever in bangladesh,
+    nepal, and pakistan
+  type: article-journal
+  url: "http://dx.doi.org/10.1016/S2214-109X(22)00119-X"
+  volume: 10
+  journal-title: '*The Lancet Global Health*'
+  date: 2022-07
+  path: https://doi.org/10.1016/s2214-109x(22)00119-x
+- author:
+  - family: Carey
+    given: Megan E
+  - family: MacWright
+    given: William R
+  - family: Im
+    given: Justin
+  - family: Meiring
+    given: James E
+  - family: Gibani
+    given: Malick M
+  - family: Park
+    given: Se Eun
+  - family: Longley
+    given: Ashley
+  - family: Jeon
+    given: Hyon Jin
+  - family: Hemlock
+    given: Caitlin
+  - family: Yu
+    given: Alexander T
+  - family: Soura
+    given: Abdramane
+  - family: Aiemjoy
+    given: Kristen
+  - family: Owusu-Dabo
+    given: Ellis
+  - family: Terferi
+    given: Mekonnen
+  - family: Islam
+    given: Sahidul
+  - family: Lunguya
+    given: Octavie
+  - family: Jacobs
+    given: Jan
+  - family: Gordon
+    given: Melita
+  - family: Dolecek
+    given: Christiane
+  - family: Baker
+    given: Stephen
+  - family: Pitzer
+    given: Virginia E
+  - family: Yousafzai
+    given: Mohammad Tahir
+  - family: Tonks
+    given: Susan
+  - family: Clemens
+    given: John D
+  - family: Date
+    given: Kashmira
+  - family: Qadri
+    given: Firdausi
+  - family: Heyderman
+    given: Robert S
+  - family: Saha
+    given: Samir K
+  - family: Basnyat
+    given: Buddha
+  - family: Okeke
+    given: Iruka N
+  - family: Qamar
+    given: Farah N
+  - family: Voysey
+    given: Merryn
+  - family: Luby
+    given: Stephen
+  - family: Kang
+    given: Gagandeep
+  - family: Andrews
+    given: Jason
+  - family: Pollard
+    given: Andrew J
+  - family: John
+    given: Jacob
+  - family: Garrett
+    given: Denise
+  - family: Marks
+    given: Florian
+  container-title: Clinical Infectious Diseases
+  doi: 10.1093/cid/ciaa367
+  id: Carey_2020
+  issn: 1537-6591
+  issue: Supplement_2
+  issued: 2020-07
+  page: S102-S110
+  publisher: Oxford University Press (OUP)
+  title: "The surveillance for enteric fever in asia project (SEAP),
+    severe typhoid fever surveillance in africa (SETA), surveillance of
+    enteric fever in india (SEFI), and strategic typhoid alliance across
+    africa and asia (STRATAA) population-based enteric fever studies: A
+    review of methodological similarities and differences"
+  title-short: The surveillance for enteric fever in asia project
+    (SEAP), severe typhoid fever surveillance in africa (SETA),
+    surveillance of enteric fever in india (SEFI), and strategic typhoid
+    alliance across africa and asia (STRATAA) population-based enteric
+    fever studies
+  type: article-journal
+  url: "http://dx.doi.org/10.1093/cid/ciaa367"
+  volume: 71
+  journal-title: '*Clinical Infectious Diseases*'
+  date: 2020-07
+  path: https://doi.org/10.1093/cid/ciaa367
+- author:
+  - family: Morrison
+    given: Doug
+  - family: Laeyendecker
+    given: Oliver
+  - family: Brookmeyer
+    given: Ron
+  container-title: Statistics in Medicine
+  doi: 10.1002/sim.8196
+  id: Morrison_2019
+  issn: 1097-0258
+  issue: 19
+  issued: 2019-05
+  page: 3614-3627
+  publisher: Wiley
+  title: Cross‐sectional HIV incidence estimation in an evolving
+    epidemic
+  type: article-journal
+  url: "http://dx.doi.org/10.1002/sim.8196"
+  volume: 38
+  journal-title: '*Statistics in Medicine*'
+  date: 2019-05
+  path: https://doi.org/10.1002/sim.8196
