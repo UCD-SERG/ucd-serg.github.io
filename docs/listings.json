@@ -5,6 +5,9 @@
   },
   {
     "listing": "/publications.html",
-    "items": []
+    "items": [
+      "/publications/articles/aiemjoy2022/aiemjoy2022lancet.html",
+      "/publications/articles/morrison2019/morrison2019.html"
+    ]
   }
 ]

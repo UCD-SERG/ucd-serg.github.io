@@ -11,13 +11,14 @@ listing:
   # template: papers/publications.js
   contents:
     - publications.yml
+    - "publications/*/*/**.qmd"
   # page-size: 10
   sort: 'issued desc'
   type: grid
   # categories: true
   # sort-ui: [date, title, journal-title]
   # filter-ui: [date, title, journal-title]
-  fields: [date, title, journal-title]
+  fields: [image, date, title, journal-title]
   field-display-names:
     date: Issued
     title: Title
@@ -28,6 +29,7 @@ listing:
   # template: papers/publications.js
   contents:
     - publications.yml
+    - "publications/*/*/**.qmd"
   # page-size: 10
   sort: 'issued desc'
   type: table
