@@ -13,7 +13,7 @@ listing:
   categories: false
   sort-ui: [date, title, journal-title]
   filter-ui: [date, title, journal-title]
-  fields: [date, title, journal-title]
+  fields: [date, title, authors, journal-title]
   field-display-names:
     date: Issued
     journal-title: Journal
