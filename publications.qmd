@@ -9,8 +9,9 @@ toc-location: right
 listing:
 - id: articles 
   # template: papers/listing.qmd
+  # template: papers/publications.js
   contents:
-    - publications.yml
+    - publictaions.yml
   # page-size: 10
   sort: 'issued desc'
   type: grid
