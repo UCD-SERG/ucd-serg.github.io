@@ -1,5 +1,5 @@
 ---
-title: "UC Davis Seroepidemiology Research Group (UCD-SeRG)"
+title: "UC Davis Seroepidemiology Research Group"
 ---
 
 Our research focuses on infectious disease surveillance and diagnostics 
