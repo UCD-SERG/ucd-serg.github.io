@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
 website:
-  title: "ucd.serg"
+  title: "UCD-SeRG"
   navbar:
     left:
       - href: index.qmd
