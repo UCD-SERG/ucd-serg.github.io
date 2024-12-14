@@ -1,10 +1,10 @@
 project:
   type: website
   output-dir: docs
-  repo-url: https://github.com/UCD-SERG/ucd-serg.github.io
-  repo-actions: [edit, source, issue]
 website:
   title: "UCD-SeRG"
+  repo-url: https://github.com/UCD-SERG/ucd-serg.github.io
+  repo-actions: [edit, source, issue]
   navbar:
     left:
       - href: index.qmd
