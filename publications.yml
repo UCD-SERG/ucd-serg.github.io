@@ -1,104 +1,507 @@
 - author:
-  - family: Carey
-    given: Megan E
-  - family: MacWright
-    given: William R
-  - family: Im
-    given: Justin
-  - family: Meiring
-    given: James E
-  - family: Gibani
-    given: Malick M
-  - family: Park
-    given: Se Eun
+  - family: Garrett
+    given: Denise O
   - family: Longley
-    given: Ashley
-  - family: Jeon
-    given: Hyon Jin
+    given: Ashley T
+  - family: Aiemjoy
+    given: Kristen
+  - family: Yousafzai
+    given: Mohammad T
   - family: Hemlock
     given: Caitlin
   - family: Yu
     given: Alexander T
-  - family: Soura
-    given: Abdramane
-  - family: Aiemjoy
-    given: Kristen
-  - family: Owusu-Dabo
-    given: Ellis
-  - family: Terferi
-    given: Mekonnen
-  - family: Islam
-    given: Sahidul
-  - family: Lunguya
-    given: Octavie
-  - family: Jacobs
-    given: Jan
-  - family: Gordon
-    given: Melita
-  - family: Dolecek
-    given: Christiane
-  - family: Baker
-    given: Stephen
-  - family: Pitzer
-    given: Virginia E
-  - family: Yousafzai
-    given: Mohammad Tahir
-  - family: Tonks
-    given: Susan
-  - family: Clemens
-    given: John D
+  - family: Vaidya
+    given: Krista
+  - family: Tamrakar
+    given: Dipesh
+  - family: Saha
+    given: Shampa
+  - family: Bogoch
+    given: Isaac I
   - family: Date
     given: Kashmira
-  - family: Qadri
-    given: Firdausi
-  - family: Heyderman
-    given: Robert S
   - family: Saha
-    given: Samir K
-  - family: Basnyat
-    given: Buddha
-  - family: Okeke
-    given: Iruka N
-  - family: Qamar
-    given: Farah N
-  - family: Voysey
-    given: Merryn
-  - family: Luby
-    given: Stephen
-  - family: Kang
-    given: Gagandeep
-  - family: Andrews
-    given: Jason
-  - family: Pollard
-    given: Andrew J
-  - family: John
-    given: Jacob
-  - family: Garrett
-    given: Denise
+    given: Senjuti
+  - family: Islam
+    given: Mohammad Shahidul
+  - family: Sayeed
+    given: K M Ishtiaque
+  - family: Bern
+    given: Caryn
+  - family: Shakoor
+    given: Sadia
+  - family: Dehraj
+    given: Irum F
+  - family: Mehmood
+    given: Junaid
+  - family: Sajib
+    given: Mohammad S I
+  - family: Islam
+    given: Maksuda
+  - family: Thobani
+    given: Rozina S
+  - family: Hotwani
+    given: Aneeta
+  - family: Rahman
+    given: Najeeb
+  - family: Irfan
+    given: Seema
+  - family: Naga
+    given: Shiva R
+  - family: Memon
+    given: Ashraf M
+  - family: Pradhan
+    given: Sailesh
+  - family: Iqbal
+    given: Khalid
+  - family: Shrestha
+    given: Rajeev
+  - family: Rahman
+    given: Hafizur
+  - family: Hasan
+    given: Md Mahmudul
+  - family: Qazi
+    given: Saqib H
+  - family: Kazi
+    given: Abdul M
+  - family: Saddal
+    given: Nasir S
+  - family: Jamal
+    given: Raza
+  - family: Hunzai
+    given: Mohammed J
+  - family: Hossain
+    given: Tanvir
   - family: Marks
     given: Florian
-  container-title: Clinical Infectious Diseases
-  doi: 10.1093/cid/ciaa367
-  id: Carey_2020
-  issn: 1537-6591
-  issue: Supplement_2
-  issued: 2020-07
-  page: S102-S110
-  publisher: Oxford University Press (OUP)
-  title: "The surveillance for enteric fever in asia project (SEAP),
-    severe typhoid fever surveillance in africa (SETA), surveillance of
-    enteric fever in india (SEFI), and strategic typhoid alliance across
-    africa and asia (STRATAA) population-based enteric fever studies: A
-    review of methodological similarities and differences"
-  title-short: The surveillance for enteric fever in asia project
-    (SEAP), severe typhoid fever surveillance in africa (SETA),
-    surveillance of enteric fever in india (SEFI), and strategic typhoid
-    alliance across africa and asia (STRATAA) population-based enteric
-    fever studies
+  - family: Carter
+    given: Alice S
+  - family: Seidman
+    given: Jessica C
+  - family: Qamar
+    given: Farah N
+  - family: Saha
+    given: Samir K
+  - family: Andrews
+    given: Jason R
+  - family: Luby
+    given: Stephen P
+  container-title: The Lancet Global Health
+  doi: 10.1016/s2214-109x(22)00119-x
+  id: Garrett_2022
+  issn: 2214-109X
+  issue: 7
+  issued: 2022-07
+  page: e978-e988
+  publisher: Elsevier BV
+  title: "Incidence of typhoid and paratyphoid fever in bangladesh,
+    nepal, and pakistan: Results of the surveillance for enteric fever
+    in asia project"
+  title-short: Incidence of typhoid and paratyphoid fever in bangladesh,
+    nepal, and pakistan
   type: article-journal
-  url: "http://dx.doi.org/10.1093/cid/ciaa367"
-  volume: 71
-  journal-title: '*Clinical Infectious Diseases*'
-  date: 2020-07
-  path: https://doi.org/10.1093/cid/ciaa367
+  url: "http://dx.doi.org/10.1016/S2214-109X(22)00119-X"
+  volume: 10
+  journal-title: '*The Lancet Global Health*'
+  date: 2022-07
+  path: https://doi.org/10.1016/s2214-109x(22)00119-x
   highlight: 1
+- author:
+  - family: Morrison
+    given: Doug
+  - family: Laeyendecker
+    given: Oliver
+  - family: Brookmeyer
+    given: Ron
+  container-title: Statistics in Medicine
+  doi: 10.1002/sim.8196
+  id: Morrison_2019
+  issn: 1097-0258
+  issue: 19
+  issued: 2019-05
+  page: 3614-3627
+  publisher: Wiley
+  title: Cross‐sectional HIV incidence estimation in an evolving
+    epidemic
+  type: article-journal
+  url: "http://dx.doi.org/10.1002/sim.8196"
+  volume: 38
+  journal-title: '*Statistics in Medicine*'
+  date: 2019-05
+  path: https://doi.org/10.1002/sim.8196
+  highlight: 1
+- author:
+  - family: Katuwal
+    given: Nishan
+  - family: Thapa
+    given: Melina
+  - family: Shrestha
+    given: Sony
+  - family: Vaidya
+    given: Krista
+  - family: Bogoch
+    given: Isaac I.
+  - family: Shrestha
+    given: Rajeev
+  - family: Andrews
+    given: Jason R.
+  - family: Tamrakar
+    given: Dipesh
+  - family: Aiemjoy
+    given: Kristen
+  container-title: PLOS Neglected Tropical Diseases
+  doi: 10.1371/journal.pntd.0012375
+  editor:
+  - family: Poonawala
+    given: Husain
+  id: Katuwal_2024
+  issn: 1935-2735
+  issue: 8
+  issued: 2024-08
+  page: e0012375
+  publisher: Public Library of Science (PLoS)
+  title: "Hepatitis e virus in the kathmandu valley: Insights from a
+    representative longitudinal serosurvey"
+  title-short: Hepatitis e virus in the kathmandu valley
+  type: article-journal
+  url: "http://dx.doi.org/10.1371/journal.pntd.0012375"
+  volume: 18
+  journal-title: '*PLOS Neglected Tropical Diseases*'
+  date: 2024-08
+  path: https://doi.org/10.1371/journal.pntd.0012375
+  highlight: 0
+- author:
+  - family: Aiemjoy
+    given: Kristen
+  - family: Katuwal
+    given: Nishan
+  - family: Vaidya
+    given: Krista
+  - family: Shrestha
+    given: Sony
+  - family: Thapa
+    given: Melina
+  - family: Teunis
+    given: Peter
+  - family: Bogoch
+    given: Isaac I.
+  - family: Trowbridge
+    given: Paul
+  - family: Blacksell
+    given: Stuart D.
+  - family: Paris
+    given: Daniel H.
+  - family: Wangrangsimakul
+    given: Tri
+  - family: Varghese
+    given: George M.
+  - family: Maude
+    given: Richard J.
+  - family: Tamrakar
+    given: Dipesh
+  - family: Andrews
+    given: Jason R.
+  container-title: The American Journal of Tropical Medicine and Hygiene
+  doi: 10.4269/ajtmh.23-0475
+  id: Aiemjoy_2024
+  issn: 1476-1645
+  issue: 2
+  issued: 2024-08
+  page: 267-276
+  publisher: American Society of Tropical Medicine and Hygiene
+  title: Estimating the seroincidence of scrub typhus using antibody
+    dynamics after infection
+  type: article-journal
+  url: "http://dx.doi.org/10.4269/ajtmh.23-0475"
+  volume: 111
+  journal-title: '*The American Journal of Tropical Medicine and Hygiene*'
+  date: 2024-08
+  path: https://doi.org/10.4269/ajtmh.23-0475
+  highlight: 0
+- author:
+  - family: Looareesuwan
+    given: Panita
+  - family: Aiemjoy
+    given: Kristen
+  - family: Charoensakulchai
+    given: Sakarn
+  - family: Thaipadungpanit
+    given: Janjira
+  - family: Wongsantichon
+    given: Jantana
+  - family: Tanganuchitcharnchai
+    given: Ampai
+  - family: Rungrojn
+    given: Artharee
+  - family: Blacksell
+    given: Stuart D
+  - family: Matsee
+    given: Wasin
+  container-title: Journal of Travel Medicine
+  doi: 10.1093/jtm/taad143
+  id: Looareesuwan_2023
+  issn: 1708-8305
+  issue: 8
+  issued: 2023-11
+  publisher: Oxford University Press (OUP)
+  title: Diagnostic challenges and antibody kinetics in a paediatric
+    traveller with scrub typhus
+  type: article-journal
+  url: "http://dx.doi.org/10.1093/jtm/taad143"
+  volume: 30
+  journal-title: '*Journal of Travel Medicine*'
+  date: 2023-11
+  path: https://doi.org/10.1093/jtm/taad143
+  highlight: 0
+- author:
+  - family: Teunis
+    given: Peter F. M.
+  - family: Wang
+    given: Yuke
+  - family: Aiemjoy
+    given: Kristen
+  - family: Kretzschmar
+    given: Mirjam
+  - family: Aerts
+    given: Marc
+  container-title: Statistics in Medicine
+  doi: 10.1002/sim.9906
+  id: Teunis_2023
+  issn: 1097-0258
+  issue: 28
+  issued: 2023-09
+  page: 5160-5188
+  publisher: Wiley
+  title: Estimating seroconversion rates accounting for repeated
+    infections by approximate bayesian computation
+  type: article-journal
+  url: "http://dx.doi.org/10.1002/sim.9906"
+  volume: 42
+  journal-title: '*Statistics in Medicine*'
+  date: 2023-09
+  path: https://doi.org/10.1002/sim.9906
+  highlight: 0
+- author:
+  - family: Aiemjoy
+    given: Kristen
+  - family: Seidman
+    given: Jessica C
+  - family: Charles
+    given: Richelle C
+  - family: Andrews
+    given: Jason R
+  container-title: Open Forum Infectious Diseases
+  doi: 10.1093/ofid/ofad021
+  id: Aiemjoy_2023
+  issn: 2328-8957
+  issue: Supplement_1
+  issued: 2023-05
+  page: S21-S25
+  publisher: Oxford University Press (OUP)
+  title: "Seroepidemiology for enteric fever: Emerging approaches and
+    opportunities"
+  title-short: Seroepidemiology for enteric fever
+  type: article-journal
+  url: "http://dx.doi.org/10.1093/ofid/ofad021"
+  volume: 10
+  journal-title: '*Open Forum Infectious Diseases*'
+  date: 2023-05
+  path: https://doi.org/10.1093/ofid/ofad021
+  highlight: 0
+- author:
+  - family: Aiemjoy
+    given: Kristen
+  - family: Rumunu
+    given: John
+  - family: Hassen
+    given: Juma John
+  - family: Wiens
+    given: Kirsten E.
+  - family: Garrett
+    given: Denise
+  - family: Kamenskaya
+    given: Polina
+  - family: Harris
+    given: Jason B.
+  - family: Azman
+    given: Andrew S.
+  - family: Teunis
+    given: Peter
+  - family: Seidman
+    given: Jessica C.
+  - family: Wamala
+    given: Joseph F.
+  - family: Andrews
+    given: Jason R.
+  - family: Charles
+    given: Richelle C.
+  container-title: Emerging Infectious Diseases
+  doi: 10.3201/eid2811.220239
+  id: Aiemjoy_2022
+  issn: 1080-6059
+  issue: 11
+  issued: 2022-11
+  publisher: Centers for Disease Control and Prevention (CDC)
+  title: Seroincidence of enteric fever, juba, south sudan
+  type: article-journal
+  url: "http://dx.doi.org/10.3201/eid2811.220239"
+  volume: 28
+  journal-title: '*Emerging Infectious Diseases*'
+  date: 2022-11
+  path: https://doi.org/10.3201/eid2811.220239
+  highlight: 0
+- author:
+  - family: Aiemjoy
+    given: Kristen
+  - family: Seidman
+    given: Jessica C
+  - family: Saha
+    given: Senjuti
+  - family: Munira
+    given: Sira Jam
+  - family: Islam Sajib
+    given: Mohammad Saiful
+  - family: Sium
+    given: Syed Muktadir Al
+  - family: Sarkar
+    given: Anik
+  - family: Alam
+    given: Nusrat
+  - family: Zahan
+    given: Farha Nusrat
+  - family: Kabir
+    given: Md Shakiul
+  - family: Tamrakar
+    given: Dipesh
+  - family: Vaidya
+    given: Krista
+  - family: Shrestha
+    given: Rajeev
+  - family: Shakya
+    given: Jivan
+  - family: Katuwal
+    given: Nishan
+  - family: Shrestha
+    given: Sony
+  - family: Yousafzai
+    given: Mohammad Tahir
+  - family: Iqbal
+    given: Junaid
+  - family: Dehraj
+    given: Irum Fatima
+  - family: Ladak
+    given: Yasmin
+  - family: Maria
+    given: Noshi
+  - family: Adnan
+    given: Mehreen
+  - family: Pervaiz
+    given: Sadaf
+  - family: Carter
+    given: Alice S
+  - family: Longley
+    given: Ashley T
+  - family: Fraser
+    given: Clare
+  - family: Ryan
+    given: Edward T
+  - family: Nodoushani
+    given: Ariana
+  - family: Fasano
+    given: Alessio
+  - family: Leonard
+    given: Maureen M
+  - family: Kenyon
+    given: Victoria
+  - family: Bogoch
+    given: Isaac I
+  - family: Jeon
+    given: Hyon Jin
+  - family: Haselbeck
+    given: Andrea
+  - family: Park
+    given: Se Eun
+  - family: Zellweger
+    given: Raphaël M
+  - family: Marks
+    given: Florian
+  - family: Owusu-Dabo
+    given: Ellis
+  - family: Adu-Sarkodie
+    given: Yaw
+  - family: Owusu
+    given: Michael
+  - family: Teunis
+    given: Peter
+  - family: Luby
+    given: Stephen P
+  - family: Garrett
+    given: Denise O
+  - family: Qamar
+    given: Farah Naz
+  - family: Saha
+    given: Samir K
+  - family: Charles
+    given: Richelle C
+  - family: Andrews
+    given: Jason R
+  container-title: The Lancet Microbe
+  doi: 10.1016/s2666-5247(22)00114-8
+  id: Aiemjoy_2022
+  issn: 2666-5247
+  issue: 8
+  issued: 2022-08
+  page: e578-e587
+  publisher: Elsevier BV
+  title: "Estimating typhoid incidence from community-based serosurveys:
+    A multicohort study"
+  title-short: Estimating typhoid incidence from community-based
+    serosurveys
+  type: article-journal
+  url: "http://dx.doi.org/10.1016/S2666-5247(22)00114-8"
+  volume: 3
+  journal-title: '*The Lancet Microbe*'
+  date: 2022-08
+  path: https://doi.org/10.1016/s2666-5247(22)00114-8
+  highlight: 0
+- author:
+  - family: Aiemjoy
+    given: Kristen
+  - family: Aragie
+    given: Solomon
+  - family: Wittberg
+    given: Dionna M.
+  - family: Tadesse
+    given: Zerihun
+  - family: Callahan
+    given: E. Kelly
+  - family: Gwyn
+    given: Sarah
+  - family: Martin
+    given: Diana
+  - family: Keenan
+    given: Jeremy D.
+  - family: Arnold
+    given: Benjamin F.
+  container-title: PLOS Neglected Tropical Diseases
+  doi: 10.1371/journal.pntd.0008647
+  editor:
+  - family: Ngondi
+    given: Jeremiah M.
+  id: Aiemjoy_2020
+  issn: 1935-2735
+  issue: 9
+  issued: 2020-09
+  page: e0008647
+  publisher: Public Library of Science (PLoS)
+  title: Seroprevalence of antibodies against chlamydia trachomatis and
+    enteropathogens and distance to the nearest water source among young
+    children in the amhara region of ethiopia
+  type: article-journal
+  url: "http://dx.doi.org/10.1371/journal.pntd.0008647"
+  volume: 14
+  journal-title: '*PLOS Neglected Tropical Diseases*'
+  date: 2020-09
+  path: https://doi.org/10.1371/journal.pntd.0008647
+  highlight: 0
