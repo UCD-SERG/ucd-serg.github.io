@@ -21,7 +21,7 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render
-        if: github.event_name = 'pull_request'
+        if: github.event_name == 'pull_request'
         uses: quarto-dev/quarto-actions/render@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
