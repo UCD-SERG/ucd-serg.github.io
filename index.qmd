@@ -2,5 +2,10 @@
 title: "UC Davis Seroepidemiology Research Group"
 ---
 
-Our research focuses on infectious disease surveillance and diagnostics 
-with a focus on enteric infections.
+Accurate methods to measure infectious disease burden are essential for guiding public health decisions, yet many infectious diseases remain underrecognized due to limited diagnostics and costly, resource-intensive surveillance systems. We work addresses this gap by developing seroepidemiologic methods to characterize infection burden in populations. Currently, we focus on enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae). 
+
+ Our research group is based at the University of California, Davis, and is led by Drs. Kristen Aiemjoy and Ezra Morrison and supported by US National Institutes of Health and the Bill and Melinda Gates Foundation. 
+ 
+ We are always looking for new collaborators and students. If you are interested in working with us, please contact us at ucdserg[at]ucdavis.edu
+ 
+![2023 workshop on 'Serocalculator' adjascent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries](figures/serocalculator_kigali.jpg)
