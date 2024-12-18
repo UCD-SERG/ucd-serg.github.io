@@ -6,30 +6,12 @@ date-format: 'MMMM,<br>YYYY'
 include-back-link: false
 toc-location: right
 listing:
-- id: articles 
-  # template: papers/listing.qmd
-  # template: papers/publications.js
-  contents:
-    - publications.yml
-    - "publications/*/*/**.qmd"
-  # page-size: 10
-  sort: 'issued desc'
-  type: grid
-  # categories: true
-  # sort-ui: [date, title, journal-title]
-  # filter-ui: [date, title, journal-title]
-  fields: [image, date, title, journal-title]
-  field-display-names:
-    date: Issued
-    title: Title
-    journal-title: Journal
-    
 - id: articles2
   # template: papers/listing.qmd
   # template: papers/publications.js
   contents:
     - publications.yml
-    - "publications/*/*/**.qmd"
+    # - "publications/*/*/**.qmd"
   # page-size: 10
   sort: 'issued desc'
   type: table
@@ -43,13 +25,6 @@ listing:
     journal-title: Journal
 
 ---
-
-# Grid format: 
-
-:::{#articles}
-:::
-
-# Table format:
 
 :::{#articles2}
 :::

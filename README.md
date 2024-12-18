@@ -12,3 +12,9 @@ References and examples:
 - https://quarto.org/docs/websites/
 - https://dfolio.fr/posts/2023/2023-08-17_publications
 - https://drganghe.github.io/quarto-academic-site-examples.html
+
+
+## How to update publications
+
+1. add new paper to `papers/DOIs.csv`
+2. re-run `data-raw/papers.R` script
