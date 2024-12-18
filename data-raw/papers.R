@@ -1,5 +1,5 @@
 
-load_all()
+devtools::load_all()
 
 library(rcrossref)
 
