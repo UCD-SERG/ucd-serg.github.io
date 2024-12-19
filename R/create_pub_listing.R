@@ -1,7 +1,7 @@
 # taken from
 # https://github.com/mcanouil/mickael.canouil.fr/blob/main/publications.r # nolint: line_length_linter
 
-create_pub_listing <- function(bib = read_bib_file(bib_file),
+create_pub_listing <- function(bib = bibtex::read.bib(bib_file),
                                bib_file = "publications.bib",
                                author = "Canouil",
                                highlight = seq_along(bibtex_entries) < 3) { # nolint: line_length_linter
