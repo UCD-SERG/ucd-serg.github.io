@@ -4,8 +4,8 @@ library(rcrossref)
 library(dplyr)
 
 
-dois <- read.csv("papers/DOIs.csv") |> 
-  dplyr::pull(DOI) 
+dois <- read.csv("papers/DOIs.csv") |>
+  dplyr::pull(DOI)
 
 
 bibtex_entries <-
