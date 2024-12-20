@@ -1,9 +1,12 @@
 devtools::load_all()
 
 library(rcrossref)
+library(dplyr)
 
-dois <- read.csv("papers/DOIs.csv") |>
-  pull(DOI)
+
+dois <- read.csv("papers/DOIs.csv") |> 
+  dplyr::pull(DOI) 
+
 
 bibtex_entries <-
   cr_cn(dois, format = "bibtex") |>

@@ -505,3 +505,53 @@
   date: 2020-09
   path: https://doi.org/10.1371/journal.pntd.0008647
   highlight: 0
+- author:
+  - family: Morrison
+    given: Doug
+  - family: Laeyendecker
+    given: Oliver
+  - family: Brookmeyer
+    given: Ron
+  container-title: Biometrics
+  doi: 10.1111/biom.13472
+  id: Morrison_2021
+  issn: 1541-0420
+  issue: 3
+  issued: 2021-05
+  page: 908-921
+  publisher: Oxford University Press (OUP)
+  title: "Regression with interval‐censored covariates: Application to
+    cross‐sectional incidence estimation"
+  title-short: Regression with interval‐censored covariates
+  type: article-journal
+  url: "http://dx.doi.org/10.1111/biom.13472"
+  volume: 78
+  journal-title: '*Biometrics*'
+  date: 2021-05
+  path: https://doi.org/10.1111/biom.13472
+  highlight: 0
+- author:
+  - family: Morrison
+    given: Doug
+  - family: Laeyendecker
+    given: Oliver
+  - family: Konikoff
+    given: Jacob
+  - family: Brookmeyer
+    given: Ron
+  container-title: Statistical Communications in Infectious Diseases
+  doi: 10.1515/scid-2017-0003
+  id: Morrison_2018
+  issn: 2194-6310
+  issue: 1
+  issued: 2018-07
+  publisher: Walter de Gruyter GmbH
+  title: Cross-sectional HIV incidence estimation with missing
+    biomarkers
+  type: article-journal
+  url: "http://dx.doi.org/10.1515/scid-2017-0003"
+  volume: 10
+  journal-title: '*Statistical Communications in Infectious Diseases*'
+  date: 2018-07
+  path: https://doi.org/10.1515/scid-2017-0003
+  highlight: 0
