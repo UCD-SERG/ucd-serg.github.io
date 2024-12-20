@@ -1,10 +1,10 @@
 
-# ucd.serg.github.io
+# ucd-serg.github.io
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ucd.serg.github.io is to build a website for the UC Davis 
+The goal of ucd-serg.github.io is to build a website for the UC Davis 
 Seroepidemiology Research Group (UCD-SeRG).
 
 References and examples:
