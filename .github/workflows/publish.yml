@@ -30,7 +30,7 @@ jobs:
         if: github.event_name == 'pull_request'
         run: |
           QUARTO_PUBLISH_URL="https://ucd-serg.github.io/${{ github.repository }}-preview-${{ github.event.number }}"
-          quarto publish gh-pages --target $QUARTO_PUBLISH_URL
+          quarto publish gh-pages --server $QUARTO_PUBLISH_URL
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
