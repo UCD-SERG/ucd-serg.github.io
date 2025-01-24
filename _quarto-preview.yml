@@ -1,4 +1,6 @@
-
+project:
+  type: website
+  output-dir: docs/preview
 format:
   html:
     include-in-header:
