@@ -28,15 +28,7 @@ listing:
 :::{#PIs}
 :::
 
-## Graduate students
+## Students
 
 :::{#lab-member}
 :::
-
-## Undergraduate students
-
-test5
-
-## Affiliates
-
-## Alumni
