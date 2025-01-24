@@ -26,6 +26,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Deploy Preview
+        if: github.event_name == 'pull_request'
+        run: |
+          QUARTO_PUBLISH_URL="https://${{ github.actor }}.github.io/${{ github.repository }}-preview-${{ github.event.number }}"
+          quarto publish gh-pages --target $QUARTO_PUBLISH_URL
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Render and Publish
         if: github.event_name != 'pull_request'
         uses: quarto-dev/quarto-actions/publish@v2
@@ -33,5 +41,3 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-          
