@@ -1,5 +1,4 @@
-# .github/workflows/preview.yml
-name: Deploy PR previews
+name: Quarto Preview
 
 on:
   pull_request:
@@ -9,27 +8,23 @@ on:
       - synchronize
       - closed
 
-concurrency: preview-${{ github.ref }}
-
 jobs:
-  deploy-preview:
+  build-deploy:
     runs-on: ubuntu-latest
-    # Only run if this PR is not from a fork
-    if: github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
-      - name: Checkout
+      - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Render preview
-        if: github.event_name == 'pull_request'
+      - name: Render
         uses: quarto-dev/quarto-actions/render@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@v1.4.8
         with:
-          source-dir: docs
+          source-dir: ./docs/
