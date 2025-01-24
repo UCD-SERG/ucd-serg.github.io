@@ -26,7 +26,6 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          QUARTO_PROFILE: preview
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
