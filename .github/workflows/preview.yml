@@ -28,6 +28,6 @@ jobs:
         uses: rossjrw/pr-preview-action@main
         with:
           source-dir: ./docs/
-          pages_base_url: ucd-serg.github.io
+          pages-base-url: ucd-serg.github.io
         
            
