@@ -12,6 +12,7 @@ listing:
   contents: 
     - people/demorrison/demorrison.yaml
     - people/kaiemjoy/kaiemjoy.yaml
+    - people/skang/skang.yaml
 ---
 
 ## Current lab members
