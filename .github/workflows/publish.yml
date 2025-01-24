@@ -5,7 +5,7 @@ on:
   pull_request:
   release:
     types: [published]
-  
+
 name: Quarto Publish
 
 jobs:
@@ -26,10 +26,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set Git user
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+
       - name: Deploy Preview
         if: github.event_name == 'pull_request'
         run: |
-          QUARTO_PUBLISH_URL="https://ucd-serg.github.io/${{ github.repository }}-preview-${{ github.event.number }}"
+          QUARTO_PUBLISH_URL="https://ucd-serg.github.io/UCD-SERG/ucd-serg.github.io-preview-${{ github.event.number }}"
           quarto publish gh-pages --server $QUARTO_PUBLISH_URL
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
