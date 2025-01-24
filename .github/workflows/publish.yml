@@ -2,10 +2,7 @@ on:
   workflow_dispatch:
   push:
     branches: main
-  pull_request:
-  release:
-    types: [published]
-  
+
 name: Quarto Publish
 
 jobs:
@@ -21,15 +18,11 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render
-        if: github.event_name == 'pull_request'
         uses: quarto-dev/quarto-actions/render@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Render and Publish
-        if: github.event_name != 'pull_request'
-        uses: quarto-dev/quarto-actions/publish@v2
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          folder: docs/
+          clean-exclude: pr-preview/
+          force: false
