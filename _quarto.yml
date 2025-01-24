@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: ./
+  output-dir: docs
 website:
   title: "UCD-SeRG"
   repo-url: https://github.com/UCD-SERG/ucd-serg.github.io

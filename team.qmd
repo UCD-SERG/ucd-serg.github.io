@@ -33,4 +33,6 @@ listing:
 :::{#lab-member}
 :::
 
+## Undergraduate students
+
 ## Affiliates
