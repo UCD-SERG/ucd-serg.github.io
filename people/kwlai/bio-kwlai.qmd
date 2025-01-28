@@ -1,0 +1,17 @@
+---
+title: "Kristina W. Lai, MPH"
+image: headshot_Kristina Lai_cropped2.jpg
+about:
+  template: solana
+---
+---
+subtitle: "PhD Candidate, Graduate Group in Epidemiology"
+---
+
+Kristina is a 4th year PhD candidate in the Graduate Group in Epidemiology at UC Davis. Her current research focuses on advancing seroepidemiologic methods to characterize the population-level force of infection for enteric fever to support global vaccine uptake and enhanced disease surveillance. Kristina brings over a decade of experience as an epidemiologist in state and local health departments, clinical research organizations, international nonprofits, and public health consulting. In her free time, she enjoys chasing after her toddler and getting outdoors with her family.
+
+## Education
+
+  MPH in Global Epidemiology | Emory University  
+  
+  BS in Microbiology, Immunology, and Molecular Genetics | University of California, Los Angeles 

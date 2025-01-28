@@ -10,6 +10,7 @@ listing:
   grid-columns: 4
   image-height: 250px
   contents: 
+    - people/kwlai/kwlai.yaml
     - people/sschild/sschild.yaml
 - id: PIs
   sort: "lastname asc"
