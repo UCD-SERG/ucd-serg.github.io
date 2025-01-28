@@ -5,6 +5,8 @@
   },
   {
     "listing": "/team.html",
-    "items": []
+    "items": [
+      "/people/kwlai/bio-kwlai.html"
+    ]
   }
 ]
