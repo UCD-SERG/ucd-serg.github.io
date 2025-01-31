@@ -1,0 +1,13 @@
+[
+  {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/team.html",
+    "items": [
+      "/people/kwlai/bio-kwlai.html",
+      "/people/sschild/bio-sschild.html"
+    ]
+  }
+]
