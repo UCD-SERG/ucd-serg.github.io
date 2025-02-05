@@ -1,0 +1,4 @@
+- path: https://ucdserg.shinyapps.io/shiny_decay_curve/
+  image: software/serodynamics_shiny_screenshot.jpg
+  title: "<strong style='font-size:24px;'>Serodynamics Shiny App </strong>"
+  description: "This App takes the 5 curve parameters (y0, y1, t1, alpha, and r) to draw a single curve on antibody concentration"
