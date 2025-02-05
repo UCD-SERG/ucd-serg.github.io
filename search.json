@@ -2,9 +2,23 @@
   {
     "objectID": "software.html",
     "href": "software.html",
-    "title": "Software",
+    "title": "Software and Apps",
     "section": "",
-    "text": "serocalculator: https://ucd-serg.github.io/serocalculator/"
+    "text": "Serocalculator is an R package for estimating seroconversion rates from cross-sectional population data\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "software.html#software",
+    "href": "software.html#software",
+    "title": "Software and Apps",
+    "section": "",
+    "text": "Serocalculator is an R package for estimating seroconversion rates from cross-sectional population data\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "software.html#shiny-apps",
+    "href": "software.html#shiny-apps",
+    "title": "Software and Apps",
+    "section": "Shiny Apps",
+    "text": "Shiny Apps\n\n\n\n\n\n\n\n\n\n\nSerocalculator Shiny App \n\n\nThis App is a user-friendly interface for the Serocalculator package\n\n\n\n\n\n\n\n\n\n\n\n\n\nSerodynamics Shiny App \n\n\nThis App takes the 5 curve parameters (y0, y1, t1, alpha, and r) to draw a single curve on antibody concentration\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications.html",
