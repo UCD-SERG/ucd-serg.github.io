@@ -10,8 +10,8 @@ listing:
   grid-columns: 4
   image-height: 250px
   contents: 
-    - people/kwlai/kwlai.yaml
-    - people/sschild/sschild.yaml
+    - people/kwlai/bio-kwlai.qmd
+    - people/sschild/bio-sschild.qmd
 - id: PIs
   sort: "lastname asc"
   type: grid

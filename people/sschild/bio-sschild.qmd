@@ -1,5 +1,6 @@
 ---
 title: "Samuel Schildhauer, MPH"
+lastname: "Schildhauer"
 image: sschild.jpg
 about: 
   template: solana
