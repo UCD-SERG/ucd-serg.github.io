@@ -3,8 +3,6 @@ title: "Samuel Schildhauer, MPH"
 image: sschild.jpg
 about: 
   template: solana
----
----
 subtitle: "PhD Student, Graduate Group in Epidemiology"
 ---
 
