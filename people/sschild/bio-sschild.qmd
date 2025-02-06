@@ -1,0 +1,19 @@
+---
+title: "Samuel Schildhauer, MPH"
+lastname: "Schildhauer"
+image: sschild.jpg
+about: 
+  template: solana
+subtitle: "PhD Student, Graduate Group in Epidemiology, UC Davis"
+---
+
+Samuel is a 2nd year PhD student in the Graduate Group in Epidemiology program at UC Davis. His current research focuses on developing and evaluating novel surveillance tools to better understand the seroepidemiology and environmental ecology of scrub typhus in low-resource settings. Samuel has been working in public health for the past 8 years from both a laboratory and epidemiologic perspective, including non-profit, governmental, and academic research.
+
+Email: sschildhauer@ucdavis.edu
+
+## Education
+
+MPH in Infectious Disease and Vaccinology | UC Berkeley
+
+BS in Molecular, Cellular, and Developmental Biology | UC Santa Cruz
+

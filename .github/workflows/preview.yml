@@ -1,15 +1,19 @@
-on:
-  workflow_dispatch:
-  push:
-    branches: main
+name: Quarto Preview
 
-name: Quarto Publish
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -20,9 +24,10 @@ jobs:
       - name: Render
         uses: quarto-dev/quarto-actions/render@v2
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@main
         with:
-          folder: docs/
-          clean-exclude: pr-preview/
-          force: false
+          source-dir: ./docs/
+          pages-base-url: ucd-serg.github.io
+        
+           

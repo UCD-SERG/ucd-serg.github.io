@@ -1,0 +1,4 @@
+- path: https://ucdserg.shinyapps.io/shiny_serocalculator/
+  image: software/serocalculator_shiny_screenshot.jpg
+  title: "<strong style='font-size:24px;'>Serocalculator Shiny App </strong>"
+  description: "This App is a user-friendly interface for the Serocalculator package"
