@@ -21,7 +21,7 @@ LazyData: true
 URL: https://github.com/UCD-SERG/ucd-serg.github.io
 BugReports: https://github.com/UCD-SERG/ucd-serg.github.io/issues
 Suggests: 
-    dplyr
+    dplyr,
     spelling
 Language: en-US
 
