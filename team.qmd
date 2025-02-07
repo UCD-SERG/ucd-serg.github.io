@@ -12,6 +12,7 @@ listing:
   contents: 
     - people/kwlai/bio-kwlai.qmd
     - people/sschild/bio-sschild.qmd
+    - people/skang/bio-skang.qmd
 - id: PIs
   sort: "lastname asc"
   type: grid
@@ -22,7 +23,6 @@ listing:
   contents: 
     - people/demorrison/demorrison.yaml
     - people/kaiemjoy/kaiemjoy.yaml
-    - people/skang/skang.yaml
 ---
 
 ## Principal investigators
