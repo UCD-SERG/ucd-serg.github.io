@@ -12,10 +12,7 @@ listing:
   contents: 
     - people/kwlai/bio-kwlai.qmd
     - people/sschild/bio-sschild.qmd
-<<<<<<< HEAD
     - people/ksjlee/bio-ksjlee.qmd
-=======
->>>>>>> b0b8331b0785faecd7f72bd7a3741222d2de6b9b
 - id: PIs
   sort: "lastname asc"
   type: grid
