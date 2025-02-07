@@ -10,12 +10,27 @@ listing:
   grid-columns: 4
   image-height: 250px
   contents: 
+    - people/kwlai/bio-kwlai.qmd
+    - people/sschild/bio-sschild.qmd
+    - people/ksjlee/bio-ksjlee.qmd
+- id: PIs
+  sort: "lastname asc"
+  type: grid
+  fields: [image, title, subtitle]
+  grid-item-align: center
+  grid-columns: 4
+  image-height: 250px
+  contents: 
     - people/demorrison/demorrison.yaml
     - people/kaiemjoy/kaiemjoy.yaml
-    - people/ksjlee/ksjlee.yaml
 ---
 
-## Current lab members
+## Principal investigators
+
+:::{#PIs}
+:::
+
+## Students
 
 :::{#lab-member}
 :::
