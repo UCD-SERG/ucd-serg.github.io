@@ -1,5 +1,36 @@
 ---
-title: "Software"
+title: "Software and Apps"
+page-layout: full
+listing:
+- id: software
+ # sort: "lastname asc"
+  type: grid
+  fields: [image, title, description]
+  grid-item-align: center
+  grid-columns: 2
+  image-height: 250px
+  contents: 
+    - software/serocalculator.yml
+
+- id: apps
+ # sort: "lastname asc"
+  type: grid
+  fields: [image, title, description]
+  grid-item-align: center
+  grid-columns: 2
+  image-height: 250px
+  contents:
+    - software/serocalculator-shiny.yml
+    - software/serodynamics-shiny.yml
+
 ---
 
-serocalculator: <https://ucd-serg.github.io/serocalculator/>
+## Software
+
+:::{#software}
+:::
+
+## Shiny Apps
+
+:::{#apps}
+:::
