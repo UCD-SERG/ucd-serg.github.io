@@ -1,0 +1,19 @@
+---
+title: "Kwan Ho Lee, MS"
+lastname: "Lee"
+image: ksjlee.jpg
+about: 
+  template: solana
+subtitle: "PhD Candidate, Graduate Group in Epidemiology, UC Davis"
+---
+
+Kwan Ho is a 4th year PhD candidate in the Graduate Group in Epidemiology program at UC Davis. His research focuses on using hierarchical Bayesian models to study antibody dynamics and correlations in Shigella infections. He also develops seroincidence estimation methods incorporating antibody correlation structures. Prior to his PhD, Kwan Ho worked in the pharmaceutical industry on clinical research, providing statistical input for study design, sample size estimation, and data analysis in drug development for Short Bowel Syndrome and Nonalcoholic Steatohepatitis.
+
+Email: ksjlee@ucdavis.edu
+
+## Education
+
+MS in Applied Mathematics | CU Boulder
+
+BA in Mathematics | SUNY Geneseo
+
