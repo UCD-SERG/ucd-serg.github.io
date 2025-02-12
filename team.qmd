@@ -12,6 +12,8 @@ listing:
   contents: 
     - people/kwlai/bio-kwlai.qmd
     - people/sschild/bio-sschild.qmd
+    - people/skang/bio-skang.qmd
+    - people/ksjlee/bio-ksjlee.qmd
 - id: PIs
   sort: "lastname asc"
   type: grid
