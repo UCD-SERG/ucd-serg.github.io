@@ -46,7 +46,21 @@
     "href": "team.html#students",
     "title": "Team",
     "section": "Students",
-    "text": "Students\n\n\n\n\n\n\n\n\n\n\nKristina W. Lai, MPH\n\n\nPhD Candidate, Graduate Group in Epidemiology, UC Davis\n\n\n\n\n\n\n\n\n\n\n\n\n\nSamuel Schildhauer, MPH\n\n\nPhD Student, Graduate Group in Epidemiology, UC Davis\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Students\n\n\n\n\n\n\n\n\n\n\nSophie Kang\n\n\nPhD Student, University of Oxford\n\n\n\n\n\n\n\n\n\n\n\n\n\nKristina W. Lai, MPH\n\n\nPhD Candidate, Graduate Group in Epidemiology, UC Davis\n\n\n\n\n\n\n\n\n\n\n\n\n\nKwan Ho Lee, MS\n\n\nPhD Candidate, Graduate Group in Epidemiology, UC Davis\n\n\n\n\n\n\n\n\n\n\n\n\n\nSamuel Schildhauer, MPH\n\n\nPhD Student, Graduate Group in Epidemiology, UC Davis\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "people/ksjlee/bio-ksjlee.html",
+    "href": "people/ksjlee/bio-ksjlee.html",
+    "title": "Kwan Ho Lee, MS",
+    "section": "",
+    "text": "Kwan Ho is a 4th year PhD candidate in the Graduate Group in Epidemiology program at UC Davis. His research focuses on using hierarchical Bayesian models to study antibody dynamics and correlations in Shigella infections. He also develops seroincidence estimation methods incorporating antibody correlation structures. Prior to his PhD, Kwan Ho worked in the pharmaceutical industry on clinical research, providing statistical input for study design, sample size estimation, and data analysis in drug development for Short Bowel Syndrome and Nonalcoholic Steatohepatitis.\nEmail: ksjlee@ucdavis.edu"
+  },
+  {
+    "objectID": "people/ksjlee/bio-ksjlee.html#education",
+    "href": "people/ksjlee/bio-ksjlee.html#education",
+    "title": "Kwan Ho Lee, MS",
+    "section": "Education",
+    "text": "Education\nMS in Applied Mathematics | CU Boulder\nBA in Mathematics | SUNY Geneseo"
   },
   {
     "objectID": "people/sschild/bio-sschild.html",
@@ -61,6 +75,20 @@
     "title": "Samuel Schildhauer, MPH",
     "section": "Education",
     "text": "Education\nMPH in Infectious Disease and Vaccinology | UC Berkeley\nBS in Molecular, Cellular, and Developmental Biology | UC Santa Cruz"
+  },
+  {
+    "objectID": "people/skang/bio-skang.html",
+    "href": "people/skang/bio-skang.html",
+    "title": "Sophie Kang",
+    "section": "",
+    "text": "Sophie is a 1st year PhD student at the University of Oxford, and is co-advised by Professor Aiemjoy and collaborating with the UCD-SeRG team. Her research is based at the Mahidol Oxford Tropical Medicine Research Unit (MORU), where she is analyzing multiplex serology data from a large cohort of acute febrile illness patients in rural South and Southeast Asia. Previously, Sophie worked at the International Vaccine Institute as a researcher on HEV and schistosomiasis disease burden studies, and on Phase IV vaccine effectiveness studies for SARS-CoV-2 vaccines.\nEmail: sopkang@ucdavis.edu | sophie.kang@wolfson.ox.ac.uk"
+  },
+  {
+    "objectID": "people/skang/bio-skang.html#education",
+    "href": "people/skang/bio-skang.html#education",
+    "title": "Sophie Kang",
+    "section": "Education",
+    "text": "Education\nMSc in Infectious Disease Epidemiology | Johns Hopkins University\nBA in Public Health | UC Berkeley"
   },
   {
     "objectID": "people/kwlai/bio-kwlai.html",
