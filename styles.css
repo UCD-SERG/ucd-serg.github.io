@@ -1,1 +1,8 @@
-/* css styles */
+/* Remove line clamping and fixed height from listing descriptions */
+.qu-card .qu-card-text {
+  display: block !important;
+  -webkit-line-clamp: unset !important;
+  max-height: none !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
