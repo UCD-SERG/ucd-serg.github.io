@@ -1,0 +1,16 @@
+---
+title: "Projects"
+page-layout: full
+css: styles.css
+listing:
+- id: projects
+ # sort: "lastname asc"
+  type: grid
+  fields: [image, title, description]
+  grid-item-align: center
+  grid-columns: 2
+  image-height: 550px
+  contents: 
+    - projects/sefa.yml
+    
+---

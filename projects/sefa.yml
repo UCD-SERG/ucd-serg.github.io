@@ -1,0 +1,20 @@
+# - image: projects/sefa1.jpg
+#   title: "<strong style='font-size:24px;'>Surveillance for Enteric Fever in Afghanistan</strong>"
+#   description: "SEFA is a prospective population-based serosurveillance study for enteric fever in Eastern Afghanistan
+#                 - PIs: Dr Gulam Awab, Dr Kristen Aiemjoy  
+#                 - Students: Kristina W. Lai  
+#                 - Supported by: Bill and Melinda Gates Foundation"
+
+
+- image: projects/sefa1.jpg
+  title: "<strong style='font-size:24px;'>Surveillance for Enteric Fever in Afghanistan</strong>"
+  description: |
+    <div markdown="1" style="min-height:200px;">
+    
+    SEFA is a prospective population-based serosurveillance study for enteric fever in Eastern Afghanistan
+    
+    - PIs: Dr Gulam Awab, Dr Kristen Aiemjoy  
+    - Students: Kristina W. Lai  
+    - Supported by: Bill and Melinda Gates Foundation
+    
+    </div>
