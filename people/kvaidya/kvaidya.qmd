@@ -1,7 +1,7 @@
 ---
 title: "Krista Vaidya"
 lastname: "Vaidya"
-image: Krista Vaidya_1-25-23_003.jpg
+image: kvaidya.jpg
 about: 
   template: solana
 subtitle: "PhD Student, Graduate Group in Epidemiology, UC Davis"
