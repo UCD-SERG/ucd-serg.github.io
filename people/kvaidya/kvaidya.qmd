@@ -1,5 +1,5 @@
 ---
-title: "Krista"
+title: "Krista Vaidya"
 lastname: "Vaidya"
 image: kvaidya.jpg
 about: 
