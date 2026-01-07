@@ -15,7 +15,8 @@ listing:
   field-display-names:
     date: Submitted
     title: Title
-  categories: [preprint]
+  include:
+    categories: [preprint]
 - id: articles2
   # template: papers/listing.qmd
   # template: papers/publications.js
@@ -33,7 +34,8 @@ listing:
     date: Issued
     title: Title
     journal-title: Journal
-  categories: "!preprint"
+  exclude:
+    categories: [preprint]
 
 ---
 
