@@ -1,0 +1,110 @@
+---
+title: "Opportunities"
+page-layout: full
+---
+
+We are always seeking motivated individuals to join our research group. Below are opportunities for undergraduate students, graduate students, and postdoctoral research fellows.
+
+## Undergraduate Students
+
+We welcome undergraduate students interested in gaining research experience in seroepidemiology and infectious disease modeling. Undergraduate researchers in our group work on data analysis, literature reviews, and contribute to ongoing research projects.
+
+### Recommended Skills
+
+- **Programming**: Experience with R or Python is beneficial but not required. We provide training for motivated students.
+- **Statistics**: Coursework in statistics or biostatistics is helpful.
+- **Biology/Public Health**: Interest in infectious diseases, immunology, or public health.
+- **Data Analysis**: Ability to work with spreadsheets and databases.
+- **Communication**: Strong written and verbal communication skills.
+
+### How to Apply
+
+If you are interested in joining our group as an undergraduate researcher, please send an email to [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu) with:
+
+- A brief statement of interest (1 paragraph)
+- Your CV or resume
+- Unofficial transcript
+- Any relevant coursework or experience
+
+For more information about undergraduate research opportunities at UC Davis, visit the [Undergraduate Research Center](https://urc.ucdavis.edu/).
+
+---
+
+## Graduate Students
+
+We are looking for motivated graduate students to join our group through the UC Davis [Graduate Group in Epidemiology](https://health.ucdavis.edu/epidemiology/) or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.
+
+### Recommended Skills
+
+- **Quantitative Background**: Strong foundation in statistics, mathematics, or related quantitative fields.
+- **Programming**: Proficiency in R or Python for statistical analysis and data visualization.
+- **Epidemiology**: Understanding of epidemiological principles and study design.
+- **Infectious Diseases**: Interest in infectious disease dynamics and serology.
+- **Statistical Modeling**: Experience with regression, Bayesian methods, or machine learning is a plus.
+- **Collaboration**: Ability to work effectively in interdisciplinary teams.
+
+### Current Research Areas
+
+Our group focuses on:
+
+- Enteric fever (Salmonella Typhi and Paratyphi)
+- Scrub Typhus (Orientia tsutsugamushi)
+- Melioidosis (Burkholderia pseudomallei)
+- Shigella (Shigella spp.)
+- Cholera (Vibrio cholerae)
+
+### How to Apply
+
+Prospective graduate students should:
+
+1. Review the [UC Davis Graduate Group in Epidemiology admissions requirements](https://health.ucdavis.edu/epidemiology/graduate-programs/admissions.html)
+2. Apply through the official graduate admissions portal
+3. Indicate interest in working with Drs. Kristen Aiemjoy and/or Ezra Morrison in your application
+4. Feel free to reach out to us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu) before applying
+
+---
+
+## Postdoctoral Research Fellows
+
+We are seeking postdoctoral researchers to join our team and lead cutting-edge research in seroepidemiology and infectious disease modeling. Postdocs in our group have the opportunity to develop independent research projects, mentor students, and collaborate with international partners.
+
+### Qualifications
+
+- PhD in epidemiology, biostatistics, infectious diseases, or a related field
+- Strong publication record
+- Expertise in statistical modeling and programming (R or Python)
+- Interest in seroepidemiology and infectious disease burden estimation
+- Excellent communication and writing skills
+- Ability to work independently and collaboratively
+
+### Research Opportunities
+
+Postdoctoral fellows will have the opportunity to:
+
+- Develop novel seroepidemiologic methods
+- Analyze data from large-scale serological surveys
+- Collaborate with international research teams
+- Publish in high-impact journals
+- Mentor graduate and undergraduate students
+- Apply for independent funding
+
+### Funding
+
+Our research group is supported by the US National Institutes of Health and the Bill and Melinda Gates Foundation. Specific postdoctoral positions will be posted as funding becomes available.
+
+### How to Apply
+
+Interested candidates should send the following to [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu):
+
+- Cover letter describing your research interests and career goals
+- Curriculum vitae
+- Names and contact information for three references
+- 1-2 representative publications
+
+For information about postdoctoral programs at UC Davis, visit [UC Davis Postdoctoral Affairs](https://gradstudies.ucdavis.edu/postdoctoral).
+
+---
+
+## General Inquiries
+
+For any questions about opportunities in our research group, please contact us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu).
