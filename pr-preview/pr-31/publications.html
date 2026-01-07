@@ -73,6 +73,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-preprints .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-author","listing-doi","listing-id","listing-issued","listing-publisher","listing-title","listing-type","listing-url","listing-date","listing-highlight","listing-categories","listing-title-short"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-preprints'] = new List('listing-preprints', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-articles2 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -82,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-date','listing-title','listing-journal-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-author","listing-doi","listing-id","listing-issued","listing-publisher","listing-title","listing-type","listing-url","listing-date","listing-highlight","listing-title-short","listing-container-title","listing-issn","listing-issue","listing-volume","listing-journal-title","listing-editor","listing-page"],
+      searchColumns: ["listing-author","listing-container-title","listing-doi","listing-id","listing-issn","listing-issue","listing-issued","listing-publisher","listing-title","listing-type","listing-url","listing-volume","listing-journal-title","listing-date","listing-highlight","listing-editor","listing-page","listing-title-short"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -176,13 +204,13 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+    <div class="quarto-title column-page-left">
       <h1 class="title">Publications</h1>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta column-page-left">
 
       
     
@@ -193,16 +221,121 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preprints" id="toc-preprints" class="nav-link active" data-scroll-target="#preprints">Preprints</a></li>
+  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/publications.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
 
 
+<section id="preprints" class="level2">
+<h2 class="anchored" data-anchor-id="preprints">Preprints</h2>
+<div id="listing-preprints" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-preprints-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-preprints'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-date-sort" data-direction="asc">
+        Submitted - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Submitted - Newest
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
+
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Submitted</a>
+</th>
+
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
+
+</tr>
+</thead>
+<tbody class="list">
+
+<tr data-index="0" data-categories="cHJlcHJpbnQ=" data-listing-date-sort="1748736000000" data-listing-title-sort="Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide IgA to discriminate enteric fever from other febrile illnesses in south asia">
+<td>
+<span class="listing-date">June,<br>2025</span>
+</td>
+<td>
+<a href="https://doi.org/10.1101/2025.06.20.25329792" class="title listing-title">Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide IgA to discriminate enteric fever from other febrile illnesses in south asia</a>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="cHJlcHJpbnQ=" data-listing-date-sort="1748736000000" data-listing-title-sort="Seroincidence rate of typhoidal Salmonella in children in kenya">
+<td>
+<span class="listing-date">June,<br>2025</span>
+</td>
+<td>
+<a href="https://doi.org/10.1101/2025.06.24.25330223" class="title listing-title">Seroincidence rate of typhoidal Salmonella in children in kenya</a>
+</td>
+
+</tr>
+
+<tr data-index="2" data-categories="cHJlcHJpbnQ=" data-listing-date-sort="1748736000000" data-listing-title-sort="Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction on typhoid fever in nepal">
+<td>
+<span class="listing-date">June,<br>2025</span>
+</td>
+<td>
+<a href="https://doi.org/10.1101/2025.06.17.25329748" class="title listing-title">Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction on typhoid fever in nepal</a>
+</td>
+
+</tr>
+
+<tr data-index="3" data-categories="cHJlcHJpbnQ=" data-listing-date-sort="2025" data-listing-title-sort="Longitudinal profiling of antibody responses to burkholderia pseudomallei: Implications for diagnosis and surveillance">
+<td>
+<span class="listing-date">January,<br>1970</span>
+</td>
+<td>
+<a href="https://doi.org/10.2139/ssrn.5312903" class="title listing-title">Longitudinal profiling of antibody responses to burkholderia pseudomallei: Implications for diagnosis and surveillance</a>
+</td>
+
+</tr>
+
+<tr data-index="4" data-categories="cHJlcHJpbnQ=" data-listing-date-sort="1748736000000" data-listing-title-sort="Serocalculator, an r package for estimating seroincidence from cross-sectional serological data">
+<td>
+<span class="listing-date">June,<br>2025</span>
+</td>
+<td>
+<a href="https://doi.org/10.1101/2025.06.04.25328941" class="title listing-title">Serocalculator, an r package for estimating seroincidence from cross-sectional serological data</a>
+</td>
+
+</tr>
+
+</tbody>
+</table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
 <div id="listing-articles2" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
@@ -213,14 +346,14 @@ window.Quarto = {
       <option value="listing-title-sort" data-direction="asc">
         Title
       </option>
+      <option value="listing-journal-title" data-direction="asc">
+        Journal
+      </option>
       <option value="listing-date-sort" data-direction="asc">
         Issued - Oldest
       </option>
       <option value="listing-date-sort" data-direction="desc">
         Issued - Newest
-      </option>
-      <option value="listing-journal-title" data-direction="asc">
-        Journal
       </option>
     </select>
   </div>
@@ -275,72 +408,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="2" data-listing-date-sort="1748736000000" data-listing-title-sort="Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide IgA to discriminate enteric fever from other febrile illnesses in south asia">
-<td>
-<span class="listing-date">June,<br>2025</span>
-</td>
-<td>
-<a href="https://doi.org/10.1101/2025.06.20.25329792" class="title listing-title">Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide IgA to discriminate enteric fever from other febrile illnesses in south asia</a>
-</td>
-<td>
-<span class="listing-journal-title">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="3" data-listing-date-sort="1748736000000" data-listing-title-sort="Seroincidence rate of typhoidal Salmonella in children in kenya">
-<td>
-<span class="listing-date">June,<br>2025</span>
-</td>
-<td>
-<a href="https://doi.org/10.1101/2025.06.24.25330223" class="title listing-title">Seroincidence rate of typhoidal Salmonella in children in kenya</a>
-</td>
-<td>
-<span class="listing-journal-title">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="4" data-listing-date-sort="1748736000000" data-listing-title-sort="Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction on typhoid fever in nepal">
-<td>
-<span class="listing-date">June,<br>2025</span>
-</td>
-<td>
-<a href="https://doi.org/10.1101/2025.06.17.25329748" class="title listing-title">Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction on typhoid fever in nepal</a>
-</td>
-<td>
-<span class="listing-journal-title">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="5" data-listing-date-sort="2025" data-listing-title-sort="Longitudinal profiling of antibody responses to burkholderia pseudomallei: Implications for diagnosis and surveillance">
-<td>
-<span class="listing-date">January,<br>1970</span>
-</td>
-<td>
-<a href="https://doi.org/10.2139/ssrn.5312903" class="title listing-title">Longitudinal profiling of antibody responses to burkholderia pseudomallei: Implications for diagnosis and surveillance</a>
-</td>
-<td>
-<span class="listing-journal-title">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="6" data-listing-date-sort="1748736000000" data-listing-title-sort="Serocalculator, an r package for estimating seroincidence from cross-sectional serological data">
-<td>
-<span class="listing-date">June,<br>2025</span>
-</td>
-<td>
-<a href="https://doi.org/10.1101/2025.06.04.25328941" class="title listing-title">Serocalculator, an r package for estimating seroincidence from cross-sectional serological data</a>
-</td>
-<td>
-<span class="listing-journal-title">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="7" data-listing-date-sort="1740787200000" data-listing-title-sort="Wastewater surveillance for salmonella typhi and its association with seroincidence of enteric fever in vellore, india">
+<tr data-index="2" data-listing-date-sort="1740787200000" data-listing-title-sort="Wastewater surveillance for salmonella typhi and its association with seroincidence of enteric fever in vellore, india">
 <td>
 <span class="listing-date">March,<br>2025</span>
 </td>
@@ -353,7 +421,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="8" data-listing-date-sort="1722470400000" data-listing-title-sort="Hepatitis e virus in the kathmandu valley: Insights from a representative longitudinal serosurvey">
+<tr data-index="3" data-listing-date-sort="1722470400000" data-listing-title-sort="Hepatitis e virus in the kathmandu valley: Insights from a representative longitudinal serosurvey">
 <td>
 <span class="listing-date">August,<br>2024</span>
 </td>
@@ -366,7 +434,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="9" data-listing-date-sort="1722470400000" data-listing-title-sort="Estimating the seroincidence of scrub typhus using antibody dynamics after infection">
+<tr data-index="4" data-listing-date-sort="1722470400000" data-listing-title-sort="Estimating the seroincidence of scrub typhus using antibody dynamics after infection">
 <td>
 <span class="listing-date">August,<br>2024</span>
 </td>
@@ -379,7 +447,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="10" data-listing-date-sort="1698796800000" data-listing-title-sort="Diagnostic challenges and antibody kinetics in a paediatric traveller with scrub typhus">
+<tr data-index="5" data-listing-date-sort="1698796800000" data-listing-title-sort="Diagnostic challenges and antibody kinetics in a paediatric traveller with scrub typhus">
 <td>
 <span class="listing-date">November,<br>2023</span>
 </td>
@@ -392,7 +460,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="11" data-listing-date-sort="1693526400000" data-listing-title-sort="Estimating seroconversion rates accounting for repeated infections by approximate bayesian computation">
+<tr data-index="6" data-listing-date-sort="1693526400000" data-listing-title-sort="Estimating seroconversion rates accounting for repeated infections by approximate bayesian computation">
 <td>
 <span class="listing-date">September,<br>2023</span>
 </td>
@@ -405,7 +473,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="12" data-listing-date-sort="1682899200000" data-listing-title-sort="Seroepidemiology for enteric fever: Emerging approaches and opportunities">
+<tr data-index="7" data-listing-date-sort="1682899200000" data-listing-title-sort="Seroepidemiology for enteric fever: Emerging approaches and opportunities">
 <td>
 <span class="listing-date">May,<br>2023</span>
 </td>
@@ -418,7 +486,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="13" data-listing-date-sort="1667260800000" data-listing-title-sort="Seroincidence of enteric fever, juba, south sudan">
+<tr data-index="8" data-listing-date-sort="1667260800000" data-listing-title-sort="Seroincidence of enteric fever, juba, south sudan">
 <td>
 <span class="listing-date">November,<br>2022</span>
 </td>
@@ -431,7 +499,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="14" data-listing-date-sort="1659312000000" data-listing-title-sort="Estimating typhoid incidence from community-based serosurveys: A multicohort study">
+<tr data-index="9" data-listing-date-sort="1659312000000" data-listing-title-sort="Estimating typhoid incidence from community-based serosurveys: A multicohort study">
 <td>
 <span class="listing-date">August,<br>2022</span>
 </td>
@@ -444,7 +512,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="15" data-listing-date-sort="1656633600000" data-listing-title-sort="Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project">
+<tr data-index="10" data-listing-date-sort="1656633600000" data-listing-title-sort="Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project">
 <td>
 <span class="listing-date">July,<br>2022</span>
 </td>
@@ -457,7 +525,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="16" data-listing-date-sort="1619827200000" data-listing-title-sort="Regression with interval‐censored covariates: Application to cross‐sectional incidence estimation">
+<tr data-index="11" data-listing-date-sort="1619827200000" data-listing-title-sort="Regression with interval‐censored covariates: Application to cross‐sectional incidence estimation">
 <td>
 <span class="listing-date">May,<br>2021</span>
 </td>
@@ -470,7 +538,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="17" data-listing-date-sort="1598918400000" data-listing-title-sort="Seroprevalence of antibodies against chlamydia trachomatis and enteropathogens and distance to the nearest water source among young children in the amhara region of ethiopia">
+<tr data-index="12" data-listing-date-sort="1598918400000" data-listing-title-sort="Seroprevalence of antibodies against chlamydia trachomatis and enteropathogens and distance to the nearest water source among young children in the amhara region of ethiopia">
 <td>
 <span class="listing-date">September,<br>2020</span>
 </td>
@@ -483,7 +551,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="18" data-listing-date-sort="1556668800000" data-listing-title-sort="Cross‐sectional HIV incidence estimation in an evolving epidemic">
+<tr data-index="13" data-listing-date-sort="1556668800000" data-listing-title-sort="Cross‐sectional HIV incidence estimation in an evolving epidemic">
 <td>
 <span class="listing-date">May,<br>2019</span>
 </td>
@@ -496,7 +564,7 @@ window.Quarto = {
 
 </tr>
 
-<tr data-index="19" data-listing-date-sort="1530403200000" data-listing-title-sort="Cross-sectional HIV incidence estimation with missing biomarkers">
+<tr data-index="14" data-listing-date-sort="1530403200000" data-listing-title-sort="Cross-sectional HIV incidence estimation with missing biomarkers">
 <td>
 <span class="listing-date">July,<br>2018</span>
 </td>
@@ -516,6 +584,7 @@ window.Quarto = {
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -923,4 +992,4 @@ window.Quarto = {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/publications.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/publications.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/publications.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
