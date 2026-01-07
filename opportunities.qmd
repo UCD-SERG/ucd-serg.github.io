@@ -74,11 +74,11 @@ We are seeking postdoctoral researchers to join our team and lead cutting-edge r
 
 ### Current Funded Opportunity
 
-**Postdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development**
+**[Postdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development](opportunities/postdoc-typhoid-seroepi.qmd)**
 
 We are currently seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools. This position offers the opportunity to contribute to cutting-edge research in infectious disease epidemiology while developing computational tools that will be used by researchers worldwide.
 
-For more information about this position, please contact [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu).
+[**→ View Full Position Description**](opportunities/postdoc-typhoid-seroepi.qmd)
 
 ### Qualifications
 

@@ -1,0 +1,104 @@
+---
+title: "Postdoctoral Research Fellow in Seroepidemiology"
+subtitle: "To Advance Global Typhoid Burden Estimation and Open-Source Tool Development"
+page-layout: full
+---
+
+## Position Overview
+
+The UC Davis Seroepidemiology Research Group (UCD-SeRG) is seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools. This position offers the opportunity to contribute to cutting-edge research in infectious disease epidemiology while developing computational tools that will be used by researchers worldwide.
+
+## About the Project
+
+Typhoid fever remains a significant global health burden, particularly in low- and middle-income countries. However, accurate burden estimation is challenging due to underdiagnosis and limited surveillance systems. This project aims to:
+
+- Develop and validate novel seroepidemiologic methods for estimating typhoid fever incidence
+- Analyze serological data from multiple countries to characterize global typhoid burden
+- Create open-source software tools (R packages and Shiny applications) for use by the global research community
+- Collaborate with international partners to implement these methods in diverse settings
+- Contribute to global health policy decisions through improved burden estimates
+
+## Responsibilities
+
+The postdoctoral fellow will:
+
+- Lead statistical analysis of large-scale serological survey data from multiple countries
+- Develop and implement novel statistical methods for seroepidemiologic analysis
+- Create, document, and maintain open-source R packages and Shiny applications
+- Collaborate with international research teams and public health partners
+- Prepare manuscripts for publication in peer-reviewed journals
+- Present research findings at national and international conferences
+- Mentor graduate and undergraduate students
+- Contribute to grant writing and proposal development
+- Participate in research group activities and seminars
+
+## Required Qualifications
+
+- PhD in epidemiology, biostatistics, infectious diseases, public health, statistics, or a related quantitative field
+- Strong programming skills in R (required) or Python
+- Experience with statistical modeling and data analysis
+- Excellent written and verbal communication skills
+- Strong publication record or demonstrated potential for high-impact publications
+- Ability to work independently and as part of a collaborative team
+- Commitment to open science and reproducible research practices
+
+## Preferred Qualifications
+
+- Experience with seroepidemiology or immunology
+- Expertise in Bayesian statistical methods
+- Experience developing R packages or software tools
+- Familiarity with infectious disease modeling
+- Experience with international or global health research
+- Knowledge of typhoid fever or other enteric infections
+- Experience with large-scale data analysis and visualization
+- Proficiency in version control (Git/GitHub) and collaborative coding practices
+
+## What We Offer
+
+- Competitive postdoctoral salary commensurate with experience and NIH guidelines
+- Full benefits package including health insurance
+- Professional development opportunities including conference travel
+- Collaborative and supportive research environment
+- Opportunity to work with international research partners
+- Access to cutting-edge computational resources
+- Mentorship from established researchers in seroepidemiology
+- Beautiful campus setting in Davis, California, near San Francisco and the Sierra Nevada
+
+## About UCD-SeRG
+
+The UC Davis Seroepidemiology Research Group is led by Drs. Kristen Aiemjoy and Ezra Morrison and is based in the Department of Public Health Sciences at UC Davis. Our research focuses on developing and applying seroepidemiologic methods to characterize infection burden for neglected infectious diseases. We are committed to open science, capacity building, and translating research findings into public health impact. Our work is supported by the US National Institutes of Health and the Bill and Melinda Gates Foundation.
+
+## Location
+
+This position is based at the University of California, Davis campus in Davis, California. Davis is a vibrant college town located in Northern California, approximately 15 miles west of Sacramento and 70 miles northeast of San Francisco.
+
+## Duration and Start Date
+
+This is a full-time position for up to 3 years, with the possibility of extension subject to funding availability and performance. The preferred start date is as soon as possible, with flexibility for the right candidate.
+
+## Application Instructions
+
+To apply, please send the following materials to [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu) with the subject line "Postdoc Application - Typhoid Seroepidemiology":
+
+1. Cover letter describing your research interests, relevant experience, and career goals (2 pages maximum)
+2. Curriculum vitae including publication list
+3. Names and contact information for three professional references
+4. One or two representative publications or preprints
+
+Applications will be reviewed on a rolling basis until the position is filled. Early application is encouraged.
+
+## Equal Opportunity
+
+The University of California is an Equal Opportunity/Affirmative Action Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or protected veteran status.
+
+## Contact Information
+
+For questions about this position, please contact:
+
+**UC Davis Seroepidemiology Research Group**  
+Email: [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu)  
+Website: [https://ucd-serg.github.io](https://ucd-serg.github.io)
+
+---
+
+[Back to Opportunities Page](../opportunities.qmd)
