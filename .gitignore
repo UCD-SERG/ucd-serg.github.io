@@ -7,3 +7,5 @@ docs/
 ucd.serg.github.io.Rcheck/
 ucd.serg.github.io*.tar.gz
 ucd.serg.github.io*.tgz
+
+**/*.quarto_ipynb
