@@ -1,4 +1,484 @@
 - author:
+  - family: Seidman
+    given: Jessica C.
+  - family: Aiemjoy
+    given: Kristen
+  - family: Adnan
+    given: Mehreen
+  - family: Dehraj
+    given: Irum Fatima
+  - family: Iqbal
+    given: Junaid
+  - family: Iqbal
+    given: Khalid
+  - family: Irfan
+    given: Seema
+  - family: Islam
+    given: Nahidul
+  - family: Kabir
+    given: Md. Shakiul
+  - family: Katuwal
+    given: Nishan
+  - family: Maria
+    given: Noshi
+  - family: Memon
+    given: Muhammad Ashraf
+  - family: Munira
+    given: Sira Jam
+  - family: Naga
+    given: Shiva Ram
+  - family: Pradhan
+    given: Sailesh
+  - family: Sarkar
+    given: Anik
+  - family: Shrestha
+    given: Rajeev
+  - family: Shrestha
+    given: Sony
+  - family: Al Sium
+    given: Syed Muktadir
+  - family: Vaidya
+    given: Krista
+  - family: Morrison
+    given: Douglas Ezra
+  - family: Carter
+    given: Alice S.
+  - family: Saha
+    given: Senjuti
+  - family: Tamrakar
+    given: Dipesh
+  - family: Yousafzai
+    given: Mohammad Tahir
+  - family: Garrett
+    given: Denise O.
+  - family: Luby
+    given: Stephen P.
+  - family: Qamar
+    given: Farah Naz
+  - family: Saha
+    given: Samir
+  - family: Andrews
+    given: Jason R.
+  - family: Charles
+    given: Richelle C.
+  doi: 10.1101/2025.06.20.25329792
+  id: Seidman_2025
+  issued: 2025-06
+  publisher: Cold Spring Harbor Laboratory
+  title: Evaluating the accuracy ofSalmonellaTyphi hemolysin e and
+    lipopolysaccharide IgA to discriminate enteric fever from other
+    febrile illnesses in south asia
+  type: article-journal
+  url: "http://dx.doi.org/10.1101/2025.06.20.25329792"
+  date: 2025-06
+  path: https://doi.org/10.1101/2025.06.20.25329792
+  highlight: 1
+- author:
+  - family: Khan
+    given: Aslam
+  - family: Kamenskaya
+    given: Polina
+  - family: Rezende
+    given: Izabela
+  - family: Mutuku
+    given: Francis
+  - family: Ndenga
+    given: Bryson
+  - family: Jembe
+    given: Zainab
+  - family: Maina
+    given: Priscilla
+  - family: Chebii
+    given: Philip
+  - family: Ronga
+    given: Charles
+  - family: Okuta
+    given: Victoria
+  - family: Garrett
+    given: Denise O.
+  - family: Bisanzio
+    given: Donal
+  - family: Aiemjoy
+    given: Kristen
+  - family: Andrews
+    given: Jason R.
+  - family: LaBeaud
+    given: A. Desiree
+  - family: Charles
+    given: Richelle
+  doi: 10.1101/2025.06.24.25330223
+  id: Khan_2025
+  issued: 2025-06
+  publisher: Cold Spring Harbor Laboratory
+  title: Seroincidence rate of typhoidalSalmonellain children in kenya
+  type: article-journal
+  url: "http://dx.doi.org/10.1101/2025.06.24.25330223"
+  date: 2025-06
+  path: https://doi.org/10.1101/2025.06.24.25330223
+  highlight: 1
+- author:
+  - family: Tamrakar
+    given: Dipesh
+  - family: Naga
+    given: Shivram
+  - family: Jung
+    given: Esther
+  - family: Shrestha
+    given: Basudha
+  - family: Roka
+    given: Pratibha Bista
+  - family: Pokharel
+    given: Rabin Sharma
+  - family: Shah
+    given: Sabin Bikram
+  - family: Bajracharya
+    given: Arjya Tara
+  - family: Mahadup
+    given: Surendra K.
+  - family: Katuwal
+    given: Nishan
+  - family: Doyle
+    given: Kate
+  - family: Seidman
+    given: Jessica C.
+  - family: Carter
+    given: Alice S.
+  - family: Luby
+    given: Stephen P.
+  - family: Bogoch
+    given: Isaac I.
+  - family: Aiemjoy
+    given: Kristen
+  - family: Garrett
+    given: Denise O.
+  - family: Shrestha
+    given: Rajeev
+  - family: Andrews
+    given: Jason R.
+  doi: 10.1101/2025.06.17.25329748
+  id: Tamrakar_2025
+  issued: 2025-06
+  publisher: Cold Spring Harbor Laboratory
+  title: Impact of the COVID-19 pandemic and typhoid conjugate vaccine
+    introduction on typhoid fever in nepal
+  type: article-journal
+  url: "http://dx.doi.org/10.1101/2025.06.17.25329748"
+  date: 2025-06
+  path: https://doi.org/10.1101/2025.06.17.25329748
+  highlight: 0
+- author:
+  - family: Saiprom
+    given: Natnaree
+  - family: Nimnuan-ngam
+    given: Supichaya
+  - family: Phunpang
+    given: Rungnapa
+  - family: Schildhauer
+    given: Samuel Hisaji
+  - family: Morrison
+    given: Ezra
+  - family: Tandhavanant
+    given: Sarunporn
+  - family: Chandna
+    given: Arjun
+  - family: Sengyee
+    given: Sineenart
+  - family: West
+    given: T. Eoin
+  - family: Burtnick
+    given: Mary N.
+  - family: Brett
+    given: Paul J.
+  - family: Chantratita
+    given: Narisara
+  - family: Aiemjoy
+    given: Kristen
+  doi: 10.2139/ssrn.5312903
+  id: Saiprom_2025
+  issued: 2025
+  publisher: Elsevier BV
+  title: "Longitudinal profiling of antibody responses to burkholderia
+    pseudomallei: Implications for diagnosis and surveillance"
+  title-short: Longitudinal profiling of antibody responses to
+    burkholderia pseudomallei
+  type: article-journal
+  url: "http://dx.doi.org/10.2139/ssrn.5312903"
+  date: 2025
+  path: https://doi.org/10.2139/ssrn.5312903
+  highlight: 0
+- author:
+  - family: Lai
+    given: Kristina W.
+  - family: Orwa
+    given: Chris
+  - family: Seidman
+    given: Jessica C.
+  - family: Garrett
+    given: Denise O.
+  - family: Saha
+    given: Samir K.
+  - family: Tamrakar
+    given: Dipesh
+  - family: Qamar
+    given: Farah Naz
+  - family: Charles
+    given: Richelle C.
+  - family: Andrews
+    given: Jason R.
+  - family: Teunis
+    given: Peter
+  - family: Aiemjoy
+    given: Kristen
+  - family: Morrison
+    given: Douglas Ezra
+  doi: 10.1101/2025.06.04.25328941
+  id: Lai_2025
+  issued: 2025-06
+  publisher: Cold Spring Harbor Laboratory
+  title: Serocalculator, an r package for estimating seroincidence from
+    cross-sectional serological data
+  type: article-journal
+  url: "http://dx.doi.org/10.1101/2025.06.04.25328941"
+  date: 2025-06
+  path: https://doi.org/10.1101/2025.06.04.25328941
+  highlight: 0
+- author:
+  - family: Kamau
+    given: Everlyn
+  - family: Ante-Testard
+    given: Pearl Anne
+  - family: Gwyn
+    given: Sarah
+  - family: Blumberg
+    given: Seth
+  - family: Abdalla
+    given: Zeinab
+  - family: Aiemjoy
+    given: Kristen
+  - family: Amza
+    given: Abdou
+  - family: Aragie
+    given: Solomon
+  - family: Arzika
+    given: Ahmed M.
+  - family: Awoussi
+    given: Marcel S.
+  - family: Bailey
+    given: Robin L.
+  - family: Butcher
+    given: Robert
+  - family: Callahan
+    given: E. Kelly
+  - family: Chaima
+    given: David
+  - family: Dawed
+    given: Adisu Abebe
+  - family: Díaz
+    given: Martha Idalí Saboyá
+  - family: Domingo
+    given: Abou-Bakr Sidik
+  - family: Drakeley
+    given: Chris
+  - family: Elshafie
+    given: Belgesa E.
+  - family: Emerson
+    given: Paul M.
+  - family: Fornace
+    given: Kimberly
+  - family: Gass
+    given: Katherine
+  - family: Goodhew
+    given: E. Brook
+  - family: Hammou
+    given: Jaouad
+  - family: Harding-Esch
+    given: Emma M.
+  - family: Hooper
+    given: PJ
+  - family: Kadri
+    given: Boubacar
+  - family: Kalua
+    given: Khumbo
+  - family: Kanyi
+    given: Sarjo
+  - family: Kasubi
+    given: Mabula
+  - family: Kello
+    given: Amir B.
+  - family: Ko
+    given: Robert
+  - family: Lammie
+    given: Patrick J.
+  - family: Lescano
+    given: Andres G.
+  - family: Maliki
+    given: Ramatou
+  - family: Masika
+    given: Michael Peter
+  - family: Migchelsen
+    given: Stephanie J.
+  - family: Nassirou
+    given: Beido
+  - family: Nesemann
+    given: John M.
+  - family: Parameswaran
+    given: Nishanth
+  - family: Pomat
+    given: Willie
+  - family: Renneker
+    given: Kristen K.
+  - family: Roberts
+    given: Chrissy
+  - family: Rymil
+    given: Prudence
+  - family: Sata
+    given: Eshetu
+  - family: Senyonjo
+    given: Laura
+  - family: Seife
+    given: Fikre
+  - family: Sillah
+    given: Ansumana
+  - family: Sokana
+    given: Oliver
+  - family: Srivathsan
+    given: Ariktha
+  - family: Tadesse
+    given: Zerihun
+  - family: Taleo
+    given: Fasihah
+  - family: Taylor
+    given: Emma Michelle
+  - family: Tekeraoi
+    given: Rabebe
+  - family: Togbey
+    given: Kwamy
+  - family: West
+    given: Sheila K.
+  - family: Wickens
+    given: Karana
+  - family: William
+    given: Timothy
+  - family: Wittberg
+    given: Dionna M.
+  - family: Yeboah-Manu
+    given: Dorothy
+  - family: Youbi
+    given: Mohammed
+  - family: Zeru
+    given: Taye
+  - family: Keenan
+    given: Jeremy D.
+  - family: Lietman
+    given: Thomas M.
+  - family: Solomon
+    given: Anthony W.
+  - family: Nash
+    given: Scott D.
+  - family: Martin
+    given: Diana L.
+  - family: Arnold
+    given: Benjamin F.
+  container-title: Nature Communications
+  doi: 10.1038/s41467-025-60581-z
+  id: Kamau_2025
+  issn: 2041-1723
+  issue: 1
+  issued: 2025-07
+  publisher: Springer Science and Business Media LLC
+  title: Characterizing trachoma elimination using serology
+  type: article-journal
+  url: "http://dx.doi.org/10.1038/s41467-025-60581-z"
+  volume: 16
+  journal-title: '*Nature Communications*'
+  date: 2025-07
+  path: https://doi.org/10.1038/s41467-025-60581-z
+  highlight: 0
+- author:
+  - family: Abraham
+    given: Dilip
+  - family: Kathiresan
+    given: Lalithambigai
+  - family: Sasikumar
+    given: Midhun
+  - family: Aiemjoy
+    given: Kristen
+  - family: Charles
+    given: Richelle C.
+  - family: Kumar
+    given: Dilesh
+  - family: Srinivasan
+    given: Rajan
+  - family: Troman
+    given: Catherine
+  - family: Gray
+    given: Elizabeth
+  - family: Uzzell
+    given: Christopher B.
+  - family: John
+    given: Jacob
+  - family: Veeraraghavan
+    given: Balaji
+  - family: Grassly
+    given: Nicholas C.
+  - family: Mohan
+    given: Venkata Raghava
+  container-title: PLOS Neglected Tropical Diseases
+  doi: 10.1371/journal.pntd.0012373
+  editor:
+  - family: Diemert
+    given: David J.
+  id: Abraham_2025
+  issn: 1935-2735
+  issue: 3
+  issued: 2025-03
+  page: e0012373
+  publisher: Public Library of Science (PLoS)
+  title: Wastewater surveillance for salmonella typhi and its
+    association with seroincidence of enteric fever in vellore, india
+  type: article-journal
+  url: "http://dx.doi.org/10.1371/journal.pntd.0012373"
+  volume: 19
+  journal-title: '*PLOS Neglected Tropical Diseases*'
+  date: 2025-03
+  path: https://doi.org/10.1371/journal.pntd.0012373
+  highlight: 0
+- author:
+  - family: Teunis
+    given: Peter F. M.
+  - family: Seidman
+    given: Jessica C.
+  - family: Tamrakar
+    given: Dipesh
+  - family: Qamar
+    given: Farah Naz
+  - family: Saha
+    given: Samir K.
+  - family: Garrett
+    given: Denise O.
+  - family: Andrews
+    given: Jason R.
+  - family: Charles
+    given: Richelle C.
+  - family: Aiemjoy
+    given: Kristen
+  container-title: Epidemics
+  doi: 10.1016/j.epidem.2025.100874
+  id: Teunis_2026
+  issn: 1755-4365
+  issued: 2026-03
+  page: 100874
+  publisher: Elsevier BV
+  title: Seroresponse to repeated infections with salmonella enterica
+    typhi and paratyphi a
+  type: article-journal
+  url: "http://dx.doi.org/10.1016/j.epidem.2025.100874"
+  volume: 54
+  journal-title: '*Epidemics*'
+  date: 2026-03
+  path: https://doi.org/10.1016/j.epidem.2025.100874
+  highlight: 0
+- author:
   - family: Garrett
     given: Denise O
   - family: Longley
@@ -106,7 +586,7 @@
   journal-title: '*The Lancet Global Health*'
   date: 2022-07
   path: https://doi.org/10.1016/s2214-109x(22)00119-x
-  highlight: 1
+  highlight: 0
 - author:
   - family: Morrison
     given: Doug
@@ -130,7 +610,7 @@
   journal-title: '*Statistics in Medicine*'
   date: 2019-05
   path: https://doi.org/10.1002/sim.8196
-  highlight: 1
+  highlight: 0
 - author:
   - family: Katuwal
     given: Nishan
