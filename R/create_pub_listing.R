@@ -4,7 +4,8 @@
 create_pub_listing <- function(bib = bibtex::read.bib(bib_file),
                                bib_file = "publications.bib",
                                author = "Canouil",
-                               highlight = seq_along(bibtex_entries) < 3) { # nolint: line_length_linter
+                               highlight = seq_along(bibtex_entries) < 3, # nolint: line_length_linter
+                               categories = NULL) { # nolint: line_length_linter
   articles <- lapply(
     X = bib[bib != ""],
     FUN = function(ibib) {
@@ -43,6 +44,18 @@ create_pub_listing <- function(bib = bibtex::read.bib(bib_file),
     FUN = function(x, h) c(x, paste("  highlight:", as.integer(h))),
     articles, highlight
   )
+  if (!is.null(categories)) {
+    articles <- mapply(
+      FUN = function(x, cat) {
+        if (!is.na(cat) && cat != "") {
+          c(x, paste0("  categories: [", cat, "]"))
+        } else {
+          x
+        }
+      },
+      articles, categories
+    )
+  }
   writeLines(text = unlist(articles),
              con = sub("\\.bib$", ".yml", bib_file))
 
