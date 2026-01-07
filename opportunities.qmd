@@ -48,7 +48,7 @@ We are looking for motivated graduate students to join our group through the UC 
 Our group focuses on:
 
 - Enteric fever (Salmonella Typhi and Paratyphi)
-- Scrub Typhus (Orientia tsutsugamushi)
+- Scrub typhus (Orientia tsutsugamushi)
 - Melioidosis (Burkholderia pseudomallei)
 - Shigella (Shigella spp.)
 - Cholera (Vibrio cholerae)
