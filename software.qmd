@@ -25,6 +25,8 @@ listing:
 
 ---
 
+For more software and tools from our lab, visit our [GitHub organization](https://github.com/UCD-SERG).
+
 ## Software
 
 :::{#software}
