@@ -6,6 +6,17 @@ date-format: 'MMMM,<br>YYYY'
 include-back-link: false
 toc-location: right
 listing:
+- id: preprints
+  contents:
+    - publications.yml
+  sort: 'issued desc'
+  type: table
+  fields: [date, title]
+  field-display-names:
+    date: Submitted
+    title: Title
+  include:
+    categories: [preprint]
 - id: articles2
   # template: papers/listing.qmd
   # template: papers/publications.js
@@ -23,8 +34,17 @@ listing:
     date: Issued
     title: Title
     journal-title: Journal
+  exclude:
+    categories: [preprint]
 
 ---
+
+## Preprints
+
+:::{#preprints}
+:::
+
+## Publications
 
 :::{#articles2}
 :::
