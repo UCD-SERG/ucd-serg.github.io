@@ -73,6 +73,7 @@
   date: 2025-06
   path: https://doi.org/10.1101/2025.06.20.25329792
   highlight: 1
+  categories: [preprint]
 - author:
   - family: Khan
     given: Aslam
@@ -116,6 +117,7 @@
   date: 2025-06
   path: https://doi.org/10.1101/2025.06.24.25330223
   highlight: 1
+  categories: [preprint]
 - author:
   - family: Tamrakar
     given: Dipesh
@@ -166,6 +168,7 @@
   date: 2025-06
   path: https://doi.org/10.1101/2025.06.17.25329748
   highlight: 0
+  categories: [preprint]
 - author:
   - family: Saiprom
     given: Natnaree
@@ -206,6 +209,7 @@
   date: 2025
   path: https://doi.org/10.2139/ssrn.5312903
   highlight: 0
+  categories: [preprint]
 - author:
   - family: Lai
     given: Kristina W.
@@ -242,6 +246,7 @@
   date: 2025-06
   path: https://doi.org/10.1101/2025.06.04.25328941
   highlight: 0
+  categories: [preprint]
 - author:
   - family: Kamau
     given: Everlyn
