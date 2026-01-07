@@ -17,5 +17,3 @@ bibtex_entries |>
   cat(file = "publications.bib")
 
 bibtex_entries |> create_pub_listing()
-
-
