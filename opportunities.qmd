@@ -9,6 +9,8 @@ We are always seeking motivated individuals to join our research group. Below ar
 
 We welcome undergraduate students interested in gaining research experience in seroepidemiology and infectious disease modeling. Undergraduate researchers in our group work on data analysis, literature reviews, and contribute to ongoing research projects.
 
+**Note:** Most undergraduate research opportunities are unfunded volunteer positions, though students may earn academic credit through departmental research units.
+
 ### Recommended Skills
 
 - **Programming**: Experience with R or Python is beneficial but not required. We provide training for motivated students.
@@ -33,6 +35,8 @@ For more information about undergraduate research opportunities at UC Davis, vis
 ## Graduate Students
 
 We are looking for motivated graduate students to join our group through the UC Davis [Graduate Group in Epidemiology](https://health.ucdavis.edu/epidemiology/) or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.
+
+**Funding:** Most graduate student positions are unfunded, though competitive students may receive 1-2 years of internal funding through Graduate Studies. Graduate students are expected to apply for external fellowships throughout their studies, particularly NIH F-31 predoctoral fellowships.
 
 ### Recommended Skills
 
@@ -67,6 +71,14 @@ Prospective graduate students should:
 ## Postdoctoral Research Fellows
 
 We are seeking postdoctoral researchers to join our team and lead cutting-edge research in seroepidemiology and infectious disease modeling. Postdocs in our group have the opportunity to develop independent research projects, mentor students, and collaborate with international partners.
+
+### Current Funded Opportunity
+
+**Postdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development**
+
+We are currently seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools. This position offers the opportunity to contribute to cutting-edge research in infectious disease epidemiology while developing computational tools that will be used by researchers worldwide.
+
+For more information about this position, please contact [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu).
 
 ### Qualifications
 
