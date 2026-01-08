@@ -16,19 +16,19 @@ Currently, we focus on enteric fever (*Salmonella Typhi and Paratyphi*), Scrub T
 <div class="photo-album">
 <div class="photo-album-container">
   <div class="photo-item">
-    <img src="figures/serocalculator_kigali.jpg" alt="Workshop in Kigali">
+    <img src="figures/serocalculator_kigali.jpg" alt="Serocalculator workshop participants from 19 countries in Kigali, Rwanda, 2023">
     <div class="photo-caption">2023 workshop on 'Serocalculator' adjacent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries</div>
   </div>
   <div class="photo-item">
-    <img src="software/serocalculator_shiny_screenshot.jpg" alt="Serocalculator Shiny App">
+    <img src="software/serocalculator_shiny_screenshot.jpg" alt="Screenshot of Serocalculator Shiny application interface for antibody data analysis">
     <div class="photo-caption">Serocalculator Shiny application for antibody data analysis</div>
   </div>
   <div class="photo-item">
-    <img src="software/serodynamics_shiny_screenshot.jpg" alt="Serodynamics Shiny App">
+    <img src="software/serodynamics_shiny_screenshot.jpg" alt="Screenshot of Serodynamics Shiny application interface showing antibody decay curve">
     <div class="photo-caption">Serodynamics Shiny application for modeling antibody dynamics</div>
   </div>
   <div class="photo-item">
-    <img src="software/serocalculator_image2.jpg" alt="Serocalculator Interface">
+    <img src="software/serocalculator_image2.jpg" alt="Screenshot of interactive Serocalculator interface for seroprevalence calculations">
     <div class="photo-caption">Interactive interface for seroprevalence calculations</div>
   </div>
 </div>

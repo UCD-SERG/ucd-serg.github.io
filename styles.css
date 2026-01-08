@@ -75,3 +75,17 @@
     height: 225px;
   }
 }
+
+@media (max-width: 480px) {
+  .photo-item {
+    width: 250px;
+  }
+  
+  .photo-item img {
+    height: 190px;
+  }
+  
+  .photo-caption {
+    font-size: 0.85rem;
+  }
+}
