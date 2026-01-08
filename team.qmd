@@ -5,7 +5,7 @@ listing:
 - id: lab-member
   sort: "lastname asc"
   type: grid
-  fields: [image, title, subtitle]
+  template: _ejs/people-box.ejs
   grid-item-align: center
   grid-columns: 4
   image-height: 250px
@@ -18,7 +18,7 @@ listing:
 - id: PIs
   sort: "lastname asc"
   type: grid
-  fields: [image, title, subtitle]
+  template: _ejs/people-box.ejs
   grid-item-align: center
   grid-columns: 4
   image-height: 250px

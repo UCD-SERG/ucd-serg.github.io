@@ -4,7 +4,8 @@ lastname: "Vaidya"
 image: kvaidya.jpg
 about: 
   template: solana
-subtitle: "PhD Student, Graduate Group in Epidemiology, UC Davis"
+subtitle: "PhD Student, Graduate Group in Epidemiology"
+institution: "UC Davis"
 ---
 
 Krista is a third year PhD student in the Graduate Group in Epidemiology program at UC Davis. Her current research focuses on understanding the burden of Pediatric Scrub typhus in Nepal. Krista has over eight years of experience in epidemiological research, particularly in Enteric fever surveillance in both hospital and community settings, as well as Sero-Epidemiology and Environmental surveillance.

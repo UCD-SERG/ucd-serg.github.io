@@ -4,7 +4,8 @@ lastname: "Kang"
 image: skang.jpg
 about: 
   template: solana
-subtitle: "PhD Student, University of Oxford"
+subtitle: "PhD Student"
+institution: "University of Oxford"
 ---
 
 Sophie is a 1st year PhD student at the University of Oxford, and is co-advised by Professor Aiemjoy and collaborating with the UCD-SeRG team. Her research is based at the Mahidol Oxford Tropical Medicine Research Unit (MORU), where she is analyzing multiplex serology data from a large cohort of acute febrile illness patients in rural South and Southeast Asia. Previously, Sophie worked at the International Vaccine Institute as a researcher on HEV and schistosomiasis disease burden studies, and on Phase IV vaccine effectiveness studies for SARS-CoV-2 vaccines.
