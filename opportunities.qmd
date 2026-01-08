@@ -50,7 +50,7 @@ We are looking for motivated graduate students to join our group through the UC 
 
 Prospective graduate students should:
 
-1. Review the [UC Davis Graduate Group in Epidemiology admissions requirements](https://www.epi.ucdavis.edu/prospective-students)
+1. Review the [UC Davis Graduate Group in Epidemiology admissions requirements](https://www.epi.ucdavis.edu/admissions)
 2. Apply through the official graduate admissions portal
 3. Indicate interest in working with Drs. Kristen Aiemjoy and/or Ezra Morrison in your application
 4. Feel free to reach out to us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu) before applying
@@ -68,6 +68,9 @@ We are seeking postdoctoral researchers to join our team and lead cutting-edge r
 We are currently seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools. 
 
 [**→ View Full Position Description**](opportunities/postdoc-typhoid-seroepi.qmd)
+
+
+For information about postdoctoral programs at UC Davis, visit [Chancellor's Postdoctoral Fellowship Program](https://grad.ucdavis.edu/chancellors-postdoctoral-fellowship-program-cpfp).
 
 ---
 
