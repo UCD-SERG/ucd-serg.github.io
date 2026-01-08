@@ -1,0 +1,299 @@
+---
+title: "Lab Manual"
+page-layout: full
+toc: true
+---
+
+Welcome to the UC Davis Seroepidemiology Research Group (UCD-SeRG) lab manual! This manual serves as a guide to our lab culture, expectations, and practices. It is a living document that will evolve as our group grows and changes.
+
+## Mission and Values
+
+### Our Mission
+
+We develop and apply seroepidemiologic methods to characterize infectious disease burden in populations, with a focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance. Our work aims to provide accurate methods to measure infectious disease burden to guide public health decisions.
+
+### Our Values
+
+- **Scientific rigor**: We are committed to conducting high-quality, reproducible research
+- **Open science**: We share our methods, code, and data openly whenever possible
+- **Collaboration**: We work with partners around the world and value diverse perspectives
+- **Mentorship**: We support the professional development of all lab members
+- **Equity and inclusion**: We strive to create a welcoming environment for people of all backgrounds
+- **Work-life balance**: We recognize that doing great science requires taking care of ourselves
+
+## Lab Culture and Expectations
+
+### General Expectations
+
+All lab members are expected to:
+
+- Conduct research with integrity and honesty
+- Treat all lab members, collaborators, and research participants with respect
+- Communicate openly and regularly with the PIs and other lab members
+- Contribute to a positive, collaborative lab environment
+- Take responsibility for your own professional development
+- Participate in lab meetings and group activities
+- Maintain good documentation of your work
+- Follow all institutional policies and research ethics guidelines
+
+### Work Hours and Flexibility
+
+We recognize that people have different working styles and personal obligations. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.
+
+What matters most is that you:
+
+- Make consistent progress on your research
+- Meet deadlines and commitments
+- Are available for scheduled meetings and lab events
+- Communicate your schedule and availability
+
+### Time Off
+
+Taking time off is important for maintaining productivity and well-being. Lab members should:
+
+- Coordinate time off with the PIs in advance
+- Ensure ongoing projects are covered during your absence
+- Update the lab calendar with your planned absences
+- Follow university policies for holidays and leave
+
+## Communication
+
+### Lab Meetings
+
+We hold regular lab meetings to discuss ongoing research, practice presentations, and discuss relevant literature. All lab members are expected to attend unless they have a conflict.
+
+- **Frequency**: Weekly (schedule may vary by quarter)
+- **Format**: Varies - research updates, journal clubs, practice talks
+- **Preparation**: Come prepared to participate and provide constructive feedback
+
+### Individual Meetings
+
+Graduate students and postdocs should meet with their PI(s) regularly:
+
+- **Frequency**: At least bi-weekly, more often as needed
+- **Preparation**: Send an agenda at least 24 hours in advance
+- **Follow-up**: Send notes summarizing action items and decisions
+
+### Email and Messaging
+
+- Check email regularly during working hours
+- Respond to emails from PIs and collaborators within 24-48 hours
+- Use subject lines that clearly indicate the topic
+- For urgent matters, follow up with a message or call
+
+### Lab Slack/Communication Platform
+
+[If applicable] We use [platform name] for day-to-day communication:
+
+- Use appropriate channels for different topics
+- Respect people's off-hours by using scheduled messages when appropriate
+- Keep communications professional but friendly
+
+## Research Practices
+
+### Project Management
+
+- Maintain a clear project timeline with milestones
+- Keep the PIs informed of progress and challenges
+- Document your work thoroughly
+- Use version control (e.g., Git) for code
+- Follow reproducible research practices
+
+### Data Management
+
+- Follow the lab's data management plan
+- Store data securely and back up regularly
+- Document data sources, processing steps, and analyses
+- Use clear, consistent file naming conventions
+- Prepare data for archiving and sharing as appropriate
+
+### Code and Software
+
+- Write clear, well-commented code
+- Use version control for all code
+- Follow coding style guidelines (e.g., tidyverse style guide for R)
+- Share code openly when publishing (e.g., via GitHub)
+- Document software dependencies and versions
+
+### Literature and Resources
+
+- Stay current with relevant literature in your field
+- Maintain a reference management system (e.g., Zotero, Mendeley)
+- Share interesting papers with the lab
+- Contribute to lab knowledge base
+
+### Lab Notebooks and Documentation
+
+- Maintain clear records of your research activities
+- Document analyses, decisions, and results
+- Make your work reproducible by others
+- Store notebooks/documentation in accessible locations
+
+## Authorship and Publications
+
+### Authorship Guidelines
+
+We follow standard academic authorship practices:
+
+- **First authorship**: Typically goes to the person who led the work
+- **Corresponding author**: Usually the PI, unless otherwise agreed
+- **Co-authorship**: Determined by substantial intellectual contributions
+- **Acknowledgments**: For contributions that don't meet authorship criteria
+
+Authorship should be discussed early in a project and revisited as the work evolves.
+
+### Publication Process
+
+1. **Planning**: Discuss target journals and outline with PIs
+2. **Drafting**: Lead author prepares initial draft
+3. **Internal review**: Co-authors review and provide feedback
+4. **Revision**: Lead author incorporates feedback
+5. **Submission**: After PI approval
+6. **Revisions**: Lead author coordinates response to reviewers
+
+### Preprints and Open Access
+
+We encourage posting preprints and publishing in open access journals when possible.
+
+## Mentorship and Professional Development
+
+### Mentoring Philosophy
+
+We believe in individualized mentoring that supports each person's career goals. Regular communication between mentees and mentors is essential.
+
+### Individual Development Plans
+
+All graduate students and postdocs should maintain an Individual Development Plan (IDP) that outlines:
+
+- Short-term and long-term career goals
+- Skills to develop
+- Training needs
+- Timeline and milestones
+
+Update your IDP annually and discuss with your PI.
+
+### Presentations and Conferences
+
+We encourage lab members to present their work at conferences:
+
+- Discuss conference opportunities with PIs
+- Submit abstracts with PI approval
+- Practice presentations in lab meeting
+- Funding for conferences depends on availability
+
+### Teaching and Outreach
+
+Teaching and outreach are valuable professional development opportunities:
+
+- Graduate students are encouraged to gain teaching experience
+- We support science communication and outreach activities
+- Discuss opportunities with PIs
+
+### Networking
+
+Building a professional network is important for your career:
+
+- Attend seminars and departmental events
+- Connect with researchers in your field
+- Join professional societies
+- Use social media professionally (e.g., Twitter/X for science)
+
+## Health, Safety, and Well-being
+
+### Laboratory Safety
+
+[If applicable] For lab members conducting wet lab work:
+
+- Complete required safety training
+- Follow all safety protocols
+- Report any incidents or concerns
+- Use appropriate personal protective equipment
+
+### Mental Health and Well-being
+
+Graduate school and research can be stressful. Resources available include:
+
+- UC Davis [Counseling Services](https://shcs.ucdavis.edu/services/counseling-services)
+- [Employee Assistance Program](https://hr.ucdavis.edu/departments/asap/employee/eap) for employees
+- Talk to your PI if you're struggling
+- Reach out to peer support networks
+
+### Harassment and Discrimination
+
+We are committed to providing a harassment-free environment. If you experience or witness harassment or discrimination:
+
+- Contact your PI (if comfortable)
+- Use university reporting systems
+- Contact the [UC Davis Office of Compliance and Policy](https://compliance.ucdavis.edu/)
+
+## Funding and Resources
+
+### Funding Acknowledgments
+
+All publications and presentations should acknowledge funding sources as required by grant agreements.
+
+### Grant Writing
+
+- Graduate students and postdocs are encouraged to apply for fellowships
+- PIs will support fellowship applications with feedback and letters
+- Start planning fellowship applications well in advance of deadlines
+
+### Computing Resources
+
+[Details about computing resources available to lab members]
+
+### Equipment and Supplies
+
+[Details about how to request equipment or supplies]
+
+## Leaving the Lab
+
+### Off-boarding Process
+
+When leaving the lab:
+
+1. **Notify PI**: Give appropriate notice (typically 2-4 weeks)
+2. **Document projects**: Ensure all work is well-documented
+3. **Transfer knowledge**: Train others on ongoing projects
+4. **Archive data**: Organize and archive all data and code
+5. **Return materials**: Return any equipment or materials
+6. **Exit meeting**: Meet with PI to discuss transition
+
+### Staying Connected
+
+We value our alumni and encourage you to stay in touch:
+
+- Update us on your career progress
+- Attend lab events when possible
+- Collaborate on future projects
+- Provide mentorship to current lab members
+
+## Resources and Links
+
+### UC Davis Resources
+
+- [Graduate Studies](https://grad.ucdavis.edu/)
+- [Postdoctoral Scholar Program](https://grad.ucdavis.edu/postdoctoral-scholars)
+- [Graduate Group in Epidemiology](https://www.epi.ucdavis.edu/)
+- [Library Research Support](https://www.library.ucdavis.edu/service/research-support/)
+
+### Professional Development
+
+- [National Center for Faculty Development & Diversity](https://www.facultydiversity.org/)
+- [myIDP - Individual Development Plan tool](https://myidp.sciencecareers.org/)
+- [NIH OITE Career Resources](https://www.training.nih.gov/career_resources)
+
+### Lab Resources
+
+- [Lab GitHub Organization](https://github.com/UCD-SERG)
+- Lab email: [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu)
+
+## Acknowledgments
+
+This lab manual was inspired by several excellent examples from other research groups. We are grateful to those who have shared their lab manuals openly.
+
+---
+
+**Last updated**: January 2026
+
+**Questions or suggestions?** Contact us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu)
