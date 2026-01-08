@@ -46,84 +46,49 @@
     "href": "opportunities/postdoc-typhoid-seroepi.html",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
     "section": "",
-    "text": "The UC Davis Seroepidemiology Research Group (UCD-SeRG) is seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools. This position offers the opportunity to contribute to cutting-edge research in infectious disease epidemiology while developing computational tools that will be used by researchers worldwide."
+    "text": "The UC Davis Seroepidemiology Research Group (SeRG) led by Dr. Kristen Aiemjoy and Dr. Ezra Morrison, is seeking a highly motivated Postdoctoral Research Fellow to contribute to a new Gates Foundation–funded project aimed at advancing global serosurveillance tools for Salmonella infections, including typhoidal Salmonella and invasive non-typhoidal Salmonella (iNTS). The position is full-time, funded for two years, with opportunities to apply for competitive external fellowship funding should the fellow wish to pursue further independent support.\nThe postdoc will join a dynamic interdisciplinary environment focused on antibody kinetics, infectious disease modeling, and global health surveillance. This work will involve close collaboration with partners at Massachusetts General Hospital / Harvard Medical School and Sabin Vaccine Institute. International travel to study sites and partner meetings may be required. Position start date is flexible, ideally between January and March 2025. Ideally, the fellow will attend the Coalition Against Typhoid (CaT) meeting in Phnom Penh, Cambodia in March 2025."
   },
   {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#position-overview",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#position-overview",
+    "objectID": "opportunities/postdoc-typhoid-seroepi.html#project-description",
+    "href": "opportunities/postdoc-typhoid-seroepi.html#project-description",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "",
-    "text": "The UC Davis Seroepidemiology Research Group (UCD-SeRG) is seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools. This position offers the opportunity to contribute to cutting-edge research in infectious disease epidemiology while developing computational tools that will be used by researchers worldwide."
+    "section": "Project Description",
+    "text": "Project Description\nThe aim of this project is to develop, refine and validate serologic tools to estimate enteric fever seroincidence, with a focus on improving the interpretability and performance of antibody-based surveillance systems for Salmonella infections across diverse infection settings. The postdoctoral fellow will contribute to modeling post-infection antibody kinetics using longitudinal datasets from confirmed typhoid and iNTS cases; extending two-phase within-host models and seroincidence likelihood frameworks to settings with high co-circulation of Salmonella serovars; and assessing antigen specificity and potential cross-reactivity. The fellow will also contribute to R package development, to support reproducible workflows and methodological innovation within seroepidemiology. This work will inform global typhoid and iNTS burden estimation and strengthen serosurveillance approaches for use in countries where blood culture surveillance systems are limited. The fellow will receive structured mentorship from Drs. Aiemjoy and Morrison, including weekly one-on-one meetings and individualized professional development planning, and will lead at least 3 first-author manuscripts and contribute to several additional collaborative manuscripts."
   },
   {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#about-the-project",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#about-the-project",
+    "objectID": "opportunities/postdoc-typhoid-seroepi.html#key-responsibilities",
+    "href": "opportunities/postdoc-typhoid-seroepi.html#key-responsibilities",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "About the Project",
-    "text": "About the Project\nTyphoid fever remains a significant global health burden, particularly in low- and middle-income countries. However, accurate burden estimation is challenging due to underdiagnosis and limited surveillance systems. This project aims to:\n\nDevelop and validate novel seroepidemiologic methods for estimating typhoid fever incidence\nAnalyze serological data from multiple countries to characterize global typhoid burden\nCreate open-source software tools (R packages and Shiny applications) for use by the global research community\nCollaborate with international partners to implement these methods in diverse settings\nContribute to global health policy decisions through improved burden estimates"
+    "section": "Key Responsibilities",
+    "text": "Key Responsibilities\n\nDevelop and refine seroepidemiologic methods that leverage antibody decay dynamics to characterize seroincidence (force of infection) in populations.\nDevelop and maintain software in R.\nLead and co-lead manuscripts arising from project aims.\nPresent scientific findings at international conferences.\nCollaborate regularly with external partners.\nProvide mentorship to graduate and undergraduate students within UCD-SeRG and trainees at partner institutions in Asia and Africa."
   },
   {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#responsibilities",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#responsibilities",
+    "objectID": "opportunities/postdoc-typhoid-seroepi.html#qualifications",
+    "href": "opportunities/postdoc-typhoid-seroepi.html#qualifications",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "Responsibilities",
-    "text": "Responsibilities\nThe postdoctoral fellow will:\n\nLead statistical analysis of large-scale serological survey data from multiple countries\nDevelop and implement novel statistical methods for seroepidemiologic analysis\nCreate, document, and maintain open-source R packages and Shiny applications\nCollaborate with international research teams and public health partners\nPrepare manuscripts for publication in peer-reviewed journals\nPresent research findings at national and international conferences\nMentor graduate and undergraduate students\nContribute to grant writing and proposal development\nParticipate in research group activities and seminars"
-  },
-  {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#required-qualifications",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#required-qualifications",
-    "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "Required Qualifications",
-    "text": "Required Qualifications\n\nPhD in epidemiology, biostatistics, infectious diseases, public health, statistics, or a related quantitative field\nStrong programming skills in R (required) or Python\nExperience with statistical modeling and data analysis\nExcellent written and verbal communication skills\nStrong publication record or demonstrated potential for high-impact publications\nAbility to work independently and as part of a collaborative team\nCommitment to open science and reproducible research practices"
-  },
-  {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#preferred-qualifications",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#preferred-qualifications",
-    "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "Preferred Qualifications",
-    "text": "Preferred Qualifications\n\nExperience with seroepidemiology or immunology\nExpertise in Bayesian statistical methods\nExperience developing R packages or software tools\nFamiliarity with infectious disease modeling\nExperience with international or global health research\nKnowledge of typhoid fever or other enteric infections\nExperience with large-scale data analysis and visualization\nProficiency in version control (Git/GitHub) and collaborative coding practices"
-  },
-  {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#what-we-offer",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#what-we-offer",
-    "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "What We Offer",
-    "text": "What We Offer\n\nCompetitive postdoctoral salary commensurate with experience and NIH guidelines\nFull benefits package including health insurance\nProfessional development opportunities including conference travel\nCollaborative and supportive research environment\nOpportunity to work with international research partners\nAccess to cutting-edge computational resources\nMentorship from established researchers in seroepidemiology\nBeautiful campus setting in Davis, California, near San Francisco and the Sierra Nevada"
-  },
-  {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#about-ucd-serg",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#about-ucd-serg",
-    "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "About UCD-SeRG",
-    "text": "About UCD-SeRG\nThe UC Davis Seroepidemiology Research Group is led by Drs. Kristen Aiemjoy and Ezra Morrison and is based in the Department of Public Health Sciences at UC Davis. Our research focuses on developing and applying seroepidemiologic methods to characterize infection burden for neglected infectious diseases. We are committed to open science, capacity building, and translating research findings into public health impact. Our work is supported by the US National Institutes of Health and the Bill and Melinda Gates Foundation."
+    "section": "Qualifications",
+    "text": "Qualifications\nA PhD in Epidemiology, Biostatistics, Mathematics, Statistics, Computer Science, or a related quantitative field is required. We are particularly interested in candidates with strong programming experience in R, including experience developing research software and maintaining code on GitHub. Candidates should have excellent written and verbal communication skills and a demonstrated ability to work collaboratively on interdisciplinary teams. Preferred qualifications include experience with infectious disease modeling, Bayesian hierarchical models, and the analysis of serologic data such as multiplex bead-based assays or ELISAs. While not required, familiarity with laboratory workflows, assay validation, or quality-control processes is an asset."
   },
   {
     "objectID": "opportunities/postdoc-typhoid-seroepi.html#location",
     "href": "opportunities/postdoc-typhoid-seroepi.html#location",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
     "section": "Location",
-    "text": "Location\nThis position is based at the University of California, Davis campus in Davis, California. Davis is a vibrant college town located in Northern California, approximately 15 miles west of Sacramento and 70 miles northeast of San Francisco."
+    "text": "Location\nBased at UC Davis School of Medicine (Sacramento, CA) within the Seroepidemiology Research Group. Hybrid/remote arrangements may be considered; international travel may be required."
   },
   {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#duration-and-start-date",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#duration-and-start-date",
+    "objectID": "opportunities/postdoc-typhoid-seroepi.html#salary-benefits",
+    "href": "opportunities/postdoc-typhoid-seroepi.html#salary-benefits",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "Duration and Start Date",
-    "text": "Duration and Start Date\nThis is a full-time position for up to 3 years, with the possibility of extension subject to funding availability and performance. The preferred start date is as soon as possible, with flexibility for the right candidate."
+    "section": "Salary & Benefits",
+    "text": "Salary & Benefits\nSalary follows UC Postdoctoral Scholar scales and includes comprehensive UC benefits. https://postdocs.ucdavis.edu/"
   },
   {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#application-instructions",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#application-instructions",
+    "objectID": "opportunities/postdoc-typhoid-seroepi.html#to-apply",
+    "href": "opportunities/postdoc-typhoid-seroepi.html#to-apply",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "Application Instructions",
-    "text": "Application Instructions\nTo apply, please send the following materials to ucdserg@ucdavis.edu with the subject line “Postdoc Application - Typhoid Seroepidemiology”:\n\nCover letter describing your research interests, relevant experience, and career goals (2 pages maximum)\nCurriculum vitae including publication list\nNames and contact information for three professional references\nOne or two representative publications or preprints\n\nApplications will be reviewed on a rolling basis until the position is filled. Early application is encouraged."
-  },
-  {
-    "objectID": "opportunities/postdoc-typhoid-seroepi.html#equal-opportunity",
-    "href": "opportunities/postdoc-typhoid-seroepi.html#equal-opportunity",
-    "title": "Postdoctoral Research Fellow in Seroepidemiology",
-    "section": "Equal Opportunity",
-    "text": "Equal Opportunity\nThe University of California is an Equal Opportunity/Affirmative Action Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, age, or protected veteran status."
+    "section": "To Apply",
+    "text": "To Apply\nPlease the following application materials to Drs. Kristen Aiemjoy and Ezra Morrsion (seroepi@ucdavis.edu) - Cover letter describing your research interests and career goals - Curriculum vitae - Names and contact information for three references - 1-2 representative publications\nApplications will be reviewed as they are received, and well-qualified candidates will be contacted for an interview."
   },
   {
     "objectID": "opportunities/postdoc-typhoid-seroepi.html#contact-information",
@@ -221,21 +186,21 @@
     "href": "opportunities.html#undergraduate-students",
     "title": "Opportunities",
     "section": "Undergraduate Students",
-    "text": "Undergraduate Students\nWe welcome undergraduate students interested in gaining research experience in seroepidemiology and infectious disease modeling. Undergraduate researchers in our group work on data analysis, literature reviews, and contribute to ongoing research projects.\nNote: Most undergraduate research opportunities are unfunded volunteer positions, though students may earn academic credit through departmental research units.\n\nRecommended Skills\n\nProgramming: Experience with R or Python is beneficial but not required. We provide training for motivated students.\nStatistics: Coursework in statistics or biostatistics is helpful.\nBiology/Public Health: Interest in infectious diseases, immunology, or public health.\nData Analysis: Ability to work with spreadsheets and databases.\nCommunication: Strong written and verbal communication skills.\n\n\n\nHow to Apply\nIf you are interested in joining our group as an undergraduate researcher, please send an email to ucdserg@ucdavis.edu with:\n\nA brief statement of interest (1 paragraph)\nYour CV or resume\nUnofficial transcript\nAny relevant coursework or experience\n\nFor more information about undergraduate research opportunities at UC Davis, visit the Undergraduate Research Center."
+    "text": "Undergraduate Students\nWe welcome undergraduate students interested in gaining research experience in seroepidemiology and infectious disease modeling. Undergraduate researchers in our group work on data analysis, literature reviews, and contribute to ongoing research projects.\nNote: All undergraduate research opportunities are unfunded volunteer positions, though students may earn academic credit through departmental research units.\n\nRecommended Skills\n\nProgramming: Experience with R or Python.\nCoursework: Coursework in statistics, biostatistics, and epidemiology is helpful.\nBiology/Public Health: Interest in infectious diseases, immunology, or public health.\nData Analysis: Experience working with and anlyzing data.\nCommunication: Strong written and verbal communication skills.\n\n\n\nHow to Apply\nIf you are interested in joining our group as an undergraduate researcher, please send an email to ucdserg@ucdavis.edu with:\n\nA brief statement of interest (1 paragraph)\nYour CV or resume\nUnofficial transcript\nAny relevant coursework or experience"
   },
   {
     "objectID": "opportunities.html#graduate-students",
     "href": "opportunities.html#graduate-students",
     "title": "Opportunities",
     "section": "Graduate Students",
-    "text": "Graduate Students\nWe are looking for motivated graduate students to join our group through the UC Davis Graduate Group in Epidemiology or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.\nFunding: Most graduate student positions are unfunded, though competitive students may receive 1-2 years of internal funding through Graduate Studies. Graduate students are expected to apply for external fellowships throughout their studies, particularly NIH F-31 predoctoral fellowships.\n\nRecommended Skills\n\nQuantitative Background: Strong foundation in statistics, mathematics, or related quantitative fields.\nProgramming: Proficiency in R or Python for statistical analysis and data visualization.\nEpidemiology: Understanding of epidemiological principles and study design.\nInfectious Diseases: Interest in infectious disease dynamics and serology.\nStatistical Modeling: Experience with regression, Bayesian methods, or machine learning is a plus.\nCollaboration: Ability to work effectively in interdisciplinary teams.\n\n\n\nCurrent Research Areas\nOur group focuses on:\n\nEnteric fever (Salmonella Typhi and Paratyphi)\nScrub typhus (Orientia tsutsugamushi)\nMelioidosis (Burkholderia pseudomallei)\nShigella (Shigella spp.)\nCholera (Vibrio cholerae)\n\n\n\nHow to Apply\nProspective graduate students should:\n\nReview the UC Davis Graduate Group in Epidemiology admissions requirements\nApply through the official graduate admissions portal\nIndicate interest in working with Drs. Kristen Aiemjoy and/or Ezra Morrison in your application\nFeel free to reach out to us at ucdserg@ucdavis.edu before applying"
+    "text": "Graduate Students\nWe are looking for motivated graduate students to join our group through the UC Davis Graduate Group in Epidemiology or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.\nFunding: Most graduate student positions are unfunded, though competitive students may receive 1-2 years of internal funding through Graduate Studies. Graduate students are expected to apply for external fellowships throughout their studies, particularly NIH F-31 predoctoral fellowships.\n\nRecommended Skills\n\nQuantitative Background: Strong foundation in statistics, mathematics, epidemiology, modeling or related quantitative fields.\nProgramming: Proficiency in R or Python for statistical analysis and data visualization.\nInfectious Diseases: Interest in infectious disease dynamics and serology.\nCollaboration: Ability to work effectively in interdisciplinary teams.\nCommunication: Strong written and verbal communication skills.\n\n\n\nHow to Apply\nProspective graduate students should:\n\nReview the UC Davis Graduate Group in Epidemiology admissions requirements\nApply through the official graduate admissions portal\nIndicate interest in working with Drs. Kristen Aiemjoy and/or Ezra Morrison in your application\nFeel free to reach out to us at ucdserg@ucdavis.edu before applying"
   },
   {
     "objectID": "opportunities.html#postdoctoral-research-fellows",
     "href": "opportunities.html#postdoctoral-research-fellows",
     "title": "Opportunities",
     "section": "Postdoctoral Research Fellows",
-    "text": "Postdoctoral Research Fellows\nWe are seeking postdoctoral researchers to join our team and lead cutting-edge research in seroepidemiology and infectious disease modeling. Postdocs in our group have the opportunity to develop independent research projects, mentor students, and collaborate with international partners.\n\nCurrent Funded Opportunity\nPostdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development\nWe are currently seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools. This position offers the opportunity to contribute to cutting-edge research in infectious disease epidemiology while developing computational tools that will be used by researchers worldwide.\n→ View Full Position Description\n\n\nQualifications\n\nPhD in epidemiology, biostatistics, infectious diseases, or a related field\nStrong publication record\nExpertise in statistical modeling and programming (R or Python)\nInterest in seroepidemiology and infectious disease burden estimation\nExcellent communication and writing skills\nAbility to work independently and collaboratively\n\n\n\nResearch Opportunities\nPostdoctoral fellows will have the opportunity to:\n\nDevelop novel seroepidemiologic methods\nAnalyze data from large-scale serological surveys\nCollaborate with international research teams\nPublish in high-impact journals\nMentor graduate and undergraduate students\nApply for independent funding\n\n\n\nFunding\nOur research group is supported by the US National Institutes of Health and the Bill and Melinda Gates Foundation. Specific postdoctoral positions will be posted as funding becomes available.\n\n\nHow to Apply\nInterested candidates should send the following to ucdserg@ucdavis.edu:\n\nCover letter describing your research interests and career goals\nCurriculum vitae\nNames and contact information for three references\n1-2 representative publications\n\nFor information about postdoctoral programs at UC Davis, visit UC Davis Postdoctoral Affairs."
+    "text": "Postdoctoral Research Fellows\nWe are seeking postdoctoral researchers to join our team and lead cutting-edge research in seroepidemiology and infectious disease modeling. Postdocs in our group have the opportunity to develop independent research projects, mentor students, and collaborate with international partners.\n\nCurrent Openings\nPostdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development\nWe are currently seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools.\n→ View Full Position Description\nFor information about postdoctoral programs at UC Davis, visit UC Davis Postdoctoral Affairs."
   },
   {
     "objectID": "opportunities.html#general-inquiries",
