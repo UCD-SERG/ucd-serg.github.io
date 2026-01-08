@@ -1,0 +1,54 @@
+---
+title: "Postdoctoral Research Fellow in Seroepidemiology"
+subtitle: "Advancing Global Typhoid Burden Estimation and Open-Source Research Software Development"
+page-layout: full
+date: Posdted January 10, 2026
+---
+
+
+The UC Davis Seroepidemiology Research Group (SeRG) led by Dr. Kristen Aiemjoy and Dr. Ezra Morrison, is seeking a highly motivated Postdoctoral Research Fellow to contribute to a new Gates Foundation–funded project aimed at advancing global serosurveillance tools for Salmonella infections, including typhoidal Salmonella and invasive non-typhoidal Salmonella (iNTS). The position is full-time, funded for two years, with opportunities to apply for competitive external fellowship funding should the fellow wish to pursue further independent support.
+
+The postdoc will join a dynamic interdisciplinary environment focused on antibody kinetics, infectious disease modeling, and global health surveillance. This work will involve close collaboration with partners at Massachusetts General Hospital / Harvard Medical School and Sabin Vaccine Institute. International travel to study sites and partner meetings may be required. Position start date is flexible, ideally between January and March 2025. Ideally, the fellow will attend the Coalition Against Typhoid (CaT) meeting in Phnom Penh, Cambodia in March 2025.
+
+## Project Description
+The aim of this project is to develop, refine and validate serologic tools to estimate enteric fever seroincidence, with a focus on improving the interpretability and performance of antibody-based surveillance systems for Salmonella infections across diverse infection settings. The postdoctoral fellow will contribute to modeling post-infection antibody kinetics using longitudinal datasets from confirmed typhoid and iNTS cases; extending two-phase within-host models and seroincidence likelihood frameworks to settings with high co-circulation of Salmonella serovars; and assessing antigen specificity and potential cross-reactivity. The fellow will also contribute to R package development, to support reproducible workflows and methodological innovation within seroepidemiology. This work will inform global typhoid and iNTS burden estimation and strengthen serosurveillance approaches for use in countries where blood culture surveillance systems are limited. The fellow will receive structured mentorship from Drs. Aiemjoy and Morrison, including weekly one-on-one meetings and individualized professional development planning, and will lead at least 3 first-author manuscripts and contribute to several additional collaborative manuscripts.
+
+## Key Responsibilities
+-	Develop and refine seroepidemiologic methods that leverage antibody decay dynamics to characterize seroincidence (force of infection) in populations.
+-	Develop and maintain software in R.
+-	Lead and co-lead manuscripts arising from project aims.
+-	Present scientific findings at international conferences.
+-	Collaborate regularly with external partners.
+-	Provide mentorship to graduate and undergraduate students within UCD-SeRG and trainees at partner institutions in Asia and Africa.
+
+## Qualifications
+A PhD in Epidemiology, Biostatistics, Mathematics, Statistics, Computer Science, or a related quantitative field is required. We are particularly interested in candidates with strong programming experience in R, including experience developing research software and maintaining code on GitHub. Candidates should have excellent written and verbal communication skills and a demonstrated ability to work collaboratively on interdisciplinary teams. Preferred qualifications include experience with infectious disease modeling, Bayesian hierarchical models, and the analysis of serologic data such as multiplex bead-based assays or ELISAs. While not required, familiarity with laboratory workflows, assay validation, or quality-control processes is an asset.
+
+## Location
+Based at UC Davis School of Medicine (Sacramento, CA) within the Seroepidemiology Research Group. Hybrid/remote arrangements may be considered; international travel may be required.
+
+## Salary & Benefits
+Salary follows UC Postdoctoral Scholar scales and includes comprehensive UC benefits.
+https://postdocs.ucdavis.edu/
+
+## To Apply
+
+Please the following application materials to Drs. Kristen Aiemjoy and Ezra Morrsion (seroepi@ucdavis.edu) 
+- Cover letter describing your research interests and career goals
+- Curriculum vitae
+- Names and contact information for three references
+- 1-2 representative publications
+
+Applications will be reviewed as they are received, and well-qualified candidates will be contacted for an interview.
+
+## Contact Information
+
+For questions about this position, please contact:
+
+**UC Davis Seroepidemiology Research Group**  
+Email: [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu)  
+Website: [https://ucd-serg.github.io](https://ucd-serg.github.io)
+
+---
+
+[Back to Opportunities Page](../opportunities.qmd)
