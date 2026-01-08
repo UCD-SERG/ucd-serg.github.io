@@ -10,6 +10,27 @@ Currently, we focus on enteric fever (*Salmonella Typhi and Paratyphi*), Scrub T
 
  Our research group is based at the University of California, Davis, and is led by Drs. Kristen Aiemjoy and Ezra Morrison and supported by US National Institutes of Health and the Bill and Melinda Gates Foundation. 
  
- We are always looking for new collaborators and students. If you are interested in working with us, please check out our [opportunities page](opportunities.qmd) or reach out to us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu), 
- 
-![2023 workshop on 'Serocalculator' adjacent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries](figures/serocalculator_kigali.jpg)
+ We are always looking for new collaborators and students. If you are interested in working with us, please check out our [opportunities page](opportunities.qmd) or reach out to us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu). 
+
+```{=html}
+<div class="photo-album">
+<div class="photo-album-container">
+  <div class="photo-item">
+    <img src="figures/serocalculator_kigali.jpg" alt="Workshop in Kigali">
+    <div class="photo-caption">2023 workshop on 'Serocalculator' adjacent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries</div>
+  </div>
+  <div class="photo-item">
+    <img src="software/serocalculator_shiny_screenshot.jpg" alt="Serocalculator Shiny App">
+    <div class="photo-caption">Serocalculator Shiny application for antibody data analysis</div>
+  </div>
+  <div class="photo-item">
+    <img src="software/serodynamics_shiny_screenshot.jpg" alt="Serodynamics Shiny App">
+    <div class="photo-caption">Serodynamics Shiny application for modeling antibody dynamics</div>
+  </div>
+  <div class="photo-item">
+    <img src="software/serocalculator_image2.jpg" alt="Serocalculator Interface">
+    <div class="photo-caption">Interactive interface for seroprevalence calculations</div>
+  </div>
+</div>
+</div>
+```

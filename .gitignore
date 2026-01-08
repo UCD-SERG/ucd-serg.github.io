@@ -9,3 +9,6 @@ ucd.serg.github.io*.tar.gz
 ucd.serg.github.io*.tgz
 
 **/*.quarto_ipynb
+
+# Quarto installer
+*.deb
