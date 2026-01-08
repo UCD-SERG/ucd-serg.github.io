@@ -66,6 +66,31 @@
   line-height: 1.4;
 }
 
+/* Dark mode styles */
+html[data-bs-theme="dark"] .photo-album-container {
+  scrollbar-color: #666 #2b2b2b;
+}
+
+html[data-bs-theme="dark"] .photo-album-container::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+
+html[data-bs-theme="dark"] .photo-album-container::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+html[data-bs-theme="dark"] .photo-album-container::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+html[data-bs-theme="dark"] .photo-item img {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+html[data-bs-theme="dark"] .photo-caption {
+  color: #aaa;
+}
+
 @media (max-width: 768px) {
   .photo-item {
     width: 300px;
