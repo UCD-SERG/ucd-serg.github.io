@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/team.html",
+    "items": [
+      "/people/skang/bio-skang.html",
+      "/people/kwlai/bio-kwlai.html",
+      "/people/ksjlee/bio-ksjlee.html",
+      "/people/sschild/bio-sschild.html",
+      "/people/kvaidya/kvaidya.html"
+    ]
+  },
+  {
+    "listing": "/software.html",
+    "items": []
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
+  }
+]
