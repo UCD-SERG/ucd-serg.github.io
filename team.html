@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-language','listing-title','listing-lastname','listing-image','listing-about','listing-subtitle','listing-institution','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-language","listing-title","listing-lastname","listing-image","listing-about","listing-subtitle","listing-institution","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -108,9 +108,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-lastname','listing-subtitle','listing-institution',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-image","listing-title","listing-lastname","listing-subtitle"],
+      searchColumns: ["listing-image","listing-title","listing-lastname","listing-subtitle","listing-institution"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -243,129 +243,257 @@ window.Quarto = {
 
 <section id="principal-investigators" class="level2">
 <h2 class="anchored" data-anchor-id="principal-investigators">Principal investigators</h2>
-<div id="listing-PIs" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0">
-<a href="https://health.ucdavis.edu/phs/team/43064/kristen-aiemjoy---infectious-diseases---epidemiology/" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="people/kaiemjoy/kaiemjoy-office.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kristen Aiemjoy
-</h5>
-<div class="card-subtitle listing-subtitle">
-Assistant Professor of Epidemiology, UC Davis
+<div id="listing-PIs" class="quarto-listing quarto-listing-container-custom">
+
+<div class="quarto-listing quarto-listing-container-grid">
+  
+  <div class="list grid quarto-listing-cols-4"> 
+
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="https://health.ucdavis.edu/phs/team/43064/kristen-aiemjoy---infectious-diseases---epidemiology/" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Kristen Aiemjoy" src="people/kaiemjoy/kaiemjoy-office.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Kristen Aiemjoy<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              Assistant Professor of Epidemiology<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                UC Davis<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="https://demorrison.ucdavis.edu" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Ezra Morrison" src="people/demorrison/demorrison.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Ezra Morrison<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              Assistant Professor of Biostatistics<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                UC Davis<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+    
+  
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1">
-<a href="https://demorrison.ucdavis.edu" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="people/demorrison/demorrison.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ezra Morrison
-</h5>
-<div class="card-subtitle listing-subtitle">
-Assistant Professor of Biostatistics, UC Davis
-</div>
-</div>
-</div></a>
-</div>
-</div>
+
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
 <section id="students" class="level2">
 <h2 class="anchored" data-anchor-id="students">Students</h2>
-<div id="listing-lab-member" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-4">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1767837953352" data-listing-reading-time-sort="1" data-listing-word-count-sort="104">
-<a href="./people/skang/bio-skang.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/skang/skang.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Sophie Kang
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student, University of Oxford
+<div id="listing-lab-member" class="quarto-listing quarto-listing-container-custom">
+
+<div class="quarto-listing quarto-listing-container-grid">
+  
+  <div class="list grid quarto-listing-cols-4"> 
+
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="./people/skang/bio-skang.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Sophie Kang" src="./people/skang/skang.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Sophie Kang<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              PhD Student<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                University of Oxford<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="./people/kwlai/bio-kwlai.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Kristina W. Lai, MPH" src="./people/kwlai/headshot_Kristina Lai_cropped2.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Kristina W. Lai, MPH<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              PhD Candidate, Graduate Group in Epidemiology<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                UC Davis<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="./people/ksjlee/bio-ksjlee.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Kwan Ho Lee, MS" src="./people/ksjlee/ksjlee.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Kwan Ho Lee, MS<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              PhD Candidate, Graduate Group in Epidemiology<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                UC Davis<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="./people/sschild/bio-sschild.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Samuel Schildhauer, MPH" src="./people/sschild/sschild.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Samuel Schildhauer, MPH<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              PhD Student, Graduate Group in Epidemiology<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                UC Davis<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="./people/kvaidya/kvaidya.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Krista Vaidya" src="./people/kvaidya/kvaidya.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Krista Vaidya<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              PhD Student, Graduate Group in Epidemiology<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                UC Davis<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+    
+  
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1767837953350" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
-<a href="./people/kwlai/bio-kwlai.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/kwlai/headshot_Kristina Lai_cropped2.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kristina W. Lai, MPH
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Candidate, Graduate Group in Epidemiology, UC Davis
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1767837953347" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
-<a href="./people/ksjlee/bio-ksjlee.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/ksjlee/ksjlee.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kwan Ho Lee, MS
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Candidate, Graduate Group in Epidemiology, UC Davis
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1767837953352" data-listing-reading-time-sort="1" data-listing-word-count-sort="86">
-<a href="./people/sschild/bio-sschild.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/sschild/sschild.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Samuel Schildhauer, MPH
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student, Graduate Group in Epidemiology, UC Davis
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1767837953350" data-listing-reading-time-sort="1" data-listing-word-count-sort="72">
-<a href="./people/kvaidya/kvaidya.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-center">
-<p class="card-img-top">
-<img loading="lazy" src="./people/kvaidya/kvaidya.jpg" class="thumbnail-image card-img" style="height: 250px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Krista Vaidya
-</h5>
-<div class="card-subtitle listing-subtitle">
-PhD Student, Graduate Group in Epidemiology, UC Davis
-</div>
-</div>
-</div></a>
-</div>
-</div>
+
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 
