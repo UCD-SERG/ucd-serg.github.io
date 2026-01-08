@@ -33,7 +33,7 @@ If you are interested in joining our group as an undergraduate researcher, pleas
 
 ## Graduate Students
 
-We are looking for motivated graduate students to join our group through the UC Davis [Graduate Group in Epidemiology](https://health.ucdavis.edu/epidemiology/) or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.
+We are looking for motivated graduate students to join our group through the UC Davis [Graduate Group in Epidemiology](https://health.ucdavis.edu/phs/divisions/epidemiology/index.html) or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.
 
 **Funding:** Most graduate student positions are unfunded, though competitive students may receive 1-2 years of internal funding through Graduate Studies. Graduate students are expected to apply for external fellowships throughout their studies, particularly NIH F-31 predoctoral fellowships.
 
@@ -50,7 +50,7 @@ We are looking for motivated graduate students to join our group through the UC 
 
 Prospective graduate students should:
 
-1. Review the [UC Davis Graduate Group in Epidemiology admissions requirements](https://health.ucdavis.edu/epidemiology/graduate-programs/admissions.html)
+1. Review the [UC Davis Graduate Group in Epidemiology admissions requirements](https://health.ucdavis.edu/phs/education/PhD/prospective_phd_students.html)
 2. Apply through the official graduate admissions portal
 3. Indicate interest in working with Drs. Kristen Aiemjoy and/or Ezra Morrison in your application
 4. Feel free to reach out to us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu) before applying
@@ -70,7 +70,7 @@ We are currently seeking a postdoctoral research fellow to work on a Gates Found
 [**→ View Full Position Description**](opportunities/postdoc-typhoid-seroepi.qmd)
 
 
-For information about postdoctoral programs at UC Davis, visit [UC Davis Postdoctoral Affairs](https://gradstudies.ucdavis.edu/postdoctoral).
+For information about postdoctoral programs at UC Davis, visit [UC Davis Postdoctoral Affairs](https://grad.ucdavis.edu/professional-development/postdoctoral-scholars).
 
 ---
 
