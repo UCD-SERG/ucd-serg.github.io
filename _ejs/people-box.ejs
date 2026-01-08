@@ -7,12 +7,8 @@
     <% for (const item of items) { %> 
     
     <div class="g-col-1 listing-box">
-      
-      
-      
       <a href="<%- item.path %>" role="button" class="quarto-grid-link">
         <div class="quarto-grid-item card h-100 card-center">
-          
           
           <p class="card-img-top">
             <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
@@ -27,19 +23,12 @@
             <div class="listing-box-subtitle">
               <%= item.subtitle %><br>
             </div>
-                
             
-              
-              <div class="listing-box-institution">
-                
-                <% if (item.institution) { %>
-                  <em><%= item.institution %></em><br>
-                  <% } %>
-                    
-              </div>  
-                  
-
-            
+            <div class="listing-box-institution">
+              <% if (item.institution) { %>
+                <em><%= item.institution %></em><br>
+              <% } %>
+            </div>  
             
           </div>  
         </div>  
