@@ -4,7 +4,7 @@ lastname: "Kang"
 image: skang.jpg
 about: 
   template: solana
-subtitle: "PhD Student, University of Oxford"
+subtitle: "PhD Student"
 institution: "University of Oxford"
 ---
 

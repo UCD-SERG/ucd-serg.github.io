@@ -4,7 +4,7 @@ lastname: "Schildhauer"
 image: sschild.jpg
 about: 
   template: solana
-subtitle: "PhD Student, Graduate Group in Epidemiology, UC Davis"
+subtitle: "PhD Student, Graduate Group in Epidemiology"
 institution: "UC Davis"
 ---
 

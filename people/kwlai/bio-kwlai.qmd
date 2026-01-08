@@ -4,7 +4,7 @@ lastname: "Lai"
 image: headshot_Kristina Lai_cropped2.jpg
 about:
   template: solana
-subtitle: "PhD Candidate, Graduate Group in Epidemiology, UC Davis"
+subtitle: "PhD Candidate, Graduate Group in Epidemiology"
 institution: "UC Davis"
 ---
 
