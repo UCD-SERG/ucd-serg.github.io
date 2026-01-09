@@ -51,7 +51,6 @@ jobs:
       #   run: |
       #     sudo apt-get update
       #     sudo apt-get install -y \
-      #       jags \
       #       libcurl4-openssl-dev \
       #       libssl-dev \
       #       libxml2-dev \
@@ -63,9 +62,9 @@ jobs:
       #       libtiff5-dev \
       #       libjpeg-dev
       
-      # # Set up pandoc for documentation
-      # - name: Set up Pandoc
-      #   uses: r-lib/actions/setup-pandoc@v2
+      # Set up pandoc for documentation
+      - name: Set up Pandoc
+        uses: r-lib/actions/setup-pandoc@v2
       
       # # Set up R using the standard GitHub Actions setup
       # - name: Set up R
