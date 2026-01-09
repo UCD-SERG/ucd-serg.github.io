@@ -5,42 +5,52 @@ This directory contains Dr. Aiemjoy's CV page and related files.
 ## Files
 
 - `kaiemjoy-cv.qmd` - The main CV page in Quarto markdown format
-- `cv/publications.yml` - Publications data extracted from the main publications.yml
-- `cv/fetch_publications.py` - Python script to fetch publications from NCBI (for future use)
-- `cv/extract_publications.py` - Python script to extract Dr. Aiemjoy's publications from the main publications.yml
+- `cv/publications.yml` - Formatted publications data
+- `cv/publication-simple-template.ejs` - EJS template for rendering publications
+- `cv/reformat_publications.py` - Script to reformat publications in LaTeX CV style
+- `cv/fetch_from_ncbi.py` - Script to fetch publications from NCBI My Bibliography (for future use)
+- `cv/fetch_publications.py` - Alternative NCBI fetcher using E-utilities
+- `cv/extract_publications.py` - Legacy script (replaced by reformat_publications.py)
 
 ## Updating Publications
 
-Publications on the CV are automatically synchronized with the main lab publications list. When new publications are added to the lab's `publications.yml`, run the following command to update the CV:
+Publications on the CV are sourced from the main lab publications list. When new publications are added to the lab's `publications.yml`, run the following command to update the CV:
 
 ```bash
 cd /path/to/ucd-serg.github.io
-python3 people/kaiemjoy/cv/extract_publications.py
+python3 people/kaiemjoy/cv/reformat_publications.py
 quarto render people/kaiemjoy/kaiemjoy-cv.qmd
 ```
 
-Alternatively, when the entire site is rendered with `quarto render`, the CV will be automatically updated.
+The reformatting script:
+1. Extracts publications where Dr. Aiemjoy is an author
+2. Formats them in LaTeX CV style: `Last FI, Last FI, **Aiemjoy K**, ... [hyperlinked title]. Journal. Year. DOI: xxx.`
+3. Saves to `cv/publications.yml`
+
+## Publication Format
+
+Publications are displayed with:
+- Full author lists with initials (e.g., "Seidman JC, **Aiemjoy K**, Adnan M, ...")
+- **Aiemjoy K** bolded using HTML `<strong>` tags
+- Hyperlinked titles (linked to DOI when available)
+- Journal names in italics using HTML `<em>` tags
+- Year and DOI information
 
 ## Future Enhancement: Direct NCBI Fetch
 
-The `fetch_publications.py` script is provided for future use to fetch publications directly from NCBI's My Bibliography API. This requires network access to NCBI servers. When available, publications can be fetched using:
-
-```bash
-python3 people/kaiemjoy/cv/fetch_publications.py > people/kaiemjoy/cv/ncbi_publications.json
-```
-
-The script would need to be enhanced to convert NCBI JSON/XML format to the YAML format used by Quarto.
+The `fetch_from_ncbi.py` script is provided for future use to fetch publications directly from Dr. Aiemjoy's NCBI My Bibliography profile (https://www.ncbi.nlm.nih.gov/myncbi/1xIGpkekG9FQP/bibliography/public/). This requires network access to NCBI servers.
 
 ## CV Structure
 
 The CV includes the following sections:
-- Contact Information
+- Positions
 - Education
-- Professional Experience
 - Research Interests
-- Publications (auto-populated)
-- Selected Honors and Awards
+- Peer-Reviewed Publications (auto-populated)
+- Presentations
+- Honors and Awards
 - Professional Service
 - Teaching
+- Grants and Funding
 
 Sections can be updated by editing the `kaiemjoy-cv.qmd` file directly.

@@ -7,10 +7,10 @@ listing:
 - id: cv-publications
   contents:
     - cv/publications.yml
-  sort: 'issued desc'
+  sort: 'year desc'
   type: default
-  page-size: 100
-  template: cv/publication-template.ejs
+  page-size: 200
+  template: cv/publication-simple-template.ejs
 ---
 
 ::: {style="text-align: right;"}
@@ -53,6 +53,7 @@ Stanford University
 
 **BS in Human Biology** (2010)  
 Stanford University
+
 ---
 
 ## Research Interests
@@ -75,21 +76,55 @@ Stanford University
 
 ---
 
-## Selected Honors and Awards
+## Presentations
 
-*This section can be updated with specific awards and honors*
+### Invited Talks
+
+*To be updated with presentation history*
+
+### Conference Presentations
+
+*To be updated with conference presentations*
+
+---
+
+## Honors and Awards
+
+*To be updated with specific awards and honors*
 
 ---
 
 ## Professional Service
 
-*This section can be updated with committee memberships, editorial boards, and other service activities*
+### Editorial Boards
+
+*To be updated with editorial board memberships*
+
+### Peer Review
+
+*To be updated with peer review activities*
+
+### Committee Memberships
+
+*To be updated with committee memberships and service activities*
 
 ---
 
 ## Teaching
 
-*This section can be updated with courses taught and student mentorship*
+### Courses Taught
+
+*To be updated with courses taught*
+
+### Student Mentorship
+
+*To be updated with student mentorship activities*
+
+---
+
+## Grants and Funding
+
+*Grants section excluded as requested*
 
 ---
 

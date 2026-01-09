@@ -1,1070 +1,161 @@
-- author:
-  - family: Seidman
-    given: Jessica C.
-  - family: Aiemjoy
-    given: Kristen
-  - family: Adnan
-    given: Mehreen
-  - family: Dehraj
-    given: Irum Fatima
-  - family: Iqbal
-    given: Junaid
-  - family: Iqbal
-    given: Khalid
-  - family: Irfan
-    given: Seema
-  - family: Islam
-    given: Nahidul
-  - family: Kabir
-    given: Md. Shakiul
-  - family: Katuwal
-    given: Nishan
-  - family: Maria
-    given: Noshi
-  - family: Memon
-    given: Muhammad Ashraf
-  - family: Munira
-    given: Sira Jam
-  - family: Naga
-    given: Shiva Ram
-  - family: Pradhan
-    given: Sailesh
-  - family: Sarkar
-    given: Anik
-  - family: Shrestha
-    given: Rajeev
-  - family: Shrestha
-    given: Sony
-  - family: Al Sium
-    given: Syed Muktadir
-  - family: Vaidya
-    given: Krista
-  - family: Morrison
-    given: Douglas Ezra
-  - family: Carter
-    given: Alice S.
-  - family: Saha
-    given: Senjuti
-  - family: Tamrakar
-    given: Dipesh
-  - family: Yousafzai
-    given: Mohammad Tahir
-  - family: Garrett
-    given: Denise O.
-  - family: Luby
-    given: Stephen P.
-  - family: Qamar
-    given: Farah Naz
-  - family: Saha
-    given: Samir
-  - family: Andrews
-    given: Jason R.
-  - family: Charles
-    given: Richelle C.
-  doi: 10.1101/2025.06.20.25329792
-  id: Seidman_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
-  title: Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide
-    IgA to discriminate enteric fever from other febrile illnesses in south asia
-  type: article-journal
-  url: http://dx.doi.org/10.1101/2025.06.20.25329792
-  date: 2025-06
-  path: https://doi.org/10.1101/2025.06.20.25329792
-  highlight: 1
-  categories:
-  - preprint
-  authors_formatted: Jessica C. Seidman, **Kristen Aiemjoy**, Mehreen Adnan, Irum
-    Fatima Dehraj, Junaid Iqbal, Khalid Iqbal, Seema Irfan, Nahidul Islam, Md. Shakiul
-    Kabir, Nishan Katuwal, Noshi Maria, Muhammad Ashraf Memon, Sira Jam Munira, Shiva
-    Ram Naga, Sailesh Pradhan, Anik Sarkar, Rajeev Shrestha, Sony Shrestha, Syed Muktadir
-    Al Sium, Krista Vaidya, Douglas Ezra Morrison, Alice S. Carter, Senjuti Saha,
-    Dipesh Tamrakar, Mohammad Tahir Yousafzai, Denise O. Garrett, Stephen P. Luby,
-    Farah Naz Qamar, Samir Saha, Jason R. Andrews, Richelle C. Charles
-  year: '2025'
-- author:
-  - family: Khan
-    given: Aslam
-  - family: Kamenskaya
-    given: Polina
-  - family: Rezende
-    given: Izabela
-  - family: Mutuku
-    given: Francis
-  - family: Ndenga
-    given: Bryson
-  - family: Jembe
-    given: Zainab
-  - family: Maina
-    given: Priscilla
-  - family: Chebii
-    given: Philip
-  - family: Ronga
-    given: Charles
-  - family: Okuta
-    given: Victoria
-  - family: Garrett
-    given: Denise O.
-  - family: Bisanzio
-    given: Donal
-  - family: Aiemjoy
-    given: Kristen
-  - family: Andrews
-    given: Jason R.
-  - family: LaBeaud
-    given: A. Desiree
-  - family: Charles
-    given: Richelle
-  doi: 10.1101/2025.06.24.25330223
-  id: Khan_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
-  title: Seroincidence rate of typhoidal Salmonella in children in kenya
-  type: article-journal
-  url: http://dx.doi.org/10.1101/2025.06.24.25330223
-  date: 2025-06
-  path: https://doi.org/10.1101/2025.06.24.25330223
-  highlight: 1
-  categories:
-  - preprint
-  authors_formatted: Aslam Khan, Polina Kamenskaya, Izabela Rezende, Francis Mutuku,
-    Bryson Ndenga, Zainab Jembe, Priscilla Maina, Philip Chebii, Charles Ronga, Victoria
-    Okuta, Denise O. Garrett, Donal Bisanzio, **Kristen Aiemjoy**, Jason R. Andrews,
-    A. Desiree LaBeaud, Richelle Charles
-  year: '2025'
-- author:
-  - family: Tamrakar
-    given: Dipesh
-  - family: Naga
-    given: Shivram
-  - family: Jung
-    given: Esther
-  - family: Shrestha
-    given: Basudha
-  - family: Roka
-    given: Pratibha Bista
-  - family: Pokharel
-    given: Rabin Sharma
-  - family: Shah
-    given: Sabin Bikram
-  - family: Bajracharya
-    given: Arjya Tara
-  - family: Mahadup
-    given: Surendra K.
-  - family: Katuwal
-    given: Nishan
-  - family: Doyle
-    given: Kate
-  - family: Seidman
-    given: Jessica C.
-  - family: Carter
-    given: Alice S.
-  - family: Luby
-    given: Stephen P.
-  - family: Bogoch
-    given: Isaac I.
-  - family: Aiemjoy
-    given: Kristen
-  - family: Garrett
-    given: Denise O.
-  - family: Shrestha
-    given: Rajeev
-  - family: Andrews
-    given: Jason R.
-  doi: 10.1101/2025.06.17.25329748
-  id: Tamrakar_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
-  title: Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction
-    on typhoid fever in nepal
-  type: article-journal
-  url: http://dx.doi.org/10.1101/2025.06.17.25329748
-  date: 2025-06
-  path: https://doi.org/10.1101/2025.06.17.25329748
-  highlight: 0
-  categories:
-  - preprint
-  authors_formatted: Dipesh Tamrakar, Shivram Naga, Esther Jung, Basudha Shrestha,
-    Pratibha Bista Roka, Rabin Sharma Pokharel, Sabin Bikram Shah, Arjya Tara Bajracharya,
-    Surendra K. Mahadup, Nishan Katuwal, Kate Doyle, Jessica C. Seidman, Alice S.
-    Carter, Stephen P. Luby, Isaac I. Bogoch, **Kristen Aiemjoy**, Denise O. Garrett,
-    Rajeev Shrestha, Jason R. Andrews
-  year: '2025'
-- author:
-  - family: Saiprom
-    given: Natnaree
-  - family: Nimnuan-ngam
-    given: Supichaya
-  - family: Phunpang
-    given: Rungnapa
-  - family: Schildhauer
-    given: Samuel Hisaji
-  - family: Morrison
-    given: Ezra
-  - family: Tandhavanant
-    given: Sarunporn
-  - family: Chandna
-    given: Arjun
-  - family: Sengyee
-    given: Sineenart
-  - family: West
-    given: T. Eoin
-  - family: Burtnick
-    given: Mary N.
-  - family: Brett
-    given: Paul J.
-  - family: Chantratita
-    given: Narisara
-  - family: Aiemjoy
-    given: Kristen
-  doi: 10.2139/ssrn.5312903
-  id: Saiprom_2025
-  issued: 2025-06-23
-  publisher: Elsevier BV
-  title: 'Longitudinal profiling of antibody responses to burkholderia pseudomallei:
-    Implications for diagnosis and surveillance'
-  title-short: Longitudinal profiling of antibody responses to burkholderia pseudomallei
-  type: article-journal
-  url: http://dx.doi.org/10.2139/ssrn.5312903
-  date: 2025-06-23
-  path: https://doi.org/10.2139/ssrn.5312903
-  highlight: 0
-  categories:
-  - preprint
-  authors_formatted: Natnaree Saiprom, Supichaya Nimnuan-ngam, Rungnapa Phunpang,
-    Samuel Hisaji Schildhauer, Ezra Morrison, Sarunporn Tandhavanant, Arjun Chandna,
-    Sineenart Sengyee, T. Eoin West, Mary N. Burtnick, Paul J. Brett, Narisara Chantratita,
-    **Kristen Aiemjoy**
-  year: '2025'
-- author:
-  - family: Lai
-    given: Kristina W.
-  - family: Orwa
-    given: Chris
-  - family: Seidman
-    given: Jessica C.
-  - family: Garrett
-    given: Denise O.
-  - family: Saha
-    given: Samir K.
-  - family: Tamrakar
-    given: Dipesh
-  - family: Qamar
-    given: Farah Naz
-  - family: Charles
-    given: Richelle C.
-  - family: Andrews
-    given: Jason R.
-  - family: Teunis
-    given: Peter
-  - family: Aiemjoy
-    given: Kristen
-  - family: Morrison
-    given: Douglas Ezra
-  doi: 10.1101/2025.06.04.25328941
-  id: Lai_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
-  title: Serocalculator, an r package for estimating seroincidence from cross-sectional
-    serological data
-  type: article-journal
-  url: http://dx.doi.org/10.1101/2025.06.04.25328941
-  date: 2025-06
-  path: https://doi.org/10.1101/2025.06.04.25328941
-  highlight: 0
-  categories:
-  - preprint
-  authors_formatted: Kristina W. Lai, Chris Orwa, Jessica C. Seidman, Denise O. Garrett,
-    Samir K. Saha, Dipesh Tamrakar, Farah Naz Qamar, Richelle C. Charles, Jason R.
-    Andrews, Peter Teunis, **Kristen Aiemjoy**, Douglas Ezra Morrison
-  year: '2025'
-- author:
-  - family: Kamau
-    given: Everlyn
-  - family: Ante-Testard
-    given: Pearl Anne
-  - family: Gwyn
-    given: Sarah
-  - family: Blumberg
-    given: Seth
-  - family: Abdalla
-    given: Zeinab
-  - family: Aiemjoy
-    given: Kristen
-  - family: Amza
-    given: Abdou
-  - family: Aragie
-    given: Solomon
-  - family: Arzika
-    given: Ahmed M.
-  - family: Awoussi
-    given: Marcel S.
-  - family: Bailey
-    given: Robin L.
-  - family: Butcher
-    given: Robert
-  - family: Callahan
-    given: E. Kelly
-  - family: Chaima
-    given: David
-  - family: Dawed
-    given: Adisu Abebe
-  - family: Díaz
-    given: Martha Idalí Saboyá
-  - family: Domingo
-    given: Abou-Bakr Sidik
-  - family: Drakeley
-    given: Chris
-  - family: Elshafie
-    given: Belgesa E.
-  - family: Emerson
-    given: Paul M.
-  - family: Fornace
-    given: Kimberly
-  - family: Gass
-    given: Katherine
-  - family: Goodhew
-    given: E. Brook
-  - family: Hammou
-    given: Jaouad
-  - family: Harding-Esch
-    given: Emma M.
-  - family: Hooper
-    given: PJ
-  - family: Kadri
-    given: Boubacar
-  - family: Kalua
-    given: Khumbo
-  - family: Kanyi
-    given: Sarjo
-  - family: Kasubi
-    given: Mabula
-  - family: Kello
-    given: Amir B.
-  - family: Ko
-    given: Robert
-  - family: Lammie
-    given: Patrick J.
-  - family: Lescano
-    given: Andres G.
-  - family: Maliki
-    given: Ramatou
-  - family: Masika
-    given: Michael Peter
-  - family: Migchelsen
-    given: Stephanie J.
-  - family: Nassirou
-    given: Beido
-  - family: Nesemann
-    given: John M.
-  - family: Parameswaran
-    given: Nishanth
-  - family: Pomat
-    given: Willie
-  - family: Renneker
-    given: Kristen K.
-  - family: Roberts
-    given: Chrissy
-  - family: Rymil
-    given: Prudence
-  - family: Sata
-    given: Eshetu
-  - family: Senyonjo
-    given: Laura
-  - family: Seife
-    given: Fikre
-  - family: Sillah
-    given: Ansumana
-  - family: Sokana
-    given: Oliver
-  - family: Srivathsan
-    given: Ariktha
-  - family: Tadesse
-    given: Zerihun
-  - family: Taleo
-    given: Fasihah
-  - family: Taylor
-    given: Emma Michelle
-  - family: Tekeraoi
-    given: Rabebe
-  - family: Togbey
-    given: Kwamy
-  - family: West
-    given: Sheila K.
-  - family: Wickens
-    given: Karana
-  - family: William
-    given: Timothy
-  - family: Wittberg
-    given: Dionna M.
-  - family: Yeboah-Manu
-    given: Dorothy
-  - family: Youbi
-    given: Mohammed
-  - family: Zeru
-    given: Taye
-  - family: Keenan
-    given: Jeremy D.
-  - family: Lietman
-    given: Thomas M.
-  - family: Solomon
-    given: Anthony W.
-  - family: Nash
-    given: Scott D.
-  - family: Martin
-    given: Diana L.
-  - family: Arnold
-    given: Benjamin F.
-  container-title: Nature Communications
-  doi: 10.1038/s41467-025-60581-z
-  id: Kamau_2025
-  issn: 2041-1723
-  issue: 1
-  issued: 2025-07
-  publisher: Springer Science and Business Media LLC
-  title: Characterizing trachoma elimination using serology
-  type: article-journal
-  url: http://dx.doi.org/10.1038/s41467-025-60581-z
-  volume: 16
-  journal-title: '*Nature Communications*'
-  date: 2025-07
-  path: https://doi.org/10.1038/s41467-025-60581-z
-  highlight: 0
-  authors_formatted: Everlyn Kamau, Pearl Anne Ante-Testard, Sarah Gwyn, Seth Blumberg,
-    Zeinab Abdalla, **Kristen Aiemjoy**, Abdou Amza, Solomon Aragie, Ahmed M. Arzika,
-    Marcel S. Awoussi, Robin L. Bailey, Robert Butcher, E. Kelly Callahan, David Chaima,
-    Adisu Abebe Dawed, Martha Idalí Saboyá Díaz, Abou-Bakr Sidik Domingo, Chris Drakeley,
-    Belgesa E. Elshafie, Paul M. Emerson, Kimberly Fornace, Katherine Gass, E. Brook
-    Goodhew, Jaouad Hammou, Emma M. Harding-Esch, PJ Hooper, Boubacar Kadri, Khumbo
-    Kalua, Sarjo Kanyi, Mabula Kasubi, Amir B. Kello, Robert Ko, Patrick J. Lammie,
-    Andres G. Lescano, Ramatou Maliki, Michael Peter Masika, Stephanie J. Migchelsen,
-    Beido Nassirou, John M. Nesemann, Nishanth Parameswaran, Willie Pomat, Kristen
-    K. Renneker, Chrissy Roberts, Prudence Rymil, Eshetu Sata, Laura Senyonjo, Fikre
-    Seife, Ansumana Sillah, Oliver Sokana, Ariktha Srivathsan, Zerihun Tadesse, Fasihah
-    Taleo, Emma Michelle Taylor, Rabebe Tekeraoi, Kwamy Togbey, Sheila K. West, Karana
-    Wickens, Timothy William, Dionna M. Wittberg, Dorothy Yeboah-Manu, Mohammed Youbi,
-    Taye Zeru, Jeremy D. Keenan, Thomas M. Lietman, Anthony W. Solomon, Scott D. Nash,
-    Diana L. Martin, Benjamin F. Arnold
-  year: '2025'
-- author:
-  - family: Abraham
-    given: Dilip
-  - family: Kathiresan
-    given: Lalithambigai
-  - family: Sasikumar
-    given: Midhun
-  - family: Aiemjoy
-    given: Kristen
-  - family: Charles
-    given: Richelle C.
-  - family: Kumar
-    given: Dilesh
-  - family: Srinivasan
-    given: Rajan
-  - family: Troman
-    given: Catherine
-  - family: Gray
-    given: Elizabeth
-  - family: Uzzell
-    given: Christopher B.
-  - family: John
-    given: Jacob
-  - family: Veeraraghavan
-    given: Balaji
-  - family: Grassly
-    given: Nicholas C.
-  - family: Mohan
-    given: Venkata Raghava
-  container-title: PLOS Neglected Tropical Diseases
-  doi: 10.1371/journal.pntd.0012373
-  editor:
-  - family: Diemert
-    given: David J.
-  id: Abraham_2025
-  issn: 1935-2735
-  issue: 3
-  issued: 2025-03
-  page: e0012373
-  publisher: Public Library of Science (PLoS)
-  title: Wastewater surveillance for salmonella typhi and its association with seroincidence
-    of enteric fever in vellore, india
-  type: article-journal
-  url: http://dx.doi.org/10.1371/journal.pntd.0012373
-  volume: 19
-  journal-title: '*PLOS Neglected Tropical Diseases*'
-  date: 2025-03
-  path: https://doi.org/10.1371/journal.pntd.0012373
-  highlight: 0
-  authors_formatted: Dilip Abraham, Lalithambigai Kathiresan, Midhun Sasikumar, **Kristen
-    Aiemjoy**, Richelle C. Charles, Dilesh Kumar, Rajan Srinivasan, Catherine Troman,
-    Elizabeth Gray, Christopher B. Uzzell, Jacob John, Balaji Veeraraghavan, Nicholas
-    C. Grassly, Venkata Raghava Mohan
-  year: '2025'
-- author:
-  - family: Teunis
-    given: Peter F. M.
-  - family: Seidman
-    given: Jessica C.
-  - family: Tamrakar
-    given: Dipesh
-  - family: Qamar
-    given: Farah Naz
-  - family: Saha
-    given: Samir K.
-  - family: Garrett
-    given: Denise O.
-  - family: Andrews
-    given: Jason R.
-  - family: Charles
-    given: Richelle C.
-  - family: Aiemjoy
-    given: Kristen
-  container-title: Epidemics
-  doi: 10.1016/j.epidem.2025.100874
-  id: Teunis_2026
-  issn: 1755-4365
-  issued: 2026-03
-  page: 100874
-  publisher: Elsevier BV
+- formatted: 'Teunis PFM, Seidman JC, Tamrakar D, Qamar FN, Saha SK, Garrett DO, Andrews
+    JR, Charles RC, <strong>Aiemjoy K</strong>. [Seroresponse to repeated infections
+    with salmonella enterica typhi and paratyphi a](https://doi.org/10.1016/j.epidem.2025.100874).
+    <em>Epidemics</em>. 2026. DOI: 10.1016/j.epidem.2025.100874.'
+  year: '2026'
   title: Seroresponse to repeated infections with salmonella enterica typhi and paratyphi
     a
-  type: article-journal
-  url: http://dx.doi.org/10.1016/j.epidem.2025.100874
-  volume: 54
-  journal-title: '*Epidemics*'
-  date: 2026-03
-  path: https://doi.org/10.1016/j.epidem.2025.100874
-  highlight: 0
-  authors_formatted: Peter F. M. Teunis, Jessica C. Seidman, Dipesh Tamrakar, Farah
-    Naz Qamar, Samir K. Saha, Denise O. Garrett, Jason R. Andrews, Richelle C. Charles,
-    **Kristen Aiemjoy**
-  year: '2026'
-- author:
-  - family: Garrett
-    given: Denise O
-  - family: Longley
-    given: Ashley T
-  - family: Aiemjoy
-    given: Kristen
-  - family: Yousafzai
-    given: Mohammad T
-  - family: Hemlock
-    given: Caitlin
-  - family: Yu
-    given: Alexander T
-  - family: Vaidya
-    given: Krista
-  - family: Tamrakar
-    given: Dipesh
-  - family: Saha
-    given: Shampa
-  - family: Bogoch
-    given: Isaac I
-  - family: Date
-    given: Kashmira
-  - family: Saha
-    given: Senjuti
-  - family: Islam
-    given: Mohammad Shahidul
-  - family: Sayeed
-    given: K M Ishtiaque
-  - family: Bern
-    given: Caryn
-  - family: Shakoor
-    given: Sadia
-  - family: Dehraj
-    given: Irum F
-  - family: Mehmood
-    given: Junaid
-  - family: Sajib
-    given: Mohammad S I
-  - family: Islam
-    given: Maksuda
-  - family: Thobani
-    given: Rozina S
-  - family: Hotwani
-    given: Aneeta
-  - family: Rahman
-    given: Najeeb
-  - family: Irfan
-    given: Seema
-  - family: Naga
-    given: Shiva R
-  - family: Memon
-    given: Ashraf M
-  - family: Pradhan
-    given: Sailesh
-  - family: Iqbal
-    given: Khalid
-  - family: Shrestha
-    given: Rajeev
-  - family: Rahman
-    given: Hafizur
-  - family: Hasan
-    given: Md Mahmudul
-  - family: Qazi
-    given: Saqib H
-  - family: Kazi
-    given: Abdul M
-  - family: Saddal
-    given: Nasir S
-  - family: Jamal
-    given: Raza
-  - family: Hunzai
-    given: Mohammed J
-  - family: Hossain
-    given: Tanvir
-  - family: Marks
-    given: Florian
-  - family: Carter
-    given: Alice S
-  - family: Seidman
-    given: Jessica C
-  - family: Qamar
-    given: Farah N
-  - family: Saha
-    given: Samir K
-  - family: Andrews
-    given: Jason R
-  - family: Luby
-    given: Stephen P
-  container-title: The Lancet Global Health
-  doi: 10.1016/s2214-109x(22)00119-x
-  id: Garrett_2022
-  issn: 2214-109X
-  issue: 7
-  issued: 2022-07
-  page: e978-e988
-  publisher: Elsevier BV
-  title: 'Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan:
-    Results of the surveillance for enteric fever in asia project'
-  title-short: Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and
-    pakistan
-  type: article-journal
-  url: http://dx.doi.org/10.1016/S2214-109X(22)00119-X
-  volume: 10
-  journal-title: '*The Lancet Global Health*'
-  date: 2022-07
-  path: https://doi.org/10.1016/s2214-109x(22)00119-x
-  highlight: 0
-  authors_formatted: Denise O Garrett, Ashley T Longley, **Kristen Aiemjoy**, Mohammad
-    T Yousafzai, Caitlin Hemlock, Alexander T Yu, Krista Vaidya, Dipesh Tamrakar,
-    Shampa Saha, Isaac I Bogoch, Kashmira Date, Senjuti Saha, Mohammad Shahidul Islam,
-    K M Ishtiaque Sayeed, Caryn Bern, Sadia Shakoor, Irum F Dehraj, Junaid Mehmood,
-    Mohammad S I Sajib, Maksuda Islam, Rozina S Thobani, Aneeta Hotwani, Najeeb Rahman,
-    Seema Irfan, Shiva R Naga, Ashraf M Memon, Sailesh Pradhan, Khalid Iqbal, Rajeev
-    Shrestha, Hafizur Rahman, Md Mahmudul Hasan, Saqib H Qazi, Abdul M Kazi, Nasir
-    S Saddal, Raza Jamal, Mohammed J Hunzai, Tanvir Hossain, Florian Marks, Alice
-    S Carter, Jessica C Seidman, Farah N Qamar, Samir K Saha, Jason R Andrews, Stephen
-    P Luby
-  year: '2022'
-- author:
-  - family: Katuwal
-    given: Nishan
-  - family: Thapa
-    given: Melina
-  - family: Shrestha
-    given: Sony
-  - family: Vaidya
-    given: Krista
-  - family: Bogoch
-    given: Isaac I.
-  - family: Shrestha
-    given: Rajeev
-  - family: Andrews
-    given: Jason R.
-  - family: Tamrakar
-    given: Dipesh
-  - family: Aiemjoy
-    given: Kristen
-  container-title: PLOS Neglected Tropical Diseases
-  doi: 10.1371/journal.pntd.0012375
-  editor:
-  - family: Poonawala
-    given: Husain
-  id: Katuwal_2024
-  issn: 1935-2735
-  issue: 8
-  issued: 2024-08
-  page: e0012375
-  publisher: Public Library of Science (PLoS)
+  doi: 10.1016/j.epidem.2025.100874
+- formatted: 'Saiprom N, Nimnuan-ngam S, Phunpang R, Schildhauer SH, Morrison E, Tandhavanant
+    S, Chandna A, Sengyee S, West TE, Burtnick MN, Brett PJ, Chantratita N, <strong>Aiemjoy
+    K</strong>. [Longitudinal profiling of antibody responses to burkholderia pseudomallei:
+    Implications for diagnosis and surveillance](https://doi.org/10.2139/ssrn.5312903).
+    2025-06-23. DOI: 10.2139/ssrn.5312903.'
+  year: '2025-06-23'
+  title: 'Longitudinal profiling of antibody responses to burkholderia pseudomallei:
+    Implications for diagnosis and surveillance'
+  doi: 10.2139/ssrn.5312903
+- formatted: 'Seidman JC, <strong>Aiemjoy K</strong>, Adnan M, Dehraj IF, Iqbal J,
+    Iqbal K, Irfan S, Islam N, Kabir MS, Katuwal N, Maria N, Memon MA, Munira SJ,
+    Naga SR, Pradhan S, Sarkar A, Shrestha R, Shrestha S, Al Sium SM, Vaidya K, Morrison
+    DE, Carter AS, Saha S, Tamrakar D, Yousafzai MT, Garrett DO, Luby SP, Qamar FN,
+    Saha S, Andrews JR, Charles RC. [Evaluating the accuracy of Salmonella Typhi hemolysin
+    e and lipopolysaccharide IgA to discriminate enteric fever from other febrile
+    illnesses in south asia](https://doi.org/10.1101/2025.06.20.25329792). 2025. DOI:
+    10.1101/2025.06.20.25329792.'
+  year: '2025'
+  title: Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide
+    IgA to discriminate enteric fever from other febrile illnesses in south asia
+  doi: 10.1101/2025.06.20.25329792
+- formatted: 'Khan A, Kamenskaya P, Rezende I, Mutuku F, Ndenga B, Jembe Z, Maina
+    P, Chebii P, Ronga C, Okuta V, Garrett DO, Bisanzio D, <strong>Aiemjoy K</strong>,
+    Andrews JR, LaBeaud AD, Charles R. [Seroincidence rate of typhoidal Salmonella
+    in children in kenya](https://doi.org/10.1101/2025.06.24.25330223). 2025. DOI:
+    10.1101/2025.06.24.25330223.'
+  year: '2025'
+  title: Seroincidence rate of typhoidal Salmonella in children in kenya
+  doi: 10.1101/2025.06.24.25330223
+- formatted: 'Tamrakar D, Naga S, Jung E, Shrestha B, Roka PB, Pokharel RS, Shah SB,
+    Bajracharya AT, Mahadup SK, Katuwal N, Doyle K, Seidman JC, Carter AS, Luby SP,
+    Bogoch II, <strong>Aiemjoy K</strong>, Garrett DO, Shrestha R, Andrews JR. [Impact
+    of the COVID-19 pandemic and typhoid conjugate vaccine introduction on typhoid
+    fever in nepal](https://doi.org/10.1101/2025.06.17.25329748). 2025. DOI: 10.1101/2025.06.17.25329748.'
+  year: '2025'
+  title: Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction
+    on typhoid fever in nepal
+  doi: 10.1101/2025.06.17.25329748
+- formatted: 'Lai KW, Orwa C, Seidman JC, Garrett DO, Saha SK, Tamrakar D, Qamar FN,
+    Charles RC, Andrews JR, Teunis P, <strong>Aiemjoy K</strong>, Morrison DE. [Serocalculator,
+    an r package for estimating seroincidence from cross-sectional serological data](https://doi.org/10.1101/2025.06.04.25328941).
+    2025. DOI: 10.1101/2025.06.04.25328941.'
+  year: '2025'
+  title: Serocalculator, an r package for estimating seroincidence from cross-sectional
+    serological data
+  doi: 10.1101/2025.06.04.25328941
+- formatted: 'Kamau E, Ante-Testard PA, Gwyn S, Blumberg S, Abdalla Z, <strong>Aiemjoy
+    K</strong>, Amza A, Aragie S, Arzika AM, Awoussi MS, Bailey RL, Butcher R, Callahan
+    EK, Chaima D, Dawed AA, Díaz MIS, Domingo AS, Drakeley C, Elshafie BE, Emerson
+    PM, Fornace K, Gass K, Goodhew EB, Hammou J, Harding-Esch EM, Hooper P, Kadri
+    B, Kalua K, Kanyi S, Kasubi M, Kello AB, Ko R, Lammie PJ, Lescano AG, Maliki R,
+    Masika MP, Migchelsen SJ, Nassirou B, Nesemann JM, Parameswaran N, Pomat W, Renneker
+    KK, Roberts C, Rymil P, Sata E, Senyonjo L, Seife F, Sillah A, Sokana O, Srivathsan
+    A, Tadesse Z, Taleo F, Taylor EM, Tekeraoi R, Togbey K, West SK, Wickens K, William
+    T, Wittberg DM, Yeboah-Manu D, Youbi M, Zeru T, Keenan JD, Lietman TM, Solomon
+    AW, Nash SD, Martin DL, Arnold BF. [Characterizing trachoma elimination using
+    serology](https://doi.org/10.1038/s41467-025-60581-z). <em>Nature Communications</em>.
+    2025. DOI: 10.1038/s41467-025-60581-z.'
+  year: '2025'
+  title: Characterizing trachoma elimination using serology
+  doi: 10.1038/s41467-025-60581-z
+- formatted: 'Abraham D, Kathiresan L, Sasikumar M, <strong>Aiemjoy K</strong>, Charles
+    RC, Kumar D, Srinivasan R, Troman C, Gray E, Uzzell CB, John J, Veeraraghavan
+    B, Grassly NC, Mohan VR. [Wastewater surveillance for salmonella typhi and its
+    association with seroincidence of enteric fever in vellore, india](https://doi.org/10.1371/journal.pntd.0012373).
+    <em>PLOS Neglected Tropical Diseases</em>. 2025. DOI: 10.1371/journal.pntd.0012373.'
+  year: '2025'
+  title: Wastewater surveillance for salmonella typhi and its association with seroincidence
+    of enteric fever in vellore, india
+  doi: 10.1371/journal.pntd.0012373
+- formatted: 'Katuwal N, Thapa M, Shrestha S, Vaidya K, Bogoch II, Shrestha R, Andrews
+    JR, Tamrakar D, <strong>Aiemjoy K</strong>. [Hepatitis e virus in the kathmandu
+    valley: Insights from a representative longitudinal serosurvey](https://doi.org/10.1371/journal.pntd.0012375).
+    <em>PLOS Neglected Tropical Diseases</em>. 2024. DOI: 10.1371/journal.pntd.0012375.'
+  year: '2024'
   title: 'Hepatitis e virus in the kathmandu valley: Insights from a representative
     longitudinal serosurvey'
-  title-short: Hepatitis e virus in the kathmandu valley
-  type: article-journal
-  url: http://dx.doi.org/10.1371/journal.pntd.0012375
-  volume: 18
-  journal-title: '*PLOS Neglected Tropical Diseases*'
-  date: 2024-08
-  path: https://doi.org/10.1371/journal.pntd.0012375
-  highlight: 0
-  authors_formatted: Nishan Katuwal, Melina Thapa, Sony Shrestha, Krista Vaidya, Isaac
-    I. Bogoch, Rajeev Shrestha, Jason R. Andrews, Dipesh Tamrakar, **Kristen Aiemjoy**
+  doi: 10.1371/journal.pntd.0012375
+- formatted: '<strong>Aiemjoy K</strong>, Katuwal N, Vaidya K, Shrestha S, Thapa M,
+    Teunis P, Bogoch II, Trowbridge P, Blacksell SD, Paris DH, Wangrangsimakul T,
+    Varghese GM, Maude RJ, Tamrakar D, Andrews JR. [Estimating the seroincidence of
+    scrub typhus using antibody dynamics after infection](https://doi.org/10.4269/ajtmh.23-0475).
+    <em>The American Journal of Tropical Medicine and Hygiene</em>. 2024. DOI: 10.4269/ajtmh.23-0475.'
   year: '2024'
-- author:
-  - family: Aiemjoy
-    given: Kristen
-  - family: Katuwal
-    given: Nishan
-  - family: Vaidya
-    given: Krista
-  - family: Shrestha
-    given: Sony
-  - family: Thapa
-    given: Melina
-  - family: Teunis
-    given: Peter
-  - family: Bogoch
-    given: Isaac I.
-  - family: Trowbridge
-    given: Paul
-  - family: Blacksell
-    given: Stuart D.
-  - family: Paris
-    given: Daniel H.
-  - family: Wangrangsimakul
-    given: Tri
-  - family: Varghese
-    given: George M.
-  - family: Maude
-    given: Richard J.
-  - family: Tamrakar
-    given: Dipesh
-  - family: Andrews
-    given: Jason R.
-  container-title: The American Journal of Tropical Medicine and Hygiene
-  doi: 10.4269/ajtmh.23-0475
-  id: Aiemjoy_2024
-  issn: 1476-1645
-  issue: 2
-  issued: 2024-08
-  page: 267-276
-  publisher: American Society of Tropical Medicine and Hygiene
   title: Estimating the seroincidence of scrub typhus using antibody dynamics after
     infection
-  type: article-journal
-  url: http://dx.doi.org/10.4269/ajtmh.23-0475
-  volume: 111
-  journal-title: '*The American Journal of Tropical Medicine and Hygiene*'
-  date: 2024-08
-  path: https://doi.org/10.4269/ajtmh.23-0475
-  highlight: 0
-  authors_formatted: '**Kristen Aiemjoy**, Nishan Katuwal, Krista Vaidya, Sony Shrestha,
-    Melina Thapa, Peter Teunis, Isaac I. Bogoch, Paul Trowbridge, Stuart D. Blacksell,
-    Daniel H. Paris, Tri Wangrangsimakul, George M. Varghese, Richard J. Maude, Dipesh
-    Tamrakar, Jason R. Andrews'
-  year: '2024'
-- author:
-  - family: Looareesuwan
-    given: Panita
-  - family: Aiemjoy
-    given: Kristen
-  - family: Charoensakulchai
-    given: Sakarn
-  - family: Thaipadungpanit
-    given: Janjira
-  - family: Wongsantichon
-    given: Jantana
-  - family: Tanganuchitcharnchai
-    given: Ampai
-  - family: Rungrojn
-    given: Artharee
-  - family: Blacksell
-    given: Stuart D
-  - family: Matsee
-    given: Wasin
-  container-title: Journal of Travel Medicine
-  doi: 10.1093/jtm/taad143
-  id: Looareesuwan_2023
-  issn: 1708-8305
-  issue: 8
-  issued: 2023-11
-  publisher: Oxford University Press (OUP)
+  doi: 10.4269/ajtmh.23-0475
+- formatted: 'Looareesuwan P, <strong>Aiemjoy K</strong>, Charoensakulchai S, Thaipadungpanit
+    J, Wongsantichon J, Tanganuchitcharnchai A, Rungrojn A, Blacksell SD, Matsee W.
+    [Diagnostic challenges and antibody kinetics in a paediatric traveller with scrub
+    typhus](https://doi.org/10.1093/jtm/taad143). <em>Journal of Travel Medicine</em>.
+    2023. DOI: 10.1093/jtm/taad143.'
+  year: '2023'
   title: Diagnostic challenges and antibody kinetics in a paediatric traveller with
     scrub typhus
-  type: article-journal
-  url: http://dx.doi.org/10.1093/jtm/taad143
-  volume: 30
-  journal-title: '*Journal of Travel Medicine*'
-  date: 2023-11
-  path: https://doi.org/10.1093/jtm/taad143
-  highlight: 0
-  authors_formatted: Panita Looareesuwan, **Kristen Aiemjoy**, Sakarn Charoensakulchai,
-    Janjira Thaipadungpanit, Jantana Wongsantichon, Ampai Tanganuchitcharnchai, Artharee
-    Rungrojn, Stuart D Blacksell, Wasin Matsee
+  doi: 10.1093/jtm/taad143
+- formatted: 'Teunis PFM, Wang Y, <strong>Aiemjoy K</strong>, Kretzschmar M, Aerts
+    M. [Estimating seroconversion rates accounting for repeated infections by approximate
+    bayesian computation](https://doi.org/10.1002/sim.9906). <em>Statistics in Medicine</em>.
+    2023. DOI: 10.1002/sim.9906.'
   year: '2023'
-- author:
-  - family: Teunis
-    given: Peter F. M.
-  - family: Wang
-    given: Yuke
-  - family: Aiemjoy
-    given: Kristen
-  - family: Kretzschmar
-    given: Mirjam
-  - family: Aerts
-    given: Marc
-  container-title: Statistics in Medicine
-  doi: 10.1002/sim.9906
-  id: Teunis_2023
-  issn: 1097-0258
-  issue: 28
-  issued: 2023-09
-  page: 5160-5188
-  publisher: Wiley
   title: Estimating seroconversion rates accounting for repeated infections by approximate
     bayesian computation
-  type: article-journal
-  url: http://dx.doi.org/10.1002/sim.9906
-  volume: 42
-  journal-title: '*Statistics in Medicine*'
-  date: 2023-09
-  path: https://doi.org/10.1002/sim.9906
-  highlight: 0
-  authors_formatted: Peter F. M. Teunis, Yuke Wang, **Kristen Aiemjoy**, Mirjam Kretzschmar,
-    Marc Aerts
+  doi: 10.1002/sim.9906
+- formatted: '<strong>Aiemjoy K</strong>, Seidman JC, Charles RC, Andrews JR. [Seroepidemiology
+    for enteric fever: Emerging approaches and opportunities](https://doi.org/10.1093/ofid/ofad021).
+    <em>Open Forum Infectious Diseases</em>. 2023. DOI: 10.1093/ofid/ofad021.'
   year: '2023'
-- author:
-  - family: Aiemjoy
-    given: Kristen
-  - family: Seidman
-    given: Jessica C
-  - family: Charles
-    given: Richelle C
-  - family: Andrews
-    given: Jason R
-  container-title: Open Forum Infectious Diseases
-  doi: 10.1093/ofid/ofad021
-  id: Aiemjoy_2023
-  issn: 2328-8957
-  issue: Supplement_1
-  issued: 2023-05
-  page: S21-S25
-  publisher: Oxford University Press (OUP)
   title: 'Seroepidemiology for enteric fever: Emerging approaches and opportunities'
-  title-short: Seroepidemiology for enteric fever
-  type: article-journal
-  url: http://dx.doi.org/10.1093/ofid/ofad021
-  volume: 10
-  journal-title: '*Open Forum Infectious Diseases*'
-  date: 2023-05
-  path: https://doi.org/10.1093/ofid/ofad021
-  highlight: 0
-  authors_formatted: '**Kristen Aiemjoy**, Jessica C Seidman, Richelle C Charles,
-    Jason R Andrews'
-  year: '2023'
-- author:
-  - family: Aiemjoy
-    given: Kristen
-  - family: Rumunu
-    given: John
-  - family: Hassen
-    given: Juma John
-  - family: Wiens
-    given: Kirsten E.
-  - family: Garrett
-    given: Denise
-  - family: Kamenskaya
-    given: Polina
-  - family: Harris
-    given: Jason B.
-  - family: Azman
-    given: Andrew S.
-  - family: Teunis
-    given: Peter
-  - family: Seidman
-    given: Jessica C.
-  - family: Wamala
-    given: Joseph F.
-  - family: Andrews
-    given: Jason R.
-  - family: Charles
-    given: Richelle C.
-  container-title: Emerging Infectious Diseases
-  doi: 10.3201/eid2811.220239
-  id: Aiemjoy_2022
-  issn: 1080-6059
-  issue: 11
-  issued: 2022-11
-  publisher: Centers for Disease Control and Prevention (CDC)
-  title: Seroincidence of enteric fever, juba, south sudan
-  type: article-journal
-  url: http://dx.doi.org/10.3201/eid2811.220239
-  volume: 28
-  journal-title: '*Emerging Infectious Diseases*'
-  date: 2022-11
-  path: https://doi.org/10.3201/eid2811.220239
-  highlight: 0
-  authors_formatted: '**Kristen Aiemjoy**, John Rumunu, Juma John Hassen, Kirsten
-    E. Wiens, Denise Garrett, Polina Kamenskaya, Jason B. Harris, Andrew S. Azman,
-    Peter Teunis, Jessica C. Seidman, Joseph F. Wamala, Jason R. Andrews, Richelle
-    C. Charles'
+  doi: 10.1093/ofid/ofad021
+- formatted: 'Garrett DO, Longley AT, <strong>Aiemjoy K</strong>, Yousafzai MT, Hemlock
+    C, Yu AT, Vaidya K, Tamrakar D, Saha S, Bogoch II, Date K, Saha S, Islam MS, Sayeed
+    KMI, Bern C, Shakoor S, Dehraj IF, Mehmood J, Sajib MSI, Islam M, Thobani RS,
+    Hotwani A, Rahman N, Irfan S, Naga SR, Memon AM, Pradhan S, Iqbal K, Shrestha
+    R, Rahman H, Hasan MM, Qazi SH, Kazi AM, Saddal NS, Jamal R, Hunzai MJ, Hossain
+    T, Marks F, Carter AS, Seidman JC, Qamar FN, Saha SK, Andrews JR, Luby SP. [Incidence
+    of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of
+    the surveillance for enteric fever in asia project](https://doi.org/10.1016/s2214-109x(22)00119-x).
+    <em>The Lancet Global Health</em>. 2022. DOI: 10.1016/s2214-109x(22)00119-x.'
   year: '2022'
-- author:
-  - family: Aiemjoy
-    given: Kristen
-  - family: Seidman
-    given: Jessica C
-  - family: Saha
-    given: Senjuti
-  - family: Munira
-    given: Sira Jam
-  - family: Islam Sajib
-    given: Mohammad Saiful
-  - family: Sium
-    given: Syed Muktadir Al
-  - family: Sarkar
-    given: Anik
-  - family: Alam
-    given: Nusrat
-  - family: Zahan
-    given: Farha Nusrat
-  - family: Kabir
-    given: Md Shakiul
-  - family: Tamrakar
-    given: Dipesh
-  - family: Vaidya
-    given: Krista
-  - family: Shrestha
-    given: Rajeev
-  - family: Shakya
-    given: Jivan
-  - family: Katuwal
-    given: Nishan
-  - family: Shrestha
-    given: Sony
-  - family: Yousafzai
-    given: Mohammad Tahir
-  - family: Iqbal
-    given: Junaid
-  - family: Dehraj
-    given: Irum Fatima
-  - family: Ladak
-    given: Yasmin
-  - family: Maria
-    given: Noshi
-  - family: Adnan
-    given: Mehreen
-  - family: Pervaiz
-    given: Sadaf
-  - family: Carter
-    given: Alice S
-  - family: Longley
-    given: Ashley T
-  - family: Fraser
-    given: Clare
-  - family: Ryan
-    given: Edward T
-  - family: Nodoushani
-    given: Ariana
-  - family: Fasano
-    given: Alessio
-  - family: Leonard
-    given: Maureen M
-  - family: Kenyon
-    given: Victoria
-  - family: Bogoch
-    given: Isaac I
-  - family: Jeon
-    given: Hyon Jin
-  - family: Haselbeck
-    given: Andrea
-  - family: Park
-    given: Se Eun
-  - family: Zellweger
-    given: Raphaël M
-  - family: Marks
-    given: Florian
-  - family: Owusu-Dabo
-    given: Ellis
-  - family: Adu-Sarkodie
-    given: Yaw
-  - family: Owusu
-    given: Michael
-  - family: Teunis
-    given: Peter
-  - family: Luby
-    given: Stephen P
-  - family: Garrett
-    given: Denise O
-  - family: Qamar
-    given: Farah Naz
-  - family: Saha
-    given: Samir K
-  - family: Charles
-    given: Richelle C
-  - family: Andrews
-    given: Jason R
-  container-title: The Lancet Microbe
-  doi: 10.1016/s2666-5247(22)00114-8
-  id: Aiemjoy_2022
-  issn: 2666-5247
-  issue: 8
-  issued: 2022-08
-  page: e578-e587
-  publisher: Elsevier BV
+  title: 'Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan:
+    Results of the surveillance for enteric fever in asia project'
+  doi: 10.1016/s2214-109x(22)00119-x
+- formatted: '<strong>Aiemjoy K</strong>, Rumunu J, Hassen JJ, Wiens KE, Garrett D,
+    Kamenskaya P, Harris JB, Azman AS, Teunis P, Seidman JC, Wamala JF, Andrews JR,
+    Charles RC. [Seroincidence of enteric fever, juba, south sudan](https://doi.org/10.3201/eid2811.220239).
+    <em>Emerging Infectious Diseases</em>. 2022. DOI: 10.3201/eid2811.220239.'
+  year: '2022'
+  title: Seroincidence of enteric fever, juba, south sudan
+  doi: 10.3201/eid2811.220239
+- formatted: '<strong>Aiemjoy K</strong>, Seidman JC, Saha S, Munira SJ, Islam Sajib
+    MS, Sium SMA, Sarkar A, Alam N, Zahan FN, Kabir MS, Tamrakar D, Vaidya K, Shrestha
+    R, Shakya J, Katuwal N, Shrestha S, Yousafzai MT, Iqbal J, Dehraj IF, Ladak Y,
+    Maria N, Adnan M, Pervaiz S, Carter AS, Longley AT, Fraser C, Ryan ET, Nodoushani
+    A, Fasano A, Leonard MM, Kenyon V, Bogoch II, Jeon HJ, Haselbeck A, Park SE, Zellweger
+    RM, Marks F, Owusu-Dabo E, Adu-Sarkodie Y, Owusu M, Teunis P, Luby SP, Garrett
+    DO, Qamar FN, Saha SK, Charles RC, Andrews JR. [Estimating typhoid incidence from
+    community-based serosurveys: A multicohort study](https://doi.org/10.1016/s2666-5247(22)00114-8).
+    <em>The Lancet Microbe</em>. 2022. DOI: 10.1016/s2666-5247(22)00114-8.'
+  year: '2022'
   title: 'Estimating typhoid incidence from community-based serosurveys: A multicohort
     study'
-  title-short: Estimating typhoid incidence from community-based serosurveys
-  type: article-journal
-  url: http://dx.doi.org/10.1016/S2666-5247(22)00114-8
-  volume: 3
-  journal-title: '*The Lancet Microbe*'
-  date: 2022-08
-  path: https://doi.org/10.1016/s2666-5247(22)00114-8
-  highlight: 0
-  authors_formatted: '**Kristen Aiemjoy**, Jessica C Seidman, Senjuti Saha, Sira Jam
-    Munira, Mohammad Saiful Islam Sajib, Syed Muktadir Al Sium, Anik Sarkar, Nusrat
-    Alam, Farha Nusrat Zahan, Md Shakiul Kabir, Dipesh Tamrakar, Krista Vaidya, Rajeev
-    Shrestha, Jivan Shakya, Nishan Katuwal, Sony Shrestha, Mohammad Tahir Yousafzai,
-    Junaid Iqbal, Irum Fatima Dehraj, Yasmin Ladak, Noshi Maria, Mehreen Adnan, Sadaf
-    Pervaiz, Alice S Carter, Ashley T Longley, Clare Fraser, Edward T Ryan, Ariana
-    Nodoushani, Alessio Fasano, Maureen M Leonard, Victoria Kenyon, Isaac I Bogoch,
-    Hyon Jin Jeon, Andrea Haselbeck, Se Eun Park, Raphaël M Zellweger, Florian Marks,
-    Ellis Owusu-Dabo, Yaw Adu-Sarkodie, Michael Owusu, Peter Teunis, Stephen P Luby,
-    Denise O Garrett, Farah Naz Qamar, Samir K Saha, Richelle C Charles, Jason R Andrews'
-  year: '2022'
-- author:
-  - family: Aiemjoy
-    given: Kristen
-  - family: Aragie
-    given: Solomon
-  - family: Wittberg
-    given: Dionna M.
-  - family: Tadesse
-    given: Zerihun
-  - family: Callahan
-    given: E. Kelly
-  - family: Gwyn
-    given: Sarah
-  - family: Martin
-    given: Diana
-  - family: Keenan
-    given: Jeremy D.
-  - family: Arnold
-    given: Benjamin F.
-  container-title: PLOS Neglected Tropical Diseases
-  doi: 10.1371/journal.pntd.0008647
-  editor:
-  - family: Ngondi
-    given: Jeremiah M.
-  id: Aiemjoy_2020
-  issn: 1935-2735
-  issue: 9
-  issued: 2020-09
-  page: e0008647
-  publisher: Public Library of Science (PLoS)
+  doi: 10.1016/s2666-5247(22)00114-8
+- formatted: '<strong>Aiemjoy K</strong>, Aragie S, Wittberg DM, Tadesse Z, Callahan
+    EK, Gwyn S, Martin D, Keenan JD, Arnold BF. [Seroprevalence of antibodies against
+    chlamydia trachomatis and enteropathogens and distance to the nearest water source
+    among young children in the amhara region of ethiopia](https://doi.org/10.1371/journal.pntd.0008647).
+    <em>PLOS Neglected Tropical Diseases</em>. 2020. DOI: 10.1371/journal.pntd.0008647.'
+  year: '2020'
   title: Seroprevalence of antibodies against chlamydia trachomatis and enteropathogens
     and distance to the nearest water source among young children in the amhara region
     of ethiopia
-  type: article-journal
-  url: http://dx.doi.org/10.1371/journal.pntd.0008647
-  volume: 14
-  journal-title: '*PLOS Neglected Tropical Diseases*'
-  date: 2020-09
-  path: https://doi.org/10.1371/journal.pntd.0008647
-  highlight: 0
-  authors_formatted: '**Kristen Aiemjoy**, Solomon Aragie, Dionna M. Wittberg, Zerihun
-    Tadesse, E. Kelly Callahan, Sarah Gwyn, Diana Martin, Jeremy D. Keenan, Benjamin
-    F. Arnold'
-  year: '2020'
+  doi: 10.1371/journal.pntd.0008647
