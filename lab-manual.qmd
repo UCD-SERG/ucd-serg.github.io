@@ -628,6 +628,4 @@ This lab manual was inspired by several excellent examples from other research g
 
 ---
 
-**Last updated**: `r Sys.Date()`
-
 **Questions or suggestions?** This is a living document. Contact us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu) with feedback or suggestions for improvement.
