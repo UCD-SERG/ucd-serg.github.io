@@ -7,6 +7,7 @@ This script fetches publications from the NCBI Bibliography API and formats them
 import json
 import urllib.request
 import urllib.error
+import urllib.parse
 import sys
 from datetime import datetime
 
@@ -88,14 +89,7 @@ def fetch_pubmed_details(pmids):
         print(f"Error fetching publication details: {e}", file=sys.stderr)
         return None
 
-def format_for_yaml(publications_data):
-    """
-    Format publication data for YAML output compatible with Quarto
-    This is a placeholder - actual implementation depends on the data structure
-    """
-    # This would need to be implemented based on the actual data structure
-    # returned from NCBI
-    pass
+
 
 if __name__ == "__main__":
     print("Fetching publications from NCBI...", file=sys.stderr)
