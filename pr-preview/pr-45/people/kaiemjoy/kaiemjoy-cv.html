@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-author','listing-doi','listing-id','listing-issued','listing-publisher','listing-title','listing-type','listing-url','listing-date','listing-highlight','listing-categories','listing-authors_formatted','listing-year','listing-title-short','listing-container-title','listing-issn','listing-issue','listing-volume','listing-journal-title','listing-editor','listing-page',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-formatted','listing-year','listing-title','listing-doi',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-author","listing-doi","listing-id","listing-issued","listing-publisher","listing-title","listing-type","listing-url","listing-date","listing-highlight","listing-categories","listing-authors_formatted","listing-year","listing-title-short","listing-container-title","listing-issn","listing-issue","listing-volume","listing-journal-title","listing-editor","listing-page"],
+      searchColumns: ["listing-formatted","listing-year","listing-title","listing-doi"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -356,9 +356,24 @@ window.Quarto = {
   <li><a href="#education" id="toc-education" class="nav-link" data-scroll-target="#education">Education</a></li>
   <li><a href="#research-interests" id="toc-research-interests" class="nav-link" data-scroll-target="#research-interests">Research Interests</a></li>
   <li><a href="#peer-reviewed-publications" id="toc-peer-reviewed-publications" class="nav-link" data-scroll-target="#peer-reviewed-publications">Peer-Reviewed Publications</a></li>
-  <li><a href="#selected-honors-and-awards" id="toc-selected-honors-and-awards" class="nav-link" data-scroll-target="#selected-honors-and-awards">Selected Honors and Awards</a></li>
-  <li><a href="#professional-service" id="toc-professional-service" class="nav-link" data-scroll-target="#professional-service">Professional Service</a></li>
-  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching">Teaching</a></li>
+  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations">Presentations</a>
+  <ul class="collapse">
+  <li><a href="#invited-talks" id="toc-invited-talks" class="nav-link" data-scroll-target="#invited-talks">Invited Talks</a></li>
+  <li><a href="#conference-presentations" id="toc-conference-presentations" class="nav-link" data-scroll-target="#conference-presentations">Conference Presentations</a></li>
+  </ul></li>
+  <li><a href="#honors-and-awards" id="toc-honors-and-awards" class="nav-link" data-scroll-target="#honors-and-awards">Honors and Awards</a></li>
+  <li><a href="#professional-service" id="toc-professional-service" class="nav-link" data-scroll-target="#professional-service">Professional Service</a>
+  <ul class="collapse">
+  <li><a href="#editorial-boards" id="toc-editorial-boards" class="nav-link" data-scroll-target="#editorial-boards">Editorial Boards</a></li>
+  <li><a href="#peer-review" id="toc-peer-review" class="nav-link" data-scroll-target="#peer-review">Peer Review</a></li>
+  <li><a href="#committee-memberships" id="toc-committee-memberships" class="nav-link" data-scroll-target="#committee-memberships">Committee Memberships</a></li>
+  </ul></li>
+  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching">Teaching</a>
+  <ul class="collapse">
+  <li><a href="#courses-taught" id="toc-courses-taught" class="nav-link" data-scroll-target="#courses-taught">Courses Taught</a></li>
+  <li><a href="#student-mentorship" id="toc-student-mentorship" class="nav-link" data-scroll-target="#student-mentorship">Student Mentorship</a></li>
+  </ul></li>
+  <li><a href="#grants-and-funding" id="toc-grants-and-funding" class="nav-link" data-scroll-target="#grants-and-funding">Grants and Funding</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/people/kaiemjoy/kaiemjoy-cv.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/people/kaiemjoy/kaiemjoy-cv.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
 </nav>
@@ -420,7 +435,8 @@ Stanford University</p>
 <p><strong>MS in Epidemiology</strong> (2015)<br>
 Stanford University</p>
 <p><strong>BS in Human Biology</strong> (2010)<br>
-Stanford University —</p>
+Stanford University</p>
+<hr>
 </section>
 <section id="research-interests" class="level2">
 <h2 class="anchored" data-anchor-id="research-interests">Research Interests</h2>
@@ -439,409 +455,129 @@ Stanford University —</p>
 <section id="peer-reviewed-publications" class="level2">
 <h2 class="anchored" data-anchor-id="peer-reviewed-publications">Peer-Reviewed Publications</h2>
 <div id="listing-cv-publications" class="quarto-listing quarto-listing-container-custom">
-<div class="quarto-listing quarto-listing-container-default">
-  <div class="list quarto-listing-default">
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Peter F. M. Teunis, Jessica C. Seidman, Dipesh Tamrakar, Farah Naz Qamar, Samir K. Saha, Denise O. Garrett, Jason R. Andrews, Richelle C. Charles, **Kristen Aiemjoy** (2026).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1016/j.epidem.2025.100874">Seroresponse to repeated infections with salmonella enterica typhi and paratyphi a</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*Epidemics*</em>.
-          
-          
-            DOI: 10.1016/j.epidem.2025.100874
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Everlyn Kamau, Pearl Anne Ante-Testard, Sarah Gwyn, Seth Blumberg, Zeinab Abdalla, **Kristen Aiemjoy**, Abdou Amza, Solomon Aragie, Ahmed M. Arzika, Marcel S. Awoussi, Robin L. Bailey, Robert Butcher, E. Kelly Callahan, David Chaima, Adisu Abebe Dawed, Martha Idalí Saboyá Díaz, Abou-Bakr Sidik Domingo, Chris Drakeley, Belgesa E. Elshafie, Paul M. Emerson, Kimberly Fornace, Katherine Gass, E. Brook Goodhew, Jaouad Hammou, Emma M. Harding-Esch, PJ Hooper, Boubacar Kadri, Khumbo Kalua, Sarjo Kanyi, Mabula Kasubi, Amir B. Kello, Robert Ko, Patrick J. Lammie, Andres G. Lescano, Ramatou Maliki, Michael Peter Masika, Stephanie J. Migchelsen, Beido Nassirou, John M. Nesemann, Nishanth Parameswaran, Willie Pomat, Kristen K. Renneker, Chrissy Roberts, Prudence Rymil, Eshetu Sata, Laura Senyonjo, Fikre Seife, Ansumana Sillah, Oliver Sokana, Ariktha Srivathsan, Zerihun Tadesse, Fasihah Taleo, Emma Michelle Taylor, Rabebe Tekeraoi, Kwamy Togbey, Sheila K. West, Karana Wickens, Timothy William, Dionna M. Wittberg, Dorothy Yeboah-Manu, Mohammed Youbi, Taye Zeru, Jeremy D. Keenan, Thomas M. Lietman, Anthony W. Solomon, Scott D. Nash, Diana L. Martin, Benjamin F. Arnold (2025).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1038/s41467-025-60581-z">Characterizing trachoma elimination using serology</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*Nature Communications*</em>.
-          
-          
-            DOI: 10.1038/s41467-025-60581-z
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Natnaree Saiprom, Supichaya Nimnuan-ngam, Rungnapa Phunpang, Samuel Hisaji Schildhauer, Ezra Morrison, Sarunporn Tandhavanant, Arjun Chandna, Sineenart Sengyee, T. Eoin West, Mary N. Burtnick, Paul J. Brett, Narisara Chantratita, **Kristen Aiemjoy** (2025).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.2139/ssrn.5312903">Longitudinal profiling of antibody responses to burkholderia pseudomallei: Implications for diagnosis and surveillance</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-          
-            DOI: 10.2139/ssrn.5312903
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Jessica C. Seidman, **Kristen Aiemjoy**, Mehreen Adnan, Irum Fatima Dehraj, Junaid Iqbal, Khalid Iqbal, Seema Irfan, Nahidul Islam, Md. Shakiul Kabir, Nishan Katuwal, Noshi Maria, Muhammad Ashraf Memon, Sira Jam Munira, Shiva Ram Naga, Sailesh Pradhan, Anik Sarkar, Rajeev Shrestha, Sony Shrestha, Syed Muktadir Al Sium, Krista Vaidya, Douglas Ezra Morrison, Alice S. Carter, Senjuti Saha, Dipesh Tamrakar, Mohammad Tahir Yousafzai, Denise O. Garrett, Stephen P. Luby, Farah Naz Qamar, Samir Saha, Jason R. Andrews, Richelle C. Charles (2025).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1101/2025.06.20.25329792">Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide IgA to discriminate enteric fever from other febrile illnesses in south asia</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-          
-            DOI: 10.1101/2025.06.20.25329792
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Aslam Khan, Polina Kamenskaya, Izabela Rezende, Francis Mutuku, Bryson Ndenga, Zainab Jembe, Priscilla Maina, Philip Chebii, Charles Ronga, Victoria Okuta, Denise O. Garrett, Donal Bisanzio, **Kristen Aiemjoy**, Jason R. Andrews, A. Desiree LaBeaud, Richelle Charles (2025).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1101/2025.06.24.25330223">Seroincidence rate of typhoidal Salmonella in children in kenya</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-          
-            DOI: 10.1101/2025.06.24.25330223
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Dipesh Tamrakar, Shivram Naga, Esther Jung, Basudha Shrestha, Pratibha Bista Roka, Rabin Sharma Pokharel, Sabin Bikram Shah, Arjya Tara Bajracharya, Surendra K. Mahadup, Nishan Katuwal, Kate Doyle, Jessica C. Seidman, Alice S. Carter, Stephen P. Luby, Isaac I. Bogoch, **Kristen Aiemjoy**, Denise O. Garrett, Rajeev Shrestha, Jason R. Andrews (2025).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1101/2025.06.17.25329748">Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction on typhoid fever in nepal</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-          
-            DOI: 10.1101/2025.06.17.25329748
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Kristina W. Lai, Chris Orwa, Jessica C. Seidman, Denise O. Garrett, Samir K. Saha, Dipesh Tamrakar, Farah Naz Qamar, Richelle C. Charles, Jason R. Andrews, Peter Teunis, **Kristen Aiemjoy**, Douglas Ezra Morrison (2025).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1101/2025.06.04.25328941">Serocalculator, an r package for estimating seroincidence from cross-sectional serological data</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-          
-            DOI: 10.1101/2025.06.04.25328941
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Dilip Abraham, Lalithambigai Kathiresan, Midhun Sasikumar, **Kristen Aiemjoy**, Richelle C. Charles, Dilesh Kumar, Rajan Srinivasan, Catherine Troman, Elizabeth Gray, Christopher B. Uzzell, Jacob John, Balaji Veeraraghavan, Nicholas C. Grassly, Venkata Raghava Mohan (2025).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1371/journal.pntd.0012373">Wastewater surveillance for salmonella typhi and its association with seroincidence of enteric fever in vellore, india</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*PLOS Neglected Tropical Diseases*</em>.
-          
-          
-            DOI: 10.1371/journal.pntd.0012373
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Nishan Katuwal, Melina Thapa, Sony Shrestha, Krista Vaidya, Isaac I. Bogoch, Rajeev Shrestha, Jason R. Andrews, Dipesh Tamrakar, **Kristen Aiemjoy** (2024).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1371/journal.pntd.0012375">Hepatitis e virus in the kathmandu valley: Insights from a representative longitudinal serosurvey</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*PLOS Neglected Tropical Diseases*</em>.
-          
-          
-            DOI: 10.1371/journal.pntd.0012375
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            **Kristen Aiemjoy**, Nishan Katuwal, Krista Vaidya, Sony Shrestha, Melina Thapa, Peter Teunis, Isaac I. Bogoch, Paul Trowbridge, Stuart D. Blacksell, Daniel H. Paris, Tri Wangrangsimakul, George M. Varghese, Richard J. Maude, Dipesh Tamrakar, Jason R. Andrews (2024).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.4269/ajtmh.23-0475">Estimating the seroincidence of scrub typhus using antibody dynamics after infection</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*The American Journal of Tropical Medicine and Hygiene*</em>.
-          
-          
-            DOI: 10.4269/ajtmh.23-0475
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Panita Looareesuwan, **Kristen Aiemjoy**, Sakarn Charoensakulchai, Janjira Thaipadungpanit, Jantana Wongsantichon, Ampai Tanganuchitcharnchai, Artharee Rungrojn, Stuart D Blacksell, Wasin Matsee (2023).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1093/jtm/taad143">Diagnostic challenges and antibody kinetics in a paediatric traveller with scrub typhus</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*Journal of Travel Medicine*</em>.
-          
-          
-            DOI: 10.1093/jtm/taad143
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Peter F. M. Teunis, Yuke Wang, **Kristen Aiemjoy**, Mirjam Kretzschmar, Marc Aerts (2023).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1002/sim.9906">Estimating seroconversion rates accounting for repeated infections by approximate bayesian computation</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*Statistics in Medicine*</em>.
-          
-          
-            DOI: 10.1002/sim.9906
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            **Kristen Aiemjoy**, Jessica C Seidman, Richelle C Charles, Jason R Andrews (2023).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1093/ofid/ofad021">Seroepidemiology for enteric fever: Emerging approaches and opportunities</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*Open Forum Infectious Diseases*</em>.
-          
-          
-            DOI: 10.1093/ofid/ofad021
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            **Kristen Aiemjoy**, John Rumunu, Juma John Hassen, Kirsten E. Wiens, Denise Garrett, Polina Kamenskaya, Jason B. Harris, Andrew S. Azman, Peter Teunis, Jessica C. Seidman, Joseph F. Wamala, Jason R. Andrews, Richelle C. Charles (2022).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.3201/eid2811.220239">Seroincidence of enteric fever, juba, south sudan</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*Emerging Infectious Diseases*</em>.
-          
-          
-            DOI: 10.3201/eid2811.220239
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            **Kristen Aiemjoy**, Jessica C Seidman, Senjuti Saha, Sira Jam Munira, Mohammad Saiful Islam Sajib, Syed Muktadir Al Sium, Anik Sarkar, Nusrat Alam, Farha Nusrat Zahan, Md Shakiul Kabir, Dipesh Tamrakar, Krista Vaidya, Rajeev Shrestha, Jivan Shakya, Nishan Katuwal, Sony Shrestha, Mohammad Tahir Yousafzai, Junaid Iqbal, Irum Fatima Dehraj, Yasmin Ladak, Noshi Maria, Mehreen Adnan, Sadaf Pervaiz, Alice S Carter, Ashley T Longley, Clare Fraser, Edward T Ryan, Ariana Nodoushani, Alessio Fasano, Maureen M Leonard, Victoria Kenyon, Isaac I Bogoch, Hyon Jin Jeon, Andrea Haselbeck, Se Eun Park, Raphaël M Zellweger, Florian Marks, Ellis Owusu-Dabo, Yaw Adu-Sarkodie, Michael Owusu, Peter Teunis, Stephen P Luby, Denise O Garrett, Farah Naz Qamar, Samir K Saha, Richelle C Charles, Jason R Andrews (2022).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1016/s2666-5247(22)00114-8">Estimating typhoid incidence from community-based serosurveys: A multicohort study</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*The Lancet Microbe*</em>.
-          
-          
-            DOI: 10.1016/s2666-5247(22)00114-8
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            Denise O Garrett, Ashley T Longley, **Kristen Aiemjoy**, Mohammad T Yousafzai, Caitlin Hemlock, Alexander T Yu, Krista Vaidya, Dipesh Tamrakar, Shampa Saha, Isaac I Bogoch, Kashmira Date, Senjuti Saha, Mohammad Shahidul Islam, K M Ishtiaque Sayeed, Caryn Bern, Sadia Shakoor, Irum F Dehraj, Junaid Mehmood, Mohammad S I Sajib, Maksuda Islam, Rozina S Thobani, Aneeta Hotwani, Najeeb Rahman, Seema Irfan, Shiva R Naga, Ashraf M Memon, Sailesh Pradhan, Khalid Iqbal, Rajeev Shrestha, Hafizur Rahman, Md Mahmudul Hasan, Saqib H Qazi, Abdul M Kazi, Nasir S Saddal, Raza Jamal, Mohammed J Hunzai, Tanvir Hossain, Florian Marks, Alice S Carter, Jessica C Seidman, Farah N Qamar, Samir K Saha, Jason R Andrews, Stephen P Luby (2022).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1016/s2214-109x(22)00119-x">Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*The Lancet Global Health*</em>.
-          
-          
-            DOI: 10.1016/s2214-109x(22)00119-x
-          
-        </p>
-      </div>
-    </div>
-    
-    <div class="quarto-post" style="margin-bottom: 1.5em;">
-      <div class="body">
-        <p class="pub-authors" style="margin-bottom: 0.3em;">
-          
-            **Kristen Aiemjoy**, Solomon Aragie, Dionna M. Wittberg, Zerihun Tadesse, E. Kelly Callahan, Sarah Gwyn, Diana Martin, Jeremy D. Keenan, Benjamin F. Arnold (2020).
-          
-        </p>
-        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
-          
-            <a href="https://doi.org/10.1371/journal.pntd.0008647">Seroprevalence of antibodies against chlamydia trachomatis and enteropathogens and distance to the nearest water source among young children in the amhara region of ethiopia</a>
-          
-        </p>
-        <p class="pub-journal" style="margin-bottom: 0;">
-          
-            <em>*PLOS Neglected Tropical Diseases*</em>.
-          
-          
-            DOI: 10.1371/journal.pntd.0008647
-          
-        </p>
-      </div>
-    </div>
-    
+<div class="publications-list">
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Teunis PFM, Seidman JC, Tamrakar D, Qamar FN, Saha SK, Garrett DO, Andrews JR, Charles RC, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;. [Seroresponse to repeated infections with salmonella enterica typhi and paratyphi a](https://doi.org/10.1016/j.epidem.2025.100874). &lt;em&gt;Epidemics&lt;/em&gt;. 2026. DOI: 10.1016/j.epidem.2025.100874.</p>
   </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Saiprom N, Nimnuan-ngam S, Phunpang R, Schildhauer SH, Morrison E, Tandhavanant S, Chandna A, Sengyee S, West TE, Burtnick MN, Brett PJ, Chantratita N, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;. [Longitudinal profiling of antibody responses to burkholderia pseudomallei: Implications for diagnosis and surveillance](https://doi.org/10.2139/ssrn.5312903). 2025-06-23. DOI: 10.2139/ssrn.5312903.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Seidman JC, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Adnan M, Dehraj IF, Iqbal J, Iqbal K, Irfan S, Islam N, Kabir MS, Katuwal N, Maria N, Memon MA, Munira SJ, Naga SR, Pradhan S, Sarkar A, Shrestha R, Shrestha S, Al Sium SM, Vaidya K, Morrison DE, Carter AS, Saha S, Tamrakar D, Yousafzai MT, Garrett DO, Luby SP, Qamar FN, Saha S, Andrews JR, Charles RC. [Evaluating the accuracy of Salmonella Typhi hemolysin e and lipopolysaccharide IgA to discriminate enteric fever from other febrile illnesses in south asia](https://doi.org/10.1101/2025.06.20.25329792). 2025. DOI: 10.1101/2025.06.20.25329792.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Khan A, Kamenskaya P, Rezende I, Mutuku F, Ndenga B, Jembe Z, Maina P, Chebii P, Ronga C, Okuta V, Garrett DO, Bisanzio D, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Andrews JR, LaBeaud AD, Charles R. [Seroincidence rate of typhoidal Salmonella in children in kenya](https://doi.org/10.1101/2025.06.24.25330223). 2025. DOI: 10.1101/2025.06.24.25330223.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Tamrakar D, Naga S, Jung E, Shrestha B, Roka PB, Pokharel RS, Shah SB, Bajracharya AT, Mahadup SK, Katuwal N, Doyle K, Seidman JC, Carter AS, Luby SP, Bogoch II, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Garrett DO, Shrestha R, Andrews JR. [Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction on typhoid fever in nepal](https://doi.org/10.1101/2025.06.17.25329748). 2025. DOI: 10.1101/2025.06.17.25329748.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Lai KW, Orwa C, Seidman JC, Garrett DO, Saha SK, Tamrakar D, Qamar FN, Charles RC, Andrews JR, Teunis P, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Morrison DE. [Serocalculator, an r package for estimating seroincidence from cross-sectional serological data](https://doi.org/10.1101/2025.06.04.25328941). 2025. DOI: 10.1101/2025.06.04.25328941.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Kamau E, Ante-Testard PA, Gwyn S, Blumberg S, Abdalla Z, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Amza A, Aragie S, Arzika AM, Awoussi MS, Bailey RL, Butcher R, Callahan EK, Chaima D, Dawed AA, Díaz MIS, Domingo AS, Drakeley C, Elshafie BE, Emerson PM, Fornace K, Gass K, Goodhew EB, Hammou J, Harding-Esch EM, Hooper P, Kadri B, Kalua K, Kanyi S, Kasubi M, Kello AB, Ko R, Lammie PJ, Lescano AG, Maliki R, Masika MP, Migchelsen SJ, Nassirou B, Nesemann JM, Parameswaran N, Pomat W, Renneker KK, Roberts C, Rymil P, Sata E, Senyonjo L, Seife F, Sillah A, Sokana O, Srivathsan A, Tadesse Z, Taleo F, Taylor EM, Tekeraoi R, Togbey K, West SK, Wickens K, William T, Wittberg DM, Yeboah-Manu D, Youbi M, Zeru T, Keenan JD, Lietman TM, Solomon AW, Nash SD, Martin DL, Arnold BF. [Characterizing trachoma elimination using serology](https://doi.org/10.1038/s41467-025-60581-z). &lt;em&gt;Nature Communications&lt;/em&gt;. 2025. DOI: 10.1038/s41467-025-60581-z.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Abraham D, Kathiresan L, Sasikumar M, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Charles RC, Kumar D, Srinivasan R, Troman C, Gray E, Uzzell CB, John J, Veeraraghavan B, Grassly NC, Mohan VR. [Wastewater surveillance for salmonella typhi and its association with seroincidence of enteric fever in vellore, india](https://doi.org/10.1371/journal.pntd.0012373). &lt;em&gt;PLOS Neglected Tropical Diseases&lt;/em&gt;. 2025. DOI: 10.1371/journal.pntd.0012373.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Katuwal N, Thapa M, Shrestha S, Vaidya K, Bogoch II, Shrestha R, Andrews JR, Tamrakar D, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;. [Hepatitis e virus in the kathmandu valley: Insights from a representative longitudinal serosurvey](https://doi.org/10.1371/journal.pntd.0012375). &lt;em&gt;PLOS Neglected Tropical Diseases&lt;/em&gt;. 2024. DOI: 10.1371/journal.pntd.0012375.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">&lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Katuwal N, Vaidya K, Shrestha S, Thapa M, Teunis P, Bogoch II, Trowbridge P, Blacksell SD, Paris DH, Wangrangsimakul T, Varghese GM, Maude RJ, Tamrakar D, Andrews JR. [Estimating the seroincidence of scrub typhus using antibody dynamics after infection](https://doi.org/10.4269/ajtmh.23-0475). &lt;em&gt;The American Journal of Tropical Medicine and Hygiene&lt;/em&gt;. 2024. DOI: 10.4269/ajtmh.23-0475.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Looareesuwan P, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Charoensakulchai S, Thaipadungpanit J, Wongsantichon J, Tanganuchitcharnchai A, Rungrojn A, Blacksell SD, Matsee W. [Diagnostic challenges and antibody kinetics in a paediatric traveller with scrub typhus](https://doi.org/10.1093/jtm/taad143). &lt;em&gt;Journal of Travel Medicine&lt;/em&gt;. 2023. DOI: 10.1093/jtm/taad143.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Teunis PFM, Wang Y, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Kretzschmar M, Aerts M. [Estimating seroconversion rates accounting for repeated infections by approximate bayesian computation](https://doi.org/10.1002/sim.9906). &lt;em&gt;Statistics in Medicine&lt;/em&gt;. 2023. DOI: 10.1002/sim.9906.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">&lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Seidman JC, Charles RC, Andrews JR. [Seroepidemiology for enteric fever: Emerging approaches and opportunities](https://doi.org/10.1093/ofid/ofad021). &lt;em&gt;Open Forum Infectious Diseases&lt;/em&gt;. 2023. DOI: 10.1093/ofid/ofad021.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">Garrett DO, Longley AT, &lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Yousafzai MT, Hemlock C, Yu AT, Vaidya K, Tamrakar D, Saha S, Bogoch II, Date K, Saha S, Islam MS, Sayeed KMI, Bern C, Shakoor S, Dehraj IF, Mehmood J, Sajib MSI, Islam M, Thobani RS, Hotwani A, Rahman N, Irfan S, Naga SR, Memon AM, Pradhan S, Iqbal K, Shrestha R, Rahman H, Hasan MM, Qazi SH, Kazi AM, Saddal NS, Jamal R, Hunzai MJ, Hossain T, Marks F, Carter AS, Seidman JC, Qamar FN, Saha SK, Andrews JR, Luby SP. [Incidence of typhoid and paratyphoid fever in bangladesh, nepal, and pakistan: Results of the surveillance for enteric fever in asia project](https://doi.org/10.1016/s2214-109x(22)00119-x). &lt;em&gt;The Lancet Global Health&lt;/em&gt;. 2022. DOI: 10.1016/s2214-109x(22)00119-x.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">&lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Rumunu J, Hassen JJ, Wiens KE, Garrett D, Kamenskaya P, Harris JB, Azman AS, Teunis P, Seidman JC, Wamala JF, Andrews JR, Charles RC. [Seroincidence of enteric fever, juba, south sudan](https://doi.org/10.3201/eid2811.220239). &lt;em&gt;Emerging Infectious Diseases&lt;/em&gt;. 2022. DOI: 10.3201/eid2811.220239.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">&lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Seidman JC, Saha S, Munira SJ, Islam Sajib MS, Sium SMA, Sarkar A, Alam N, Zahan FN, Kabir MS, Tamrakar D, Vaidya K, Shrestha R, Shakya J, Katuwal N, Shrestha S, Yousafzai MT, Iqbal J, Dehraj IF, Ladak Y, Maria N, Adnan M, Pervaiz S, Carter AS, Longley AT, Fraser C, Ryan ET, Nodoushani A, Fasano A, Leonard MM, Kenyon V, Bogoch II, Jeon HJ, Haselbeck A, Park SE, Zellweger RM, Marks F, Owusu-Dabo E, Adu-Sarkodie Y, Owusu M, Teunis P, Luby SP, Garrett DO, Qamar FN, Saha SK, Charles RC, Andrews JR. [Estimating typhoid incidence from community-based serosurveys: A multicohort study](https://doi.org/10.1016/s2666-5247(22)00114-8). &lt;em&gt;The Lancet Microbe&lt;/em&gt;. 2022. DOI: 10.1016/s2666-5247(22)00114-8.</p>
+  </div>
+  
+  <div class="publication-entry" style="margin-bottom: 1em;">
+    <p style="margin: 0;">&lt;strong&gt;Aiemjoy K&lt;/strong&gt;, Aragie S, Wittberg DM, Tadesse Z, Callahan EK, Gwyn S, Martin D, Keenan JD, Arnold BF. [Seroprevalence of antibodies against chlamydia trachomatis and enteropathogens and distance to the nearest water source among young children in the amhara region of ethiopia](https://doi.org/10.1371/journal.pntd.0008647). &lt;em&gt;PLOS Neglected Tropical Diseases&lt;/em&gt;. 2020. DOI: 10.1371/journal.pntd.0008647.</p>
+  </div>
+  
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 <hr>
 </section>
-<section id="selected-honors-and-awards" class="level2">
-<h2 class="anchored" data-anchor-id="selected-honors-and-awards">Selected Honors and Awards</h2>
-<p><em>This section can be updated with specific awards and honors</em></p>
+<section id="presentations" class="level2">
+<h2 class="anchored" data-anchor-id="presentations">Presentations</h2>
+<section id="invited-talks" class="level3">
+<h3 class="anchored" data-anchor-id="invited-talks">Invited Talks</h3>
+<p><em>To be updated with presentation history</em></p>
+</section>
+<section id="conference-presentations" class="level3">
+<h3 class="anchored" data-anchor-id="conference-presentations">Conference Presentations</h3>
+<p><em>To be updated with conference presentations</em></p>
+<hr>
+</section>
+</section>
+<section id="honors-and-awards" class="level2">
+<h2 class="anchored" data-anchor-id="honors-and-awards">Honors and Awards</h2>
+<p><em>To be updated with specific awards and honors</em></p>
 <hr>
 </section>
 <section id="professional-service" class="level2">
 <h2 class="anchored" data-anchor-id="professional-service">Professional Service</h2>
-<p><em>This section can be updated with committee memberships, editorial boards, and other service activities</em></p>
+<section id="editorial-boards" class="level3">
+<h3 class="anchored" data-anchor-id="editorial-boards">Editorial Boards</h3>
+<p><em>To be updated with editorial board memberships</em></p>
+</section>
+<section id="peer-review" class="level3">
+<h3 class="anchored" data-anchor-id="peer-review">Peer Review</h3>
+<p><em>To be updated with peer review activities</em></p>
+</section>
+<section id="committee-memberships" class="level3">
+<h3 class="anchored" data-anchor-id="committee-memberships">Committee Memberships</h3>
+<p><em>To be updated with committee memberships and service activities</em></p>
 <hr>
+</section>
 </section>
 <section id="teaching" class="level2">
 <h2 class="anchored" data-anchor-id="teaching">Teaching</h2>
-<p><em>This section can be updated with courses taught and student mentorship</em></p>
+<section id="courses-taught" class="level3">
+<h3 class="anchored" data-anchor-id="courses-taught">Courses Taught</h3>
+<p><em>To be updated with courses taught</em></p>
+</section>
+<section id="student-mentorship" class="level3">
+<h3 class="anchored" data-anchor-id="student-mentorship">Student Mentorship</h3>
+<p><em>To be updated with student mentorship activities</em></p>
+<hr>
+</section>
+</section>
+<section id="grants-and-funding" class="level2">
+<h2 class="anchored" data-anchor-id="grants-and-funding">Grants and Funding</h2>
+<p><em>Grants section excluded as requested</em></p>
 <hr>
 <div style="font-size: 0.9em; font-style: italic;">
 <p>Last updated: January 2025</p>
