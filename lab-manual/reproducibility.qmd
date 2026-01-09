@@ -1,0 +1,75 @@
+---
+title: "Reproducibility"
+---
+
+# Reproducibility
+
+## Commitment to Reproducibility
+
+Our lab adopts rigorous practices to maximize the reproducibility of our work:
+
+1. Design studies with appropriate methodology and adherence to best practices in epidemiology and biostatistics
+2. Register study protocols when appropriate
+3. Write and register pre-analysis plans for confirmatory research
+4. Create reproducible computational workflows
+5. Process and analyze data with internal replication and masking when possible
+6. Use reporting checklists with manuscripts
+7. Publish preprints
+8. Publish data (when possible) and replication code
+
+## Why Reproducibility Matters
+
+In the past decade, an increasing number of studies have found that published findings could not be reproduced, both computationally (with the same data and code) and scientifically (with newly collected data using similar study designs). This "reproducibility crisis" has occurred across disciplines and has motivated new practices in transparency and openness. Our lab is committed to adopting these best practices.
+
+**Recommended readings:**
+
+- Nuzzo R. How scientists fool themselves – and how they can stop. *Nature* 2015. <https://www.nature.com/articles/526182a>
+- Munafò MR, et al. A manifesto for reproducible science. *Nature Human Behavior* 2017. <http://dx.doi.org/10.1038/s41562-016-0021>
+
+## Pre-Analysis Plans
+
+We write pre-analysis plans for most original research projects that are confirmatory in nature. Pre-analysis plans typically include:
+
+1. Brief background and rationale
+2. Hypotheses / objectives
+3. Study design
+4. Description of data and data sources
+5. Definition of outcomes
+6. Definition of interventions / exposures
+7. Definition of covariates
+8. Statistical power calculation
+9. Statistical analysis plan:
+   - Type of model
+   - Covariate selection / screening
+   - Standard error estimation method
+   - Missing data analysis
+   - Assessment of effect modification / subgroup analyses
+   - Sensitivity analyses
+   - Negative control analyses (when applicable)
+
+We typically register pre-analysis plans on platforms like Open Science Framework ([osf.io](https://osf.io)).
+
+## Project Management
+
+- Maintain a clear project timeline with milestones
+- Keep the PIs informed of progress and challenges
+- Document your work thoroughly
+- Use version control (e.g., Git) for code
+- Follow reproducible research practices
+
+## Data Management
+
+- Follow the lab's data management plan
+- Store data securely and back up regularly
+- Document data sources, processing steps, and analyses
+- Use clear, consistent file naming conventions
+- Prepare data for archiving and sharing as appropriate
+
+## Lab Notebooks and Documentation
+
+- Maintain clear, detailed records of your research activities
+- Document analyses, decisions, and results as you go
+- Make your work reproducible by others (including your future self)
+- Store notebooks and documentation in accessible, backed-up locations
+- Use clear, consistent file naming conventions
+- Consider using electronic lab notebooks or project wikis for complex projects

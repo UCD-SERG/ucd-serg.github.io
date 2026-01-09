@@ -1,0 +1,35 @@
+---
+title: "UCD-SeRG Lab Manual"
+date: last-modified
+---
+
+# Welcome to the UC Davis Seroepidemiology Research Group!
+
+## About the lab
+
+Welcome to the UC Davis Seroepidemiology Research Group (UCD-SeRG), led by Drs. Kristen Aiemjoy and Ezra Morrison. Our mission is to improve population health by developing and applying seroepidemiologic methods to characterize infectious disease burden in populations. We focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance systems, including enteric fever (*Salmonella Typhi and Paratyphi*), Scrub Typhus (*Orientia tsutsugamushi*), Melioidosis (*Burkholderia pseudomallei*), Shigella (*Shigella spp.*), and Cholera (*Vibrio cholerae*). 
+
+Our research group is based at the University of California, Davis, and we collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America. We use a variety of epidemiologic, computational, and statistical methods, including causal inference and machine learning methods, in pursuit of our mission.
+
+## About this lab manual
+
+This lab manual covers our communication strategy, code of conduct, and best practices for reproducibility of computational workflows. It is a living document that is updated regularly to reflect our evolving practices and lessons learned.
+
+This manual was created with inspiration from [other scientists' lab manuals](https://github.com/jadebc/lab-manual), particularly the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/). 
+
+Feel free to draw from this manual and adapt it for your own use.
+
+## Mission and Values
+
+### Our Mission
+
+We develop and apply seroepidemiologic methods to characterize infectious disease burden in populations, with a focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance. Our work aims to provide accurate methods to measure infectious disease burden to guide public health decisions.
+
+### Our Values
+
+- **Scientific rigor and reproducibility**: We are committed to conducting high-quality, reproducible research that advances the field
+- **Open science**: We share our methods, code, and data openly whenever possible to enable others to build upon our work
+- **Collaboration**: We work with partners around the world and value diverse perspectives and interdisciplinary approaches
+- **Mentorship**: We support the professional development of all lab members at every career stage
+- **Diversity, equity, and inclusion**: We strive to create a welcoming, anti-racist environment where people of all backgrounds are equally and inclusively supported
+- **Work-life balance**: We recognize that doing great science requires taking care of ourselves and maintaining sustainable work practices

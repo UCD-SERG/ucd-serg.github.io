@@ -1,0 +1,54 @@
+---
+title: "Coding Practices"
+---
+
+# Coding Practices
+
+## Code and Software
+
+- Write clear, well-commented code that others can understand
+- Use version control (Git/GitHub) for all code
+- Follow coding style guidelines:
+  - For R: [Hadley Wickham's Style Guide](http://adv-r.had.co.nz/Style.html) or tidyverse style guide
+  - For Python: PEP 8 style guide
+- Create reproducible workflows that allow results to be regenerated with a single command (e.g., a master script)
+- Document software dependencies and versions (e.g., using `renv` for R, `requirements.txt` for Python)
+- Share code openly when publishing (e.g., via GitHub)
+- Archive code on platforms like Zenodo for long-term preservation
+- Include README files that explain how to run the code
+- Remove commented-out code and debug statements before finalizing scripts
+
+## Code Checklist
+
+Before sharing or finalizing code:
+
+- Does the script run without errors?
+- Is code self-contained within the repository?
+- Is all commented-out code / debug remarks removed?
+- Does the header accurately describe what the script does?
+- Is the script pushed to its GitHub repository?
+- Does the code adhere to the coding style guide?
+- Are all warnings either addressed or documented as ignorable?
+
+## GitHub and Version Control
+
+Version control is essential for reproducible research. All lab members should:
+
+- Use Git and GitHub for tracking code changes
+- Commit changes regularly with informative commit messages
+- Use branches for developing new features or analyses
+- Write clear README files for each repository
+- Include licenses for code repositories (typically MIT or GPL for open source)
+- Link GitHub repositories in publications
+
+**Resources:**
+
+- [Introduction to Git](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
+- [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github)
+
+## Literature and Resources
+
+- Stay current with relevant literature in your field
+- Maintain a reference management system (e.g., Zotero, Mendeley)
+- Share interesting papers with the lab
+- Contribute to lab knowledge base

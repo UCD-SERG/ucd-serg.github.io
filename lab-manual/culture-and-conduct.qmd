@@ -1,0 +1,68 @@
+---
+title: "Culture and Conduct"
+---
+
+# Culture and Conduct
+
+## Lab Culture
+
+We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment. 
+
+We encourage lab members of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group thrives upon such respectful input from team members, and open dialogue helps us continuously improve our productivity and the quality of our work.
+
+## Diversity, Equity, and Inclusion
+
+The UCD-SeRG lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, including, but not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.
+
+## General Expectations
+
+All lab members are expected to:
+
+- Conduct research with integrity and honesty
+- Treat all lab members, collaborators, and research participants with respect
+- Communicate openly and regularly with the PIs and other lab members
+- Contribute to a positive, collaborative lab environment
+- Take responsibility for your own professional development
+- Participate in lab meetings and group activities
+- Maintain good documentation of your work
+- Follow all institutional policies and research ethics guidelines
+
+## Work Hours and Flexibility
+
+We recognize that people have different working styles and personal obligations. One benefit of the academic environment is its schedule flexibility. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.
+
+Lab members may choose to work in the early morning, evening, or weekends. However, we do not expect lab members to respond to communications outside of business hours unless there are special circumstances.
+
+What matters most is that you:
+
+- Make consistent progress on your research
+- Meet deadlines and commitments
+- Are available for scheduled meetings and lab events
+- Communicate your schedule and availability
+
+## Time Off
+
+Taking time off is important for maintaining productivity and well-being. Lab members should:
+
+- Coordinate time off with the PIs in advance
+- Alert the team if you will be unusually busy (e.g., taking exams, major deadlines) or on vacation so we know not to expect immediate responses
+- Ensure ongoing projects are covered during your absence
+- Update the lab calendar with your planned absences
+- Follow university policies for holidays and leave
+
+## Protecting Human Subjects
+
+All lab members must complete required human subjects research training (e.g., CITI training) and share their certificate with the PIs. Team members will be added to relevant Institutional Review Board (IRB) protocols prior to working with identifiable datasets.
+
+One of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. In practice, this means:
+
+- Understand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers
+- Do not share data with anyone without permission, including other members of the group who might not be on the same IRB protocol (check with PIs first)
+- Remember that data that appears non-identifiable may still require special protection under IRB or HIPAA regulations
+- Always proceed with caution and ask for help if you have concerns about maintaining study participant confidentiality
+
+## Authorship
+
+We adhere to the [ICMJE Definition of authorship](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html) and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.
+
+Authorship should be discussed early in a project and revisited as the work evolves to ensure transparency and fairness.

@@ -1,0 +1,55 @@
+---
+title: "Checklists"
+---
+
+# Checklists
+
+## Pre-Analysis Plan Checklist
+
+- [ ] Brief background on the study
+- [ ] Hypotheses / objectives
+- [ ] Study design
+- [ ] Description of data
+- [ ] Definition of outcomes
+- [ ] Definition of interventions / exposures
+- [ ] Definition of covariates
+- [ ] Statistical power calculation
+- [ ] Statistical model description
+- [ ] Covariate selection / screening approach
+- [ ] Standard error estimation method
+- [ ] Missing data analysis plan
+- [ ] Effect modification / subgroup analyses
+- [ ] Sensitivity analyses
+- [ ] Negative control analyses (if applicable)
+
+## Code Checklist
+
+Before sharing or finalizing code:
+
+- [ ] Does the script run without errors?
+- [ ] Is code self-contained within repository and/or designated folder?
+- [ ] Is all commented-out code / debug remarks removed?
+- [ ] Does the header accurately describe the script's purpose?
+- [ ] Is the script pushed to GitHub repository?
+- [ ] Does code adhere to the coding style guide?
+- [ ] Are all warnings either addressed or documented as ignorable?
+- [ ] Are file paths relative (not absolute) for portability?
+- [ ] Is there a README explaining how to run the code?
+
+## Figure Checklist
+
+- [ ] X-axis and y-axis labeled clearly
+- [ ] Panels labeled if multiple subplots included
+- [ ] Sufficient tick marks and labels on axes
+- [ ] Font size appropriate (readable but not distracting)
+- [ ] Colors are colorblind-friendly
+- [ ] Colors, shapes, line types defined in legend
+- [ ] Minimal abbreviations; all explained
+- [ ] Transparency used for overlapping data (if needed)
+- [ ] Measures of precision shown (e.g., 95% CIs)
+- [ ] Figure caption is clear and standalone
+- [ ] High resolution for publication (typically 300+ DPI)
+
+## Manuscript Checklist
+
+*(See comprehensive checklist in Publications section)*

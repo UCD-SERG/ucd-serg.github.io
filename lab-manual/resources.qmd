@@ -1,0 +1,68 @@
+---
+title: "Resources"
+---
+
+# Resources and Links
+
+## UC Davis Resources
+
+- [Graduate Studies](https://grad.ucdavis.edu/)
+- [Postdoctoral Scholar Program](https://grad.ucdavis.edu/postdoctoral-scholars)
+- [Graduate Group in Epidemiology](https://www.epi.ucdavis.edu/)
+- [Library Research Support](https://www.library.ucdavis.edu/service/research-support/)
+- [UC Davis Data Science Initiative](https://dsi.ucdavis.edu/)
+- [Counseling Services](https://shcs.ucdavis.edu/services/counseling-services)
+- [Employee Assistance Program](https://hr.ucdavis.edu/departments/asap/employee/eap)
+- [UC Davis Office of Compliance and Policy](https://compliance.ucdavis.edu/)
+
+## Professional Development Resources
+
+- [National Center for Faculty Development & Diversity](https://www.facultydiversity.org/)
+- [myIDP - Individual Development Plan tool](https://myidp.sciencecareers.org/)
+- [NIH OITE Career Resources](https://www.training.nih.gov/career_resources)
+
+## R Programming Resources
+
+- [dplyr and tidyr cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+- [ggplot2 cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+- [data.table cheat sheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf)
+- [RMarkdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [Hadley Wickham's R Style Guide](http://adv-r.had.co.nz/Style.html)
+- [Tidy Eval in 5 Minutes](https://www.youtube.com/watch?v=nERXS3ssntw) (video)
+- [Programming with dplyr](https://dplyr.tidyverse.org/articles/programming.html)
+
+## Git & GitHub Resources
+
+- [Data Camp Introduction to Git](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
+- [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github)
+
+## Scientific Writing and Presentation Resources
+
+- [Tips on writing a great science paper](https://www.nature.com/articles/d41586-019-02918-5)
+- [Elements of style for scientific writing](https://www.nature.com/articles/nphys724)
+- [ICMJE Definition of authorship](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html)
+- [The Pathway to Publishing: A Guide to Quantitative Writing](https://link.springer.com/book/10.1007/978-3-030-98175-4)
+- [Ten Simple Rules for Better Figures](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833)
+- [How to tell a compelling story in scientific presentations](https://www.nature.com/articles/d41586-021-03603-2)
+- [How to make a better poster](https://www.youtube.com/watch?v=1RwJbhkCA58)
+
+## Ethics and Global Health Research
+
+- [Global Code of Conduct For Research in Resource-Poor Settings](https://www.globalcodeofconduct.org/)
+- [Who is a global health expert?](https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0002269)
+
+## Funding Resources
+
+- [Building Your Funding Train](https://grantwriting.stanford.edu/funding-train/)
+- [NIH Funding Opportunities](https://grants.nih.gov)
+- [NSF Graduate Research Fellowship Program](https://www.nsfgrfp.org/)
+
+## Lab Resources
+
+- [Lab GitHub Organization](https://github.com/UCD-SERG)
+- Lab email: [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu)
+- Lab website: [ucd-serg.github.io](https://ucd-serg.github.io)
+
+## Acknowledgments
+
+This lab manual was inspired by several excellent examples from other research groups, particularly the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) by Dr. Jade Benjamin-Chung at Stanford University. We are grateful to those who have shared their lab manuals openly, enabling others to learn from and adapt best practices.

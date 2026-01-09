@@ -1,0 +1,80 @@
+---
+title: "Publications"
+---
+
+# Authorship and Publications
+
+## Authorship Guidelines
+
+We follow the [ICMJE Definition of authorship](http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html). To qualify for authorship, individuals must meet all four criteria:
+
+1. Substantial contributions to conception/design, or acquisition/analysis/interpretation of data
+2. Drafting the work or revising it critically for important intellectual content
+3. Final approval of the version to be published
+4. Agreement to be accountable for all aspects of the work
+
+**Authorship practices:**
+
+- **First authorship**: Typically goes to the person who led the work
+- **Corresponding author**: Usually the PI, unless otherwise agreed
+- **Co-authorship**: Determined by substantial intellectual contributions
+- **Author order**: Should be discussed and agreed upon by all authors
+- **Acknowledgments**: For contributions that don't meet authorship criteria
+
+Authorship should be discussed early in a project and revisited as the work evolves. We encourage using the [CRediT Taxonomy](https://credit.niso.org/) to document specific author contributions.
+
+## Publication Process
+
+1. **Planning**: Discuss target journals, outline, and timeline with PIs
+2. **Drafting**: Lead author prepares initial draft
+3. **Internal review**: Co-authors review and provide feedback
+4. **Revision**: Lead author incorporates feedback iteratively
+5. **PI approval**: Obtain final approval from PIs before submission
+6. **Submission**: Submit to journal
+7. **Revisions**: Lead author coordinates response to peer reviewers
+8. **Publication**: Celebrate and share!
+
+## Preprints and Open Access
+
+- We encourage posting preprints prior to or during peer review on platforms like [medRxiv](https://www.medrxiv.org/) or [bioRxiv](https://www.biorxiv.org/)
+- Preprints allow rapid dissemination of findings and can be cited in grant applications
+- We support publishing in open access journals when possible to maximize accessibility
+- Many funders, including NIH, have public access policies that require making publications freely available
+
+## Reporting Checklists
+
+Using reporting checklists ensures that publications contain information needed for readers to assess validity and reproducibility. We use checklists appropriate to study design:
+
+- CONSORT for randomized trials
+- STROBE for observational studies
+- PRISMA for systematic reviews
+- Others as appropriate (see [EQUATOR Network](https://www.equator-network.org/))
+
+## Publishing Data and Code
+
+- We publish data on platforms like [Open Science Framework](https://osf.io) when ethically and legally permissible
+- We share analysis code via GitHub repositories
+- We archive code on [Zenodo](https://zenodo.org) for long-term preservation with DOI
+- Include data dictionaries and README files with published datasets
+- Follow funder and journal requirements for data sharing
+
+## Manuscript Checklist
+
+Before submitting a manuscript:
+
+- [ ] Completed relevant reporting checklist
+- [ ] Results are reproducible (rerunning code replicates tables/figures exactly)
+- [ ] Target journal selected
+- [ ] Title is declarative and states findings clearly
+- [ ] Word count meets journal requirements
+- [ ] Manuscript follows journal formatting guidelines
+- [ ] Consistent voice throughout (typically active voice)
+- [ ] All figures and tables referenced in main text
+- [ ] Captions for all figures and tables
+- [ ] Tables/figures numbered by order of appearance
+- [ ] Abbreviations defined at first use and used sparingly
+- [ ] Avoid subjective wording (e.g., "interesting", "dramatic")
+- [ ] Avoid directionless statements (specify direction of associations)
+- [ ] Causal language only when supported by study design
+- [ ] Avoid "significant" (easily confused with statistical significance)
+- [ ] Author contributions drafted using CRediT Taxonomy

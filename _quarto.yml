@@ -17,8 +17,23 @@ website:
         text: Software
       - href: opportunities.qmd
         text: Opportunities
-      - href: lab-manual.qmd
+      - href: lab-manual/index.qmd
         text: Lab Manual
+  sidebar:
+    - id: lab-manual
+      title: "Lab Manual"
+      style: "docked"
+      collapse-level: 1
+      contents:
+        - lab-manual/index.qmd
+        - lab-manual/culture-and-conduct.qmd
+        - lab-manual/communication.qmd
+        - lab-manual/reproducibility.qmd
+        - lab-manual/coding-practices.qmd
+        - lab-manual/publications.qmd
+        - lab-manual/professional-development.qmd
+        - lab-manual/checklists.qmd
+        - lab-manual/resources.qmd
 
 format:
   html:

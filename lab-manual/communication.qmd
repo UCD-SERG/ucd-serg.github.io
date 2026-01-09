@@ -1,0 +1,57 @@
+---
+title: "Communication and Coordination"
+---
+
+# Communication and Coordination
+
+Effective communication is essential for successful collaboration. We use several platforms for different types of communication.
+
+## Slack (or Primary Communication Platform)
+
+- Use Slack for scheduling, coding-related questions, quick check-ins, and day-to-day coordination
+- If your message exceeds 200 words, consider using email instead
+- Use channels instead of direct messages unless discussing something private
+- Please respond to messages that tag you (e.g., `@yourname`) as quickly as possible and always within 24 hours
+- If you are unusually busy or on vacation, alert the team in advance and set your status so we know not to expect immediate responses
+- Thread messages as much as possible to keep conversations organized
+- Respect people's off-hours by using scheduled messages when appropriate
+
+## Email
+
+- Use email for longer messages (>200 words) or messages that merit preservation
+- Generally, strive to respond within 24 hours during business hours
+- As noted above, if you are unusually busy or on vacation, alert the team in advance
+
+## Project Management Tools
+
+- We use project management tools (e.g., Trello, GitHub Projects) to track tasks and progress
+- Higher priority tasks are listed at the top of your list
+- Strive to complete tasks by the dates listed
+- Use checklists to break down tasks into smaller, manageable chunks
+- Update task status regularly to keep the team informed
+
+## Lab Meetings
+
+We hold regular lab meetings to discuss ongoing research, practice presentations, and discuss relevant literature. All lab members are expected to attend unless they have a conflict.
+
+- **Timing**: Meetings start on time. If you will be late, send a message to the group
+- **Frequency**: Weekly (schedule may vary by quarter)
+- **Format**: Varies - research updates, journal clubs, practice talks, methods discussions
+- **Preparation**: Come prepared to participate and provide constructive feedback
+- If you are regularly unable to attend at the scheduled time, notify the team so we can consider adjusting the schedule
+
+## Individual Meetings
+
+Graduate students and postdocs should meet with their PI(s) regularly:
+
+- **Frequency**: At least bi-weekly, more often as needed
+- **Preparation**: Send an agenda at least 24 hours in advance
+- **Follow-up**: Send notes summarizing action items and decisions
+
+## Email and Messaging
+
+- Check email regularly during working hours
+- Respond to emails from PIs and collaborators within 24-48 hours
+- Use subject lines that clearly indicate the topic
+- For urgent matters, follow up with a message or call
+- We do not expect responses outside of business hours
