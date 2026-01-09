@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Culture and Conduct – UCD-SeRG</title>
+<title>Coding Style – UCD-SeRG</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -292,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-manual/culture-and-conduct.html">Culture and Conduct</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-manual/coding-style.html">Coding Style</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -312,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-manual/culture-and-conduct.html" class="sidebar-item-text sidebar-link active">
+  <a href="../lab-manual/culture-and-conduct.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Culture and Conduct</span></a>
   </div>
 </li>
@@ -336,7 +371,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-manual/coding-style.html" class="sidebar-item-text sidebar-link">
+  <a href="../lab-manual/coding-style.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Coding Style</span></a>
   </div>
 </li>
@@ -392,18 +427,20 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#culture-and-conduct" id="toc-culture-and-conduct" class="nav-link active" data-scroll-target="#culture-and-conduct">Culture and Conduct</a>
+  <li><a href="#coding-style" id="toc-coding-style" class="nav-link active" data-scroll-target="#coding-style">Coding Style</a>
   <ul class="collapse">
-  <li><a href="#lab-culture" id="toc-lab-culture" class="nav-link" data-scroll-target="#lab-culture">Lab Culture</a></li>
-  <li><a href="#diversity-equity-and-inclusion" id="toc-diversity-equity-and-inclusion" class="nav-link" data-scroll-target="#diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</a></li>
-  <li><a href="#general-expectations" id="toc-general-expectations" class="nav-link" data-scroll-target="#general-expectations">General Expectations</a></li>
-  <li><a href="#work-hours-and-flexibility" id="toc-work-hours-and-flexibility" class="nav-link" data-scroll-target="#work-hours-and-flexibility">Work Hours and Flexibility</a></li>
-  <li><a href="#time-off" id="toc-time-off" class="nav-link" data-scroll-target="#time-off">Time Off</a></li>
-  <li><a href="#protecting-human-subjects" id="toc-protecting-human-subjects" class="nav-link" data-scroll-target="#protecting-human-subjects">Protecting Human Subjects</a></li>
-  <li><a href="#authorship" id="toc-authorship" class="nav-link" data-scroll-target="#authorship">Authorship</a></li>
+  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">Comments</a></li>
+  <li><a href="#line-breaks" id="toc-line-breaks" class="nav-link" data-scroll-target="#line-breaks">Line Breaks</a></li>
+  <li><a href="#automated-tools-for-style" id="toc-automated-tools-for-style" class="nav-link" data-scroll-target="#automated-tools-for-style">Automated Tools for Style</a>
+  <ul class="collapse">
+  <li><a href="#code-autoformatting" id="toc-code-autoformatting" class="nav-link" data-scroll-target="#code-autoformatting">Code Autoformatting</a></li>
+  <li><a href="#styler-r" id="toc-styler-r" class="nav-link" data-scroll-target="#styler-r">StyleR (R)</a></li>
+  <li><a href="#linter-r" id="toc-linter-r" class="nav-link" data-scroll-target="#linter-r">Linter (R)</a></li>
+  </ul></li>
+  <li><a href="#python-style" id="toc-python-style" class="nav-link" data-scroll-target="#python-style">Python Style</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/coding-style.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/coding-style.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -411,7 +448,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Culture and Conduct</h1>
+<h1 class="title">Coding Style</h1>
 </div>
 
 
@@ -428,69 +465,91 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="culture-and-conduct" class="level1">
-<h1>Culture and Conduct</h1>
-<section id="lab-culture" class="level2">
-<h2 class="anchored" data-anchor-id="lab-culture">Lab Culture</h2>
-<p>We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment.</p>
-<p>We encourage lab members of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group thrives upon such respectful input from team members, and open dialogue helps us continuously improve our productivity and the quality of our work.</p>
+<section id="coding-style" class="level1">
+<h1>Coding Style</h1>
+<p><em>Adapted from the <a href="https://jadebc.github.io/lab-manual/">Benjamin-Chung Lab Manual</a></em></p>
+<section id="comments" class="level2">
+<h2 class="anchored" data-anchor-id="comments">Comments</h2>
+<ol type="1">
+<li><strong>File Headers</strong> - Every file in a project should have a header that allows it to be interpreted on its own. It should include the name of the project and a short description for what this file does specifically.</li>
+</ol>
+<pre><code>################################################################################
+# @Organization - UC Davis Seroepidemiology Research Group
+# @Project - Example Project
+# @Description - This file is responsible for [...]
+################################################################################</code></pre>
+<ol start="2" type="1">
+<li><p><strong>File Structure</strong> - Data should flow naturally through a script. Generally: 1) source your config =&gt; 2) load all your data =&gt; 3) do all your analysis/computation =&gt; 4) save your data. Each section should be “chunked together” using comments.</p></li>
+<li><p><strong>Single-Line Comments</strong> - Commenting your code is important for reproducibility. Comments describing what large or complex chunks of code do. Format: <code># This is a comment -- first letter is capitalized and spaced away from the hash symbol</code></p></li>
+<li><p><strong>Multi-Line Comments</strong> - For multi-line comments, don’t add line breaks manually. In RStudio &gt; Tools &gt; Global Options &gt; Code &gt; enable “Soft-wrap R source files” to have lines wrap around.</p></li>
+</ol>
 </section>
-<section id="diversity-equity-and-inclusion" class="level2">
-<h2 class="anchored" data-anchor-id="diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</h2>
-<p>The UCD-SeRG lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, including, but not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.</p>
+<section id="line-breaks" class="level2">
+<h2 class="anchored" data-anchor-id="line-breaks">Line Breaks</h2>
+<p>For <code>ggplot</code> calls and <code>dplyr</code> pipelines, do not crowd single lines. Here are examples:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: dplyr pipeline</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>school_names <span class="ot">=</span> <span class="fu">list</span>(</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">OUSD_school_names =</span> absentee_all <span class="sc">%&gt;%</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(dist.n <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(school) <span class="sc">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    unique <span class="sc">%&gt;%</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    sort,</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">WCCSD_school_names =</span> absentee_all <span class="sc">%&gt;%</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(dist.n <span class="sc">==</span> <span class="dv">0</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pull</span>(school) <span class="sc">%&gt;%</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    unique <span class="sc">%&gt;%</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    sort</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: ggplot call</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data=</span>data,</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping=</span><span class="fu">aes_string</span>(<span class="at">x=</span><span class="st">"year"</span>, <span class="at">y=</span><span class="st">"rd"</span>, <span class="at">group=</span>group)) <span class="sc">+</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">mapping=</span><span class="fu">aes_string</span>(<span class="at">col=</span>group, <span class="at">shape=</span>group),</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>             <span class="at">position=</span><span class="fu">position_dodge</span>(<span class="at">width=</span><span class="fl">0.2</span>),</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>             <span class="at">size=</span><span class="fl">2.5</span>) <span class="sc">+</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="at">mapping=</span><span class="fu">aes_string</span>(<span class="at">ymin=</span><span class="st">"lb"</span>, <span class="at">ymax=</span><span class="st">"ub"</span>, <span class="at">col=</span>group),</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>                <span class="at">position=</span><span class="fu">position_dodge</span>(<span class="at">width=</span><span class="fl">0.2</span>),</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>                <span class="at">width=</span><span class="fl">0.2</span>) <span class="sc">+</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits=</span>limits, <span class="at">breaks=</span>breaks, <span class="at">labels=</span>breaks) <span class="sc">+</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="general-expectations" class="level2">
-<h2 class="anchored" data-anchor-id="general-expectations">General Expectations</h2>
-<p>All lab members are expected to:</p>
+<section id="automated-tools-for-style" class="level2">
+<h2 class="anchored" data-anchor-id="automated-tools-for-style">Automated Tools for Style</h2>
+<section id="code-autoformatting" class="level3">
+<h3 class="anchored" data-anchor-id="code-autoformatting">Code Autoformatting</h3>
 <ul>
-<li>Conduct research with integrity and honesty</li>
-<li>Treat all lab members, collaborators, and research participants with respect</li>
-<li>Communicate openly and regularly with the PIs and other lab members</li>
-<li>Contribute to a positive, collaborative lab environment</li>
-<li>Take responsibility for your own professional development</li>
-<li>Participate in lab meetings and group activities</li>
-<li>Maintain good documentation of your work</li>
-<li>Follow all institutional policies and research ethics guidelines</li>
+<li><strong>RStudio</strong>: Use built-in autoformatting (keyboard shortcut: <code>CMD-Shift-A</code>) to format highlighted code</li>
+<li><strong>Python</strong>: Use tools like <code>black</code> or <code>autopep8</code></li>
 </ul>
 </section>
-<section id="work-hours-and-flexibility" class="level2">
-<h2 class="anchored" data-anchor-id="work-hours-and-flexibility">Work Hours and Flexibility</h2>
-<p>We recognize that people have different working styles and personal obligations. One benefit of the academic environment is its schedule flexibility. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.</p>
-<p>Lab members may choose to work in the early morning, evening, or weekends. However, we do not expect lab members to respond to communications outside of business hours unless there are special circumstances.</p>
-<p>What matters most is that you:</p>
-<ul>
-<li>Make consistent progress on your research</li>
-<li>Meet deadlines and commitments</li>
-<li>Are available for scheduled meetings and lab events</li>
-<li>Communicate your schedule and availability</li>
-</ul>
+<section id="styler-r" class="level3">
+<h3 class="anchored" data-anchor-id="styler-r">StyleR (R)</h3>
+<p>The <a href="https://www.tidyverse.org/articles/2017/12/styler-1.0.0/">styler package</a> can style entire projects:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Style a directory</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>styler<span class="sc">::</span><span class="fu">style_dir</span>(<span class="at">path =</span> <span class="st">"."</span>, <span class="at">scope =</span> <span class="st">"line_breaks"</span>, <span class="at">strict =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Note</strong>: StyleR modifies files in-place, so use version control before running.</p>
 </section>
-<section id="time-off" class="level2">
-<h2 class="anchored" data-anchor-id="time-off">Time Off</h2>
-<p>Taking time off is important for maintaining productivity and well-being. Lab members should:</p>
+<section id="linter-r" class="level3">
+<h3 class="anchored" data-anchor-id="linter-r">Linter (R)</h3>
+<p>The <a href="https://cran.r-project.org/web/packages/lintr/readme/README.html">lintr package</a> checks code for style issues:</p>
 <ul>
-<li>Coordinate time off with the PIs in advance</li>
-<li>Alert the team if you will be unusually busy (e.g., taking exams, major deadlines) or on vacation so we know not to expect immediate responses</li>
-<li>Ensure ongoing projects are covered during your absence</li>
-<li>Update the lab calendar with your planned absences</li>
-<li>Follow university policies for holidays and leave</li>
+<li>Checks for unused variables, improper whitespace, and other issues</li>
+<li>Based on <a href="http://r-pkgs.had.co.nz/style.html">Hadley Wickham’s R Style Guide</a></li>
+<li>Can be customized to project needs</li>
 </ul>
+<p><strong>Note</strong>: <code>lintr</code> and <code>styler</code> work well together - styler fixes what lintr catches.</p>
 </section>
-<section id="protecting-human-subjects" class="level2">
-<h2 class="anchored" data-anchor-id="protecting-human-subjects">Protecting Human Subjects</h2>
-<p>All lab members must complete required human subjects research training (e.g., CITI training) and share their certificate with the PIs. Team members will be added to relevant Institutional Review Board (IRB) protocols prior to working with identifiable datasets.</p>
-<p>One of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. In practice, this means:</p>
+</section>
+<section id="python-style" class="level2">
+<h2 class="anchored" data-anchor-id="python-style">Python Style</h2>
+<p>For Python code, follow <a href="https://pep8.org/">PEP 8</a> style guidelines:</p>
 <ul>
-<li>Understand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers</li>
-<li>Do not share data with anyone without permission, including other members of the group who might not be on the same IRB protocol (check with PIs first)</li>
-<li>Remember that data that appears non-identifiable may still require special protection under IRB or HIPAA regulations</li>
-<li>Always proceed with caution and ask for help if you have concerns about maintaining study participant confidentiality</li>
+<li>Use 4 spaces for indentation</li>
+<li>Limit lines to 79 characters</li>
+<li>Use descriptive variable names</li>
+<li>Add docstrings to functions and classes</li>
 </ul>
-</section>
-<section id="authorship" class="level2">
-<h2 class="anchored" data-anchor-id="authorship">Authorship</h2>
-<p>We adhere to the <a href="http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">ICMJE Definition of authorship</a> and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.</p>
-<p>Authorship should be discussed early in a project and revisited as the work evolves to ensure transparency and fairness.</p>
 
 
 </section>
@@ -915,4 +974,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/coding-style.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/coding-style.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

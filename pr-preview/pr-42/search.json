@@ -229,91 +229,600 @@
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html",
-    "href": "lab-manual/culture-and-conduct.html",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html",
+    "href": "lab-manual/unix-commands.html",
+    "title": "Unix Commands",
     "section": "",
-    "text": "We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment.\nWe encourage lab members of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group thrives upon such respectful input from team members, and open dialogue helps us continuously improve our productivity and the quality of our work.\n\n\n\nThe UCD-SeRG lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, including, but not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.\n\n\n\nAll lab members are expected to:\n\nConduct research with integrity and honesty\nTreat all lab members, collaborators, and research participants with respect\nCommunicate openly and regularly with the PIs and other lab members\nContribute to a positive, collaborative lab environment\nTake responsibility for your own professional development\nParticipate in lab meetings and group activities\nMaintain good documentation of your work\nFollow all institutional policies and research ethics guidelines\n\n\n\n\nWe recognize that people have different working styles and personal obligations. One benefit of the academic environment is its schedule flexibility. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.\nLab members may choose to work in the early morning, evening, or weekends. However, we do not expect lab members to respond to communications outside of business hours unless there are special circumstances.\nWhat matters most is that you:\n\nMake consistent progress on your research\nMeet deadlines and commitments\nAre available for scheduled meetings and lab events\nCommunicate your schedule and availability\n\n\n\n\nTaking time off is important for maintaining productivity and well-being. Lab members should:\n\nCoordinate time off with the PIs in advance\nAlert the team if you will be unusually busy (e.g., taking exams, major deadlines) or on vacation so we know not to expect immediate responses\nEnsure ongoing projects are covered during your absence\nUpdate the lab calendar with your planned absences\nFollow university policies for holidays and leave\n\n\n\n\nAll lab members must complete required human subjects research training (e.g., CITI training) and share their certificate with the PIs. Team members will be added to relevant Institutional Review Board (IRB) protocols prior to working with identifiable datasets.\nOne of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. In practice, this means:\n\nUnderstand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers\nDo not share data with anyone without permission, including other members of the group who might not be on the same IRB protocol (check with PIs first)\nRemember that data that appears non-identifiable may still require special protection under IRB or HIPAA regulations\nAlways proceed with caution and ask for help if you have concerns about maintaining study participant confidentiality\n\n\n\n\nWe adhere to the ICMJE Definition of authorship and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.\nAuthorship should be discussed early in a project and revisited as the work evolves to ensure transparency and fairness.",
+    "text": "Adapted from the Benjamin-Chung Lab Manual\nWe typically use Unix commands in Terminal (Mac) or Git Bash (Windows) to:\n\nRun scripts in parallel or in a specific order to reproduce our work\nCheck on the progress of batch jobs\nUse git and push to GitHub\nNavigate file systems and manage files\n\n\n\nNote: When typing directories or file names, use quotes if the name includes spaces.\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ncd folder_name\nChange directory to folder_name\n\n\npwd\nPrint working directory (shows current location)\n\n\nls\nList files in the current directory\n\n\nls -la\nList all files including hidden files with details\n\n\ncp \"file1\" \"file2\"\nCopy file (include file extensions like .pdf or .R)\n\n\nmv \"file1\" \"file2\"\nRename or move file\n\n\ncd ..\nGo to parent directory\n\n\nmkdir folder_name\nMake a new folder\n\n\nrm &lt;filename&gt;\nRemove file\n\n\nrm -rf folder_name\nRemove directory and contents (use carefully!)\n\n\nclear\nClear terminal screen\n\n\n\n\n\n\n\n\n# Make script executable (first time only)\nchmod +x script.R\n\n# Run R script\nRscript script.R\n\n# Run R script with output to file\nRscript script.R &gt; output.log 2&gt;&1\n\n# Run in background\nRscript script.R &\n\n\n\nFirst, add R to your PATH or use the full path to Rscript.\n# Test Rscript\nRscript -e \"cat('this is a test')\"\n\n# Run R script\nRscript -e \"source('C:/path/to/script.R')\"\nCommon Mistakes: - Include quotes around file paths with spaces - If you see Error: '\\U' used..., replace \\ with \\\\ or /\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\nchmod +x script.sh\nMake script executable (first time only)\n\n\n./script.sh\nRun script\n\n\nbash script.sh &\nRun script in background\n\n\n\n\n\n\n\n\n\n\n\nMac / Linux\nWindows\nDescription\n\n\n\n\nps -v\ntasklist\nList all processes\n\n\ntop\n\nInteractive process viewer\n\n\ntop -o cpu\n\nSort by CPU usage\n\n\n\n\n\n\n\n\n\nMac / Linux\nWindows\nDescription\n\n\n\n\nkill &lt;PID&gt;\ntaskkill /F /PID &lt;PID&gt;\nKill process by ID\n\n\n\ntaskkill /IM \"name\" /F\nKill by process name (Windows)\n\n\n\nNote: Find PID using ps -v or tasklist\n\n\n\n\nFor long-running jobs, especially on remote servers:\n\n\n# Run script that continues even if you log out\nnohup Rscript long_script.R &gt; output.log 2&gt;&1 &\n\n# Check output\ntail -f output.log\n\n\n\n# Create new session\ntmux new -s session_name\n\n# Run your job\nRscript my_job.R &\n\n# Detach from session (Ctrl-b then d)\n\n# Re-attach to session\ntmux attach -t session_name\n\n# List sessions\ntmux ls\n\n# Kill session\ntmux kill-session -t session_name\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\nhead -n 10 file.txt\nShow first 10 lines of file\n\n\ntail -n 10 file.txt\nShow last 10 lines of file\n\n\ntail -f file.txt\nFollow file updates in real-time\n\n\nwc -l file.txt\nCount lines in file\n\n\ngrep \"pattern\" file.txt\nSearch for pattern in file\n\n\nfind . -name \"*.R\"\nFind all R files in current directory\n\n\n\n\n\n\nUse pipes (|) and redirection (&gt;, &gt;&gt;) to combine commands:\n# Count R files\nfind . -name \"*.R\" | wc -l\n\n# Save output to file\nls -la &gt; file_list.txt\n\n# Append to file\nls -la &gt;&gt; file_list.txt\n\n# Search and count\ngrep \"function\" script.R | wc -l\n\n\n\n\nTest commands carefully - especially rm -rf which permanently deletes\nUse tab completion - press Tab to auto-complete file/directory names\nCheck your location - use pwd to know where you are\nKeep backups - before running destructive commands\nUse version control - git tracks changes and allows recovery",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html#lab-culture",
-    "href": "lab-manual/culture-and-conduct.html#lab-culture",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html#basic-commands",
+    "href": "lab-manual/unix-commands.html#basic-commands",
+    "title": "Unix Commands",
     "section": "",
-    "text": "We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment.\nWe encourage lab members of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group thrives upon such respectful input from team members, and open dialogue helps us continuously improve our productivity and the quality of our work.",
+    "text": "Note: When typing directories or file names, use quotes if the name includes spaces.\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ncd folder_name\nChange directory to folder_name\n\n\npwd\nPrint working directory (shows current location)\n\n\nls\nList files in the current directory\n\n\nls -la\nList all files including hidden files with details\n\n\ncp \"file1\" \"file2\"\nCopy file (include file extensions like .pdf or .R)\n\n\nmv \"file1\" \"file2\"\nRename or move file\n\n\ncd ..\nGo to parent directory\n\n\nmkdir folder_name\nMake a new folder\n\n\nrm &lt;filename&gt;\nRemove file\n\n\nrm -rf folder_name\nRemove directory and contents (use carefully!)\n\n\nclear\nClear terminal screen",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html#diversity-equity-and-inclusion",
-    "href": "lab-manual/culture-and-conduct.html#diversity-equity-and-inclusion",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html#running-r-scripts",
+    "href": "lab-manual/unix-commands.html#running-r-scripts",
+    "title": "Unix Commands",
     "section": "",
-    "text": "The UCD-SeRG lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, including, but not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.",
+    "text": "# Make script executable (first time only)\nchmod +x script.R\n\n# Run R script\nRscript script.R\n\n# Run R script with output to file\nRscript script.R &gt; output.log 2&gt;&1\n\n# Run in background\nRscript script.R &\n\n\n\nFirst, add R to your PATH or use the full path to Rscript.\n# Test Rscript\nRscript -e \"cat('this is a test')\"\n\n# Run R script\nRscript -e \"source('C:/path/to/script.R')\"\nCommon Mistakes: - Include quotes around file paths with spaces - If you see Error: '\\U' used..., replace \\ with \\\\ or /",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html#general-expectations",
-    "href": "lab-manual/culture-and-conduct.html#general-expectations",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html#running-bash-scripts",
+    "href": "lab-manual/unix-commands.html#running-bash-scripts",
+    "title": "Unix Commands",
     "section": "",
-    "text": "All lab members are expected to:\n\nConduct research with integrity and honesty\nTreat all lab members, collaborators, and research participants with respect\nCommunicate openly and regularly with the PIs and other lab members\nContribute to a positive, collaborative lab environment\nTake responsibility for your own professional development\nParticipate in lab meetings and group activities\nMaintain good documentation of your work\nFollow all institutional policies and research ethics guidelines",
+    "text": "Command\nDescription\n\n\n\n\nchmod +x script.sh\nMake script executable (first time only)\n\n\n./script.sh\nRun script\n\n\nbash script.sh &\nRun script in background",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html#work-hours-and-flexibility",
-    "href": "lab-manual/culture-and-conduct.html#work-hours-and-flexibility",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html#process-management",
+    "href": "lab-manual/unix-commands.html#process-management",
+    "title": "Unix Commands",
     "section": "",
-    "text": "We recognize that people have different working styles and personal obligations. One benefit of the academic environment is its schedule flexibility. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.\nLab members may choose to work in the early morning, evening, or weekends. However, we do not expect lab members to respond to communications outside of business hours unless there are special circumstances.\nWhat matters most is that you:\n\nMake consistent progress on your research\nMeet deadlines and commitments\nAre available for scheduled meetings and lab events\nCommunicate your schedule and availability",
+    "text": "Mac / Linux\nWindows\nDescription\n\n\n\n\nps -v\ntasklist\nList all processes\n\n\ntop\n\nInteractive process viewer\n\n\ntop -o cpu\n\nSort by CPU usage\n\n\n\n\n\n\n\n\n\nMac / Linux\nWindows\nDescription\n\n\n\n\nkill &lt;PID&gt;\ntaskkill /F /PID &lt;PID&gt;\nKill process by ID\n\n\n\ntaskkill /IM \"name\" /F\nKill by process name (Windows)\n\n\n\nNote: Find PID using ps -v or tasklist",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html#time-off",
-    "href": "lab-manual/culture-and-conduct.html#time-off",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html#running-jobs-in-background",
+    "href": "lab-manual/unix-commands.html#running-jobs-in-background",
+    "title": "Unix Commands",
     "section": "",
-    "text": "Taking time off is important for maintaining productivity and well-being. Lab members should:\n\nCoordinate time off with the PIs in advance\nAlert the team if you will be unusually busy (e.g., taking exams, major deadlines) or on vacation so we know not to expect immediate responses\nEnsure ongoing projects are covered during your absence\nUpdate the lab calendar with your planned absences\nFollow university policies for holidays and leave",
+    "text": "For long-running jobs, especially on remote servers:\n\n\n# Run script that continues even if you log out\nnohup Rscript long_script.R &gt; output.log 2&gt;&1 &\n\n# Check output\ntail -f output.log\n\n\n\n# Create new session\ntmux new -s session_name\n\n# Run your job\nRscript my_job.R &\n\n# Detach from session (Ctrl-b then d)\n\n# Re-attach to session\ntmux attach -t session_name\n\n# List sessions\ntmux ls\n\n# Kill session\ntmux kill-session -t session_name",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html#protecting-human-subjects",
-    "href": "lab-manual/culture-and-conduct.html#protecting-human-subjects",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html#useful-file-operations",
+    "href": "lab-manual/unix-commands.html#useful-file-operations",
+    "title": "Unix Commands",
     "section": "",
-    "text": "All lab members must complete required human subjects research training (e.g., CITI training) and share their certificate with the PIs. Team members will be added to relevant Institutional Review Board (IRB) protocols prior to working with identifiable datasets.\nOne of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. In practice, this means:\n\nUnderstand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers\nDo not share data with anyone without permission, including other members of the group who might not be on the same IRB protocol (check with PIs first)\nRemember that data that appears non-identifiable may still require special protection under IRB or HIPAA regulations\nAlways proceed with caution and ask for help if you have concerns about maintaining study participant confidentiality",
+    "text": "Command\nDescription\n\n\n\n\nhead -n 10 file.txt\nShow first 10 lines of file\n\n\ntail -n 10 file.txt\nShow last 10 lines of file\n\n\ntail -f file.txt\nFollow file updates in real-time\n\n\nwc -l file.txt\nCount lines in file\n\n\ngrep \"pattern\" file.txt\nSearch for pattern in file\n\n\nfind . -name \"*.R\"\nFind all R files in current directory",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
     ]
   },
   {
-    "objectID": "lab-manual/culture-and-conduct.html#authorship",
-    "href": "lab-manual/culture-and-conduct.html#authorship",
-    "title": "Culture and Conduct",
+    "objectID": "lab-manual/unix-commands.html#combining-commands",
+    "href": "lab-manual/unix-commands.html#combining-commands",
+    "title": "Unix Commands",
     "section": "",
-    "text": "We adhere to the ICMJE Definition of authorship and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.\nAuthorship should be discussed early in a project and revisited as the work evolves to ensure transparency and fairness.",
+    "text": "Use pipes (|) and redirection (&gt;, &gt;&gt;) to combine commands:\n# Count R files\nfind . -name \"*.R\" | wc -l\n\n# Save output to file\nls -la &gt; file_list.txt\n\n# Append to file\nls -la &gt;&gt; file_list.txt\n\n# Search and count\ngrep \"function\" script.R | wc -l",
     "crumbs": [
       "Lab Manual",
-      "Culture and Conduct"
+      "Unix Commands"
+    ]
+  },
+  {
+    "objectID": "lab-manual/unix-commands.html#best-practices",
+    "href": "lab-manual/unix-commands.html#best-practices",
+    "title": "Unix Commands",
+    "section": "",
+    "text": "Test commands carefully - especially rm -rf which permanently deletes\nUse tab completion - press Tab to auto-complete file/directory names\nCheck your location - use pwd to know where you are\nKeep backups - before running destructive commands\nUse version control - git tracks changes and allows recovery",
+    "crumbs": [
+      "Lab Manual",
+      "Unix Commands"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-practices.html",
+    "href": "lab-manual/coding-practices.html",
+    "title": "Coding Practices",
+    "section": "",
+    "text": "Write clear, well-commented code that others can understand\nUse version control (Git/GitHub) for all code\nFollow coding style guidelines:\n\nFor R: Hadley Wickham’s Style Guide or tidyverse style guide\nFor Python: PEP 8 style guide\n\nCreate reproducible workflows that allow results to be regenerated with a single command (e.g., a master script)\nDocument software dependencies and versions (e.g., using renv for R, requirements.txt for Python)\nShare code openly when publishing (e.g., via GitHub)\nArchive code on platforms like Zenodo for long-term preservation\nInclude README files that explain how to run the code\nRemove commented-out code and debug statements before finalizing scripts\n\n\n\n\nBefore sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within the repository?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe what the script does?\nIs the script pushed to its GitHub repository?\nDoes the code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?\n\n\n\n\nVersion control is essential for reproducible research. All lab members should:\n\nUse Git and GitHub for tracking code changes\nCommit changes regularly with informative commit messages\nUse branches for developing new features or analyses\nWrite clear README files for each repository\nInclude licenses for code repositories (typically MIT or GPL for open source)\nLink GitHub repositories in publications\n\nResources:\n\nIntroduction to Git\nIntroduction to GitHub\n\n\n\n\n\nStay current with relevant literature in your field\nMaintain a reference management system (e.g., Zotero, Mendeley)\nShare interesting papers with the lab\nContribute to lab knowledge base",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Practices"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-practices.html#code-and-software",
+    "href": "lab-manual/coding-practices.html#code-and-software",
+    "title": "Coding Practices",
+    "section": "",
+    "text": "Write clear, well-commented code that others can understand\nUse version control (Git/GitHub) for all code\nFollow coding style guidelines:\n\nFor R: Hadley Wickham’s Style Guide or tidyverse style guide\nFor Python: PEP 8 style guide\n\nCreate reproducible workflows that allow results to be regenerated with a single command (e.g., a master script)\nDocument software dependencies and versions (e.g., using renv for R, requirements.txt for Python)\nShare code openly when publishing (e.g., via GitHub)\nArchive code on platforms like Zenodo for long-term preservation\nInclude README files that explain how to run the code\nRemove commented-out code and debug statements before finalizing scripts",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Practices"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-practices.html#code-checklist",
+    "href": "lab-manual/coding-practices.html#code-checklist",
+    "title": "Coding Practices",
+    "section": "",
+    "text": "Before sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within the repository?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe what the script does?\nIs the script pushed to its GitHub repository?\nDoes the code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Practices"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-practices.html#github-and-version-control",
+    "href": "lab-manual/coding-practices.html#github-and-version-control",
+    "title": "Coding Practices",
+    "section": "",
+    "text": "Version control is essential for reproducible research. All lab members should:\n\nUse Git and GitHub for tracking code changes\nCommit changes regularly with informative commit messages\nUse branches for developing new features or analyses\nWrite clear README files for each repository\nInclude licenses for code repositories (typically MIT or GPL for open source)\nLink GitHub repositories in publications\n\nResources:\n\nIntroduction to Git\nIntroduction to GitHub",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Practices"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-practices.html#literature-and-resources",
+    "href": "lab-manual/coding-practices.html#literature-and-resources",
+    "title": "Coding Practices",
+    "section": "",
+    "text": "Stay current with relevant literature in your field\nMaintain a reference management system (e.g., Zotero, Mendeley)\nShare interesting papers with the lab\nContribute to lab knowledge base",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Practices"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducible-environments.html",
+    "href": "lab-manual/reproducible-environments.html",
+    "title": "Reproducible Environments",
+    "section": "",
+    "text": "Adapted from the Benjamin-Chung Lab Manual\n\n\n\n\nReproducible code should produce the same results regardless of when or where it’s run. However, our analyses often leverage open-source packages that continue to be developed over time, which may include changes that could impact how code runs.\nFor example, suppose we used a function with one argument: example_function(arg_a = \"a\"). If the package developers later update the function to require another mandatory argument arg_b, anyone running our code with the new version will receive an error.\nTo ensure the right functions are used in replication efforts, track package versions used in each project.\n\n\n\nIdeally, renv should be initiated at the start of projects and updated continuously when new packages are introduced. However, it can be initiated at any point.\nSteps:\n\nInstall the renv package: install.packages(\"renv\")\nCreate an RProject file and set working directory to the project folder\nRun renv::init() to initialize renv in your project\nThis creates: renv.lock, .Rprofile, renv/settings.json, and renv/activate.R\nCommit and push these files to GitHub\nAs you write code, update the library: renv::snapshot()\nAdd renv::restore() to the head of your config file\n\n\n\n\nIf working on an existing project with renv:\n\nInstall the renv package: install.packages(\"renv\")\nPull the most updated version from GitHub\nOpen the project’s RProject file\nRun renv::restore() (often at top of config file)\nType “Y” to proceed with updating packages\nWait for correct versions to install\nYour environment now matches the project’s package versions\n\n\n\n\n\nFor Python projects, use virtual environments to manage dependencies:\n\n\n# Create virtual environment\npython -m venv env\n\n# Activate (Mac/Linux)\nsource env/bin/activate\n\n# Activate (Windows)\nenv\\Scripts\\activate\n\n# Install packages\npip install -r requirements.txt\n\n# Save current packages\npip freeze &gt; requirements.txt\n\n# Deactivate\ndeactivate\n\n\n\n# Create environment\nconda create -n myenv python=3.9\n\n# Activate\nconda activate myenv\n\n# Install packages\nconda install package_name\n\n# Export environment\nconda env export &gt; environment.yml\n\n# Create from file\nconda env create -f environment.yml\n\n# Deactivate\nconda deactivate\n\n\n\n\nFor complete reproducibility including system dependencies, consider using Docker:\n\nCaptures entire computing environment\nEnsures consistent results across different systems\nParticularly useful for complex dependency chains\nSee Docker documentation for getting started",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducible Environments"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducible-environments.html#package-version-control-with-renv-r",
+    "href": "lab-manual/reproducible-environments.html#package-version-control-with-renv-r",
+    "title": "Reproducible Environments",
+    "section": "",
+    "text": "Reproducible code should produce the same results regardless of when or where it’s run. However, our analyses often leverage open-source packages that continue to be developed over time, which may include changes that could impact how code runs.\nFor example, suppose we used a function with one argument: example_function(arg_a = \"a\"). If the package developers later update the function to require another mandatory argument arg_b, anyone running our code with the new version will receive an error.\nTo ensure the right functions are used in replication efforts, track package versions used in each project.\n\n\n\nIdeally, renv should be initiated at the start of projects and updated continuously when new packages are introduced. However, it can be initiated at any point.\nSteps:\n\nInstall the renv package: install.packages(\"renv\")\nCreate an RProject file and set working directory to the project folder\nRun renv::init() to initialize renv in your project\nThis creates: renv.lock, .Rprofile, renv/settings.json, and renv/activate.R\nCommit and push these files to GitHub\nAs you write code, update the library: renv::snapshot()\nAdd renv::restore() to the head of your config file\n\n\n\n\nIf working on an existing project with renv:\n\nInstall the renv package: install.packages(\"renv\")\nPull the most updated version from GitHub\nOpen the project’s RProject file\nRun renv::restore() (often at top of config file)\nType “Y” to proceed with updating packages\nWait for correct versions to install\nYour environment now matches the project’s package versions",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducible Environments"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducible-environments.html#python-virtual-environments",
+    "href": "lab-manual/reproducible-environments.html#python-virtual-environments",
+    "title": "Reproducible Environments",
+    "section": "",
+    "text": "For Python projects, use virtual environments to manage dependencies:\n\n\n# Create virtual environment\npython -m venv env\n\n# Activate (Mac/Linux)\nsource env/bin/activate\n\n# Activate (Windows)\nenv\\Scripts\\activate\n\n# Install packages\npip install -r requirements.txt\n\n# Save current packages\npip freeze &gt; requirements.txt\n\n# Deactivate\ndeactivate\n\n\n\n# Create environment\nconda create -n myenv python=3.9\n\n# Activate\nconda activate myenv\n\n# Install packages\nconda install package_name\n\n# Export environment\nconda env export &gt; environment.yml\n\n# Create from file\nconda env create -f environment.yml\n\n# Deactivate\nconda deactivate",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducible Environments"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducible-environments.html#docker-for-full-reproducibility",
+    "href": "lab-manual/reproducible-environments.html#docker-for-full-reproducibility",
+    "title": "Reproducible Environments",
+    "section": "",
+    "text": "For complete reproducibility including system dependencies, consider using Docker:\n\nCaptures entire computing environment\nEnsures consistent results across different systems\nParticularly useful for complex dependency chains\nSee Docker documentation for getting started",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducible Environments"
+    ]
+  },
+  {
+    "objectID": "lab-manual/github.html",
+    "href": "lab-manual/github.html",
+    "title": "GitHub",
+    "section": "",
+    "text": "Adapted from the Benjamin-Chung Lab Manual\n\n\n\nA detailed tutorial of Git can be found here on the CS61B website\nIf you are already familiar with Git, reference the summary at Section B\nIf you made a mistake, refer to this article to undo, fix, or remove commits\n\n\n\n\nWhile the command line provides full power and flexibility, GitHub also provides GitHub Desktop as a graphical interface for basic git commands. This is a good alternative if you prefer a visual interface.\n\n\n\nBranches allow you to keep track of multiple versions of your work simultaneously. Use branches when:\n\nYou want to make dramatic changes (refactoring) without breaking code for collaborators\nYou want to start working on a new feature that may not make it to the final product\nYou are working with others and don’t want to mix up your current work with theirs\n\nA detailed tutorial on Git Branching: Git Branching Guide\n\n\n\nA standard workflow for contributing code:\n\n\n\n\n\n\n\n\nStep\nCommand\nDescription\n\n\n\n\nSETUP\ngit clone &lt;url&gt; &lt;directory_name&gt;\nClone the repo (first time only)\n\n\n1\ngit pull origin main\nUpdate to match most current version on GitHub\n\n\n2\ngit checkout -b &lt;new_branch_name&gt;\nCreate new branch and switch to it\n\n\n3\nMake file changes\nWork on your feature/implementation\n\n\n4\ngit add -p\nAdd changes to stage, reviewing line by line\n\n\n5\ngit commit -m &lt;commit message&gt;\nCommit files with a descriptive message\n\n\n6\ngit push -u origin &lt;branch_name&gt;\nPush branch to remote (first push)\n\n\n7\nRepeat 4-5\nWork and commit often\n\n\n8\ngit push\nPush work to remote branch\n\n\n9\nSubmit pull request on GitHub\nMerge work from branch into main\n\n\n10\nPR approved and merged\nReviewer deletes remote branch upon merging\n\n\n11\ngit fetch --all --prune\nClean up local git, untrack deleted remote branches\n\n\n\nNote: Many repositories now use main as the default branch instead of master. Check your repository’s default branch name.\n\n\n\n\n\n\n\n\n\n\nCommand\nDescription\n\n\n\n\ngit clone &lt;url&gt; &lt;directory_name&gt;\nClone a repository (first time only)\n\n\ngit pull origin main\nPull from main before making changes\n\n\ngit branch\nCheck what branch you are on\n\n\ngit branch -a\nCheck local branch + all remote branches\n\n\ngit checkout -b &lt;new_branch_name&gt;\nCreate new branch and switch to it\n\n\ngit checkout &lt;branch_name&gt;\nSwitch to existing branch\n\n\ngit add &lt;file_name&gt;\nAdd file to stage for commit\n\n\ngit add -p\nAdd changes interactively, showing one by one\n\n\ngit commit -m &lt;message&gt;\nCommit with a message\n\n\ngit push -u origin &lt;branch_name&gt;\nPush and set upstream (first push)\n\n\ngit push origin &lt;branch_name&gt;\nPush to branch\n\n\ngit checkout --track origin/&lt;branch_name&gt;\nPull remote branch and create local branch\n\n\ngit branch -d &lt;branch_name&gt;\nDelete local branch (-D to force)\n\n\ngit fetch --all --prune\nUntrack deleted remote branches\n\n\n\nNote: Commands above use main as the default branch. Some repositories may still use master - check your repository’s default branch name.\n\n\n\n\n\nCommit every 15 minutes or every time you make a significant change. It is better to commit more rather than less.\n\n\n\nNever push: - .Rout files - difficult to reconcile when multiple people push - Temporary files, log files - Large data files (use shared directory or data repository instead) - Sensitive data or credentials\nUse .gitignore: - Download a standardized .gitignore for R - Download a standardized .gitignore for Python - This ensures you don’t commit log files or temporary files\n\n\n\nCreate self-contained, portable projects. See this discussion on project-oriented workflows.",
+    "crumbs": [
+      "Lab Manual",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "lab-manual/github.html#basics",
+    "href": "lab-manual/github.html#basics",
+    "title": "GitHub",
+    "section": "",
+    "text": "A detailed tutorial of Git can be found here on the CS61B website\nIf you are already familiar with Git, reference the summary at Section B\nIf you made a mistake, refer to this article to undo, fix, or remove commits",
+    "crumbs": [
+      "Lab Manual",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "lab-manual/github.html#github-desktop",
+    "href": "lab-manual/github.html#github-desktop",
+    "title": "GitHub",
+    "section": "",
+    "text": "While the command line provides full power and flexibility, GitHub also provides GitHub Desktop as a graphical interface for basic git commands. This is a good alternative if you prefer a visual interface.",
+    "crumbs": [
+      "Lab Manual",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "lab-manual/github.html#git-branching",
+    "href": "lab-manual/github.html#git-branching",
+    "title": "GitHub",
+    "section": "",
+    "text": "Branches allow you to keep track of multiple versions of your work simultaneously. Use branches when:\n\nYou want to make dramatic changes (refactoring) without breaking code for collaborators\nYou want to start working on a new feature that may not make it to the final product\nYou are working with others and don’t want to mix up your current work with theirs\n\nA detailed tutorial on Git Branching: Git Branching Guide",
+    "crumbs": [
+      "Lab Manual",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "lab-manual/github.html#example-workflow",
+    "href": "lab-manual/github.html#example-workflow",
+    "title": "GitHub",
+    "section": "",
+    "text": "A standard workflow for contributing code:\n\n\n\n\n\n\n\n\nStep\nCommand\nDescription\n\n\n\n\nSETUP\ngit clone &lt;url&gt; &lt;directory_name&gt;\nClone the repo (first time only)\n\n\n1\ngit pull origin main\nUpdate to match most current version on GitHub\n\n\n2\ngit checkout -b &lt;new_branch_name&gt;\nCreate new branch and switch to it\n\n\n3\nMake file changes\nWork on your feature/implementation\n\n\n4\ngit add -p\nAdd changes to stage, reviewing line by line\n\n\n5\ngit commit -m &lt;commit message&gt;\nCommit files with a descriptive message\n\n\n6\ngit push -u origin &lt;branch_name&gt;\nPush branch to remote (first push)\n\n\n7\nRepeat 4-5\nWork and commit often\n\n\n8\ngit push\nPush work to remote branch\n\n\n9\nSubmit pull request on GitHub\nMerge work from branch into main\n\n\n10\nPR approved and merged\nReviewer deletes remote branch upon merging\n\n\n11\ngit fetch --all --prune\nClean up local git, untrack deleted remote branches\n\n\n\nNote: Many repositories now use main as the default branch instead of master. Check your repository’s default branch name.",
+    "crumbs": [
+      "Lab Manual",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "lab-manual/github.html#commonly-used-git-commands",
+    "href": "lab-manual/github.html#commonly-used-git-commands",
+    "title": "GitHub",
+    "section": "",
+    "text": "Command\nDescription\n\n\n\n\ngit clone &lt;url&gt; &lt;directory_name&gt;\nClone a repository (first time only)\n\n\ngit pull origin main\nPull from main before making changes\n\n\ngit branch\nCheck what branch you are on\n\n\ngit branch -a\nCheck local branch + all remote branches\n\n\ngit checkout -b &lt;new_branch_name&gt;\nCreate new branch and switch to it\n\n\ngit checkout &lt;branch_name&gt;\nSwitch to existing branch\n\n\ngit add &lt;file_name&gt;\nAdd file to stage for commit\n\n\ngit add -p\nAdd changes interactively, showing one by one\n\n\ngit commit -m &lt;message&gt;\nCommit with a message\n\n\ngit push -u origin &lt;branch_name&gt;\nPush and set upstream (first push)\n\n\ngit push origin &lt;branch_name&gt;\nPush to branch\n\n\ngit checkout --track origin/&lt;branch_name&gt;\nPull remote branch and create local branch\n\n\ngit branch -d &lt;branch_name&gt;\nDelete local branch (-D to force)\n\n\ngit fetch --all --prune\nUntrack deleted remote branches\n\n\n\nNote: Commands above use main as the default branch. Some repositories may still use master - check your repository’s default branch name.",
+    "crumbs": [
+      "Lab Manual",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "lab-manual/github.html#best-practices",
+    "href": "lab-manual/github.html#best-practices",
+    "title": "GitHub",
+    "section": "",
+    "text": "Commit every 15 minutes or every time you make a significant change. It is better to commit more rather than less.\n\n\n\nNever push: - .Rout files - difficult to reconcile when multiple people push - Temporary files, log files - Large data files (use shared directory or data repository instead) - Sensitive data or credentials\nUse .gitignore: - Download a standardized .gitignore for R - Download a standardized .gitignore for Python - This ensures you don’t commit log files or temporary files\n\n\n\nCreate self-contained, portable projects. See this discussion on project-oriented workflows.",
+    "crumbs": [
+      "Lab Manual",
+      "GitHub"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducibility.html",
+    "href": "lab-manual/reproducibility.html",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "Our lab adopts rigorous practices to maximize the reproducibility of our work:\n\nDesign studies with appropriate methodology and adherence to best practices in epidemiology and biostatistics\nRegister study protocols when appropriate\nWrite and register pre-analysis plans for confirmatory research\nCreate reproducible computational workflows\nProcess and analyze data with internal replication and masking when possible\nUse reporting checklists with manuscripts\nPublish preprints\nPublish data (when possible) and replication code\n\n\n\n\nIn the past decade, an increasing number of studies have found that published findings could not be reproduced, both computationally (with the same data and code) and scientifically (with newly collected data using similar study designs). This “reproducibility crisis” has occurred across disciplines and has motivated new practices in transparency and openness. Our lab is committed to adopting these best practices.\nRecommended readings:\n\nNuzzo R. How scientists fool themselves – and how they can stop. Nature 2015. https://www.nature.com/articles/526182a\nMunafò MR, et al. A manifesto for reproducible science. Nature Human Behavior 2017. http://dx.doi.org/10.1038/s41562-016-0021\n\n\n\n\nWe write pre-analysis plans for most original research projects that are confirmatory in nature. Pre-analysis plans typically include:\n\nBrief background and rationale\nHypotheses / objectives\nStudy design\nDescription of data and data sources\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical analysis plan:\n\nType of model\nCovariate selection / screening\nStandard error estimation method\nMissing data analysis\nAssessment of effect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (when applicable)\n\n\nWe typically register pre-analysis plans on platforms like Open Science Framework (osf.io).\n\n\n\n\nMaintain a clear project timeline with milestones\nKeep the PIs informed of progress and challenges\nDocument your work thoroughly\nUse version control (e.g., Git) for code\nFollow reproducible research practices\n\n\n\n\n\nFollow the lab’s data management plan\nStore data securely and back up regularly\nDocument data sources, processing steps, and analyses\nUse clear, consistent file naming conventions\nPrepare data for archiving and sharing as appropriate\n\n\n\n\n\nMaintain clear, detailed records of your research activities\nDocument analyses, decisions, and results as you go\nMake your work reproducible by others (including your future self)\nStore notebooks and documentation in accessible, backed-up locations\nUse clear, consistent file naming conventions\nConsider using electronic lab notebooks or project wikis for complex projects",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducibility.html#commitment-to-reproducibility",
+    "href": "lab-manual/reproducibility.html#commitment-to-reproducibility",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "Our lab adopts rigorous practices to maximize the reproducibility of our work:\n\nDesign studies with appropriate methodology and adherence to best practices in epidemiology and biostatistics\nRegister study protocols when appropriate\nWrite and register pre-analysis plans for confirmatory research\nCreate reproducible computational workflows\nProcess and analyze data with internal replication and masking when possible\nUse reporting checklists with manuscripts\nPublish preprints\nPublish data (when possible) and replication code",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducibility.html#why-reproducibility-matters",
+    "href": "lab-manual/reproducibility.html#why-reproducibility-matters",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "In the past decade, an increasing number of studies have found that published findings could not be reproduced, both computationally (with the same data and code) and scientifically (with newly collected data using similar study designs). This “reproducibility crisis” has occurred across disciplines and has motivated new practices in transparency and openness. Our lab is committed to adopting these best practices.\nRecommended readings:\n\nNuzzo R. How scientists fool themselves – and how they can stop. Nature 2015. https://www.nature.com/articles/526182a\nMunafò MR, et al. A manifesto for reproducible science. Nature Human Behavior 2017. http://dx.doi.org/10.1038/s41562-016-0021",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducibility.html#pre-analysis-plans",
+    "href": "lab-manual/reproducibility.html#pre-analysis-plans",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "We write pre-analysis plans for most original research projects that are confirmatory in nature. Pre-analysis plans typically include:\n\nBrief background and rationale\nHypotheses / objectives\nStudy design\nDescription of data and data sources\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical analysis plan:\n\nType of model\nCovariate selection / screening\nStandard error estimation method\nMissing data analysis\nAssessment of effect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (when applicable)\n\n\nWe typically register pre-analysis plans on platforms like Open Science Framework (osf.io).",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducibility.html#project-management",
+    "href": "lab-manual/reproducibility.html#project-management",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "Maintain a clear project timeline with milestones\nKeep the PIs informed of progress and challenges\nDocument your work thoroughly\nUse version control (e.g., Git) for code\nFollow reproducible research practices",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducibility.html#data-management",
+    "href": "lab-manual/reproducibility.html#data-management",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "Follow the lab’s data management plan\nStore data securely and back up regularly\nDocument data sources, processing steps, and analyses\nUse clear, consistent file naming conventions\nPrepare data for archiving and sharing as appropriate",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "lab-manual/reproducibility.html#lab-notebooks-and-documentation",
+    "href": "lab-manual/reproducibility.html#lab-notebooks-and-documentation",
+    "title": "Reproducibility",
+    "section": "",
+    "text": "Maintain clear, detailed records of your research activities\nDocument analyses, decisions, and results as you go\nMake your work reproducible by others (including your future self)\nStore notebooks and documentation in accessible, backed-up locations\nUse clear, consistent file naming conventions\nConsider using electronic lab notebooks or project wikis for complex projects",
+    "crumbs": [
+      "Lab Manual",
+      "Reproducibility"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-style.html",
+    "href": "lab-manual/coding-style.html",
+    "title": "Coding Style",
+    "section": "",
+    "text": "Adapted from the Benjamin-Chung Lab Manual\n\n\n\nFile Headers - Every file in a project should have a header that allows it to be interpreted on its own. It should include the name of the project and a short description for what this file does specifically.\n\n################################################################################\n# @Organization - UC Davis Seroepidemiology Research Group\n# @Project - Example Project\n# @Description - This file is responsible for [...]\n################################################################################\n\nFile Structure - Data should flow naturally through a script. Generally: 1) source your config =&gt; 2) load all your data =&gt; 3) do all your analysis/computation =&gt; 4) save your data. Each section should be “chunked together” using comments.\nSingle-Line Comments - Commenting your code is important for reproducibility. Comments describing what large or complex chunks of code do. Format: # This is a comment -- first letter is capitalized and spaced away from the hash symbol\nMulti-Line Comments - For multi-line comments, don’t add line breaks manually. In RStudio &gt; Tools &gt; Global Options &gt; Code &gt; enable “Soft-wrap R source files” to have lines wrap around.\n\n\n\n\nFor ggplot calls and dplyr pipelines, do not crowd single lines. Here are examples:\n# Example: dplyr pipeline\nschool_names = list(\n  OUSD_school_names = absentee_all %&gt;%\n    filter(dist.n == 1) %&gt;%\n    pull(school) %&gt;%\n    unique %&gt;%\n    sort,\n\n  WCCSD_school_names = absentee_all %&gt;%\n    filter(dist.n == 0) %&gt;%\n    pull(school) %&gt;%\n    unique %&gt;%\n    sort\n)\n\n# Example: ggplot call\nggplot(data=data,\n       mapping=aes_string(x=\"year\", y=\"rd\", group=group)) +\n  geom_point(mapping=aes_string(col=group, shape=group),\n             position=position_dodge(width=0.2),\n             size=2.5) +\n  geom_errorbar(mapping=aes_string(ymin=\"lb\", ymax=\"ub\", col=group),\n                position=position_dodge(width=0.2),\n                width=0.2) +\n  scale_y_continuous(limits=limits, breaks=breaks, labels=breaks) +\n  theme_minimal()\n\n\n\n\n\n\nRStudio: Use built-in autoformatting (keyboard shortcut: CMD-Shift-A) to format highlighted code\nPython: Use tools like black or autopep8\n\n\n\n\nThe styler package can style entire projects:\n# Style a directory\nstyler::style_dir(path = \".\", scope = \"line_breaks\", strict = FALSE)\nNote: StyleR modifies files in-place, so use version control before running.\n\n\n\nThe lintr package checks code for style issues:\n\nChecks for unused variables, improper whitespace, and other issues\nBased on Hadley Wickham’s R Style Guide\nCan be customized to project needs\n\nNote: lintr and styler work well together - styler fixes what lintr catches.\n\n\n\n\nFor Python code, follow PEP 8 style guidelines:\n\nUse 4 spaces for indentation\nLimit lines to 79 characters\nUse descriptive variable names\nAdd docstrings to functions and classes",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Style"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-style.html#comments",
+    "href": "lab-manual/coding-style.html#comments",
+    "title": "Coding Style",
+    "section": "",
+    "text": "File Headers - Every file in a project should have a header that allows it to be interpreted on its own. It should include the name of the project and a short description for what this file does specifically.\n\n################################################################################\n# @Organization - UC Davis Seroepidemiology Research Group\n# @Project - Example Project\n# @Description - This file is responsible for [...]\n################################################################################\n\nFile Structure - Data should flow naturally through a script. Generally: 1) source your config =&gt; 2) load all your data =&gt; 3) do all your analysis/computation =&gt; 4) save your data. Each section should be “chunked together” using comments.\nSingle-Line Comments - Commenting your code is important for reproducibility. Comments describing what large or complex chunks of code do. Format: # This is a comment -- first letter is capitalized and spaced away from the hash symbol\nMulti-Line Comments - For multi-line comments, don’t add line breaks manually. In RStudio &gt; Tools &gt; Global Options &gt; Code &gt; enable “Soft-wrap R source files” to have lines wrap around.",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Style"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-style.html#line-breaks",
+    "href": "lab-manual/coding-style.html#line-breaks",
+    "title": "Coding Style",
+    "section": "",
+    "text": "For ggplot calls and dplyr pipelines, do not crowd single lines. Here are examples:\n# Example: dplyr pipeline\nschool_names = list(\n  OUSD_school_names = absentee_all %&gt;%\n    filter(dist.n == 1) %&gt;%\n    pull(school) %&gt;%\n    unique %&gt;%\n    sort,\n\n  WCCSD_school_names = absentee_all %&gt;%\n    filter(dist.n == 0) %&gt;%\n    pull(school) %&gt;%\n    unique %&gt;%\n    sort\n)\n\n# Example: ggplot call\nggplot(data=data,\n       mapping=aes_string(x=\"year\", y=\"rd\", group=group)) +\n  geom_point(mapping=aes_string(col=group, shape=group),\n             position=position_dodge(width=0.2),\n             size=2.5) +\n  geom_errorbar(mapping=aes_string(ymin=\"lb\", ymax=\"ub\", col=group),\n                position=position_dodge(width=0.2),\n                width=0.2) +\n  scale_y_continuous(limits=limits, breaks=breaks, labels=breaks) +\n  theme_minimal()",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Style"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-style.html#automated-tools-for-style",
+    "href": "lab-manual/coding-style.html#automated-tools-for-style",
+    "title": "Coding Style",
+    "section": "",
+    "text": "RStudio: Use built-in autoformatting (keyboard shortcut: CMD-Shift-A) to format highlighted code\nPython: Use tools like black or autopep8\n\n\n\n\nThe styler package can style entire projects:\n# Style a directory\nstyler::style_dir(path = \".\", scope = \"line_breaks\", strict = FALSE)\nNote: StyleR modifies files in-place, so use version control before running.\n\n\n\nThe lintr package checks code for style issues:\n\nChecks for unused variables, improper whitespace, and other issues\nBased on Hadley Wickham’s R Style Guide\nCan be customized to project needs\n\nNote: lintr and styler work well together - styler fixes what lintr catches.",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Style"
+    ]
+  },
+  {
+    "objectID": "lab-manual/coding-style.html#python-style",
+    "href": "lab-manual/coding-style.html#python-style",
+    "title": "Coding Style",
+    "section": "",
+    "text": "For Python code, follow PEP 8 style guidelines:\n\nUse 4 spaces for indentation\nLimit lines to 79 characters\nUse descriptive variable names\nAdd docstrings to functions and classes",
+    "crumbs": [
+      "Lab Manual",
+      "Coding Style"
+    ]
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2025 ucd.serg.github.io authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UC Davis Seroepidemiology Research Group",
+    "section": "",
+    "text": "Accurate methods to measure infectious disease burden are essential for guiding public health decisions, yet many infectious diseases remain under-recognized due to limited diagnostics and costly, resource-intensive surveillance systems. Our work addresses this gap by developing seroepidemiologic methods to characterize infection burden in populations. Currently, we focus on enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and is led by Drs. Kristen Aiemjoy and Ezra Morrison. We are supported by US National Institutes of Health, the Bill and Melinda Gates Foundation and the Department of Defense. We collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America.\nWe are always looking for new collaborators and students. If you are interested in working with us, please check out our opportunities page or reach out to us at ucdserg@ucdavis.edu.\n\n\n\n \n    \n     Krista and Sam contribution to the Open Software Tools for Climate Sensitivite Infectious Diseases (CSID) held in Kanchnaburi, Thailand, 2025 \n  \n  \n  \n      \n    \n     Krista presenting at the Asia Pacific Rickettsia Conference (APRC4) - Penang Malaysia, 2025 \n  \n  \n  \n    \n    \n     Kristen donating blood after a blood collection event for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand \n  \n  \n      \n    \n     Kristina Presenting at ASTMH - Toronto, Canada, 2025 \n  \n  \n    \n    \n     Sam Collecting Dried Blood Spots for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand  \n  \n  \n      \n    \n     Krista and Kristen hoping to put scrub typhus on the WHO's list of recognized Neglected Tropical Diseases  \n  \n  \n  \n    \n    2023 workshop on 'Serocalculator' adjacent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries"
+  },
+  {
+    "objectID": "lab-manual/index.html",
+    "href": "lab-manual/index.html",
+    "title": "UCD-SeRG Lab Manual",
+    "section": "",
+    "text": "Welcome to the UC Davis Seroepidemiology Research Group (UCD-SeRG), led by Drs. Kristen Aiemjoy and Ezra Morrison. Our mission is to improve population health by developing and applying seroepidemiologic methods to characterize infectious disease burden in populations. We focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance systems, including enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and we collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America. We use a variety of epidemiologic, computational, and statistical methods, including causal inference and machine learning methods, in pursuit of our mission.\n\n\n\nThis lab manual covers our communication strategy, code of conduct, and best practices for reproducibility of computational workflows. It is a living document that is updated regularly to reflect our evolving practices and lessons learned.\nAttribution: Much of the content in this lab manual has been adapted from the Benjamin-Chung Lab Manual created by Dr. Jade Benjamin-Chung and contributors at Stanford University. We are grateful for their work in creating and openly sharing their comprehensive lab manual, which has served as an excellent foundation for our own practices. The original manual is available at https://github.com/jadebc/lab-manual under a Creative Commons license.\nFeel free to draw from this manual and adapt it for your own use.\n\n\n\n\n\nWe develop and apply seroepidemiologic methods to characterize infectious disease burden in populations, with a focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance. Our work aims to provide accurate methods to measure infectious disease burden to guide public health decisions.\n\n\n\n\nScientific rigor and reproducibility: We are committed to conducting high-quality, reproducible research that advances the field\nOpen science: We share our methods, code, and data openly whenever possible to enable others to build upon our work\nCollaboration: We work with partners around the world and value diverse perspectives and interdisciplinary approaches\nMentorship: We support the professional development of all lab members at every career stage\nDiversity, equity, and inclusion: We strive to create a welcoming, anti-racist environment where people of all backgrounds are equally and inclusively supported\nWork-life balance: We recognize that doing great science requires taking care of ourselves and maintaining sustainable work practices",
+    "crumbs": [
+      "Lab Manual",
+      "UCD-SeRG Lab Manual"
+    ]
+  },
+  {
+    "objectID": "lab-manual/index.html#about-the-lab",
+    "href": "lab-manual/index.html#about-the-lab",
+    "title": "UCD-SeRG Lab Manual",
+    "section": "",
+    "text": "Welcome to the UC Davis Seroepidemiology Research Group (UCD-SeRG), led by Drs. Kristen Aiemjoy and Ezra Morrison. Our mission is to improve population health by developing and applying seroepidemiologic methods to characterize infectious disease burden in populations. We focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance systems, including enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and we collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America. We use a variety of epidemiologic, computational, and statistical methods, including causal inference and machine learning methods, in pursuit of our mission.",
+    "crumbs": [
+      "Lab Manual",
+      "UCD-SeRG Lab Manual"
+    ]
+  },
+  {
+    "objectID": "lab-manual/index.html#about-this-lab-manual",
+    "href": "lab-manual/index.html#about-this-lab-manual",
+    "title": "UCD-SeRG Lab Manual",
+    "section": "",
+    "text": "This lab manual covers our communication strategy, code of conduct, and best practices for reproducibility of computational workflows. It is a living document that is updated regularly to reflect our evolving practices and lessons learned.\nAttribution: Much of the content in this lab manual has been adapted from the Benjamin-Chung Lab Manual created by Dr. Jade Benjamin-Chung and contributors at Stanford University. We are grateful for their work in creating and openly sharing their comprehensive lab manual, which has served as an excellent foundation for our own practices. The original manual is available at https://github.com/jadebc/lab-manual under a Creative Commons license.\nFeel free to draw from this manual and adapt it for your own use.",
+    "crumbs": [
+      "Lab Manual",
+      "UCD-SeRG Lab Manual"
+    ]
+  },
+  {
+    "objectID": "lab-manual/index.html#mission-and-values",
+    "href": "lab-manual/index.html#mission-and-values",
+    "title": "UCD-SeRG Lab Manual",
+    "section": "",
+    "text": "We develop and apply seroepidemiologic methods to characterize infectious disease burden in populations, with a focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance. Our work aims to provide accurate methods to measure infectious disease burden to guide public health decisions.\n\n\n\n\nScientific rigor and reproducibility: We are committed to conducting high-quality, reproducible research that advances the field\nOpen science: We share our methods, code, and data openly whenever possible to enable others to build upon our work\nCollaboration: We work with partners around the world and value diverse perspectives and interdisciplinary approaches\nMentorship: We support the professional development of all lab members at every career stage\nDiversity, equity, and inclusion: We strive to create a welcoming, anti-racist environment where people of all backgrounds are equally and inclusively supported\nWork-life balance: We recognize that doing great science requires taking care of ourselves and maintaining sustainable work practices",
+    "crumbs": [
+      "Lab Manual",
+      "UCD-SeRG Lab Manual"
+    ]
+  },
+  {
+    "objectID": "lab-manual/publications.html",
+    "href": "lab-manual/publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "We follow the ICMJE Definition of authorship. To qualify for authorship, individuals must meet all four criteria:\n\nSubstantial contributions to conception/design, or acquisition/analysis/interpretation of data\nDrafting the work or revising it critically for important intellectual content\nFinal approval of the version to be published\nAgreement to be accountable for all aspects of the work\n\nAuthorship practices:\n\nFirst authorship: Typically goes to the person who led the work\nCorresponding author: Usually the PI, unless otherwise agreed\nCo-authorship: Determined by substantial intellectual contributions\nAuthor order: Should be discussed and agreed upon by all authors\nAcknowledgments: For contributions that don’t meet authorship criteria\n\nAuthorship should be discussed early in a project and revisited as the work evolves. We encourage using the CRediT Taxonomy to document specific author contributions.\n\n\n\n\nPlanning: Discuss target journals, outline, and timeline with PIs\nDrafting: Lead author prepares initial draft\nInternal review: Co-authors review and provide feedback\nRevision: Lead author incorporates feedback iteratively\nPI approval: Obtain final approval from PIs before submission\nSubmission: Submit to journal\nRevisions: Lead author coordinates response to peer reviewers\nPublication: Celebrate and share!\n\n\n\n\n\nWe encourage posting preprints prior to or during peer review on platforms like medRxiv or bioRxiv\nPreprints allow rapid dissemination of findings and can be cited in grant applications\nWe support publishing in open access journals when possible to maximize accessibility\nMany funders, including NIH, have public access policies that require making publications freely available\n\n\n\n\nUsing reporting checklists ensures that publications contain information needed for readers to assess validity and reproducibility. We use checklists appropriate to study design:\n\nCONSORT for randomized trials\nSTROBE for observational studies\nPRISMA for systematic reviews\nOthers as appropriate (see EQUATOR Network)\n\n\n\n\n\nWe publish data on platforms like Open Science Framework when ethically and legally permissible\nWe share analysis code via GitHub repositories\nWe archive code on Zenodo for long-term preservation with DOI\nInclude data dictionaries and README files with published datasets\nFollow funder and journal requirements for data sharing\n\n\n\n\nBefore submitting a manuscript:\n\nCompleted relevant reporting checklist\nResults are reproducible (rerunning code replicates tables/figures exactly)\nTarget journal selected\nTitle is declarative and states findings clearly\nWord count meets journal requirements\nManuscript follows journal formatting guidelines\nConsistent voice throughout (typically active voice)\nAll figures and tables referenced in main text\nCaptions for all figures and tables\nTables/figures numbered by order of appearance\nAbbreviations defined at first use and used sparingly\nAvoid subjective wording (e.g., “interesting”, “dramatic”)\nAvoid directionless statements (specify direction of associations)\nCausal language only when supported by study design\nAvoid “significant” (easily confused with statistical significance)\nAuthor contributions drafted using CRediT Taxonomy",
+    "crumbs": [
+      "Lab Manual",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "lab-manual/publications.html#authorship-guidelines",
+    "href": "lab-manual/publications.html#authorship-guidelines",
+    "title": "Publications",
+    "section": "",
+    "text": "We follow the ICMJE Definition of authorship. To qualify for authorship, individuals must meet all four criteria:\n\nSubstantial contributions to conception/design, or acquisition/analysis/interpretation of data\nDrafting the work or revising it critically for important intellectual content\nFinal approval of the version to be published\nAgreement to be accountable for all aspects of the work\n\nAuthorship practices:\n\nFirst authorship: Typically goes to the person who led the work\nCorresponding author: Usually the PI, unless otherwise agreed\nCo-authorship: Determined by substantial intellectual contributions\nAuthor order: Should be discussed and agreed upon by all authors\nAcknowledgments: For contributions that don’t meet authorship criteria\n\nAuthorship should be discussed early in a project and revisited as the work evolves. We encourage using the CRediT Taxonomy to document specific author contributions.",
+    "crumbs": [
+      "Lab Manual",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "lab-manual/publications.html#publication-process",
+    "href": "lab-manual/publications.html#publication-process",
+    "title": "Publications",
+    "section": "",
+    "text": "Planning: Discuss target journals, outline, and timeline with PIs\nDrafting: Lead author prepares initial draft\nInternal review: Co-authors review and provide feedback\nRevision: Lead author incorporates feedback iteratively\nPI approval: Obtain final approval from PIs before submission\nSubmission: Submit to journal\nRevisions: Lead author coordinates response to peer reviewers\nPublication: Celebrate and share!",
+    "crumbs": [
+      "Lab Manual",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "lab-manual/publications.html#preprints-and-open-access",
+    "href": "lab-manual/publications.html#preprints-and-open-access",
+    "title": "Publications",
+    "section": "",
+    "text": "We encourage posting preprints prior to or during peer review on platforms like medRxiv or bioRxiv\nPreprints allow rapid dissemination of findings and can be cited in grant applications\nWe support publishing in open access journals when possible to maximize accessibility\nMany funders, including NIH, have public access policies that require making publications freely available",
+    "crumbs": [
+      "Lab Manual",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "lab-manual/publications.html#reporting-checklists",
+    "href": "lab-manual/publications.html#reporting-checklists",
+    "title": "Publications",
+    "section": "",
+    "text": "Using reporting checklists ensures that publications contain information needed for readers to assess validity and reproducibility. We use checklists appropriate to study design:\n\nCONSORT for randomized trials\nSTROBE for observational studies\nPRISMA for systematic reviews\nOthers as appropriate (see EQUATOR Network)",
+    "crumbs": [
+      "Lab Manual",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "lab-manual/publications.html#publishing-data-and-code",
+    "href": "lab-manual/publications.html#publishing-data-and-code",
+    "title": "Publications",
+    "section": "",
+    "text": "We publish data on platforms like Open Science Framework when ethically and legally permissible\nWe share analysis code via GitHub repositories\nWe archive code on Zenodo for long-term preservation with DOI\nInclude data dictionaries and README files with published datasets\nFollow funder and journal requirements for data sharing",
+    "crumbs": [
+      "Lab Manual",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "lab-manual/publications.html#manuscript-checklist",
+    "href": "lab-manual/publications.html#manuscript-checklist",
+    "title": "Publications",
+    "section": "",
+    "text": "Before submitting a manuscript:\n\nCompleted relevant reporting checklist\nResults are reproducible (rerunning code replicates tables/figures exactly)\nTarget journal selected\nTitle is declarative and states findings clearly\nWord count meets journal requirements\nManuscript follows journal formatting guidelines\nConsistent voice throughout (typically active voice)\nAll figures and tables referenced in main text\nCaptions for all figures and tables\nTables/figures numbered by order of appearance\nAbbreviations defined at first use and used sparingly\nAvoid subjective wording (e.g., “interesting”, “dramatic”)\nAvoid directionless statements (specify direction of associations)\nCausal language only when supported by study design\nAvoid “significant” (easily confused with statistical significance)\nAuthor contributions drafted using CRediT Taxonomy",
+    "crumbs": [
+      "Lab Manual",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "lab-manual/checklists.html",
+    "href": "lab-manual/checklists.html",
+    "title": "Checklists",
+    "section": "",
+    "text": "Brief background on the study\nHypotheses / objectives\nStudy design\nDescription of data\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical model description\nCovariate selection / screening approach\nStandard error estimation method\nMissing data analysis plan\nEffect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (if applicable)\n\n\n\n\nBefore sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within repository and/or designated folder?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe the script’s purpose?\nIs the script pushed to GitHub repository?\nDoes code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?\nAre file paths relative (not absolute) for portability?\nIs there a README explaining how to run the code?\n\n\n\n\n\nX-axis and y-axis labeled clearly\nPanels labeled if multiple subplots included\nSufficient tick marks and labels on axes\nFont size appropriate (readable but not distracting)\nColors are colorblind-friendly\nColors, shapes, line types defined in legend\nMinimal abbreviations; all explained\nTransparency used for overlapping data (if needed)\nMeasures of precision shown (e.g., 95% CIs)\nFigure caption is clear and standalone\nHigh resolution for publication (typically 300+ DPI)\n\n\n\n\n(See comprehensive checklist in Publications section)",
+    "crumbs": [
+      "Lab Manual",
+      "Checklists"
+    ]
+  },
+  {
+    "objectID": "lab-manual/checklists.html#pre-analysis-plan-checklist",
+    "href": "lab-manual/checklists.html#pre-analysis-plan-checklist",
+    "title": "Checklists",
+    "section": "",
+    "text": "Brief background on the study\nHypotheses / objectives\nStudy design\nDescription of data\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical model description\nCovariate selection / screening approach\nStandard error estimation method\nMissing data analysis plan\nEffect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (if applicable)",
+    "crumbs": [
+      "Lab Manual",
+      "Checklists"
+    ]
+  },
+  {
+    "objectID": "lab-manual/checklists.html#code-checklist",
+    "href": "lab-manual/checklists.html#code-checklist",
+    "title": "Checklists",
+    "section": "",
+    "text": "Before sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within repository and/or designated folder?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe the script’s purpose?\nIs the script pushed to GitHub repository?\nDoes code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?\nAre file paths relative (not absolute) for portability?\nIs there a README explaining how to run the code?",
+    "crumbs": [
+      "Lab Manual",
+      "Checklists"
+    ]
+  },
+  {
+    "objectID": "lab-manual/checklists.html#figure-checklist",
+    "href": "lab-manual/checklists.html#figure-checklist",
+    "title": "Checklists",
+    "section": "",
+    "text": "X-axis and y-axis labeled clearly\nPanels labeled if multiple subplots included\nSufficient tick marks and labels on axes\nFont size appropriate (readable but not distracting)\nColors are colorblind-friendly\nColors, shapes, line types defined in legend\nMinimal abbreviations; all explained\nTransparency used for overlapping data (if needed)\nMeasures of precision shown (e.g., 95% CIs)\nFigure caption is clear and standalone\nHigh resolution for publication (typically 300+ DPI)",
+    "crumbs": [
+      "Lab Manual",
+      "Checklists"
+    ]
+  },
+  {
+    "objectID": "lab-manual/checklists.html#manuscript-checklist",
+    "href": "lab-manual/checklists.html#manuscript-checklist",
+    "title": "Checklists",
+    "section": "",
+    "text": "(See comprehensive checklist in Publications section)",
+    "crumbs": [
+      "Lab Manual",
+      "Checklists"
     ]
   },
   {
@@ -405,325 +914,91 @@
     ]
   },
   {
-    "objectID": "lab-manual/publications.html",
-    "href": "lab-manual/publications.html",
-    "title": "Publications",
+    "objectID": "lab-manual/culture-and-conduct.html",
+    "href": "lab-manual/culture-and-conduct.html",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "We follow the ICMJE Definition of authorship. To qualify for authorship, individuals must meet all four criteria:\n\nSubstantial contributions to conception/design, or acquisition/analysis/interpretation of data\nDrafting the work or revising it critically for important intellectual content\nFinal approval of the version to be published\nAgreement to be accountable for all aspects of the work\n\nAuthorship practices:\n\nFirst authorship: Typically goes to the person who led the work\nCorresponding author: Usually the PI, unless otherwise agreed\nCo-authorship: Determined by substantial intellectual contributions\nAuthor order: Should be discussed and agreed upon by all authors\nAcknowledgments: For contributions that don’t meet authorship criteria\n\nAuthorship should be discussed early in a project and revisited as the work evolves. We encourage using the CRediT Taxonomy to document specific author contributions.\n\n\n\n\nPlanning: Discuss target journals, outline, and timeline with PIs\nDrafting: Lead author prepares initial draft\nInternal review: Co-authors review and provide feedback\nRevision: Lead author incorporates feedback iteratively\nPI approval: Obtain final approval from PIs before submission\nSubmission: Submit to journal\nRevisions: Lead author coordinates response to peer reviewers\nPublication: Celebrate and share!\n\n\n\n\n\nWe encourage posting preprints prior to or during peer review on platforms like medRxiv or bioRxiv\nPreprints allow rapid dissemination of findings and can be cited in grant applications\nWe support publishing in open access journals when possible to maximize accessibility\nMany funders, including NIH, have public access policies that require making publications freely available\n\n\n\n\nUsing reporting checklists ensures that publications contain information needed for readers to assess validity and reproducibility. We use checklists appropriate to study design:\n\nCONSORT for randomized trials\nSTROBE for observational studies\nPRISMA for systematic reviews\nOthers as appropriate (see EQUATOR Network)\n\n\n\n\n\nWe publish data on platforms like Open Science Framework when ethically and legally permissible\nWe share analysis code via GitHub repositories\nWe archive code on Zenodo for long-term preservation with DOI\nInclude data dictionaries and README files with published datasets\nFollow funder and journal requirements for data sharing\n\n\n\n\nBefore submitting a manuscript:\n\nCompleted relevant reporting checklist\nResults are reproducible (rerunning code replicates tables/figures exactly)\nTarget journal selected\nTitle is declarative and states findings clearly\nWord count meets journal requirements\nManuscript follows journal formatting guidelines\nConsistent voice throughout (typically active voice)\nAll figures and tables referenced in main text\nCaptions for all figures and tables\nTables/figures numbered by order of appearance\nAbbreviations defined at first use and used sparingly\nAvoid subjective wording (e.g., “interesting”, “dramatic”)\nAvoid directionless statements (specify direction of associations)\nCausal language only when supported by study design\nAvoid “significant” (easily confused with statistical significance)\nAuthor contributions drafted using CRediT Taxonomy",
+    "text": "We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment.\nWe encourage lab members of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group thrives upon such respectful input from team members, and open dialogue helps us continuously improve our productivity and the quality of our work.\n\n\n\nThe UCD-SeRG lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, including, but not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.\n\n\n\nAll lab members are expected to:\n\nConduct research with integrity and honesty\nTreat all lab members, collaborators, and research participants with respect\nCommunicate openly and regularly with the PIs and other lab members\nContribute to a positive, collaborative lab environment\nTake responsibility for your own professional development\nParticipate in lab meetings and group activities\nMaintain good documentation of your work\nFollow all institutional policies and research ethics guidelines\n\n\n\n\nWe recognize that people have different working styles and personal obligations. One benefit of the academic environment is its schedule flexibility. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.\nLab members may choose to work in the early morning, evening, or weekends. However, we do not expect lab members to respond to communications outside of business hours unless there are special circumstances.\nWhat matters most is that you:\n\nMake consistent progress on your research\nMeet deadlines and commitments\nAre available for scheduled meetings and lab events\nCommunicate your schedule and availability\n\n\n\n\nTaking time off is important for maintaining productivity and well-being. Lab members should:\n\nCoordinate time off with the PIs in advance\nAlert the team if you will be unusually busy (e.g., taking exams, major deadlines) or on vacation so we know not to expect immediate responses\nEnsure ongoing projects are covered during your absence\nUpdate the lab calendar with your planned absences\nFollow university policies for holidays and leave\n\n\n\n\nAll lab members must complete required human subjects research training (e.g., CITI training) and share their certificate with the PIs. Team members will be added to relevant Institutional Review Board (IRB) protocols prior to working with identifiable datasets.\nOne of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. In practice, this means:\n\nUnderstand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers\nDo not share data with anyone without permission, including other members of the group who might not be on the same IRB protocol (check with PIs first)\nRemember that data that appears non-identifiable may still require special protection under IRB or HIPAA regulations\nAlways proceed with caution and ask for help if you have concerns about maintaining study participant confidentiality\n\n\n\n\nWe adhere to the ICMJE Definition of authorship and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.\nAuthorship should be discussed early in a project and revisited as the work evolves to ensure transparency and fairness.",
     "crumbs": [
       "Lab Manual",
-      "Publications"
+      "Culture and Conduct"
     ]
   },
   {
-    "objectID": "lab-manual/publications.html#authorship-guidelines",
-    "href": "lab-manual/publications.html#authorship-guidelines",
-    "title": "Publications",
+    "objectID": "lab-manual/culture-and-conduct.html#lab-culture",
+    "href": "lab-manual/culture-and-conduct.html#lab-culture",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "We follow the ICMJE Definition of authorship. To qualify for authorship, individuals must meet all four criteria:\n\nSubstantial contributions to conception/design, or acquisition/analysis/interpretation of data\nDrafting the work or revising it critically for important intellectual content\nFinal approval of the version to be published\nAgreement to be accountable for all aspects of the work\n\nAuthorship practices:\n\nFirst authorship: Typically goes to the person who led the work\nCorresponding author: Usually the PI, unless otherwise agreed\nCo-authorship: Determined by substantial intellectual contributions\nAuthor order: Should be discussed and agreed upon by all authors\nAcknowledgments: For contributions that don’t meet authorship criteria\n\nAuthorship should be discussed early in a project and revisited as the work evolves. We encourage using the CRediT Taxonomy to document specific author contributions.",
+    "text": "We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment.\nWe encourage lab members of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group thrives upon such respectful input from team members, and open dialogue helps us continuously improve our productivity and the quality of our work.",
     "crumbs": [
       "Lab Manual",
-      "Publications"
+      "Culture and Conduct"
     ]
   },
   {
-    "objectID": "lab-manual/publications.html#publication-process",
-    "href": "lab-manual/publications.html#publication-process",
-    "title": "Publications",
+    "objectID": "lab-manual/culture-and-conduct.html#diversity-equity-and-inclusion",
+    "href": "lab-manual/culture-and-conduct.html#diversity-equity-and-inclusion",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "Planning: Discuss target journals, outline, and timeline with PIs\nDrafting: Lead author prepares initial draft\nInternal review: Co-authors review and provide feedback\nRevision: Lead author incorporates feedback iteratively\nPI approval: Obtain final approval from PIs before submission\nSubmission: Submit to journal\nRevisions: Lead author coordinates response to peer reviewers\nPublication: Celebrate and share!",
+    "text": "The UCD-SeRG lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, including, but not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.",
     "crumbs": [
       "Lab Manual",
-      "Publications"
+      "Culture and Conduct"
     ]
   },
   {
-    "objectID": "lab-manual/publications.html#preprints-and-open-access",
-    "href": "lab-manual/publications.html#preprints-and-open-access",
-    "title": "Publications",
+    "objectID": "lab-manual/culture-and-conduct.html#general-expectations",
+    "href": "lab-manual/culture-and-conduct.html#general-expectations",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "We encourage posting preprints prior to or during peer review on platforms like medRxiv or bioRxiv\nPreprints allow rapid dissemination of findings and can be cited in grant applications\nWe support publishing in open access journals when possible to maximize accessibility\nMany funders, including NIH, have public access policies that require making publications freely available",
+    "text": "All lab members are expected to:\n\nConduct research with integrity and honesty\nTreat all lab members, collaborators, and research participants with respect\nCommunicate openly and regularly with the PIs and other lab members\nContribute to a positive, collaborative lab environment\nTake responsibility for your own professional development\nParticipate in lab meetings and group activities\nMaintain good documentation of your work\nFollow all institutional policies and research ethics guidelines",
     "crumbs": [
       "Lab Manual",
-      "Publications"
+      "Culture and Conduct"
     ]
   },
   {
-    "objectID": "lab-manual/publications.html#reporting-checklists",
-    "href": "lab-manual/publications.html#reporting-checklists",
-    "title": "Publications",
+    "objectID": "lab-manual/culture-and-conduct.html#work-hours-and-flexibility",
+    "href": "lab-manual/culture-and-conduct.html#work-hours-and-flexibility",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "Using reporting checklists ensures that publications contain information needed for readers to assess validity and reproducibility. We use checklists appropriate to study design:\n\nCONSORT for randomized trials\nSTROBE for observational studies\nPRISMA for systematic reviews\nOthers as appropriate (see EQUATOR Network)",
+    "text": "We recognize that people have different working styles and personal obligations. One benefit of the academic environment is its schedule flexibility. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.\nLab members may choose to work in the early morning, evening, or weekends. However, we do not expect lab members to respond to communications outside of business hours unless there are special circumstances.\nWhat matters most is that you:\n\nMake consistent progress on your research\nMeet deadlines and commitments\nAre available for scheduled meetings and lab events\nCommunicate your schedule and availability",
     "crumbs": [
       "Lab Manual",
-      "Publications"
+      "Culture and Conduct"
     ]
   },
   {
-    "objectID": "lab-manual/publications.html#publishing-data-and-code",
-    "href": "lab-manual/publications.html#publishing-data-and-code",
-    "title": "Publications",
+    "objectID": "lab-manual/culture-and-conduct.html#time-off",
+    "href": "lab-manual/culture-and-conduct.html#time-off",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "We publish data on platforms like Open Science Framework when ethically and legally permissible\nWe share analysis code via GitHub repositories\nWe archive code on Zenodo for long-term preservation with DOI\nInclude data dictionaries and README files with published datasets\nFollow funder and journal requirements for data sharing",
+    "text": "Taking time off is important for maintaining productivity and well-being. Lab members should:\n\nCoordinate time off with the PIs in advance\nAlert the team if you will be unusually busy (e.g., taking exams, major deadlines) or on vacation so we know not to expect immediate responses\nEnsure ongoing projects are covered during your absence\nUpdate the lab calendar with your planned absences\nFollow university policies for holidays and leave",
     "crumbs": [
       "Lab Manual",
-      "Publications"
+      "Culture and Conduct"
     ]
   },
   {
-    "objectID": "lab-manual/publications.html#manuscript-checklist",
-    "href": "lab-manual/publications.html#manuscript-checklist",
-    "title": "Publications",
+    "objectID": "lab-manual/culture-and-conduct.html#protecting-human-subjects",
+    "href": "lab-manual/culture-and-conduct.html#protecting-human-subjects",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "Before submitting a manuscript:\n\nCompleted relevant reporting checklist\nResults are reproducible (rerunning code replicates tables/figures exactly)\nTarget journal selected\nTitle is declarative and states findings clearly\nWord count meets journal requirements\nManuscript follows journal formatting guidelines\nConsistent voice throughout (typically active voice)\nAll figures and tables referenced in main text\nCaptions for all figures and tables\nTables/figures numbered by order of appearance\nAbbreviations defined at first use and used sparingly\nAvoid subjective wording (e.g., “interesting”, “dramatic”)\nAvoid directionless statements (specify direction of associations)\nCausal language only when supported by study design\nAvoid “significant” (easily confused with statistical significance)\nAuthor contributions drafted using CRediT Taxonomy",
+    "text": "All lab members must complete required human subjects research training (e.g., CITI training) and share their certificate with the PIs. Team members will be added to relevant Institutional Review Board (IRB) protocols prior to working with identifiable datasets.\nOne of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. In practice, this means:\n\nUnderstand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers\nDo not share data with anyone without permission, including other members of the group who might not be on the same IRB protocol (check with PIs first)\nRemember that data that appears non-identifiable may still require special protection under IRB or HIPAA regulations\nAlways proceed with caution and ask for help if you have concerns about maintaining study participant confidentiality",
     "crumbs": [
       "Lab Manual",
-      "Publications"
+      "Culture and Conduct"
     ]
   },
   {
-    "objectID": "lab-manual/index.html",
-    "href": "lab-manual/index.html",
-    "title": "UCD-SeRG Lab Manual",
+    "objectID": "lab-manual/culture-and-conduct.html#authorship",
+    "href": "lab-manual/culture-and-conduct.html#authorship",
+    "title": "Culture and Conduct",
     "section": "",
-    "text": "Welcome to the UC Davis Seroepidemiology Research Group (UCD-SeRG), led by Drs. Kristen Aiemjoy and Ezra Morrison. Our mission is to improve population health by developing and applying seroepidemiologic methods to characterize infectious disease burden in populations. We focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance systems, including enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and we collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America. We use a variety of epidemiologic, computational, and statistical methods, including causal inference and machine learning methods, in pursuit of our mission.\n\n\n\nThis lab manual covers our communication strategy, code of conduct, and best practices for reproducibility of computational workflows. It is a living document that is updated regularly to reflect our evolving practices and lessons learned.\nThis manual was created with inspiration from other scientists’ lab manuals, particularly the Benjamin-Chung Lab Manual.\nFeel free to draw from this manual and adapt it for your own use.\n\n\n\n\n\nWe develop and apply seroepidemiologic methods to characterize infectious disease burden in populations, with a focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance. Our work aims to provide accurate methods to measure infectious disease burden to guide public health decisions.\n\n\n\n\nScientific rigor and reproducibility: We are committed to conducting high-quality, reproducible research that advances the field\nOpen science: We share our methods, code, and data openly whenever possible to enable others to build upon our work\nCollaboration: We work with partners around the world and value diverse perspectives and interdisciplinary approaches\nMentorship: We support the professional development of all lab members at every career stage\nDiversity, equity, and inclusion: We strive to create a welcoming, anti-racist environment where people of all backgrounds are equally and inclusively supported\nWork-life balance: We recognize that doing great science requires taking care of ourselves and maintaining sustainable work practices",
+    "text": "We adhere to the ICMJE Definition of authorship and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.\nAuthorship should be discussed early in a project and revisited as the work evolves to ensure transparency and fairness.",
     "crumbs": [
       "Lab Manual",
-      "UCD-SeRG Lab Manual"
-    ]
-  },
-  {
-    "objectID": "lab-manual/index.html#about-the-lab",
-    "href": "lab-manual/index.html#about-the-lab",
-    "title": "UCD-SeRG Lab Manual",
-    "section": "",
-    "text": "Welcome to the UC Davis Seroepidemiology Research Group (UCD-SeRG), led by Drs. Kristen Aiemjoy and Ezra Morrison. Our mission is to improve population health by developing and applying seroepidemiologic methods to characterize infectious disease burden in populations. We focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance systems, including enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and we collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America. We use a variety of epidemiologic, computational, and statistical methods, including causal inference and machine learning methods, in pursuit of our mission.",
-    "crumbs": [
-      "Lab Manual",
-      "UCD-SeRG Lab Manual"
-    ]
-  },
-  {
-    "objectID": "lab-manual/index.html#about-this-lab-manual",
-    "href": "lab-manual/index.html#about-this-lab-manual",
-    "title": "UCD-SeRG Lab Manual",
-    "section": "",
-    "text": "This lab manual covers our communication strategy, code of conduct, and best practices for reproducibility of computational workflows. It is a living document that is updated regularly to reflect our evolving practices and lessons learned.\nThis manual was created with inspiration from other scientists’ lab manuals, particularly the Benjamin-Chung Lab Manual.\nFeel free to draw from this manual and adapt it for your own use.",
-    "crumbs": [
-      "Lab Manual",
-      "UCD-SeRG Lab Manual"
-    ]
-  },
-  {
-    "objectID": "lab-manual/index.html#mission-and-values",
-    "href": "lab-manual/index.html#mission-and-values",
-    "title": "UCD-SeRG Lab Manual",
-    "section": "",
-    "text": "We develop and apply seroepidemiologic methods to characterize infectious disease burden in populations, with a focus on diseases that are under-recognized due to limited diagnostics and resource-intensive surveillance. Our work aims to provide accurate methods to measure infectious disease burden to guide public health decisions.\n\n\n\n\nScientific rigor and reproducibility: We are committed to conducting high-quality, reproducible research that advances the field\nOpen science: We share our methods, code, and data openly whenever possible to enable others to build upon our work\nCollaboration: We work with partners around the world and value diverse perspectives and interdisciplinary approaches\nMentorship: We support the professional development of all lab members at every career stage\nDiversity, equity, and inclusion: We strive to create a welcoming, anti-racist environment where people of all backgrounds are equally and inclusively supported\nWork-life balance: We recognize that doing great science requires taking care of ourselves and maintaining sustainable work practices",
-    "crumbs": [
-      "Lab Manual",
-      "UCD-SeRG Lab Manual"
-    ]
-  },
-  {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "MIT License",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2025 ucd.serg.github.io authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "UC Davis Seroepidemiology Research Group",
-    "section": "",
-    "text": "Accurate methods to measure infectious disease burden are essential for guiding public health decisions, yet many infectious diseases remain under-recognized due to limited diagnostics and costly, resource-intensive surveillance systems. Our work addresses this gap by developing seroepidemiologic methods to characterize infection burden in populations. Currently, we focus on enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and is led by Drs. Kristen Aiemjoy and Ezra Morrison. We are supported by US National Institutes of Health, the Bill and Melinda Gates Foundation and the Department of Defense. We collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America.\nWe are always looking for new collaborators and students. If you are interested in working with us, please check out our opportunities page or reach out to us at ucdserg@ucdavis.edu.\n\n\n\n \n    \n     Krista and Sam contribution to the Open Software Tools for Climate Sensitivite Infectious Diseases (CSID) held in Kanchnaburi, Thailand, 2025 \n  \n  \n  \n      \n    \n     Krista presenting at the Asia Pacific Rickettsia Conference (APRC4) - Penang Malaysia, 2025 \n  \n  \n  \n    \n    \n     Kristen donating blood after a blood collection event for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand \n  \n  \n      \n    \n     Kristina Presenting at ASTMH - Toronto, Canada, 2025 \n  \n  \n    \n    \n     Sam Collecting Dried Blood Spots for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand  \n  \n  \n      \n    \n     Krista and Kristen hoping to put scrub typhus on the WHO's list of recognized Neglected Tropical Diseases  \n  \n  \n  \n    \n    2023 workshop on 'Serocalculator' adjacent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries"
-  },
-  {
-    "objectID": "lab-manual/reproducibility.html",
-    "href": "lab-manual/reproducibility.html",
-    "title": "Reproducibility",
-    "section": "",
-    "text": "Our lab adopts rigorous practices to maximize the reproducibility of our work:\n\nDesign studies with appropriate methodology and adherence to best practices in epidemiology and biostatistics\nRegister study protocols when appropriate\nWrite and register pre-analysis plans for confirmatory research\nCreate reproducible computational workflows\nProcess and analyze data with internal replication and masking when possible\nUse reporting checklists with manuscripts\nPublish preprints\nPublish data (when possible) and replication code\n\n\n\n\nIn the past decade, an increasing number of studies have found that published findings could not be reproduced, both computationally (with the same data and code) and scientifically (with newly collected data using similar study designs). This “reproducibility crisis” has occurred across disciplines and has motivated new practices in transparency and openness. Our lab is committed to adopting these best practices.\nRecommended readings:\n\nNuzzo R. How scientists fool themselves – and how they can stop. Nature 2015. https://www.nature.com/articles/526182a\nMunafò MR, et al. A manifesto for reproducible science. Nature Human Behavior 2017. http://dx.doi.org/10.1038/s41562-016-0021\n\n\n\n\nWe write pre-analysis plans for most original research projects that are confirmatory in nature. Pre-analysis plans typically include:\n\nBrief background and rationale\nHypotheses / objectives\nStudy design\nDescription of data and data sources\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical analysis plan:\n\nType of model\nCovariate selection / screening\nStandard error estimation method\nMissing data analysis\nAssessment of effect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (when applicable)\n\n\nWe typically register pre-analysis plans on platforms like Open Science Framework (osf.io).\n\n\n\n\nMaintain a clear project timeline with milestones\nKeep the PIs informed of progress and challenges\nDocument your work thoroughly\nUse version control (e.g., Git) for code\nFollow reproducible research practices\n\n\n\n\n\nFollow the lab’s data management plan\nStore data securely and back up regularly\nDocument data sources, processing steps, and analyses\nUse clear, consistent file naming conventions\nPrepare data for archiving and sharing as appropriate\n\n\n\n\n\nMaintain clear, detailed records of your research activities\nDocument analyses, decisions, and results as you go\nMake your work reproducible by others (including your future self)\nStore notebooks and documentation in accessible, backed-up locations\nUse clear, consistent file naming conventions\nConsider using electronic lab notebooks or project wikis for complex projects",
-    "crumbs": [
-      "Lab Manual",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "lab-manual/reproducibility.html#commitment-to-reproducibility",
-    "href": "lab-manual/reproducibility.html#commitment-to-reproducibility",
-    "title": "Reproducibility",
-    "section": "",
-    "text": "Our lab adopts rigorous practices to maximize the reproducibility of our work:\n\nDesign studies with appropriate methodology and adherence to best practices in epidemiology and biostatistics\nRegister study protocols when appropriate\nWrite and register pre-analysis plans for confirmatory research\nCreate reproducible computational workflows\nProcess and analyze data with internal replication and masking when possible\nUse reporting checklists with manuscripts\nPublish preprints\nPublish data (when possible) and replication code",
-    "crumbs": [
-      "Lab Manual",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "lab-manual/reproducibility.html#why-reproducibility-matters",
-    "href": "lab-manual/reproducibility.html#why-reproducibility-matters",
-    "title": "Reproducibility",
-    "section": "",
-    "text": "In the past decade, an increasing number of studies have found that published findings could not be reproduced, both computationally (with the same data and code) and scientifically (with newly collected data using similar study designs). This “reproducibility crisis” has occurred across disciplines and has motivated new practices in transparency and openness. Our lab is committed to adopting these best practices.\nRecommended readings:\n\nNuzzo R. How scientists fool themselves – and how they can stop. Nature 2015. https://www.nature.com/articles/526182a\nMunafò MR, et al. A manifesto for reproducible science. Nature Human Behavior 2017. http://dx.doi.org/10.1038/s41562-016-0021",
-    "crumbs": [
-      "Lab Manual",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "lab-manual/reproducibility.html#pre-analysis-plans",
-    "href": "lab-manual/reproducibility.html#pre-analysis-plans",
-    "title": "Reproducibility",
-    "section": "",
-    "text": "We write pre-analysis plans for most original research projects that are confirmatory in nature. Pre-analysis plans typically include:\n\nBrief background and rationale\nHypotheses / objectives\nStudy design\nDescription of data and data sources\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical analysis plan:\n\nType of model\nCovariate selection / screening\nStandard error estimation method\nMissing data analysis\nAssessment of effect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (when applicable)\n\n\nWe typically register pre-analysis plans on platforms like Open Science Framework (osf.io).",
-    "crumbs": [
-      "Lab Manual",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "lab-manual/reproducibility.html#project-management",
-    "href": "lab-manual/reproducibility.html#project-management",
-    "title": "Reproducibility",
-    "section": "",
-    "text": "Maintain a clear project timeline with milestones\nKeep the PIs informed of progress and challenges\nDocument your work thoroughly\nUse version control (e.g., Git) for code\nFollow reproducible research practices",
-    "crumbs": [
-      "Lab Manual",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "lab-manual/reproducibility.html#data-management",
-    "href": "lab-manual/reproducibility.html#data-management",
-    "title": "Reproducibility",
-    "section": "",
-    "text": "Follow the lab’s data management plan\nStore data securely and back up regularly\nDocument data sources, processing steps, and analyses\nUse clear, consistent file naming conventions\nPrepare data for archiving and sharing as appropriate",
-    "crumbs": [
-      "Lab Manual",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "lab-manual/reproducibility.html#lab-notebooks-and-documentation",
-    "href": "lab-manual/reproducibility.html#lab-notebooks-and-documentation",
-    "title": "Reproducibility",
-    "section": "",
-    "text": "Maintain clear, detailed records of your research activities\nDocument analyses, decisions, and results as you go\nMake your work reproducible by others (including your future self)\nStore notebooks and documentation in accessible, backed-up locations\nUse clear, consistent file naming conventions\nConsider using electronic lab notebooks or project wikis for complex projects",
-    "crumbs": [
-      "Lab Manual",
-      "Reproducibility"
-    ]
-  },
-  {
-    "objectID": "lab-manual/checklists.html",
-    "href": "lab-manual/checklists.html",
-    "title": "Checklists",
-    "section": "",
-    "text": "Brief background on the study\nHypotheses / objectives\nStudy design\nDescription of data\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical model description\nCovariate selection / screening approach\nStandard error estimation method\nMissing data analysis plan\nEffect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (if applicable)\n\n\n\n\nBefore sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within repository and/or designated folder?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe the script’s purpose?\nIs the script pushed to GitHub repository?\nDoes code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?\nAre file paths relative (not absolute) for portability?\nIs there a README explaining how to run the code?\n\n\n\n\n\nX-axis and y-axis labeled clearly\nPanels labeled if multiple subplots included\nSufficient tick marks and labels on axes\nFont size appropriate (readable but not distracting)\nColors are colorblind-friendly\nColors, shapes, line types defined in legend\nMinimal abbreviations; all explained\nTransparency used for overlapping data (if needed)\nMeasures of precision shown (e.g., 95% CIs)\nFigure caption is clear and standalone\nHigh resolution for publication (typically 300+ DPI)\n\n\n\n\n(See comprehensive checklist in Publications section)",
-    "crumbs": [
-      "Lab Manual",
-      "Checklists"
-    ]
-  },
-  {
-    "objectID": "lab-manual/checklists.html#pre-analysis-plan-checklist",
-    "href": "lab-manual/checklists.html#pre-analysis-plan-checklist",
-    "title": "Checklists",
-    "section": "",
-    "text": "Brief background on the study\nHypotheses / objectives\nStudy design\nDescription of data\nDefinition of outcomes\nDefinition of interventions / exposures\nDefinition of covariates\nStatistical power calculation\nStatistical model description\nCovariate selection / screening approach\nStandard error estimation method\nMissing data analysis plan\nEffect modification / subgroup analyses\nSensitivity analyses\nNegative control analyses (if applicable)",
-    "crumbs": [
-      "Lab Manual",
-      "Checklists"
-    ]
-  },
-  {
-    "objectID": "lab-manual/checklists.html#code-checklist",
-    "href": "lab-manual/checklists.html#code-checklist",
-    "title": "Checklists",
-    "section": "",
-    "text": "Before sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within repository and/or designated folder?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe the script’s purpose?\nIs the script pushed to GitHub repository?\nDoes code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?\nAre file paths relative (not absolute) for portability?\nIs there a README explaining how to run the code?",
-    "crumbs": [
-      "Lab Manual",
-      "Checklists"
-    ]
-  },
-  {
-    "objectID": "lab-manual/checklists.html#figure-checklist",
-    "href": "lab-manual/checklists.html#figure-checklist",
-    "title": "Checklists",
-    "section": "",
-    "text": "X-axis and y-axis labeled clearly\nPanels labeled if multiple subplots included\nSufficient tick marks and labels on axes\nFont size appropriate (readable but not distracting)\nColors are colorblind-friendly\nColors, shapes, line types defined in legend\nMinimal abbreviations; all explained\nTransparency used for overlapping data (if needed)\nMeasures of precision shown (e.g., 95% CIs)\nFigure caption is clear and standalone\nHigh resolution for publication (typically 300+ DPI)",
-    "crumbs": [
-      "Lab Manual",
-      "Checklists"
-    ]
-  },
-  {
-    "objectID": "lab-manual/checklists.html#manuscript-checklist",
-    "href": "lab-manual/checklists.html#manuscript-checklist",
-    "title": "Checklists",
-    "section": "",
-    "text": "(See comprehensive checklist in Publications section)",
-    "crumbs": [
-      "Lab Manual",
-      "Checklists"
-    ]
-  },
-  {
-    "objectID": "lab-manual/coding-practices.html",
-    "href": "lab-manual/coding-practices.html",
-    "title": "Coding Practices",
-    "section": "",
-    "text": "Write clear, well-commented code that others can understand\nUse version control (Git/GitHub) for all code\nFollow coding style guidelines:\n\nFor R: Hadley Wickham’s Style Guide or tidyverse style guide\nFor Python: PEP 8 style guide\n\nCreate reproducible workflows that allow results to be regenerated with a single command (e.g., a master script)\nDocument software dependencies and versions (e.g., using renv for R, requirements.txt for Python)\nShare code openly when publishing (e.g., via GitHub)\nArchive code on platforms like Zenodo for long-term preservation\nInclude README files that explain how to run the code\nRemove commented-out code and debug statements before finalizing scripts\n\n\n\n\nBefore sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within the repository?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe what the script does?\nIs the script pushed to its GitHub repository?\nDoes the code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?\n\n\n\n\nVersion control is essential for reproducible research. All lab members should:\n\nUse Git and GitHub for tracking code changes\nCommit changes regularly with informative commit messages\nUse branches for developing new features or analyses\nWrite clear README files for each repository\nInclude licenses for code repositories (typically MIT or GPL for open source)\nLink GitHub repositories in publications\n\nResources:\n\nIntroduction to Git\nIntroduction to GitHub\n\n\n\n\n\nStay current with relevant literature in your field\nMaintain a reference management system (e.g., Zotero, Mendeley)\nShare interesting papers with the lab\nContribute to lab knowledge base",
-    "crumbs": [
-      "Lab Manual",
-      "Coding Practices"
-    ]
-  },
-  {
-    "objectID": "lab-manual/coding-practices.html#code-and-software",
-    "href": "lab-manual/coding-practices.html#code-and-software",
-    "title": "Coding Practices",
-    "section": "",
-    "text": "Write clear, well-commented code that others can understand\nUse version control (Git/GitHub) for all code\nFollow coding style guidelines:\n\nFor R: Hadley Wickham’s Style Guide or tidyverse style guide\nFor Python: PEP 8 style guide\n\nCreate reproducible workflows that allow results to be regenerated with a single command (e.g., a master script)\nDocument software dependencies and versions (e.g., using renv for R, requirements.txt for Python)\nShare code openly when publishing (e.g., via GitHub)\nArchive code on platforms like Zenodo for long-term preservation\nInclude README files that explain how to run the code\nRemove commented-out code and debug statements before finalizing scripts",
-    "crumbs": [
-      "Lab Manual",
-      "Coding Practices"
-    ]
-  },
-  {
-    "objectID": "lab-manual/coding-practices.html#code-checklist",
-    "href": "lab-manual/coding-practices.html#code-checklist",
-    "title": "Coding Practices",
-    "section": "",
-    "text": "Before sharing or finalizing code:\n\nDoes the script run without errors?\nIs code self-contained within the repository?\nIs all commented-out code / debug remarks removed?\nDoes the header accurately describe what the script does?\nIs the script pushed to its GitHub repository?\nDoes the code adhere to the coding style guide?\nAre all warnings either addressed or documented as ignorable?",
-    "crumbs": [
-      "Lab Manual",
-      "Coding Practices"
-    ]
-  },
-  {
-    "objectID": "lab-manual/coding-practices.html#github-and-version-control",
-    "href": "lab-manual/coding-practices.html#github-and-version-control",
-    "title": "Coding Practices",
-    "section": "",
-    "text": "Version control is essential for reproducible research. All lab members should:\n\nUse Git and GitHub for tracking code changes\nCommit changes regularly with informative commit messages\nUse branches for developing new features or analyses\nWrite clear README files for each repository\nInclude licenses for code repositories (typically MIT or GPL for open source)\nLink GitHub repositories in publications\n\nResources:\n\nIntroduction to Git\nIntroduction to GitHub",
-    "crumbs": [
-      "Lab Manual",
-      "Coding Practices"
-    ]
-  },
-  {
-    "objectID": "lab-manual/coding-practices.html#literature-and-resources",
-    "href": "lab-manual/coding-practices.html#literature-and-resources",
-    "title": "Coding Practices",
-    "section": "",
-    "text": "Stay current with relevant literature in your field\nMaintain a reference management system (e.g., Zotero, Mendeley)\nShare interesting papers with the lab\nContribute to lab knowledge base",
-    "crumbs": [
-      "Lab Manual",
-      "Coding Practices"
+      "Culture and Conduct"
     ]
   },
   {
@@ -731,18 +1006,18 @@
     "href": "lab-manual/communication.html",
     "title": "Communication and Coordination",
     "section": "",
-    "text": "Effective communication is essential for successful collaboration. We use several platforms for different types of communication.\n\n\n\nUse Slack for scheduling, coding-related questions, quick check-ins, and day-to-day coordination\nIf your message exceeds 200 words, consider using email instead\nUse channels instead of direct messages unless discussing something private\nPlease respond to messages that tag you (e.g., @yourname) as quickly as possible and always within 24 hours\nIf you are unusually busy or on vacation, alert the team in advance and set your status so we know not to expect immediate responses\nThread messages as much as possible to keep conversations organized\nRespect people’s off-hours by using scheduled messages when appropriate\n\n\n\n\n\nUse email for longer messages (&gt;200 words) or messages that merit preservation\nGenerally, strive to respond within 24 hours during business hours\nAs noted above, if you are unusually busy or on vacation, alert the team in advance\n\n\n\n\n\nWe use project management tools (e.g., Trello, GitHub Projects) to track tasks and progress\nHigher priority tasks are listed at the top of your list\nStrive to complete tasks by the dates listed\nUse checklists to break down tasks into smaller, manageable chunks\nUpdate task status regularly to keep the team informed\n\n\n\n\nWe hold regular lab meetings to discuss ongoing research, practice presentations, and discuss relevant literature. All lab members are expected to attend unless they have a conflict.\n\nTiming: Meetings start on time. If you will be late, send a message to the group\nFrequency: Weekly (schedule may vary by quarter)\nFormat: Varies - research updates, journal clubs, practice talks, methods discussions\nPreparation: Come prepared to participate and provide constructive feedback\nIf you are regularly unable to attend at the scheduled time, notify the team so we can consider adjusting the schedule\n\n\n\n\nGraduate students and postdocs should meet with their PI(s) regularly:\n\nFrequency: At least bi-weekly, more often as needed\nPreparation: Send an agenda at least 24 hours in advance\nFollow-up: Send notes summarizing action items and decisions\n\n\n\n\n\nCheck email regularly during working hours\nRespond to emails from PIs and collaborators within 24-48 hours\nUse subject lines that clearly indicate the topic\nFor urgent matters, follow up with a message or call\nWe do not expect responses outside of business hours",
+    "text": "Effective communication is essential for successful collaboration. We use several platforms for different types of communication.\n\n\n\nUse Microsoft Teams for scheduling, coding-related questions, quick check-ins, and day-to-day coordination\nIf your message exceeds 200 words, consider using email instead\nUse channels instead of direct messages unless discussing something private\nPlease respond to messages that tag you (e.g., @yourname) as quickly as possible and always within 24 hours\nIf you are unusually busy or on vacation, alert the team in advance and set your status so we know not to expect immediate responses\nThread messages as much as possible to keep conversations organized\nRespect people’s off-hours by using scheduled messages when appropriate\n\n\n\n\n\nUse email for longer messages (&gt;200 words) or messages that merit preservation\nGenerally, strive to respond within 24 hours during business hours\nAs noted above, if you are unusually busy or on vacation, alert the team in advance\n\n\n\n\n\nWe use project management tools (e.g., Trello, GitHub Projects) to track tasks and progress\nHigher priority tasks are listed at the top of your list\nStrive to complete tasks by the dates listed\nUse checklists to break down tasks into smaller, manageable chunks\nUpdate task status regularly to keep the team informed\n\n\n\n\nWe hold regular lab meetings to discuss ongoing research, practice presentations, and discuss relevant literature. All lab members are expected to attend unless they have a conflict.\n\nTiming: Meetings start on time. If you will be late, send a message to the group\nFrequency: Weekly (schedule may vary by quarter)\nFormat: Varies - research updates, journal clubs, practice talks, methods discussions\nPreparation: Come prepared to participate and provide constructive feedback\nIf you are regularly unable to attend at the scheduled time, notify the team so we can consider adjusting the schedule\n\n\n\n\nGraduate students and postdocs should meet with their PI(s) regularly:\n\nFrequency: At least bi-weekly, more often as needed\nPreparation: Send an agenda at least 24 hours in advance\nFollow-up: Send notes summarizing action items and decisions\n\n\n\n\n\nCheck email regularly during working hours\nRespond to emails from PIs and collaborators within 24-48 hours\nUse subject lines that clearly indicate the topic\nFor urgent matters, follow up with a message or call\nWe do not expect responses outside of business hours",
     "crumbs": [
       "Lab Manual",
       "Communication and Coordination"
     ]
   },
   {
-    "objectID": "lab-manual/communication.html#slack-or-primary-communication-platform",
-    "href": "lab-manual/communication.html#slack-or-primary-communication-platform",
+    "objectID": "lab-manual/communication.html#microsoft-teams",
+    "href": "lab-manual/communication.html#microsoft-teams",
     "title": "Communication and Coordination",
     "section": "",
-    "text": "Use Slack for scheduling, coding-related questions, quick check-ins, and day-to-day coordination\nIf your message exceeds 200 words, consider using email instead\nUse channels instead of direct messages unless discussing something private\nPlease respond to messages that tag you (e.g., @yourname) as quickly as possible and always within 24 hours\nIf you are unusually busy or on vacation, alert the team in advance and set your status so we know not to expect immediate responses\nThread messages as much as possible to keep conversations organized\nRespect people’s off-hours by using scheduled messages when appropriate",
+    "text": "Use Microsoft Teams for scheduling, coding-related questions, quick check-ins, and day-to-day coordination\nIf your message exceeds 200 words, consider using email instead\nUse channels instead of direct messages unless discussing something private\nPlease respond to messages that tag you (e.g., @yourname) as quickly as possible and always within 24 hours\nIf you are unusually busy or on vacation, alert the team in advance and set your status so we know not to expect immediate responses\nThread messages as much as possible to keep conversations organized\nRespect people’s off-hours by using scheduled messages when appropriate",
     "crumbs": [
       "Lab Manual",
       "Communication and Coordination"

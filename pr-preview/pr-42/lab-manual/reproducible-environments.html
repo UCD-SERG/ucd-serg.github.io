@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Culture and Conduct – UCD-SeRG</title>
+<title>Reproducible Environments – UCD-SeRG</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -292,7 +327,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-manual/culture-and-conduct.html">Culture and Conduct</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-manual/reproducible-environments.html">Reproducible Environments</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -312,7 +347,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-manual/culture-and-conduct.html" class="sidebar-item-text sidebar-link active">
+  <a href="../lab-manual/culture-and-conduct.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Culture and Conduct</span></a>
   </div>
 </li>
@@ -354,7 +389,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-manual/reproducible-environments.html" class="sidebar-item-text sidebar-link">
+  <a href="../lab-manual/reproducible-environments.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Reproducible Environments</span></a>
   </div>
 </li>
@@ -392,18 +427,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#culture-and-conduct" id="toc-culture-and-conduct" class="nav-link active" data-scroll-target="#culture-and-conduct">Culture and Conduct</a>
+  <li><a href="#reproducible-environments" id="toc-reproducible-environments" class="nav-link active" data-scroll-target="#reproducible-environments">Reproducible Environments</a>
   <ul class="collapse">
-  <li><a href="#lab-culture" id="toc-lab-culture" class="nav-link" data-scroll-target="#lab-culture">Lab Culture</a></li>
-  <li><a href="#diversity-equity-and-inclusion" id="toc-diversity-equity-and-inclusion" class="nav-link" data-scroll-target="#diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</a></li>
-  <li><a href="#general-expectations" id="toc-general-expectations" class="nav-link" data-scroll-target="#general-expectations">General Expectations</a></li>
-  <li><a href="#work-hours-and-flexibility" id="toc-work-hours-and-flexibility" class="nav-link" data-scroll-target="#work-hours-and-flexibility">Work Hours and Flexibility</a></li>
-  <li><a href="#time-off" id="toc-time-off" class="nav-link" data-scroll-target="#time-off">Time Off</a></li>
-  <li><a href="#protecting-human-subjects" id="toc-protecting-human-subjects" class="nav-link" data-scroll-target="#protecting-human-subjects">Protecting Human Subjects</a></li>
-  <li><a href="#authorship" id="toc-authorship" class="nav-link" data-scroll-target="#authorship">Authorship</a></li>
+  <li><a href="#package-version-control-with-renv-r" id="toc-package-version-control-with-renv-r" class="nav-link" data-scroll-target="#package-version-control-with-renv-r">Package Version Control with renv (R)</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#implementing-renv-in-projects" id="toc-implementing-renv-in-projects" class="nav-link" data-scroll-target="#implementing-renv-in-projects">Implementing renv in Projects</a></li>
+  <li><a href="#using-projects-with-renv" id="toc-using-projects-with-renv" class="nav-link" data-scroll-target="#using-projects-with-renv">Using Projects with renv</a></li>
+  </ul></li>
+  <li><a href="#python-virtual-environments" id="toc-python-virtual-environments" class="nav-link" data-scroll-target="#python-virtual-environments">Python Virtual Environments</a>
+  <ul class="collapse">
+  <li><a href="#using-venv" id="toc-using-venv" class="nav-link" data-scroll-target="#using-venv">Using venv</a></li>
+  <li><a href="#using-conda" id="toc-using-conda" class="nav-link" data-scroll-target="#using-conda">Using conda</a></li>
+  </ul></li>
+  <li><a href="#docker-for-full-reproducibility" id="toc-docker-for-full-reproducibility" class="nav-link" data-scroll-target="#docker-for-full-reproducibility">Docker for Full Reproducibility</a></li>
   </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/reproducible-environments.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/reproducible-environments.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -411,7 +451,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Culture and Conduct</h1>
+<h1 class="title">Reproducible Environments</h1>
 </div>
 
 
@@ -428,69 +468,98 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="culture-and-conduct" class="level1">
-<h1>Culture and Conduct</h1>
-<section id="lab-culture" class="level2">
-<h2 class="anchored" data-anchor-id="lab-culture">Lab Culture</h2>
-<p>We are committed to a lab culture that is collaborative, supportive, inclusive, open, and free from discrimination and harassment.</p>
-<p>We encourage lab members of all experience levels to respectfully share their honest opinions and ideas on any topic. Our group thrives upon such respectful input from team members, and open dialogue helps us continuously improve our productivity and the quality of our work.</p>
+<section id="reproducible-environments" class="level1">
+<h1>Reproducible Environments</h1>
+<p><em>Adapted from the <a href="https://jadebc.github.io/lab-manual/">Benjamin-Chung Lab Manual</a></em></p>
+<section id="package-version-control-with-renv-r" class="level2">
+<h2 class="anchored" data-anchor-id="package-version-control-with-renv-r">Package Version Control with renv (R)</h2>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Reproducible code should produce the same results regardless of when or where it’s run. However, our analyses often leverage open-source packages that continue to be developed over time, which may include changes that could impact how code runs.</p>
+<p>For example, suppose we used a function with one argument: <code>example_function(arg_a = "a")</code>. If the package developers later update the function to require another mandatory argument <code>arg_b</code>, anyone running our code with the new version will receive an error.</p>
+<p>To ensure the right functions are used in replication efforts, track package versions used in each project.</p>
 </section>
-<section id="diversity-equity-and-inclusion" class="level2">
-<h2 class="anchored" data-anchor-id="diversity-equity-and-inclusion">Diversity, Equity, and Inclusion</h2>
-<p>The UCD-SeRG lab recognizes the importance of and is committed to cultivating a culture of diversity, equity, and inclusion. This means being a safe, supportive, and anti-racist environment in which students from diverse backgrounds are equally and inclusively supported in their education and training. Diversity takes many forms, including, but not limited to, differences in race, ethnicity, gender, sexuality, socioeconomic status, religion, disability, and political affiliation.</p>
+<section id="implementing-renv-in-projects" class="level3">
+<h3 class="anchored" data-anchor-id="implementing-renv-in-projects">Implementing renv in Projects</h3>
+<p>Ideally, <code>renv</code> should be initiated at the start of projects and updated continuously when new packages are introduced. However, it can be initiated at any point.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li>Install the <code>renv</code> package: <code>install.packages("renv")</code></li>
+<li>Create an RProject file and set working directory to the project folder</li>
+<li>Run <code>renv::init()</code> to initialize renv in your project</li>
+<li>This creates: <code>renv.lock</code>, <code>.Rprofile</code>, <code>renv/settings.json</code>, and <code>renv/activate.R</code></li>
+<li>Commit and push these files to GitHub</li>
+<li>As you write code, update the library: <code>renv::snapshot()</code></li>
+<li>Add <code>renv::restore()</code> to the head of your config file</li>
+</ol>
 </section>
-<section id="general-expectations" class="level2">
-<h2 class="anchored" data-anchor-id="general-expectations">General Expectations</h2>
-<p>All lab members are expected to:</p>
+<section id="using-projects-with-renv" class="level3">
+<h3 class="anchored" data-anchor-id="using-projects-with-renv">Using Projects with renv</h3>
+<p>If working on an existing project with <code>renv</code>:</p>
+<ol type="1">
+<li>Install the <code>renv</code> package: <code>install.packages("renv")</code></li>
+<li>Pull the most updated version from GitHub</li>
+<li>Open the project’s RProject file</li>
+<li>Run <code>renv::restore()</code> (often at top of config file)</li>
+<li>Type “Y” to proceed with updating packages</li>
+<li>Wait for correct versions to install</li>
+<li>Your environment now matches the project’s package versions</li>
+</ol>
+</section>
+</section>
+<section id="python-virtual-environments" class="level2">
+<h2 class="anchored" data-anchor-id="python-virtual-environments">Python Virtual Environments</h2>
+<p>For Python projects, use virtual environments to manage dependencies:</p>
+<section id="using-venv" class="level3">
+<h3 class="anchored" data-anchor-id="using-venv">Using venv</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create virtual environment</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> <span class="at">-m</span> venv env</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Activate (Mac/Linux)</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> env/bin/activate</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Activate (Windows)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">env</span><span class="dt">\S</span>cripts<span class="dt">\a</span>ctivate</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Install packages</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Save current packages</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> freeze <span class="op">&gt;</span> requirements.txt</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Deactivate</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ex">deactivate</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="using-conda" class="level3">
+<h3 class="anchored" data-anchor-id="using-conda">Using conda</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create environment</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> myenv python=3.9</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Activate</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate myenv</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Install packages</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install package_name</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Export environment</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env export <span class="op">&gt;</span> environment.yml</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Create from file</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> env create <span class="at">-f</span> environment.yml</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Deactivate</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="docker-for-full-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="docker-for-full-reproducibility">Docker for Full Reproducibility</h2>
+<p>For complete reproducibility including system dependencies, consider using Docker:</p>
 <ul>
-<li>Conduct research with integrity and honesty</li>
-<li>Treat all lab members, collaborators, and research participants with respect</li>
-<li>Communicate openly and regularly with the PIs and other lab members</li>
-<li>Contribute to a positive, collaborative lab environment</li>
-<li>Take responsibility for your own professional development</li>
-<li>Participate in lab meetings and group activities</li>
-<li>Maintain good documentation of your work</li>
-<li>Follow all institutional policies and research ethics guidelines</li>
+<li>Captures entire computing environment</li>
+<li>Ensures consistent results across different systems</li>
+<li>Particularly useful for complex dependency chains</li>
+<li>See <a href="https://docs.docker.com/">Docker documentation</a> for getting started</li>
 </ul>
-</section>
-<section id="work-hours-and-flexibility" class="level2">
-<h2 class="anchored" data-anchor-id="work-hours-and-flexibility">Work Hours and Flexibility</h2>
-<p>We recognize that people have different working styles and personal obligations. One benefit of the academic environment is its schedule flexibility. Graduate students and postdocs are expected to work full-time hours, but we offer flexibility in when and where you work. Undergraduate researchers typically commit 10-15 hours per week.</p>
-<p>Lab members may choose to work in the early morning, evening, or weekends. However, we do not expect lab members to respond to communications outside of business hours unless there are special circumstances.</p>
-<p>What matters most is that you:</p>
-<ul>
-<li>Make consistent progress on your research</li>
-<li>Meet deadlines and commitments</li>
-<li>Are available for scheduled meetings and lab events</li>
-<li>Communicate your schedule and availability</li>
-</ul>
-</section>
-<section id="time-off" class="level2">
-<h2 class="anchored" data-anchor-id="time-off">Time Off</h2>
-<p>Taking time off is important for maintaining productivity and well-being. Lab members should:</p>
-<ul>
-<li>Coordinate time off with the PIs in advance</li>
-<li>Alert the team if you will be unusually busy (e.g., taking exams, major deadlines) or on vacation so we know not to expect immediate responses</li>
-<li>Ensure ongoing projects are covered during your absence</li>
-<li>Update the lab calendar with your planned absences</li>
-<li>Follow university policies for holidays and leave</li>
-</ul>
-</section>
-<section id="protecting-human-subjects" class="level2">
-<h2 class="anchored" data-anchor-id="protecting-human-subjects">Protecting Human Subjects</h2>
-<p>All lab members must complete required human subjects research training (e.g., CITI training) and share their certificate with the PIs. Team members will be added to relevant Institutional Review Board (IRB) protocols prior to working with identifiable datasets.</p>
-<p>One of the most relevant aspects of protecting human subjects in our work is maintaining confidentiality. In practice, this means:</p>
-<ul>
-<li>Understand and comply with project-specific policies about where data can be saved, particularly if the data include personal identifiers</li>
-<li>Do not share data with anyone without permission, including other members of the group who might not be on the same IRB protocol (check with PIs first)</li>
-<li>Remember that data that appears non-identifiable may still require special protection under IRB or HIPAA regulations</li>
-<li>Always proceed with caution and ask for help if you have concerns about maintaining study participant confidentiality</li>
-</ul>
-</section>
-<section id="authorship" class="level2">
-<h2 class="anchored" data-anchor-id="authorship">Authorship</h2>
-<p>We adhere to the <a href="http://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">ICMJE Definition of authorship</a> and are happy for team members who meet the definition of authorship to be included as co-authors on scientific manuscripts.</p>
-<p>Authorship should be discussed early in a project and revisited as the work evolves to ensure transparency and fairness.</p>
 
 
 </section>
@@ -915,4 +984,4 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/culture-and-conduct.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/lab-manual/reproducible-environments.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/lab-manual/reproducible-environments.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
