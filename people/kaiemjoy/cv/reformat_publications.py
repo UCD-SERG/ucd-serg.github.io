@@ -77,6 +77,7 @@ def format_publication(pub):
     # Get date/year
     issued = pub.get('issued', pub.get('date', ''))
     if isinstance(issued, str):
+        # Extract just the year from full dates like "2025-06-23"
         year = issued[:4]
         date_str = issued
     else:
@@ -119,6 +120,8 @@ def format_publication(pub):
 
 def main():
     # Read original publications file
+    # First try from temp location (if running after git show command)
+    # Otherwise read from main publications.yml
     input_file = '/tmp/original_pubs.yml'
     
     try:
