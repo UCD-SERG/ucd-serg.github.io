@@ -6,6 +6,16 @@ Extract publications for Dr. Kristen Aiemjoy from the main publications.yml file
 import yaml
 import sys
 
+def format_authors(authors):
+    """Format author list with Aiemjoy in bold markers"""
+    author_strs = []
+    for author in authors:
+        name = f"{author.get('given', '')} {author.get('family', '')}".strip()
+        if author.get('family') == 'Aiemjoy':
+            name = f"**{name}**"
+        author_strs.append(name)
+    return ', '.join(author_strs)
+
 def extract_aiemjoy_publications(input_file='publications.yml', output_file='people/kaiemjoy/cv/publications.yml'):
     """
     Extract publications where Aiemjoy is an author
@@ -27,6 +37,15 @@ def extract_aiemjoy_publications(input_file='publications.yml', output_file='peo
                 authors = pub['author']
                 for author in authors:
                     if isinstance(author, dict) and author.get('family') == 'Aiemjoy':
+                        # Add formatted author field
+                        pub['authors_formatted'] = format_authors(pub['author'])
+                        # Extract year from issued
+                        if 'issued' in pub:
+                            issued = pub['issued']
+                            if isinstance(issued, str):
+                                pub['year'] = issued[:4]
+                            else:
+                                pub['year'] = str(issued)[:4] if issued else ''
                         aiemjoy_pubs.append(pub)
                         break
         

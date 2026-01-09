@@ -1,0 +1,36 @@
+```{=html}
+<div class="quarto-listing quarto-listing-container-default">
+  <div class="list quarto-listing-default">
+    <% for (const item of items) { %>
+    <div class="quarto-post" style="margin-bottom: 1.5em;">
+      <div class="body">
+        <p class="pub-authors" style="margin-bottom: 0.3em;">
+          <% if (item.authors_formatted) { %>
+            <%- item.authors_formatted %> (<%= item.year %>).
+          <% } %>
+        </p>
+        <p class="pub-title" style="margin-bottom: 0.3em; font-weight: 500;">
+          <% if (item.path) { %>
+            <a href="<%- item.path %>"><%- item.title %></a>
+          <% } else { %>
+            <%- item.title %>
+          <% } %>
+        </p>
+        <p class="pub-journal" style="margin-bottom: 0;">
+          <% if (item['journal-title']) { %>
+            <em><%- item['journal-title'] %></em>.
+          <% } else if (item['container-title']) { %>
+            <em><%- item['container-title'] %></em>.
+          <% } %>
+          <% if (item.doi) { %>
+            DOI: <%- item.doi %>
+          <% } %>
+        </p>
+      </div>
+    </div>
+    <% } %>
+  </div>
+</div>
+```
+
+

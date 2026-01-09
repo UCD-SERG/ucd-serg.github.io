@@ -1,6 +1,5 @@
 ---
-title: "Kristen Aiemjoy, PhD"
-subtitle: "Curriculum Vitae"
+title: "Kristen Aiemjoy, PhD, MSc"
 page-layout: full
 toc: true
 toc-location: left
@@ -9,51 +8,51 @@ listing:
   contents:
     - cv/publications.yml
   sort: 'issued desc'
-  type: table
-  fields: [date, title, journal-title]
-  field-display-names:
-    date: Year
-    title: Title
-    journal-title: Journal
+  type: default
   page-size: 100
+  template: cv/publication-template.ejs
 ---
 
-## Contact Information
+::: {style="text-align: right;"}
+Email: [kaiemjoy@health.ucdavis.edu](mailto:kaiemjoy@health.ucdavis.edu)
+:::
 
-**Assistant Professor of Epidemiology**  
+---
+
+## Positions
+
+**Assistant Professor** (Oct 2021 - Present)  
+University of California Davis School of Medicine  
 Division of Epidemiology  
-Department of Public Health Sciences  
-University of California, Davis
+Department of Public Health Sciences
 
-Email: [kaiemjoy@ucdavis.edu](mailto:kaiemjoy@ucdavis.edu)  
-Website: [https://health.ucdavis.edu/phs/team/43064/kristen-aiemjoy---infectious-diseases---epidemiology/](https://health.ucdavis.edu/phs/team/43064/kristen-aiemjoy---infectious-diseases---epidemiology/)
+**Adjunct Assistant Professor** (Jan 2023 - Present)  
+Mahidol University Faculty of Tropical Medicine  
+Department of Microbiology and Immunology  
+Bangkok, Thailand
+
+**Acting Instructor** (Sep 2020 - Sep 2023)  
+Stanford University School of Medicine  
+Division of Infectious Diseases  
+Department of Medicine
+
+**Postdoctoral Scholar** (Oct 2019 - Aug 2020)  
+Stanford University School of Medicine  
+Division of Infectious Diseases  
+Department of Medicine
 
 ---
 
 ## Education
 
-**PhD in Epidemiology**  
-Stanford University, 2019
+**PhD in Epidemiology** (2019)  
+Stanford University
 
-**MS in Epidemiology**  
-Stanford University, 2015
+**MS in Epidemiology** (2015)  
+Stanford University
 
-**BS in Human Biology**  
-Stanford University, 2010
-
----
-
-## Professional Experience
-
-**Assistant Professor of Epidemiology** (2023 - Present)  
-Department of Public Health Sciences, University of California, Davis
-
-**Acting Instructor** (2020 - 2023)  
-Division of Infectious Diseases, Department of Medicine, Stanford University
-
-**Postdoctoral Scholar** (2019 - 2020)  
-Division of Infectious Diseases, Department of Medicine, Stanford University
-
+**BS in Human Biology** (2010)  
+Stanford University
 ---
 
 ## Research Interests
@@ -69,7 +68,7 @@ Division of Infectious Diseases, Department of Medicine, Stanford University
 
 ---
 
-## Publications
+## Peer-Reviewed Publications
 
 :::{#cv-publications}
 :::
@@ -94,6 +93,8 @@ Division of Infectious Diseases, Department of Medicine, Stanford University
 
 ---
 
-*Last updated: January 2025*
+::: {style="font-size: 0.9em; font-style: italic;"}
+Last updated: `r format(Sys.Date(), "%B %Y")`
 
-*Publications are automatically updated from Dr. Aiemjoy's research portfolio.*
+Publications are automatically updated from Dr. Aiemjoy's NCBI profile.
+:::
