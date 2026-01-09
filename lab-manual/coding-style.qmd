@@ -19,7 +19,7 @@ title: "Coding Style"
 
 2. **File Structure** - Data should flow naturally through a script. Generally: 1) source your config => 2) load all your data => 3) do all your analysis/computation => 4) save your data. Each section should be "chunked together" using comments.
 
-3. **Single-Line Comments** - Commenting your code is important for reproducibility. Comment describing what large or complex chunks of code do. Format: `# This is a comment -- first letter is capitalized and spaced away from the pound sign`
+3. **Single-Line Comments** - Commenting your code is important for reproducibility. Comments describing what large or complex chunks of code do. Format: `# This is a comment -- first letter is capitalized and spaced away from the hash symbol`
 
 4. **Multi-Line Comments** - For multi-line comments, don't add line breaks manually. In RStudio > Tools > Global Options > Code > enable "Soft-wrap R source files" to have lines wrap around.
 

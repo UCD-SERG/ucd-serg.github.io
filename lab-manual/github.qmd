@@ -33,7 +33,7 @@ A standard workflow for contributing code:
 | Step | Command   | Description      |
 |------|-----------|------------------|
 | SETUP | `git clone <url> <directory_name>` | Clone the repo (first time only) |
-| 1 | `git pull origin master` | Update to match most current version on GitHub |
+| 1 | `git pull origin main` | Update to match most current version on GitHub |
 | 2 | `git checkout -b <new_branch_name>` | Create new branch and switch to it |
 | 3 | Make file changes | Work on your feature/implementation |
 | 4 | `git add -p` | Add changes to stage, reviewing line by line |
@@ -41,16 +41,18 @@ A standard workflow for contributing code:
 | 6 | `git push -u origin <branch_name>` | Push branch to remote (first push) |
 | 7 | Repeat 4-5 | Work and commit often |
 | 8 | `git push` | Push work to remote branch |
-| 9 | Submit pull request on GitHub | Merge work from branch into master |
+| 9 | Submit pull request on GitHub | Merge work from branch into main |
 | 10 | PR approved and merged | Reviewer deletes remote branch upon merging |
 | 11 | `git fetch --all --prune` | Clean up local git, untrack deleted remote branches |
+
+**Note**: Many repositories now use `main` as the default branch instead of `master`. Check your repository's default branch name.
 
 ## Commonly Used Git Commands
 
 | Command   | Description      |
 |-----------|------------------|
 | `git clone <url> <directory_name>` | Clone a repository (first time only) |
-| `git pull origin master` | Pull from `master` before making changes |
+| `git pull origin main` | Pull from `main` before making changes |
 | `git branch` | Check what branch you are on |
 | `git branch -a` | Check local branch + all remote branches |
 | `git checkout -b <new_branch_name>` | Create new branch and switch to it |
@@ -63,6 +65,8 @@ A standard workflow for contributing code:
 | `git checkout --track origin/<branch_name>` | Pull remote branch and create local branch |
 | `git branch -d <branch_name>` | Delete local branch (-D to force) |
 | `git fetch --all --prune` | Untrack deleted remote branches |
+
+**Note**: Commands above use `main` as the default branch. Some repositories may still use `master` - check your repository's default branch name.
 
 ## Best Practices
 
