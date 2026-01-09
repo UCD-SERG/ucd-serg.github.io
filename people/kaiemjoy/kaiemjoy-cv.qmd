@@ -1,0 +1,99 @@
+---
+title: "Kristen Aiemjoy, PhD"
+subtitle: "Curriculum Vitae"
+page-layout: full
+toc: true
+toc-location: left
+listing:
+- id: cv-publications
+  contents:
+    - cv/publications.yml
+  sort: 'issued desc'
+  type: table
+  fields: [date, title, journal-title]
+  field-display-names:
+    date: Year
+    title: Title
+    journal-title: Journal
+  page-size: 100
+---
+
+## Contact Information
+
+**Assistant Professor of Epidemiology**  
+Division of Epidemiology  
+Department of Public Health Sciences  
+University of California, Davis
+
+Email: [kaiemjoy@ucdavis.edu](mailto:kaiemjoy@ucdavis.edu)  
+Website: [https://health.ucdavis.edu/phs/team/43064/kristen-aiemjoy---infectious-diseases---epidemiology/](https://health.ucdavis.edu/phs/team/43064/kristen-aiemjoy---infectious-diseases---epidemiology/)
+
+---
+
+## Education
+
+**PhD in Epidemiology**  
+Stanford University, 2019
+
+**MS in Epidemiology**  
+Stanford University, 2015
+
+**BS in Human Biology**  
+Stanford University, 2010
+
+---
+
+## Professional Experience
+
+**Assistant Professor of Epidemiology** (2023 - Present)  
+Department of Public Health Sciences, University of California, Davis
+
+**Acting Instructor** (2020 - 2023)  
+Division of Infectious Diseases, Department of Medicine, Stanford University
+
+**Postdoctoral Scholar** (2019 - 2020)  
+Division of Infectious Diseases, Department of Medicine, Stanford University
+
+---
+
+## Research Interests
+
+- Infectious disease epidemiology
+- Seroepidemiology and immunoepidemiology
+- Enteric infections and typhoid fever
+- Global health
+- Environmental health
+- Water, sanitation, and hygiene (WASH)
+- Mathematical modeling of infectious diseases
+- Biostatistics and study design
+
+---
+
+## Publications
+
+:::{#cv-publications}
+:::
+
+---
+
+## Selected Honors and Awards
+
+*This section can be updated with specific awards and honors*
+
+---
+
+## Professional Service
+
+*This section can be updated with committee memberships, editorial boards, and other service activities*
+
+---
+
+## Teaching
+
+*This section can be updated with courses taught and student mentorship*
+
+---
+
+*Last updated: January 2025*
+
+*Publications are automatically updated from Dr. Aiemjoy's research portfolio.*
