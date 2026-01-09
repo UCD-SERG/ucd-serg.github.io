@@ -42,10 +42,15 @@ def extract_aiemjoy_publications(input_file='publications.yml', output_file='peo
                         # Extract year from issued
                         if 'issued' in pub:
                             issued = pub['issued']
-                            if isinstance(issued, str):
-                                pub['year'] = issued[:4]
-                            else:
-                                pub['year'] = str(issued)[:4] if issued else ''
+                            try:
+                                if isinstance(issued, str):
+                                    pub['year'] = issued[:4]
+                                elif isinstance(issued, int):
+                                    pub['year'] = str(issued)
+                                else:
+                                    pub['year'] = str(issued)[:4] if issued else ''
+                            except (TypeError, ValueError):
+                                pub['year'] = ''
                         aiemjoy_pubs.append(pub)
                         break
         

@@ -94,7 +94,7 @@ Stanford University
 ---
 
 ::: {style="font-size: 0.9em; font-style: italic;"}
-Last updated: `r format(Sys.Date(), "%B %Y")`
+Last updated: January 2025
 
 Publications are automatically updated from Dr. Aiemjoy's NCBI profile.
 :::
