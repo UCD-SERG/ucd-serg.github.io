@@ -1,0 +1,91 @@
+---
+title: "Coding Style"
+---
+
+# Coding Style
+
+*Adapted from the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)*
+
+## Comments
+
+1. **File Headers** - Every file in a project should have a header that allows it to be interpreted on its own. It should include the name of the project and a short description for what this file does specifically.
+  ```
+  ################################################################################
+  # @Organization - UC Davis Seroepidemiology Research Group
+  # @Project - Example Project
+  # @Description - This file is responsible for [...]
+  ################################################################################
+  ```
+
+2. **File Structure** - Data should flow naturally through a script. Generally: 1) source your config => 2) load all your data => 3) do all your analysis/computation => 4) save your data. Each section should be "chunked together" using comments.
+
+3. **Single-Line Comments** - Commenting your code is important for reproducibility. Comment describing what large or complex chunks of code do. Format: `# This is a comment -- first letter is capitalized and spaced away from the pound sign`
+
+4. **Multi-Line Comments** - For multi-line comments, don't add line breaks manually. In RStudio > Tools > Global Options > Code > enable "Soft-wrap R source files" to have lines wrap around.
+
+## Line Breaks
+
+For `ggplot` calls and `dplyr` pipelines, do not crowd single lines. Here are examples:
+
+```r
+# Example: dplyr pipeline
+school_names = list(
+  OUSD_school_names = absentee_all %>%
+    filter(dist.n == 1) %>%
+    pull(school) %>%
+    unique %>%
+    sort,
+
+  WCCSD_school_names = absentee_all %>%
+    filter(dist.n == 0) %>%
+    pull(school) %>%
+    unique %>%
+    sort
+)
+
+# Example: ggplot call
+ggplot(data=data,
+       mapping=aes_string(x="year", y="rd", group=group)) +
+  geom_point(mapping=aes_string(col=group, shape=group),
+             position=position_dodge(width=0.2),
+             size=2.5) +
+  geom_errorbar(mapping=aes_string(ymin="lb", ymax="ub", col=group),
+                position=position_dodge(width=0.2),
+                width=0.2) +
+  scale_y_continuous(limits=limits, breaks=breaks, labels=breaks) +
+  theme_minimal()
+```
+
+## Automated Tools for Style
+
+### Code Autoformatting
+- **RStudio**: Use built-in autoformatting (keyboard shortcut: `CMD-Shift-A`) to format highlighted code
+- **Python**: Use tools like `black` or `autopep8`
+
+### StyleR (R)
+The [styler package](https://www.tidyverse.org/articles/2017/12/styler-1.0.0/) can style entire projects:
+
+```r
+# Style a directory
+styler::style_dir(path = ".", scope = "line_breaks", strict = FALSE)
+```
+
+**Note**: StyleR modifies files in-place, so use version control before running.
+
+### Linter (R)
+The [lintr package](https://cran.r-project.org/web/packages/lintr/readme/README.html) checks code for style issues:
+
+- Checks for unused variables, improper whitespace, and other issues
+- Based on [Hadley Wickham's R Style Guide](http://r-pkgs.had.co.nz/style.html)
+- Can be customized to project needs
+
+**Note**: `lintr` and `styler` work well together - styler fixes what lintr catches.
+
+## Python Style
+
+For Python code, follow [PEP 8](https://pep8.org/) style guidelines:
+
+- Use 4 spaces for indentation
+- Limit lines to 79 characters
+- Use descriptive variable names
+- Add docstrings to functions and classes

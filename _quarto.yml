@@ -30,6 +30,10 @@ website:
         - lab-manual/communication.qmd
         - lab-manual/reproducibility.qmd
         - lab-manual/coding-practices.qmd
+        - lab-manual/coding-style.qmd
+        - lab-manual/github.qmd
+        - lab-manual/unix-commands.qmd
+        - lab-manual/reproducible-environments.qmd
         - lab-manual/publications.qmd
         - lab-manual/professional-development.qmd
         - lab-manual/checklists.qmd

@@ -1,0 +1,100 @@
+---
+title: "Reproducible Environments"
+---
+
+# Reproducible Environments
+
+*Adapted from the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)*
+
+## Package Version Control with renv (R)
+
+### Introduction
+
+Reproducible code should produce the same results regardless of when or where it's run. However, our analyses often leverage open-source packages that continue to be developed over time, which may include changes that could impact how code runs.
+
+For example, suppose we used a function with one argument: `example_function(arg_a = "a")`. If the package developers later update the function to require another mandatory argument `arg_b`, anyone running our code with the new version will receive an error.
+
+To ensure the right functions are used in replication efforts, track package versions used in each project.
+
+### Implementing renv in Projects
+
+Ideally, `renv` should be initiated at the start of projects and updated continuously when new packages are introduced. However, it can be initiated at any point.
+
+**Steps:**
+
+1. Install the `renv` package: `install.packages("renv")`
+2. Create an RProject file and set working directory to the project folder
+3. Run `renv::init()` to initialize renv in your project
+4. This creates: `renv.lock`, `.Rprofile`, `renv/settings.json`, and `renv/activate.R`
+5. Commit and push these files to GitHub
+6. As you write code, update the library: `renv::snapshot()`
+7. Add `renv::restore()` to the head of your config file
+
+### Using Projects with renv
+
+If working on an existing project with `renv`:
+
+1. Install the `renv` package: `install.packages("renv")`
+2. Pull the most updated version from GitHub
+3. Open the project's RProject file
+4. Run `renv::restore()` (often at top of config file)
+5. Type "Y" to proceed with updating packages
+6. Wait for correct versions to install
+7. Your environment now matches the project's package versions
+
+## Python Virtual Environments
+
+For Python projects, use virtual environments to manage dependencies:
+
+### Using venv
+
+```bash
+# Create virtual environment
+python -m venv env
+
+# Activate (Mac/Linux)
+source env/bin/activate
+
+# Activate (Windows)
+env\Scripts\activate
+
+# Install packages
+pip install -r requirements.txt
+
+# Save current packages
+pip freeze > requirements.txt
+
+# Deactivate
+deactivate
+```
+
+### Using conda
+
+```bash
+# Create environment
+conda create -n myenv python=3.9
+
+# Activate
+conda activate myenv
+
+# Install packages
+conda install package_name
+
+# Export environment
+conda env export > environment.yml
+
+# Create from file
+conda env create -f environment.yml
+
+# Deactivate
+conda deactivate
+```
+
+## Docker for Full Reproducibility
+
+For complete reproducibility including system dependencies, consider using Docker:
+
+- Captures entire computing environment
+- Ensures consistent results across different systems
+- Particularly useful for complex dependency chains
+- See [Docker documentation](https://docs.docker.com/) for getting started

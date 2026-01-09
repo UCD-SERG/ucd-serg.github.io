@@ -1,0 +1,165 @@
+---
+title: "Unix Commands"
+---
+
+# Unix Commands
+
+*Adapted from the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)*
+
+We typically use Unix commands in Terminal (Mac) or Git Bash (Windows) to:
+
+1. Run scripts in parallel or in a specific order to reproduce our work
+2. Check on the progress of batch jobs
+3. Use git and push to GitHub
+4. Navigate file systems and manage files
+
+## Basic Commands
+
+**Note**: When typing directories or file names, use quotes if the name includes spaces.
+
+| Command  | Description |
+|----------|-------------|
+| `cd folder_name` | Change directory to `folder_name` |
+| `pwd` | Print working directory (shows current location) |
+| `ls` | List files in the current directory |
+| `ls -la` | List all files including hidden files with details |
+| `cp "file1" "file2"` | Copy file (include file extensions like `.pdf` or `.R`) |
+| `mv "file1" "file2"` | Rename or move file |
+| `cd ..` | Go to parent directory |
+| `mkdir folder_name` | Make a new folder |
+| `rm <filename>` | Remove file |
+| `rm -rf folder_name` | Remove directory and contents (use carefully!) |
+| `clear` | Clear terminal screen |
+
+## Running R Scripts
+
+### Mac / Linux
+
+```bash
+# Make script executable (first time only)
+chmod +x script.R
+
+# Run R script
+Rscript script.R
+
+# Run R script with output to file
+Rscript script.R > output.log 2>&1
+
+# Run in background
+Rscript script.R &
+```
+
+### Windows (Command Prompt)
+
+First, add R to your PATH or use the full path to Rscript.
+
+```bash
+# Test Rscript
+Rscript -e "cat('this is a test')"
+
+# Run R script
+Rscript -e "source('C:/path/to/script.R')"
+```
+
+**Common Mistakes:**
+- Include quotes around file paths with spaces
+- If you see `Error: '\U' used...`, replace `\` with `\\` or `/`
+
+## Running Bash Scripts
+
+| Command | Description |
+|---------|-------------|
+| `chmod +x script.sh` | Make script executable (first time only) |
+| `./script.sh` | Run script |
+| `bash script.sh &` | Run script in background |
+
+## Process Management
+
+### Checking Processes
+
+| Mac / Linux | Windows | Description |
+|-------------|---------|-------------|
+| `ps -v` | `tasklist` | List all processes |
+| `top` | | Interactive process viewer |
+| `top -o cpu` | | Sort by CPU usage |
+
+### Stopping Processes
+
+| Mac / Linux | Windows | Description |
+|-------------|---------|-------------|
+| `kill <PID>` | `taskkill /F /PID <PID>` | Kill process by ID |
+| | `taskkill /IM "name" /F` | Kill by process name (Windows) |
+
+**Note**: Find PID using `ps -v` or `tasklist`
+
+## Running Jobs in Background
+
+For long-running jobs, especially on remote servers:
+
+### Using nohup (Mac/Linux)
+
+```bash
+# Run script that continues even if you log out
+nohup Rscript long_script.R > output.log 2>&1 &
+
+# Check output
+tail -f output.log
+```
+
+### Using tmux (Recommended for SSH)
+
+```bash
+# Create new session
+tmux new -s session_name
+
+# Run your job
+Rscript my_job.R &
+
+# Detach from session (Ctrl-b then d)
+
+# Re-attach to session
+tmux attach -t session_name
+
+# List sessions
+tmux ls
+
+# Kill session
+tmux kill-session -t session_name
+```
+
+## Useful File Operations
+
+| Command | Description |
+|---------|-------------|
+| `head -n 10 file.txt` | Show first 10 lines of file |
+| `tail -n 10 file.txt` | Show last 10 lines of file |
+| `tail -f file.txt` | Follow file updates in real-time |
+| `wc -l file.txt` | Count lines in file |
+| `grep "pattern" file.txt` | Search for pattern in file |
+| `find . -name "*.R"` | Find all R files in current directory |
+
+## Combining Commands
+
+Use pipes (`|`) and redirection (`>`, `>>`) to combine commands:
+
+```bash
+# Count R files
+find . -name "*.R" | wc -l
+
+# Save output to file
+ls -la > file_list.txt
+
+# Append to file
+ls -la >> file_list.txt
+
+# Search and count
+grep "function" script.R | wc -l
+```
+
+## Best Practices
+
+1. **Test commands carefully** - especially `rm -rf` which permanently deletes
+2. **Use tab completion** - press Tab to auto-complete file/directory names
+3. **Check your location** - use `pwd` to know where you are
+4. **Keep backups** - before running destructive commands
+5. **Use version control** - git tracks changes and allows recovery

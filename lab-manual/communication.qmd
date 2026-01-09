@@ -6,9 +6,9 @@ title: "Communication and Coordination"
 
 Effective communication is essential for successful collaboration. We use several platforms for different types of communication.
 
-## Slack (or Primary Communication Platform)
+## Microsoft Teams
 
-- Use Slack for scheduling, coding-related questions, quick check-ins, and day-to-day coordination
+- Use Microsoft Teams for scheduling, coding-related questions, quick check-ins, and day-to-day coordination
 - If your message exceeds 200 words, consider using email instead
 - Use channels instead of direct messages unless discussing something private
 - Please respond to messages that tag you (e.g., `@yourname`) as quickly as possible and always within 24 hours

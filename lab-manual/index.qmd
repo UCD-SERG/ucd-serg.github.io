@@ -15,7 +15,7 @@ Our research group is based at the University of California, Davis, and we colla
 
 This lab manual covers our communication strategy, code of conduct, and best practices for reproducibility of computational workflows. It is a living document that is updated regularly to reflect our evolving practices and lessons learned.
 
-This manual was created with inspiration from [other scientists' lab manuals](https://github.com/jadebc/lab-manual), particularly the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/). 
+**Attribution:** Much of the content in this lab manual has been adapted from the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/) created by Dr. Jade Benjamin-Chung and contributors at Stanford University. We are grateful for their work in creating and openly sharing their comprehensive lab manual, which has served as an excellent foundation for our own practices. The original manual is available at <https://github.com/jadebc/lab-manual> under a Creative Commons license.
 
 Feel free to draw from this manual and adapt it for your own use.
 

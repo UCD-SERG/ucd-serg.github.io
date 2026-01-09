@@ -1,0 +1,87 @@
+---
+title: "GitHub"
+---
+
+# GitHub
+
+*Adapted from the [Benjamin-Chung Lab Manual](https://jadebc.github.io/lab-manual/)*
+
+## Basics
+
+- A detailed tutorial of Git can be found [here on the CS61B website](https://sp19.datastructur.es/materials/guides/using-git#b-local-repositories-narrative-introduction)
+- If you are already familiar with Git, reference the summary at [Section B](https://sp19.datastructur.es/materials/guides/using-git#b-local-repositories-narrative-introduction)
+- If you made a mistake, refer to [this article](https://sethrobertson.github.io/GitFixUm/fixup.html) to undo, fix, or remove commits
+
+## GitHub Desktop
+
+While the command line provides full power and flexibility, GitHub also provides [GitHub Desktop](https://desktop.github.com/) as a graphical interface for basic git commands. This is a good alternative if you prefer a visual interface.
+
+## Git Branching
+
+Branches allow you to keep track of multiple versions of your work simultaneously. Use branches when:
+
+* You want to make dramatic changes (refactoring) without breaking code for collaborators
+* You want to start working on a new feature that may not make it to the final product
+* You are working with others and don't want to mix up your current work with theirs
+
+A detailed tutorial on Git Branching: [Git Branching Guide](https://sp19.datastructur.es/materials/guides/using-git#e-git-branching-advanced-git-optional)
+
+## Example Workflow
+
+A standard workflow for contributing code:
+
+| Step | Command   | Description      |
+|------|-----------|------------------|
+| SETUP | `git clone <url> <directory_name>` | Clone the repo (first time only) |
+| 1 | `git pull origin master` | Update to match most current version on GitHub |
+| 2 | `git checkout -b <new_branch_name>` | Create new branch and switch to it |
+| 3 | Make file changes | Work on your feature/implementation |
+| 4 | `git add -p` | Add changes to stage, reviewing line by line |
+| 5 | `git commit -m <commit message>` | Commit files with a descriptive message |
+| 6 | `git push -u origin <branch_name>` | Push branch to remote (first push) |
+| 7 | Repeat 4-5 | Work and commit often |
+| 8 | `git push` | Push work to remote branch |
+| 9 | Submit pull request on GitHub | Merge work from branch into master |
+| 10 | PR approved and merged | Reviewer deletes remote branch upon merging |
+| 11 | `git fetch --all --prune` | Clean up local git, untrack deleted remote branches |
+
+## Commonly Used Git Commands
+
+| Command   | Description      |
+|-----------|------------------|
+| `git clone <url> <directory_name>` | Clone a repository (first time only) |
+| `git pull origin master` | Pull from `master` before making changes |
+| `git branch` | Check what branch you are on |
+| `git branch -a` | Check local branch + all remote branches |
+| `git checkout -b <new_branch_name>` | Create new branch and switch to it |
+| `git checkout <branch_name>` | Switch to existing branch |
+| `git add <file_name>` | Add file to stage for commit |
+| `git add -p` | Add changes interactively, showing one by one |
+| `git commit -m <message>` | Commit with a message |
+| `git push -u origin <branch_name>` | Push and set upstream (first push) |
+| `git push origin <branch_name>` | Push to branch |
+| `git checkout --track origin/<branch_name>` | Pull remote branch and create local branch |
+| `git branch -d <branch_name>` | Delete local branch (-D to force) |
+| `git fetch --all --prune` | Untrack deleted remote branches |
+
+## Best Practices
+
+### Commit Frequency
+Commit every 15 minutes or every time you make a significant change. It is better to commit more rather than less.
+
+### What Should Be Pushed to GitHub?
+
+**Never push:**
+- `.Rout` files - difficult to reconcile when multiple people push
+- Temporary files, log files
+- Large data files (use shared directory or data repository instead)
+- Sensitive data or credentials
+
+**Use `.gitignore`:**
+- Download a [standardized `.gitignore` for R](https://github.com/github/gitignore/blob/master/R.gitignore)
+- Download a [standardized `.gitignore` for Python](https://github.com/github/gitignore/blob/master/Python.gitignore)
+- This ensures you don't commit log files or temporary files
+
+### Project-Oriented Workflows
+
+Create self-contained, portable projects. See [this discussion](https://www.tidyverse.org/articles/2017/12/workflow-vs-script/) on project-oriented workflows.
