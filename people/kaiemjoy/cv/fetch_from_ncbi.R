@@ -12,7 +12,15 @@
 # NCBI My Bibliography Collection:
 # https://www.ncbi.nlm.nih.gov/myncbi/1xIGpkekG9FQP/bibliography/public/
 
-library(yaml)
+# Check and load required packages
+required_packages <- c("yaml", "jsonlite", "xml2")
+for (pkg in required_packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    message("Installing required package: ", pkg)
+    install.packages(pkg, repos = "https://cloud.r-project.org")
+  }
+  suppressPackageStartupMessages(library(pkg, character.only = TRUE))
+}
 
 # NCBI E-utilities base URLs
 ESEARCH_URL <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
@@ -291,18 +299,6 @@ save_publications_yaml <- function(publications, output_file) {
 main <- function() {
   cat("=== Fetching Dr. Aiemjoy's publications from NCBI ===\n\n")
   
-  # Check for required packages
-  required_packages <- c("yaml", "jsonlite", "xml2")
-  for (pkg in required_packages) {
-    if (!requireNamespace(pkg, quietly = TRUE)) {
-      cat("Installing required package:", pkg, "\n")
-      install.packages(pkg, repos = "https://cloud.r-project.org")
-      library(pkg, character.only = TRUE)
-    } else {
-      library(pkg, character.only = TRUE)
-    }
-  }
-  
   # Fetch PMIDs
   pmids <- fetch_pubmed_ids("Aiemjoy K", retmax = 100)
   
@@ -327,13 +323,27 @@ main <- function() {
     )
   ]
   
-  # Save to YAML
-  output_file <- file.path(
-    dirname(sys.frame(1)$ofile),
-    "publications.yml"
-  )
-  # If running interactively, use current directory
-  if (is.null(output_file) || output_file == "NULL") {
+  # Determine output file path
+  # Try to get script location, fall back to current directory
+  script_path <- tryCatch({
+    normalizePath(sys.frame(1)$ofile)
+  }, error = function(e) {
+    # If that fails, try commandArgs
+    tryCatch({
+      args <- commandArgs(trailingOnly = FALSE)
+      file_arg <- grep("^--file=", args, value = TRUE)
+      if (length(file_arg) > 0) {
+        normalizePath(sub("^--file=", "", file_arg))
+      } else {
+        NULL
+      }
+    }, error = function(e2) NULL)
+  })
+  
+  if (!is.null(script_path) && file.exists(script_path)) {
+    output_file <- file.path(dirname(script_path), "publications.yml")
+  } else {
+    # Fall back to current working directory
     output_file <- "publications.yml"
   }
   
