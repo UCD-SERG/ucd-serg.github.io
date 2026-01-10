@@ -105,16 +105,19 @@ format_publication <- function(pub) {
   # Build formatted string
   formatted <- paste0(authors_str, ". ")
 
-  # Add hyperlinked title
+  # Add hyperlinked title (using HTML anchor tags)
   if (doi != "") {
-    formatted <- paste0(formatted, "[", title, "](https://doi.org/", doi, "). ")
+    doi_url <- paste0("https://doi.org/", doi)
+    formatted <- paste0(formatted, "<a href=\"", doi_url, "\">", title,
+                       "</a>. ")
   } else {
     url <- pub$url
     if (is.null(url)) {
       url <- pub$path
     }
     if (!is.null(url) && url != "") {
-      formatted <- paste0(formatted, "[", title, "](", url, "). ")
+      formatted <- paste0(formatted, "<a href=\"", url, "\">", title,
+                         "</a>. ")
     } else {
       formatted <- paste0(formatted, title, ". ")
     }

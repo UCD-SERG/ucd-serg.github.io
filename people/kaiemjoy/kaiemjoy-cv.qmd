@@ -63,6 +63,8 @@ Stanford University
 
 ## Peer-Reviewed Publications
 
+> **Note**: This CV currently displays 17 publications from the lab's main publications database. Dr. Aiemjoy's complete NCBI My Bibliography profile contains 41 publications. To update this CV with all publications, please run the NCBI fetch script when network access is available, or manually update the publications list from [Dr. Aiemjoy's NCBI profile](https://www.ncbi.nlm.nih.gov/myncbi/1xIGpkekG9FQP/bibliography/public/).
+
 ```{=html}
 {{< include cv/publications_include.html >}}
 ```
