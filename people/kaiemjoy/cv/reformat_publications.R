@@ -25,7 +25,7 @@ get_initials <- function(given_name) {
   # Get first letter of each part
   initials <- paste(toupper(substring(parts[parts != ""], 1, 1)), collapse = "")
 
-  return(initials)
+  initials
 }
 
 #' Format author as: Last FI (where F is first initial, I is middle initial)
@@ -47,7 +47,7 @@ format_author <- function(last, given) {
     formatted <- paste0("<strong>", formatted, "</strong>")
   }
 
-  return(formatted)
+  formatted
 }
 
 #' Format publication in LaTeX CV style
@@ -135,7 +135,7 @@ format_publication <- function(pub) {
     formatted <- paste0(formatted, "DOI: ", doi, ".")
   }
 
-  return(trimws(formatted))
+  trimws(formatted)
 }
 
 #' Main function to reformat publications

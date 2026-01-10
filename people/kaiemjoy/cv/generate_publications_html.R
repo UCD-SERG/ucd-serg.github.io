@@ -17,11 +17,12 @@ library(yaml)
 #' Extract initials from a given name
 get_initials <- function(given_name) {
   if (is.null(given_name) || given_name == "") {
-    return("")
+    ""
+  } else {
+    parts <- strsplit(gsub("\\.", "", given_name), " ")[[1]]
+    initials <- paste(toupper(substring(parts[parts != ""], 1, 1)), collapse = "")
+    initials
   }
-  parts <- strsplit(gsub("\\.", "", given_name), " ")[[1]]
-  initials <- paste(toupper(substring(parts[parts != ""], 1, 1)), collapse = "")
-  return(initials)
 }
 
 #' Format author as: Last FI (where F is first initial, I is middle initial)
@@ -93,7 +94,7 @@ format_publication_html <- function(pub) {
   }
 
   # Build formatted HTML string
-  html <- paste0('<p style="margin-bottom: 0.5em;">')
+  html <- paste0("<p style=\"margin-bottom: 0.5em;\">")
 
   # Add authors with proper bold tags
   authors_str <- gsub("\\*\\*BOLD\\*\\*", "<strong>", authors_str)
@@ -103,16 +104,16 @@ format_publication_html <- function(pub) {
   # Add hyperlinked title
   if (doi != "") {
     doi_url <- paste0("https://doi.org/", doi)
-    html <- paste0(html, '<a href="', doi_url, '">', title, '</a>. ')
+    html <- paste0(html, "<a href=\"", doi_url, "\">", title, "</a>. ")
   } else {
     url <- pub$url
     if (is.null(url)) {
       url <- pub$path
     }
     if (!is.null(url) && url != "") {
-      html <- paste0(html, '<a href="', url, '">', title, '</a>. ')
+      html <- paste0(html, "<a href=\"", url, "\">", title, "</a>. ")
     } else {
-      html <- paste0(html, title, '. ')
+      html <- paste0(html, title, ". ")
     }
   }
 
@@ -131,7 +132,7 @@ format_publication_html <- function(pub) {
     html <- paste0(html, "DOI: ", doi, ".")
   }
 
-  html <- paste0(html, '</p>')
+  html <- paste0(html, "</p>")
 
   return(list(
     html = html,
@@ -197,9 +198,9 @@ main <- function() {
   # Write HTML output
   output_file <- "people/kaiemjoy/cv/publications.html"
   html_output <- paste0(
-    '<div class="publications-list">\n',
+    "<div class=\"publications-list\">\n",
     paste(sapply(formatted_pubs, function(p) p$html), collapse = "\n"),
-    '\n</div>'
+    "\n</div>"
   )
 
   writeLines(html_output, output_file)
