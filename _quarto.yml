@@ -17,8 +17,9 @@ website:
         text: Software
       - href: opportunities.qmd
         text: Opportunities
-      - href: lab-manual.qmd
-        text: Lab Manual
+      # Disabled for now - keeping content for later
+      # - href: lab-manual.qmd
+      #   text: Lab Manual
 
 format:
   html:
