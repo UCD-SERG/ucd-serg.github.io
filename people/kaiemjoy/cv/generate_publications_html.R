@@ -5,10 +5,12 @@
 #
 
 # Note: This script requires network access to NCBI
-# NCBI My Bibliography URL: https://www.ncbi.nlm.nih.gov/myncbi/1xIGpkekG9FQP/bibliography/public/
+# NCBI My Bibliography URL:
+# https://www.ncbi.nlm.nih.gov/myncbi/1xIGpkekG9FQP/bibliography/public/
 
 # For now, we read from the main publications.yml which is synced with NCBI
-# In the future, this can be enhanced to fetch directly from NCBI E-utilities API
+# In the future, this can be enhanced to fetch directly from
+# NCBI E-utilities API
 
 library(yaml)
 
@@ -100,7 +102,8 @@ format_publication_html <- function(pub) {
 
   # Add hyperlinked title
   if (doi != "") {
-    html <- paste0(html, '<a href="https://doi.org/', doi, '">', title, '</a>. ')
+    doi_url <- paste0("https://doi.org/", doi)
+    html <- paste0(html, '<a href="', doi_url, '">', title, '</a>. ')
   } else {
     url <- pub$url
     if (is.null(url)) {

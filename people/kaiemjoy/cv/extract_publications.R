@@ -1,6 +1,7 @@
 #!/usr/bin/env Rscript
 #
-# Extract publications for Dr. Kristen Aiemjoy from the main publications.yml file
+# Extract publications for Dr. Kristen Aiemjoy from
+# the main publications.yml file
 #
 
 library(yaml)
@@ -28,8 +29,9 @@ format_authors <- function(authors) {
 #'
 #' @param input_file Path to input publications.yml file
 #' @param output_file Path to output publications.yml file
-extract_aiemjoy_publications <- function(input_file = "publications.yml",
-                                         output_file = "people/kaiemjoy/cv/publications.yml") {
+extract_aiemjoy_publications <- function(
+    input_file = "publications.yml",
+    output_file = "people/kaiemjoy/cv/publications.yml") {
   tryCatch({
     # Read the YAML file
     publications <- yaml::read_yaml(input_file)
@@ -59,7 +61,11 @@ extract_aiemjoy_publications <- function(input_file = "publications.yml",
                   pub$year <- as.character(issued)
                 } else {
                   year_str <- as.character(issued)
-                  pub$year <- ifelse(nchar(year_str) >= 4, substr(year_str, 1, 4), "")
+                  if (nchar(year_str) >= 4) {
+                    pub$year <- substr(year_str, 1, 4)
+                  } else {
+                    pub$year <- ""
+                  }
                 }
               }, error = function(e) {
                 pub$year <- ""

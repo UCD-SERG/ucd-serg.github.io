@@ -14,7 +14,12 @@ html_lines <- c('<div class="publications-list" style="margin-top: 1em;">')
 
 for (pub in pubs) {
   formatted <- pub$formatted
-  html_lines <- c(html_lines, paste0('  <p style="margin-bottom: 0.8em;">', formatted, '</p>'))
+  html_line <- paste0(
+    '  <p style="margin-bottom: 0.8em;">',
+    formatted,
+    '</p>'
+  )
+  html_lines <- c(html_lines, html_line)
 }
 
 html_lines <- c(html_lines, '</div>')
