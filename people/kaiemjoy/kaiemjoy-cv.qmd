@@ -3,14 +3,6 @@ title: "Kristen Aiemjoy, PhD, MSc"
 page-layout: full
 toc: true
 toc-location: left
-listing:
-- id: cv-publications
-  contents:
-    - cv/publications.yml
-  sort: 'year desc'
-  type: default
-  page-size: 200
-  template: cv/publication-simple-template.ejs
 ---
 
 ::: {style="text-align: right;"}
@@ -71,8 +63,9 @@ Stanford University
 
 ## Peer-Reviewed Publications
 
-:::{#cv-publications}
-:::
+```{=html}
+{{< include cv/publications_include.html >}}
+```
 
 ---
 
