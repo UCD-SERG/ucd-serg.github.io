@@ -20,7 +20,8 @@ get_initials <- function(given_name) {
     ""
   } else {
     parts <- strsplit(gsub("\\.", "", given_name), " ")[[1]]
-    initials <- paste(toupper(substring(parts[parts != ""], 1, 1)), collapse = "")
+    filtered_parts <- parts[parts != ""]
+    initials <- paste(toupper(substring(filtered_parts, 1, 1)), collapse = "")
     initials
   }
 }
@@ -29,14 +30,15 @@ get_initials <- function(given_name) {
 format_author <- function(last, given) {
   initials <- get_initials(given)
   if (initials == "") {
-    return(last)
+    last
+  } else {
+    formatted <- paste(last, initials)
+    # Bold Aiemjoy
+    if (last == "Aiemjoy") {
+      formatted <- paste0("\\textbf{", formatted, "}")
+    }
+    formatted
   }
-  formatted <- paste(last, initials)
-  # Bold Aiemjoy
-  if (last == "Aiemjoy") {
-    formatted <- paste0("\\textbf{", formatted, "}")
-  }
-  return(formatted)
 }
 
 #' Generate HTML publication entry with proper bolding
@@ -57,9 +59,10 @@ format_publication_html <- function(pub) {
     name <- paste(last, initials)
     # Return with marker for bolding
     if (last == "Aiemjoy") {
-      return(paste0("**BOLD**", name, "**ENDBOLD**"))
+      paste0("**BOLD**", name, "**ENDBOLD**")
+    } else {
+      name
     }
-    return(name)
   })
 
   authors_str <- paste(author_parts, collapse = ", ")
@@ -134,12 +137,12 @@ format_publication_html <- function(pub) {
 
   html <- paste0(html, "</p>")
 
-  return(list(
+  list(
     html = html,
     year = year,
     title = title,
     doi = doi
-  ))
+  )
 }
 
 #' Main function
