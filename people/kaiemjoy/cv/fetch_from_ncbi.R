@@ -35,7 +35,7 @@ ESUMMARY_URL <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
 fetch_pubmed_ids <- function(author_name, retmax = 100) {
   # Build search query
   query <- paste0(author_name, "[Author]")
-  
+
   # Construct URL
   url <- paste0(
     ESEARCH_URL,
@@ -44,15 +44,15 @@ fetch_pubmed_ids <- function(author_name, retmax = 100) {
     "&retmax=", retmax,
     "&retmode=json"
   )
-  
+
   cat("Fetching PubMed IDs for:", author_name, "\n")
   cat("URL:", url, "\n")
-  
+
   # Fetch data
   tryCatch({
     response <- readLines(url, warn = FALSE)
     data <- jsonlite::fromJSON(paste(response, collapse = ""))
-    
+
     if (!is.null(data$esearchresult$idlist)) {
       pmids <- data$esearchresult$idlist
       cat("Found", length(pmids), "publications\n")
@@ -76,17 +76,17 @@ fetch_publication_details <- function(pmids) {
     cat("No PMIDs provided\n")
     return(list())
   }
-  
+
   # Process in batches of 100
   batch_size <- 100
   all_pubs <- list()
-  
+
   for (i in seq(1, length(pmids), by = batch_size)) {
     batch_end <- min(i + batch_size - 1, length(pmids))
     batch_pmids <- pmids[i:batch_end]
-    
+
     cat("Fetching details for PMIDs", i, "to", batch_end, "\n")
-    
+
     # Construct URL for efetch
     pmid_str <- paste(batch_pmids, collapse = ",")
     url <- paste0(
@@ -95,28 +95,28 @@ fetch_publication_details <- function(pmids) {
       "&id=", pmid_str,
       "&retmode=xml"
     )
-    
+
     tryCatch({
       # Fetch XML data
       xml_data <- xml2::read_xml(url)
-      
+
       # Parse each article
       articles <- xml2::xml_find_all(xml_data, ".//PubmedArticle")
-      
+
       for (article in articles) {
         pub <- parse_pubmed_article(article)
         if (!is.null(pub)) {
           all_pubs <- c(all_pubs, list(pub))
         }
       }
-      
+
       # Be polite to NCBI servers
       Sys.sleep(0.4)
     }, error = function(e) {
       cat("Error fetching details:", e$message, "\n")
     })
   }
-  
+
   cat("Successfully parsed", length(all_pubs), "publications\n")
   all_pubs
 }
@@ -132,20 +132,20 @@ parse_pubmed_article <- function(article) {
     pmid <- xml2::xml_text(
       xml2::xml_find_first(medline, ".//PMID")
     )
-    
+
     # Extract article details
     art <- xml2::xml_find_first(medline, ".//Article")
-    
+
     # Title
     title <- xml2::xml_text(
       xml2::xml_find_first(art, ".//ArticleTitle")
     )
-    
+
     # Journal
     journal <- xml2::xml_text(
       xml2::xml_find_first(art, ".//Journal/Title")
     )
-    
+
     # Authors
     author_nodes <- xml2::xml_find_all(art, ".//Author")
     authors <- sapply(author_nodes, function(auth) {
@@ -162,7 +162,7 @@ parse_pubmed_article <- function(article) {
       }
     })
     authors <- authors[!is.na(authors)]
-    
+
     # Publication date
     pub_date_node <- xml2::xml_find_first(art, ".//PubDate")
     year <- xml2::xml_text(
@@ -174,7 +174,7 @@ parse_pubmed_article <- function(article) {
     day <- xml2::xml_text(
       xml2::xml_find_first(pub_date_node, ".//Day")
     )
-    
+
     # Format date
     if (nchar(month) > 0) {
       month_num <- match(
@@ -194,7 +194,7 @@ parse_pubmed_article <- function(article) {
     } else {
       date <- paste0(year, "-01-01")
     }
-    
+
     # DOI
     doi_node <- xml2::xml_find_first(
       art,
@@ -205,7 +205,7 @@ parse_pubmed_article <- function(article) {
     } else {
       doi <- NA
     }
-    
+
     # Return publication record
     list(
       id = paste0("pmid-", pmid),
@@ -246,7 +246,7 @@ save_publications_yaml <- function(publications, output_file) {
   yaml_pubs <- lapply(publications, function(pub) {
     # Format authors
     author_str <- format_authors_latex(pub$authors)
-    
+
     # Create title with hyperlink if DOI exists
     if (!is.null(pub$doi) && !is.na(pub$doi)) {
       doi_url <- paste0("https://doi.org/", pub$doi)
@@ -256,13 +256,13 @@ save_publications_yaml <- function(publications, output_file) {
     } else {
       title_html <- pub$title
     }
-    
+
     # Format journal in italics
     journal_html <- paste0("<em>", pub$journal, "</em>")
-    
+
     # Extract year
     year <- substr(pub$date, 1, 4)
-    
+
     # Build description in LaTeX CV format
     desc_parts <- c(
       author_str,
@@ -270,14 +270,14 @@ save_publications_yaml <- function(publications, output_file) {
       journal_html,
       year
     )
-    
+
     if (!is.null(pub$doi) && !is.na(pub$doi)) {
       desc_parts <- c(desc_parts, paste0("DOI: ", pub$doi))
     }
-    
+
     description <- paste(desc_parts, collapse = ". ")
     description <- paste0(description, ".")
-    
+
     list(
       id = pub$id,
       title = pub$title,
@@ -289,7 +289,7 @@ save_publications_yaml <- function(publications, output_file) {
       description = description
     )
   })
-  
+
   # Write to YAML
   yaml::write_yaml(yaml_pubs, output_file)
   cat("Saved", length(yaml_pubs), "publications to", output_file, "\n")
@@ -298,23 +298,23 @@ save_publications_yaml <- function(publications, output_file) {
 #' Main function
 main <- function() {
   cat("=== Fetching Dr. Aiemjoy's publications from NCBI ===\n\n")
-  
+
   # Fetch PMIDs
   pmids <- fetch_pubmed_ids("Aiemjoy K", retmax = 100)
-  
+
   if (length(pmids) == 0) {
     cat("No publications found. Exiting.\n")
     return(invisible(NULL))
   }
-  
+
   # Fetch details
   publications <- fetch_publication_details(pmids)
-  
+
   if (length(publications) == 0) {
     cat("No publication details retrieved. Exiting.\n")
     return(invisible(NULL))
   }
-  
+
   # Sort by date (most recent first)
   publications <- publications[
     order(
@@ -322,7 +322,7 @@ main <- function() {
       decreasing = TRUE
     )
   ]
-  
+
   # Determine output file path
   # Try to get script location, fall back to current directory
   script_path <- tryCatch({
@@ -339,20 +339,20 @@ main <- function() {
       }
     }, error = function(e2) NULL)
   })
-  
+
   if (!is.null(script_path) && file.exists(script_path)) {
     output_file <- file.path(dirname(script_path), "publications.yml")
   } else {
     # Fall back to current working directory
     output_file <- "publications.yml"
   }
-  
+
   save_publications_yaml(publications, output_file)
-  
+
   cat("\n=== Complete! ===\n")
   cat("Publications saved to:", output_file, "\n")
   cat("Total publications:", length(publications), "\n")
-  
+
   invisible(publications)
 }
 

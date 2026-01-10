@@ -109,7 +109,7 @@ format_publication <- function(pub) {
   if (doi != "") {
     doi_url <- paste0("https://doi.org/", doi)
     formatted <- paste0(formatted, "<a href=\"", doi_url, "\">", title,
-                       "</a>. ")
+                        "</a>. ")
   } else {
     url <- pub$url
     if (is.null(url)) {
@@ -117,7 +117,7 @@ format_publication <- function(pub) {
     }
     if (!is.null(url) && url != "") {
       formatted <- paste0(formatted, "<a href=\"", url, "\">", title,
-                         "</a>. ")
+                          "</a>. ")
     } else {
       formatted <- paste0(formatted, title, ". ")
     }
