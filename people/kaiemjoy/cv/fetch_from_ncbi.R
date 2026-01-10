@@ -23,9 +23,9 @@ for (pkg in required_packages) {
 }
 
 # NCBI E-utilities base URLs
-ESEARCH_URL <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
-EFETCH_URL <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
-ESUMMARY_URL <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
+esearch_url <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
+efetch_url <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
+esummary_url <- "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
 
 #' Fetch PubMed IDs for an author
 #'
@@ -38,7 +38,7 @@ fetch_pubmed_ids <- function(author_name, retmax = 100) {
 
   # Construct URL
   url <- paste0(
-    ESEARCH_URL,
+    esearch_url,
     "?db=pubmed",
     "&term=", URLencode(query, reserved = TRUE),
     "&retmax=", retmax,
@@ -90,7 +90,7 @@ fetch_publication_details <- function(pmids) {
     # Construct URL for efetch
     pmid_str <- paste(batch_pmids, collapse = ",")
     url <- paste0(
-      EFETCH_URL,
+      efetch_url,
       "?db=pubmed",
       "&id=", pmid_str,
       "&retmode=xml"
@@ -179,15 +179,15 @@ parse_pubmed_article <- function(article) {
     if (nchar(month) > 0) {
       month_num <- match(
         month,
-        c("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+                        c("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
       )
       if (is.na(month_num)) {
         month_num <- as.integer(month)
       }
       if (nchar(day) > 0) {
         date <- sprintf("%s-%02d-%02d",
-                       year, month_num, as.integer(day))
+                        year, month_num, as.integer(day))
       } else {
         date <- sprintf("%s-%02d-01", year, month_num)
       }
