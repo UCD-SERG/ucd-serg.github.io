@@ -1,0 +1,10 @@
+---
+title: "Lab Manual"
+page-layout: full
+---
+
+Our lab manual contains information about lab policies, procedures, and expectations for all lab members.
+
+[**→ View Lab Manual**](https://ucd-serg.github.io/lab-manual/)
+
+For questions about lab policies or procedures, please contact us at [ucdserg@ucdavis.edu](mailto:ucdserg@ucdavis.edu).
