@@ -7,25 +7,13 @@ This directory contains Dr. Aiemjoy's CV page and related files.
 - `kaiemjoy-cv.qmd` - The main CV page in Quarto markdown format
 - `cv/publications.yml` - Formatted publications data
 - `cv/publication-simple-template.ejs` - EJS template for rendering publications
-- `cv/reformat_publications.py` - Python script to reformat publications in LaTeX CV style
 - `cv/reformat_publications.R` - R script to reformat publications in LaTeX CV style
-- `cv/extract_publications.py` - Python script to extract Dr. Aiemjoy's publications from main publications.yml
 - `cv/extract_publications.R` - R script to extract Dr. Aiemjoy's publications from main publications.yml
-- `cv/fetch_from_ncbi.py` - Script to fetch publications from NCBI My Bibliography (for future use)
-- `cv/fetch_publications.py` - Alternative NCBI fetcher using E-utilities
 
 ## Updating Publications
 
-Publications on the CV are sourced from the main lab publications list. When new publications are added to the lab's `publications.yml`, run one of the following commands to update the CV:
+Publications on the CV are sourced from the main lab publications list. When new publications are added to the lab's `publications.yml`, run the following command to update the CV:
 
-### Using Python:
-```bash
-cd /path/to/ucd-serg.github.io
-python3 people/kaiemjoy/cv/reformat_publications.py
-quarto render people/kaiemjoy/kaiemjoy-cv.qmd
-```
-
-### Using R:
 ```bash
 cd /path/to/ucd-serg.github.io
 Rscript people/kaiemjoy/cv/reformat_publications.R
@@ -53,10 +41,6 @@ The R scripts require the `yaml` package. Install it with:
 ```r
 install.packages("yaml")
 ```
-
-## Future Enhancement: Direct NCBI Fetch
-
-The `fetch_from_ncbi.py` script is provided for future use to fetch publications directly from Dr. Aiemjoy's NCBI My Bibliography profile (https://www.ncbi.nlm.nih.gov/myncbi/1xIGpkekG9FQP/bibliography/public/). This requires network access to NCBI servers.
 
 ## CV Structure
 
