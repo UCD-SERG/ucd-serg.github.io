@@ -179,8 +179,8 @@ parse_pubmed_article <- function(article) {
     if (nchar(month) > 0) {
       month_num <- match(
         month,
-                        c("Jan", "Feb", "Mar", "Apr", "May", "Jun",
-                          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+        c("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
       )
       if (is.na(month_num)) {
         month_num <- as.integer(month)
