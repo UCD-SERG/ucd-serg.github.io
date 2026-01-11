@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!lab-manual.qmd"
 website:
   title: "UCD-SeRG"
   repo-url: https://github.com/UCD-SERG/ucd-serg.github.io
