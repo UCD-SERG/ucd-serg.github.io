@@ -33,36 +33,36 @@ kaiemjoy\@health.ucdavis.edu
 
 ## Positions
 
-```         
+```
      Assistant Professor — Oct 2021 -
 
-**University of California Davis School of Medicine**     
+**University of California Davis School of Medicine**
 
-**Division of Epidemiology**  
+**Division of Epidemiology**
 
-    **Department of Public Health Sciences**  
+    **Department of Public Health Sciences**
 
 Adjunct Assistant Professor — Jan 2023 -
 
-**Mahidol University Faculty of Tropical Medicine**     
+**Mahidol University Faculty of Tropical Medicine**
 
-**Department of Microbiology and Immunology**  
+**Department of Microbiology and Immunology**
 
-    **Bangkok, Thailand**  
+    **Bangkok, Thailand**
 
 Visiting Scientist — June 2022 -
 
-**Mahidol Oxford Tropical Medicine Research Unit**     
+**Mahidol Oxford Tropical Medicine Research Unit**
 
-**Epidemiology Unit**  
+**Epidemiology Unit**
 
-**Bangkok, Thailand**  
+**Bangkok, Thailand**
 
      Postdoctoral Research Fellow — 2018 - 2021
 
-**Stanford University School of Medicine**     
+**Stanford University School of Medicine**
 
-**Division of Infectious Diseases and Geographic Medicine**  
+**Division of Infectious Diseases and Geographic Medicine**
 ```
 
 ## Education
@@ -95,145 +95,172 @@ library(rorcid)
 # ORCID ID for Kristen Aiemjoy
 orcid_id <- "0000-0003-1886-2699"
 
+# Function to format a single author name
+format_author <- function(author_name) {
+  if (is.null(author_name) || author_name == "") {
+    return(NULL)
+  }
+
+  # Check if this is Aiemjoy
+  if (grepl("Aiemjoy", author_name, ignore.case = TRUE)) {
+    return("**Aiemjoy K**")
+  }
+
+  # Try to extract last name and first initial
+  # Handle formats like "John Smith" or "Smith, John"
+  if (grepl(",", author_name)) {
+    parts <- strsplit(author_name, ",")[[1]]
+    if (length(parts) >= 2) {
+      last <- trimws(parts[1])
+      first <- trimws(parts[2])
+      first_initial <- substr(first, 1, 1)
+      return(paste0(last, " ", first_initial))
+    }
+  } else {
+    parts <- strsplit(author_name, " ")[[1]]
+    if (length(parts) >= 2) {
+      # Assume last part is last name
+      last <- parts[length(parts)]
+      first_initial <- substr(parts[1], 1, 1)
+      return(paste0(last, " ", first_initial))
+    }
+  }
+
+  return(author_name)
+}
+
 # Function to format publication according to specification
-format_publication <- function(work) {
-  # Extract authors
-  authors <- tryCatch({
-    contributors <- work$contributors$contributor
-    if (!is.null(contributors)) {
-      author_names <- sapply(contributors, function(c) {
-        credit_name <- c$`credit-name`$value
-        if (!is.null(credit_name)) {
-          # Bold Aiemjoy K - preserve the name format
-          if (grepl("Aiemjoy", credit_name, ignore.case = TRUE)) {
-            return(paste0("**Aiemjoy K**"))
-          }
-          # Extract last name and first initial
-          parts <- strsplit(credit_name, " ")[[1]]
-          if (length(parts) >= 2) {
-            last <- parts[length(parts)]
-            first <- substr(parts[1], 1, 1)
-            return(paste0(last, " ", first))
-          }
-          return(credit_name)
-        }
-        return(NULL)
-      })
-      author_names <- author_names[!sapply(author_names, is.null)]
-      paste(author_names, collapse=", ")
+format_publication <- function(work, put_code, orcid_id) {
+  # Extract title from flattened structure
+  title <- tryCatch({
+    if (!is.null(work$`title.title.value`)) {
+      work$`title.title.value`
+    } else {
+      "Untitled"
+    }
+  }, error = function(e) "Untitled")
+
+  # Extract journal from flattened structure
+  journal <- tryCatch({
+    if (!is.null(work$`journal-title.value`)) {
+      work$`journal-title.value`
     } else {
       ""
     }
   }, error = function(e) "")
-  
-  # Extract title
-  title <- tryCatch({
-    work$title$title$value
-  }, error = function(e) "Untitled")
-  
-  # Extract journal
-  journal <- tryCatch({
-    work$`journal-title`$value
-  }, error = function(e) "")
-  
-  # Extract publication date
+
+  # Extract publication date from flattened structure
   pub_date <- tryCatch({
-    year <- work$`publication-date`$year$value
-    month <- work$`publication-date`$month$value
+    year <- work$`publication-date.year.value`
+    month <- work$`publication-date.month.value`
+    day <- work$`publication-date.day.value`
+
     if (!is.null(year)) {
       if (!is.null(month)) {
         month_int <- suppressWarnings(as.integer(month))
         if (!is.na(month_int) && month_int >= 1 && month_int <= 12) {
           month_name <- month.name[month_int]
-          paste(year, month_name)
-        } else {
-          year
+          if (!is.null(day)) {
+            day_int <- suppressWarnings(as.integer(day))
+            if (!is.na(day_int)) {
+              return(paste(year, month_name, day_int))
+            }
+          }
+          return(paste(year, month_name))
         }
-      } else {
-        year
       }
-    } else {
-      ""
+      return(as.character(year))
     }
+    return("")
   }, error = function(e) "")
-  
-  # Extract DOI
-  doi <- tryCatch({
-    ext_ids <- work$`external-ids`$`external-id`
-    doi_id <- NULL
-    if (!is.null(ext_ids)) {
+
+  # Extract external IDs (DOI and PMID)
+  doi <- NULL
+  pmid <- NULL
+
+  tryCatch({
+    ext_ids <- work$`external-ids.external-id`
+    if (!is.null(ext_ids) && is.list(ext_ids)) {
       for (id in ext_ids) {
-        if (id$`external-id-type` == "doi") {
-          doi_id <- id$`external-id-value`
-          break
+        if (!is.null(id$`external-id-type`)) {
+          if (id$`external-id-type` == "doi" && is.null(doi)) {
+            doi <- id$`external-id-value`
+          } else if (id$`external-id-type` == "pmid" && is.null(pmid)) {
+            pmid <- id$`external-id-value`
+          }
         }
       }
     }
-    doi_id
-  }, error = function(e) NULL)
-  
-  # Extract PMID
-  pmid <- tryCatch({
-    ext_ids <- work$`external-ids`$`external-id`
-    pmid_id <- NULL
-    if (!is.null(ext_ids)) {
-      for (id in ext_ids) {
-        if (id$`external-id-type` == "pmid") {
-          pmid_id <- id$`external-id-value`
-          break
+  }, error = function(e) {})
+
+  # Try to get detailed work information for authors
+  authors <- ""
+  tryCatch({
+    if (!is.null(put_code)) {
+      work_detail <- orcid_works(orcid_id, put_code = put_code)
+      if (!is.null(work_detail) && length(work_detail) > 0) {
+        contributors <- work_detail[[1]]$contributors$contributor
+        if (!is.null(contributors) && length(contributors) > 0) {
+          author_names <- sapply(contributors, function(c) {
+            credit_name <- c$`credit-name`$value
+            format_author(credit_name)
+          })
+          author_names <- author_names[!sapply(author_names, is.null)]
+          if (length(author_names) > 0) {
+            authors <- paste(author_names, collapse = ", ")
+          }
         }
       }
     }
-    pmid_id
-  }, error = function(e) NULL)
-  
+  }, error = function(e) {})
+
   # Build formatted citation
   citation <- ""
-  
-  # Add authors if not empty
+
+  # Add authors if available
   if (authors != "") {
-    citation <- authors
+    citation <- paste0(authors, ". ")
   }
-  
+
+  # Add title with DOI link if available
   if (!is.null(doi) && doi != "") {
-    if (citation != "") {
-      citation <- paste0(citation, " ")
-    }
     citation <- paste0(citation, "<a href=\"https://doi.org/", doi, "\">", title, ".</a>")
   } else {
-    if (citation != "") {
-      citation <- paste0(citation, " ")
-    }
     citation <- paste0(citation, title, ".")
   }
-  
+
+  # Add journal
   if (journal != "") {
     citation <- paste0(citation, " ", journal, ".")
   }
-  
+
+  # Add publication date
   if (pub_date != "") {
     citation <- paste0(citation, " ", pub_date, ".")
   }
-  
+
+  # Add PMID
   if (!is.null(pmid) && pmid != "") {
     citation <- paste0(citation, " PMID: ", pmid, ".")
   }
-  
+
   return(citation)
 }
 
 # Fetch publications from ORCID
 tryCatch({
   works <- orcid_works(orcid_id)
-  
+
   if (!is.null(works) && length(works) > 0) {
     # Extract the works data
     works_data <- works[[1]]$works
-    
+
     if (!is.null(works_data) && length(works_data) > 0) {
       # Format each publication
-      for (work in works_data) {
-        citation <- format_publication(work)
+      for (i in seq_along(works_data)) {
+        work <- works_data[[i]]
+        put_code <- work$`put-code`
+        citation <- format_publication(work, put_code, orcid_id)
         cat(citation, "\n\n")
       }
     } else {
@@ -243,7 +270,7 @@ tryCatch({
     cat("No publications found.\n")
   }
 }, error = function(e) {
-  cat("Error fetching publications from ORCID. Please check your internet connection or ORCID ID.\n\n")
+  cat("Error fetching publications from ORCID: ", e$message, "\n\n")
 })
 
 ```
@@ -269,7 +296,7 @@ Kamau E, Ante-Testard PA, Gwyn S, Blumberg S, Abdalla Z, **Aiemjoy K**, Amza A, 
 
 Abraham D, Kathiresan L, Sasikumar M, **Aiemjoy K**, Charles RC, Kumar D, Srinivasan R, Troman C, Limmathurotsakul D, Pan-Ngum W, Blacksell SD, Suttinont C. Cytokines associated with scrub typhus infection severity, endothelial activation, and treatment response in northeast Thailand. *PLoS Negl Trop Dis*. 2025 Mar 3;19(3):e0012373. PMID: 40029872
 
-```         
+```
 Kutawal N, Thapa M, Shrestha S, Vaidya K, Bogoch II, Shrestha R, Aryal U, Charles RC, Seidman JC, Yu AT, Shakya M, LeBoa C, **Aiemjoy K**. Environmental surveillance for Salmonella Typhi and Paratyphi A before and after introduction of typhoid conjugate vaccines in Kathmandu, Nepal. (https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0012375) *PloS NTD*. 2024 Aug 05. PMID: 39102451
 
 **Aiemjoy K**, Kutawal N, Vaidya K, Shrestha S, Thapa M, Teunis P, Yu AT, Seidman JC, Charles RC, Shakya M. Occurrence and predictors of recurrent pediatric enteric fever in south Asia. (https://www.ajtmh.org/view/journals/tpmd/110/7/article-p1014.xml?af=R) *Am J Trop Med Hyg*. 2024 Jun 11;  PMID: 38861980.
@@ -389,7 +416,7 @@ Student Researcher — 2011\
 
 ## Honors and Awards
 
-```         
+```
 Coalition Against Typhoid, Female Leader in Typhoid — 2024
 NIH Fogarty K01 Mentored Research Scientist Development Award — 2021
 Thrasher Research Fund Early Career Award — 2019
@@ -400,20 +427,20 @@ Cum Laude, Georgetown University — 2010
 
 ## Media Coverage
 
-```         
-The importance of inclusivity to take on typhoid (https://www.coalitionagainsttyphoid.org/the-importance-of-inclusivity-to-take-on-typhoid/) Coalition Against Typhoid — 03/07/24   
+```
+The importance of inclusivity to take on typhoid (https://www.coalitionagainsttyphoid.org/the-importance-of-inclusivity-to-take-on-typhoid/) Coalition Against Typhoid — 03/07/24
 
-Environmental sampling detects typhoid bacteria in Nepal (https://www.coalitionagainsttyphoid.org/environmental-sampling-detects-typhoid-bacteria-in-nepal/) Coalition Against Typhoid — 11/28/23   
+Environmental sampling detects typhoid bacteria in Nepal (https://www.coalitionagainsttyphoid.org/environmental-sampling-detects-typhoid-bacteria-in-nepal/) Coalition Against Typhoid — 11/28/23
 
-Typhoid mutated to beat antibiotics. Science is learning how to beat those strains (https://www.npr.org/sections/goatsandsoda/2022/07/28/1113972706/typhoid-mutated-to-beat-antibiotics-science-is-learning-how-to-beat-those-strain) NPR —  07/28/22   
+Typhoid mutated to beat antibiotics. Science is learning how to beat those strains (https://www.npr.org/sections/goatsandsoda/2022/07/28/1113972706/typhoid-mutated-to-beat-antibiotics-science-is-learning-how-to-beat-those-strain) NPR —  07/28/22
 
-Easier, more accurate method to detect typhoid infections demonstrated by new study (https://health.ucdavis.edu/news/headlines/easier-more-accurate-method-to-detect-typhoid-infections-demonstrated-by-new-study/2022/06) UC Davis Health News — 06/29/22   
+Easier, more accurate method to detect typhoid infections demonstrated by new study (https://health.ucdavis.edu/news/headlines/easier-more-accurate-method-to-detect-typhoid-infections-demonstrated-by-new-study/2022/06) UC Davis Health News — 06/29/22
 
-New Technique Detects Typhoid Infections Faster (https://www.technologynetworks.com/diagnostics/news/new-technique-detects-typhoid-infections-faster-363193) Technology Networks: Diagnostics —  06/30/22   
+New Technique Detects Typhoid Infections Faster (https://www.technologynetworks.com/diagnostics/news/new-technique-detects-typhoid-infections-faster-363193) Technology Networks: Diagnostics —  06/30/22
 
-Reality bite: How a UC Davis epidemiologist is balancing her research and family life (https://health.ucdavis.edu/news/features/reality-bite-how-a-uc-davis-epidemiologist-is-balancing-her-research-and-family-life) UC Davis Health News — 12/03/24   
+Reality bite: How a UC Davis epidemiologist is balancing her research and family life (https://health.ucdavis.edu/news/features/reality-bite-how-a-uc-davis-epidemiologist-is-balancing-her-research-and-family-life) UC Davis Health News — 12/03/24
 
-How a simple blood test could help control enteric fever (https://scopeblog.stanford.edu/2022/07/06/tackling-typhoid-one-finger-prick-at-a-time) Stanford Medicine Scope — 07/06/22   
+How a simple blood test could help control enteric fever (https://scopeblog.stanford.edu/2022/07/06/tackling-typhoid-one-finger-prick-at-a-time) Stanford Medicine Scope — 07/06/22
 
-Typhoid detection technique improves diagnostic sensitivity (https://www.medgadget.com/2022/07/typhoid-detection-technique-improves-diagnostic-sensitivity.html) medgadget — 07/12/22   
+Typhoid detection technique improves diagnostic sensitivity (https://www.medgadget.com/2022/07/typhoid-detection-technique-improves-diagnostic-sensitivity.html) medgadget — 07/12/22
 ```
