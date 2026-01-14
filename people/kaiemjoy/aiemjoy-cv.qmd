@@ -1,0 +1,228 @@
+---
+title: "Kristen Aiemjoy, PhD, MSc"
+format:
+  pdf:
+    toc: false
+    documentclass: article
+---
+
+**Kristen Aiemjoy, PhD, MSc**
+
+kaiemjoy\@health.ucdavis.edu
+
+## Positions
+
+```         
+     Assistant Professor — Oct 2021 -
+
+**University of California Davis School of Medicine**     
+
+**Division of Epidemiology**  
+
+    **Department of Public Health Sciences**  
+
+Adjunct Assistant Professor — Jan 2023 -
+
+**Mahidol University Faculty of Tropical Medicine**     
+
+**Department of Microbiology and Immunology**  
+
+    **Bangkok, Thailand**  
+
+Visiting Scientist — June 2022 -
+
+**Mahidol Oxford Tropical Medicine Research Unit**     
+
+**Epidemiology Unit**  
+
+**Bangkok, Thailand**  
+
+     Postdoctoral Research Fellow — 2018 - 2021
+
+**Stanford University School of Medicine**     
+
+**Division of Infectious Diseases and Geographic Medicine**  
+```
+
+## Education
+
+**University of California San Francisco** — 2013 - 2018
+
+*PhD Epidemiology*
+
+Thesis: *Serologic approaches to trachoma surveillance and the estimation of force of infection*
+
+**London School of Hygiene and Tropical Medicine** — 2010 - 2011
+
+*MSc Public Health*
+
+**Georgetown University, Walsh School of Foreign Service** — 2006 - 2010
+
+*BSc Foreign Service & Global health, Cum Laude*
+
+## Publications
+
+Saiprom N, Nimnuan-ngam S, Phunpang R, Schildhauer SH, Morrison AC, Driemeyer C, Hennig N, Vaidya K, Tran V, Blacksell SD, Limmathurotsakul D, Bougnom BP, Aiemjoy K, Seidman JC, Pan-ngum W, Suttinont C, Blumberg S. Multiplex serosurveillance for Japanese encephalitis virus, dengue virus, Leptospira spp., and Plaut’s murine typhus in rural northeastern Thailand. *In preparation*
+
+Gwyn, S, Morrison, E, True, T, Morrison, A, Shakya, M, et al, **Aiemjoy K**, Charles, R. Renormalizing Antibody Measurements from Enzyme-Linked Immunosorbent Assays: Implications for Diagnosis and Surveillance\* *SSRN Preprint*. 2025 Jun 23.
+
+Lai KW, Orwa C, Seidman JC, Garrett DO, Saha SK, Tamrakar D, Qamar FN, Khan MI, Andrews JR, **Aiemjoy K**, et al. The Impact of Typhoid Conjugate Vaccine and SARS-CoV-2 on Incidence of Typhoidal Salmonella in Four Endemic Settings (pre-print)\* (<https://pubmed.ncbi.nlm.nih.gov/40502584/)> *medRxiv*. 2025 Jun.
+
+Tamrakar D, Naga S, Jung E, Shrestha B, Bista Roka P, Pokharel R, Shrestha J, Regmi R, Thapa B, Aryal S, Chaudhary B, Adhikari S, Bhattarai M, Teunis P, Charles RC, Yu AT, Kutawal N, Aryal U, Sakya K, Raut S, Sharma J, Stuart A, Bloem P, Joshi RD, Shakya M, Scobie HM, *Aiemjoy K*, LeBoa C. Impact of the COVID-19 pandemic and typhoid conjugate vaccine introduction on healthcare utilization and enteric fever incidence in Nepal: interrupted time series analyses (<https://www.medrxiv.org/content/2025/06/18/2025.06.17.25329748.full.pdf)> *medRxiv*. 2025 Jun.
+
+Khan A, Kamenskaya P, Rezende I, Mutuku F, Ndenga BA, Jembe Z, Mwangangi J, Asu G, Mwanzangu B, Kasouywe K, Olawepo O, Kumalija J, Muchara S, Thiongo J, Boulangé A, Ante-Testard P, Tapera O, Heddini A, Bengtsson L, Kiware S, **Aiemjoy K**, Kitty Fo. Estimates of malaria seroconversion rate in children in Kenya: implications for elimination metrics in hotspot foci. (<https://www.medrxiv.org/content/10.1101/2025.06.24.25330223v1)> *medRxiv*. 2025 Jun.
+
+Seidman JC, **Aiemjoy K**, Adnan M, Dehraj IF, Iqbal J, Iqbal K, Islam A, Kanchana M, Karki S, Kanungo S, Qamary I, Kennedy WA, Sajib MSI, Shaik Z, Khatun F, Vaid N, Taverez K, Thapa M, Tran V, Andrews JR, Garrett DO, Saha SK, Campbell JI. Enteric Fever in the Post-COVID-19 Era: Surveillance, Serosurveys, and the Need for Ongoing Systematic Burden Measurement. (<https://www.medrxiv.org/content/10.1101/2025.06.20.25329792v1)> *medRxiv*. 2025 Jun.
+
+Kamau E, Ante-Testard PA, Gwyn S, Blumberg S, Abdalla Z, **Aiemjoy K**, Amza A, Aragie S, Arzika AM, Boisson S, Bornali F, Chepkigo S, Chisalita S, Cook C, Eccles-Radtke C, Gebreyohanns M, Hugo P, Jeannot E, Mikesell C, Nelson J, Nyathi E, Okoko I, Rondeau V, Saadatian-Elahi M, Salio O, Schramm B, Talbert-Slagle K, Turner EL, Masquelier B. Direct and indirect effects of a cholera vaccine campaign in Africa. (<https://www.nature.com/articles/s41467-025-60581-z)> *Nature Communications*. 2025 Jan.
+
+Abraham D, Kathiresan L, Sasikumar M, **Aiemjoy K**, Charles RC, Kumar D, Srinivasan R, Troman C, Limmathurotsakul D, Pan-Ngum W, Blacksell SD, Suttinont C. Cytokines associated with scrub typhus infection severity, endothelial activation, and treatment response in northeast Thailand. *PLoS Negl Trop Dis*. 2025 Mar 3;19(3):e0012373. PMID: 40029872
+
+```         
+Kutawal N, Thapa M, Shrestha S, Vaidya K, Bogoch II, Shrestha R, Aryal U, Charles RC, Seidman JC, Yu AT, Shakya M, LeBoa C, **Aiemjoy K**. Environmental surveillance for Salmonella Typhi and Paratyphi A before and after introduction of typhoid conjugate vaccines in Kathmandu, Nepal. (https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0012375) *PloS NTD*. 2024 Aug 05. PMID: 39102451
+
+**Aiemjoy K**, Kutawal N, Vaidya K, Shrestha S, Thapa M, Teunis P, Yu AT, Seidman JC, Charles RC, Shakya M. Occurrence and predictors of recurrent pediatric enteric fever in south Asia. (https://www.ajtmh.org/view/journals/tpmd/110/7/article-p1014.xml?af=R) *Am J Trop Med Hyg*. 2024 Jun 11;  PMID: 38861980.
+
+Shrestha S, da Silva K, Shakya J, Yu AT, Kutawal N, Shrestha R, Vaidya K, Adhikari D, Debelyy M, Chen J, Ayres E, de Jong HK, Longley RJ, Cleary DW, Bogoch II, Aryal U, Seidman O, Charles RC, Weiser JN, Seidman JC, Shrestha M, LeBoa C, **Aiemjoy K**, Shakya M. Environmental sampling and genome sequencing of Salmonella Typhi and Paratyphi A in Nepal. (https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4994005) *PLoS Negl Trop Dis*. 2024; 18(2): e0011912.
+
+Looareesuwan P, **Aiemjoy K**, Charoensakulchai S, Thaipadungpanit J, Stuart A, Blacksell SD,  Suttinont C. Enteric fever in rural northeastern Thailand during the COVID-19 pandemic: urban-rural contrasts. (https://academic.oup.com/jtm/article-abstract/30/8/taad143/7519990?redirectedFrom=fulltext&login=false) *J Travel Med*. 2023 Dec 28;30(8): taad143. PMID: 37952213.
+
+LeBoa C, Shrestha S, Shakya J, Naga SR, Shrestha S, Shakya M, Yu AT, Cuddy E, Longley R, Adhikari D, Chen J, Schulte J, Bogoch I, Aryal U, Phippard A, Feasey N, Seidman J,**Aiemjoy K**, Charles RC, Weiser JN, Shrestha M. Associations between household-level exposures and Salmonella Typhi and Paratyphi in Nepal: a cross-sectional environmental surveillance study. (https://doi.org/10.1371/journal.pntd.0011341) *PLoS Negl Trop Dis*. 2023; 17(10): e0011341. PMID: 37851667
+
+**Aiemjoy K**, Yu AT, Hogrefe K, Shakya J, Nagar SR, Ruan J, Yasmin R, Islam M, Crump JA, Andrews JR. Longitudinal immune response to repeated typhoid exposure in children in South Asia. (https://www.sciencedirect.com/science/article/pii/S1755436523000646) *Epidemics*. 2023;43:100707. PMID: 37759624
+
+Falls L, **Aiemjoy K**, Shi L, Charles EC, Mount KE, Monnerat S, Fudacz ND, Warren WJ, Weber RA, Lynch M, Nelson KN. Typhoid fever caused by Salmonella enterica serovar Typhi with metronidazole resistance on a multidrug-resistant plasmid. (https://www.mdpi.com/2079-6382/12/1/171) *Antibiotics*.2023 Jan 10;12(1):171.  PMID: 36677208
+
+**Aiemjoy K**, Yu AT, Hogrefe K, Miller C, Saljoughian S, Marquart M, Tahir H, Bryson Y, Landsberger A, Andrews JR. Estimating enteric fever incidence from community-based serosurveys: a multicohort study in Bangladesh, Nepal, Pakistan and Ghana. (https://www.sciencedirect.com/science/article/pii/S1473309922000870) *Lancet Glob Health*. 2022 Apr;10(4):e578-e584.  PMID: 35247347
+
+Jafri RZ, Martin LB, **Aiemjoy K**, Espinoza L, Johnson SB, Price TK, Khan MI, Vogt TM, Chaignat CL, Crump JA, Neuzil KM. Bridging the gap in typhoid, paratyphoid, and invasive nontyphoidal Salmonella disease surveillance in low- and middle-income countries. (https://pubmed.ncbi.nlm.nih.gov/34710318/) *Infect Dis Poverty*. 2021 Oct 28;10(1):98. PMID: 34710318
+
+Burke RM, Ray TL, Abeels M, Boley C, **Aiemjoy K**, Eckel S. High element concentrations found in lime-based ice melts— Michigan, USA. (https://pubmed.ncbi.nlm.nih.gov/33393244/) *BMC Public Health*. 2021 Jan 4;21(1):29.  PMID: 33393244
+
+**Aiemjoy K**, Katz J, Carlton E, Gerome P, Worrell CM, Truscott JE, Yard E, Wishart DL, Watson HM, Rheingans R, Dixon H, Schwab K, Moe C, Saha A. Pooled versus individual stool samples for the assessment of intestinal parasitic infections in schoolchildren in Timor-Leste. (https://pubmed.ncbi.nlm.nih.gov/33093571/) *Am J Trop Med Hyg*. 2021 Jan;104(1):176-181.  PMID: 33093571
+
+Yasir M, Greiner T, **Aiemjoy K**, Boujija YB, Siddiqi U, Ahmed MN, Carlson MS. Clinically approved combination therapy for migraines that disrupts methicillin resistant S. aureus biofilms. (https://pubmed.ncbi.nlm.nih.gov/33050098/) *bioRxiv*. 2020 Oct.
+
+Ram M, **Aiemjoy K**, Phuanukoonnon S, Laman M, Senn N, Lau CL, Kazura J, Walker P, Yan J, Tuicakau M, Andrews R, Martin D, Skelly C, Gray D, McCarthy J, Price RN, Vallely A, Mitjà O, Marks M, Engelman D. Attrition in longitudinal studies in resource-limited settings: a systematic review and meta-analysis. (https://pubmed.ncbi.nlm.nih.gov/32993503/) *PLoS One*. 2020;15(10):e0239587.  PMID: 32993503
+
+Zhou Z, Rowe A, Miller S, **Aiemjoy K**, Arnold BF. Estimating the acidity of atmospheric water ph in the Bay Area and the contiguous United States: a tale of two acid rain problems. (https://pubmed.ncbi.nlm.nih.gov/31657067/) *ACS Earth Space Chem*. 2019 Oct 15;3(11):2443-2454. PMID: 31657067
+
+**Aiemjoy K**, Gebresillasie S, Stoller NE, Shiferaw A, Tadesse Z, Aristide C, Zewudie B, Callahan EK, Willis R, Keenan JD, Gaynor BD. Feasibility and predictors of hepatitis B screening and linkage to care at the public primary care level in Wake County, North Carolina. (https://pubmed.ncbi.nlm.nih.gov/31185348/) *J Community Health.* 2019 Aug;44(4):806-815. PMID: 31185348
+
+**Aiemjoy K**, Gebresillasie S, Stoller NE, Shiferaw A, Tadesse Z, Aristide C, Zewudie B, Callahan EK, Willis R, Keenan JD, Gaynor BD. Risk factors for hepatitis B virus infection in North Carolina. (https://pubmed.ncbi.nlm.nih.gov/31286334/) *J Public Health Manag Pract.* 2019;25(1):32-40.  PMID: 31286334
+
+Yohannan J, **Aiemjoy K**, Gebresillasie S, Stoller NE, Shiferaw A, Tadesse Z, Aristide C, Zewudie B, Callahan EK, Willis R, Keenan JD, Gaynor BD. Access to hepatitis C direct acting antivirals among patients with drug and alcohol use disorders in North Carolina. (https://pubmed.ncbi.nlm.nih.gov/31188162/) *Substance Use Misuse*. 2019;54(12):2058-2063. PMID: 31188162
+
+**Aiemjoy K**, Gebresillasie S, Stoller NE, Shiferaw A, Tadesse Z, Aristide C, Zewudie B, Callahan EK, Willis R, Keenan JD, Gaynor BD. Prevalence and predictors of hepatitis C among patients presenting to a public primary healthcare center in North Carolina. (https://pubmed.ncbi.nlm.nih.gov/30479790/) *J Community Health.* 2019 Feb;44(1):119-125. PMID: 30479790
+
+Liao W, **Aiemjoy K**, Friedman H, Mendoza R, Lam SW, Nazifovich Y, Ngo V, Peng C, Permenter J, Ricker N, Chavda A. A student-led project to increase youth utilization of sexual and reproductive health services at a California high school: from taboo to transformation. *American Public Health Association Annual Meeting Abstracts*, 2018. Atlanta.
+
+**Aiemjoy K**, Gebresillasie S, Stoller NE, Shiferaw A, Tadesse Z, Aristide C, Zewudie B, Callahan EK, Willis R, Keenan JD, Gaynor BD. Screening for Hepatitis B and C in primary care and emergency department settings: a pragmatic pilot study at the public primary care level in Wake County, North Carolina. (https://pubmed.ncbi.nlm.nih.gov/29119592/) *J Public Health Manag Pract.* 2018;24(5):439-446. PMID: 29119592
+
+**Aiemjoy K**, Gebresillasie S, Stoller NE, Shiferaw A, Tadesse Z, Aristide C, Zewudie B, Callahan EK, Willis R, Keenan JD, Gaynor BD. Linkage to care after chronic viral hepatitis diagnosis in North Carolina. (https://pubmed.ncbi.nlm.nih.gov/30048453/) *Public Health Nurs.* 2018 Sep;35(5):395-404.  PMID: 30048453
+
+Stocks ME, **Aiemjoy K**, Freeman MC, Clasen T. Prevalence of water aid point sources in China: a case study of Guangdong Province. (https://pubmed.ncbi.nlm.nih.gov/26233881/) *J Water Sanit Hyg Dev*. 2015 Mar;5(1):113-119.  PMID: 26233881
+
+**Aiemjoy K**, Gebresillasie S, Stoller NE, Shiferaw A, Tadesse Z, Aristide C, Zewudie B, Callahan EK, Willis R, Keenan JD, Gaynor BD. The burden of viral hepatitis in North Carolina. (https://pubmed.ncbi.nlm.nih.gov/25236693/) *J Public Health Manag Pract.* 2014 Nov-Dec;20(6):598-604. PMID: 25236693
+```
+
+## Invited Presentations
+
+-   Mahidol University Faculty of Tropical Medicine, Bangkok, Thailand. “Antibody dynamics and serosurveillance for enteric fever.” 2024.
+-   Aga Khan University, Karachi, Pakistan. “Antibody dynamics and serosurveillance for enteric fever.” 2023.
+-   Dhulikhel Hospital, Kathmandu University, Nepal. “Antibody dynamics and serosurveillance for enteric fever.” 2023.
+-   National Academy of Sciences Workshop on Serological Assays, Washington, DC. “Serosurveillance for enteric fever” 2022.
+-   Mahidol Oxford Tropical Medicine Research Unit, Bangkok, Thailand. “Establishing a seroepidemiology lab in Bangkok.” 2022.
+-   The AIDS Support Organization (TASO), Entebbe, Uganda. “Developing adolescent-friendly sexual and reproductive health services in a Ugandan catholic school.” 2012.
+-   Médecins Sans Frontières, London, UK. “Developing adolescent-friendly SRH services in a Ugandan catholic school.” 2012.
+
+## Scientific Conference Presentations
+
+-   American Society of Tropical Medicine & Hygiene (ASTMH) Annual Meeting, 2024. “Enteric Fever Incidence in children in South Asia” Oral presentation.
+-   ASTMH Annual Meeting, 2024. “Environmental surveillance for Salmonella Typhi and Paratyphi in Nepal.” Oral presentation.
+-   ASTMH Annual Meeting, 2023. “Scrub typhus seroepidemiology and serosurveillance.” Oral presentation.
+-   ASTMH Annual Meeting, 2023. “Typhoid serosurveillance using antibody dynamics.” Oral presentation.
+-   ASTMH Annual Meeting, 2022. “Estimation of enteric fever incidence from community-based serosurveys.” Oral presentation.
+-   ASTMH Annual Meeting, 2021. “Recurrent enteric fever infections in children in South Asia.” Oral presentation.
+-   International Conference on Typhoid & Other Invasive Salmonelloses, 2021. “Estimating typhoid incidence from serosurveys in LMICs.” Oral presentation.
+-   International Conference on Typhoid & Other Invasive Salmonelloses, 2019. “Serological incidence estimation of typhoid in LMICs.” Oral presentation.
+-   APHA Annual Meeting, 2018. “Student-led project to increase youth utilization of SRH services at a California high school.” Poster.
+-   APHA Annual Meeting, 2015. “Water aid point sources in Guangdong Province, China.” Poster.
+-   UCSF Global Health Day, 2014. “Trachoma serology and seroconversion rate measurement in Amhara, Ethiopia.” Poster.
+
+## Conference Symposiums and workshops
+
+-   Organizer/Chair, Symposium on “Serosurveillance for typhoid and other enteric infections”, ASTMH 2024.
+-   Co-organizer, Workshop on “Serologic tools for enteric fever surveillance”, Typhoid Conference 2023.
+-   Panelist, Workshop on “Seroepidemiologic methods for neglected tropical diseases”, ASTMH 2022.
+
+## Grants and Fellowships
+
+K01-TW012177: Estimating the Seroincidence of Melioidosis, Typhoid Fever and Scrub Typhus from Antibody Dynamics\
+Role: Principal Investigator\
+Funder: NIH Fogarty International Center\
+Years: 2021–2026
+
+R21-AI162934: Antibody dynamics and serosurveillance for enteric fever in South Asia\
+Role: Co-Investigator\
+Funder: NIAID\
+Years: 2021–2024
+
+Bill & Melinda Gates Foundation: Seroepidemiology platform for enteric infections\
+Role: Co-Investigator\
+Years: 2023–2026
+
+Thrasher Research Fund Early Career Award\
+Project: Serologic tools for scrub typhus surveillance in Nepal\
+Role: Principal Investigator
+
+Multiple additional internal UC Davis and Mahidol University seed grants, pilot awards, and trainee awards as in original CV.
+
+## Additional Research Experience
+
+Research Fellow — 2013–2018\
+**UCSF Francis I. Proctor Foundation for Research in Ophthalmology**\
+Epidemiology and seroepidemiology of trachoma and neglected tropical diseases; implementation research and field surveys in Ethiopia, Niger, and other settings.
+
+Research Coordinator — 2011–2013\
+**The AIDS Support Organization (TASO)**, Uganda\
+Led adolescent sexual and reproductive health intervention design and evaluation; qualitative and quantitative data collection; health services research.
+
+Student Researcher — 2011\
+**Ifakara Health Institute**\
+*Tanzania*
+
+Student Researcher — 2011\
+**The AIDS Support Organization (TASO)**\
+*Uganda*
+
+## Honors and Awards
+
+```         
+Coalition Against Typhoid, Female Leader in Typhoid — 2024
+NIH Fogarty K01 Mentored Research Scientist Development Award — 2021
+Thrasher Research Fund Early Career Award — 2019
+LSHTM Trust Scholarship — 2010–2011
+Chadwick Trust Traveling Fellowship — 2011
+Cum Laude, Georgetown University — 2010
+```
+
+## Media Coverage
+
+```         
+The importance of inclusivity to take on typhoid (https://www.coalitionagainsttyphoid.org/the-importance-of-inclusivity-to-take-on-typhoid/) Coalition Against Typhoid — 03/07/24   
+
+Environmental sampling detects typhoid bacteria in Nepal (https://www.coalitionagainsttyphoid.org/environmental-sampling-detects-typhoid-bacteria-in-nepal/) Coalition Against Typhoid — 11/28/23   
+
+Typhoid mutated to beat antibiotics. Science is learning how to beat those strains (https://www.npr.org/sections/goatsandsoda/2022/07/28/1113972706/typhoid-mutated-to-beat-antibiotics-science-is-learning-how-to-beat-those-strain) NPR —  07/28/22   
+
+Easier, more accurate method to detect typhoid infections demonstrated by new study (https://health.ucdavis.edu/news/headlines/easier-more-accurate-method-to-detect-typhoid-infections-demonstrated-by-new-study/2022/06) UC Davis Health News — 06/29/22   
+
+New Technique Detects Typhoid Infections Faster (https://www.technologynetworks.com/diagnostics/news/new-technique-detects-typhoid-infections-faster-363193) Technology Networks: Diagnostics —  06/30/22   
+
+Reality bite: How a UC Davis epidemiologist is balancing her research and family life (https://health.ucdavis.edu/news/features/reality-bite-how-a-uc-davis-epidemiologist-is-balancing-her-research-and-family-life) UC Davis Health News — 12/03/24   
+
+How a simple blood test could help control enteric fever (https://scopeblog.stanford.edu/2022/07/06/tackling-typhoid-one-finger-prick-at-a-time) Stanford Medicine Scope — 07/06/22   
+
+Typhoid detection technique improves diagnostic sensitivity (https://www.medgadget.com/2022/07/typhoid-detection-technique-improves-diagnostic-sensitivity.html) medgadget — 07/12/22   
+```
