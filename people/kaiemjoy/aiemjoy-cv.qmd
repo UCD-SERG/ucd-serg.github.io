@@ -104,9 +104,9 @@ format_publication <- function(work) {
       author_names <- sapply(contributors, function(c) {
         credit_name <- c$`credit-name`$value
         if (!is.null(credit_name)) {
-          # Bold Aiemjoy K
+          # Bold Aiemjoy K - preserve the name format
           if (grepl("Aiemjoy", credit_name, ignore.case = TRUE)) {
-            return(paste0("**", gsub(".*Aiemjoy.*", "Aiemjoy K", credit_name), "**"))
+            return(paste0("**Aiemjoy K**"))
           }
           # Extract last name and first initial
           parts <- strsplit(credit_name, " ")[[1]]
@@ -142,8 +142,16 @@ format_publication <- function(work) {
     month <- work$`publication-date`$month$value
     if (!is.null(year)) {
       if (!is.null(month)) {
-        month_name <- month.name[as.integer(month)]
-        paste(year, month_name)
+        month_int <- suppressWarnings(as.integer(month))
+        if (!is.na(month_int) && month_int >= 1 && month_int <= 12) {
+          month_name <- month.name[month_int]
+          paste(year, month_name)
+        } else {
+          year
+        }
+      } else {
+        year
+      }
       } else {
         year
       }
@@ -183,12 +191,23 @@ format_publication <- function(work) {
   }, error = function(e) NULL)
   
   # Build formatted citation
-  citation <- authors
+  citation <- ""
+  
+  # Add authors if not empty
+  if (authors != "") {
+    citation <- authors
+  }
   
   if (!is.null(doi) && doi != "") {
-    citation <- paste0(citation, " <a href=\"https://doi.org/", doi, "\">", title, ".</a>")
+    if (citation != "") {
+      citation <- paste0(citation, " ")
+    }
+    citation <- paste0(citation, "<a href=\"https://doi.org/", doi, "\">", title, ".</a>")
   } else {
-    citation <- paste0(citation, " ", title, ".")
+    if (citation != "") {
+      citation <- paste0(citation, " ")
+    }
+    citation <- paste0(citation, title, ".")
   }
   
   if (journal != "") {
