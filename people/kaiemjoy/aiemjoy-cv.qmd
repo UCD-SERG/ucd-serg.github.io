@@ -21,7 +21,7 @@ format:
 </div>
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <a href="Aiemjoy_cv_25.pdf" class="btn btn-primary" download>
+  <a href="Aiemjoy-CV.pdf" class="btn btn-primary" download>
     <i class="fas fa-download"></i> Download CV (PDF)
   </a>
 </div>
@@ -152,9 +152,6 @@ format_publication <- function(work) {
       } else {
         year
       }
-      } else {
-        year
-      }
     } else {
       ""
     }
@@ -246,7 +243,7 @@ tryCatch({
     cat("No publications found.\n")
   }
 }, error = function(e) {
-  cat("Error fetching publications from ORCID. Displaying static list below.\n\n")
+  cat("Error fetching publications from ORCID. Please check your internet connection or ORCID ID.\n\n")
 })
 
 ```
