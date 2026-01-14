@@ -13,6 +13,7 @@ Imports:
     bibtex,
     glue,
     rcrossref,
+    rorcid,
     stringr
 Depends: 
     R (>= 2.10)
