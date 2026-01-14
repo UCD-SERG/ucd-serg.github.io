@@ -21,7 +21,7 @@ format:
 </div>
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <a href="Aiemjoy-CV.pdf" class="btn btn-primary" download>
+  <a href="Aiemjoy_cv_25.pdf" class="btn btn-primary" download>
     <i class="fas fa-download"></i> Download CV (PDF)
   </a>
 </div>
