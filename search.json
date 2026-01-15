@@ -70,6 +70,48 @@
     "text": "Education\nMSc in Medical Microbiology| St. Xaviers’ College\nBSc in General Microbiology| Tri-Chandra Multiple Campus"
   },
   {
+    "objectID": "opportunities.html",
+    "href": "opportunities.html",
+    "title": "Opportunities",
+    "section": "",
+    "text": "We are always seeking motivated individuals to join our research group. Below are opportunities for undergraduate students, graduate students, and postdoctoral research fellows."
+  },
+  {
+    "objectID": "opportunities.html#undergraduate-students",
+    "href": "opportunities.html#undergraduate-students",
+    "title": "Opportunities",
+    "section": "Undergraduate Students",
+    "text": "Undergraduate Students\nWe welcome undergraduate students interested in gaining research experience in seroepidemiology and infectious disease modeling. Undergraduate researchers in our group work on data analysis, literature reviews, and contribute to ongoing research projects.\nNote: All undergraduate research opportunities are unfunded volunteer positions, though students may earn academic credit through departmental research units.\n\nRecommended Skills\n\nProgramming: Experience with R or Python.\nCoursework: Coursework in statistics, biostatistics, and epidemiology is helpful.\nBiology/Public Health: Interest in infectious diseases, immunology, or public health.\nData Analysis: Experience working with and anlyzing data.\nCommunication: Strong written and verbal communication skills.\n\n\n\nHow to Apply\nIf you are interested in joining our group as an undergraduate researcher, please send an email to ucdserg@ucdavis.edu with:\n\nA brief statement of interest (1 paragraph)\nYour CV or resume\nUnofficial transcript\nAny relevant coursework or experience"
+  },
+  {
+    "objectID": "opportunities.html#graduate-students",
+    "href": "opportunities.html#graduate-students",
+    "title": "Opportunities",
+    "section": "Graduate Students",
+    "text": "Graduate Students\nWe are looking for motivated graduate students to join our group through the UC Davis Graduate Group in Epidemiology or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.\nFunding: Most graduate student positions are unfunded, though competitive students may receive 1-2 years of internal funding through Graduate Studies. Graduate students are expected to apply for external fellowships throughout their studies, particularly NIH F-31 predoctoral fellowships.\n\nRecommended Skills\n\nQuantitative Background: Strong foundation in statistics, mathematics, epidemiology, modeling or related quantitative fields.\nProgramming: Proficiency in R or Python for statistical analysis and data visualization.\nInfectious Diseases: Interest in infectious disease dynamics and serology.\nCollaboration: Ability to work effectively in interdisciplinary teams.\nCommunication: Strong written and verbal communication skills.\n\n\n\nHow to Apply\nProspective graduate students should:\n\nReview the UC Davis Graduate Group in Epidemiology admissions requirements\nApply through the official graduate admissions portal\nIndicate interest in working with Drs. Kristen Aiemjoy and/or Ezra Morrison in your application\nFeel free to reach out to us at ucdserg@ucdavis.edu before applying"
+  },
+  {
+    "objectID": "opportunities.html#postdoctoral-research-fellows",
+    "href": "opportunities.html#postdoctoral-research-fellows",
+    "title": "Opportunities",
+    "section": "Postdoctoral Research Fellows",
+    "text": "Postdoctoral Research Fellows\nWe are seeking postdoctoral researchers to join our team and lead cutting-edge research in seroepidemiology and infectious disease modeling. Postdocs in our group have the opportunity to develop independent research projects, mentor students, and collaborate with international partners.\n\nCurrent Openings\nPostdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development\nWe are currently seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools.\n→ View Full Position Description\n\n\nOther Postdoctoral Opportunities\nIn addition to lab-specific positions, UC Davis offers the Chancellor’s Postdoctoral Fellowship Program, which provides an alternative pathway for postdoctoral scholars to join our research group."
+  },
+  {
+    "objectID": "opportunities.html#general-inquiries",
+    "href": "opportunities.html#general-inquiries",
+    "title": "Opportunities",
+    "section": "General Inquiries",
+    "text": "General Inquiries\nFor any questions about opportunities in our research group, please contact us at ucdserg@ucdavis.edu."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "UC Davis Seroepidemiology Research Group",
+    "section": "",
+    "text": "Accurate methods to measure infectious disease burden are essential for guiding public health decisions, yet many infectious diseases remain under-recognized due to limited diagnostics and costly, resource-intensive surveillance systems. Our work addresses this gap by developing seroepidemiologic methods to characterize infection burden in populations. Currently, we focus on enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and is led by Drs. Kristen Aiemjoy and Ezra Morrison. We are supported by US National Institutes of Health, the Bill and Melinda Gates Foundation and the Department of Defense. We collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America.\nWe are always looking for new collaborators and students. If you are interested in working with us, please check out our opportunities page or reach out to us at ucdserg@ucdavis.edu.\n\n\n\n \n    \n     Krista and Sam contribution to the Open Software Tools for Climate Sensitivite Infectious Diseases (CSID) held in Kanchnaburi, Thailand, 2025 \n  \n  \n  \n      \n    \n     Krista presenting at the Asia Pacific Rickettsia Conference (APRC4) - Penang Malaysia, 2025 \n  \n  \n  \n    \n    \n     Kristen donating blood after a blood collection event for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand \n  \n  \n      \n    \n     Kristina Presenting at ASTMH - Toronto, Canada, 2025 \n  \n  \n    \n    \n     Sam Collecting Dried Blood Spots for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand  \n  \n  \n      \n    \n     Krista and Kristen hoping to put scrub typhus on the WHO's list of recognized Neglected Tropical Diseases  \n  \n  \n  \n    \n    2023 workshop on 'Serocalculator' adjacent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries"
+  },
+  {
     "objectID": "opportunities/postdoc-typhoid-seroepi.html",
     "href": "opportunities/postdoc-typhoid-seroepi.html",
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
@@ -124,48 +166,6 @@
     "title": "Postdoctoral Research Fellow in Seroepidemiology",
     "section": "Contact Information",
     "text": "Contact Information\nFor questions about this position, please contact:\nUC Davis Seroepidemiology Research Group\nEmail: ucdserg@ucdavis.edu\nWebsite: https://ucd-serg.github.io\n\nBack to Opportunities Page"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "UC Davis Seroepidemiology Research Group",
-    "section": "",
-    "text": "Accurate methods to measure infectious disease burden are essential for guiding public health decisions, yet many infectious diseases remain under-recognized due to limited diagnostics and costly, resource-intensive surveillance systems. Our work addresses this gap by developing seroepidemiologic methods to characterize infection burden in populations. Currently, we focus on enteric fever (Salmonella Typhi and Paratyphi), Scrub Typhus (Orientia tsutsugamushi), Melioidosis (Burkholderia pseudomallei), Shigella (Shigella spp.), and Cholera (Vibrio cholerae).\nOur research group is based at the University of California, Davis, and is led by Drs. Kristen Aiemjoy and Ezra Morrison. We are supported by US National Institutes of Health, the Bill and Melinda Gates Foundation and the Department of Defense. We collaborate with partners around the world, including in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America.\nWe are always looking for new collaborators and students. If you are interested in working with us, please check out our opportunities page or reach out to us at ucdserg@ucdavis.edu.\n\n\n\n \n    \n     Krista and Sam contribution to the Open Software Tools for Climate Sensitivite Infectious Diseases (CSID) held in Kanchnaburi, Thailand, 2025 \n  \n  \n  \n      \n    \n     Krista presenting at the Asia Pacific Rickettsia Conference (APRC4) - Penang Malaysia, 2025 \n  \n  \n  \n    \n    \n     Kristen donating blood after a blood collection event for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand \n  \n  \n      \n    \n     Kristina Presenting at ASTMH - Toronto, Canada, 2025 \n  \n  \n    \n    \n     Sam Collecting Dried Blood Spots for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand  \n  \n  \n      \n    \n     Krista and Kristen hoping to put scrub typhus on the WHO's list of recognized Neglected Tropical Diseases  \n  \n  \n  \n    \n    2023 workshop on 'Serocalculator' adjacent to the Coalition Against Typhoid Meeting in Kigali, Rwanda. Participants were from 19 countries"
-  },
-  {
-    "objectID": "opportunities.html",
-    "href": "opportunities.html",
-    "title": "Opportunities",
-    "section": "",
-    "text": "We are always seeking motivated individuals to join our research group. Below are opportunities for undergraduate students, graduate students, and postdoctoral research fellows."
-  },
-  {
-    "objectID": "opportunities.html#undergraduate-students",
-    "href": "opportunities.html#undergraduate-students",
-    "title": "Opportunities",
-    "section": "Undergraduate Students",
-    "text": "Undergraduate Students\nWe welcome undergraduate students interested in gaining research experience in seroepidemiology and infectious disease modeling. Undergraduate researchers in our group work on data analysis, literature reviews, and contribute to ongoing research projects.\nNote: All undergraduate research opportunities are unfunded volunteer positions, though students may earn academic credit through departmental research units.\n\nRecommended Skills\n\nProgramming: Experience with R or Python.\nCoursework: Coursework in statistics, biostatistics, and epidemiology is helpful.\nBiology/Public Health: Interest in infectious diseases, immunology, or public health.\nData Analysis: Experience working with and anlyzing data.\nCommunication: Strong written and verbal communication skills.\n\n\n\nHow to Apply\nIf you are interested in joining our group as an undergraduate researcher, please send an email to ucdserg@ucdavis.edu with:\n\nA brief statement of interest (1 paragraph)\nYour CV or resume\nUnofficial transcript\nAny relevant coursework or experience"
-  },
-  {
-    "objectID": "opportunities.html#graduate-students",
-    "href": "opportunities.html#graduate-students",
-    "title": "Opportunities",
-    "section": "Graduate Students",
-    "text": "Graduate Students\nWe are looking for motivated graduate students to join our group through the UC Davis Graduate Group in Epidemiology or related programs. Graduate students in our group work on developing and applying seroepidemiologic methods to estimate disease burden in populations.\nFunding: Most graduate student positions are unfunded, though competitive students may receive 1-2 years of internal funding through Graduate Studies. Graduate students are expected to apply for external fellowships throughout their studies, particularly NIH F-31 predoctoral fellowships.\n\nRecommended Skills\n\nQuantitative Background: Strong foundation in statistics, mathematics, epidemiology, modeling or related quantitative fields.\nProgramming: Proficiency in R or Python for statistical analysis and data visualization.\nInfectious Diseases: Interest in infectious disease dynamics and serology.\nCollaboration: Ability to work effectively in interdisciplinary teams.\nCommunication: Strong written and verbal communication skills.\n\n\n\nHow to Apply\nProspective graduate students should:\n\nReview the UC Davis Graduate Group in Epidemiology admissions requirements\nApply through the official graduate admissions portal\nIndicate interest in working with Drs. Kristen Aiemjoy and/or Ezra Morrison in your application\nFeel free to reach out to us at ucdserg@ucdavis.edu before applying"
-  },
-  {
-    "objectID": "opportunities.html#postdoctoral-research-fellows",
-    "href": "opportunities.html#postdoctoral-research-fellows",
-    "title": "Opportunities",
-    "section": "Postdoctoral Research Fellows",
-    "text": "Postdoctoral Research Fellows\nWe are seeking postdoctoral researchers to join our team and lead cutting-edge research in seroepidemiology and infectious disease modeling. Postdocs in our group have the opportunity to develop independent research projects, mentor students, and collaborate with international partners.\n\nCurrent Openings\nPostdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development\nWe are currently seeking a postdoctoral research fellow to work on a Gates Foundation-funded project focused on advancing seroepidemiology methods for global typhoid burden estimation and developing open-source analytical tools.\n→ View Full Position Description\n\n\nOther Postdoctoral Opportunities\nIn addition to lab-specific positions, UC Davis offers the Chancellor’s Postdoctoral Fellowship Program, which provides an alternative pathway for postdoctoral scholars to join our research group."
-  },
-  {
-    "objectID": "opportunities.html#general-inquiries",
-    "href": "opportunities.html#general-inquiries",
-    "title": "Opportunities",
-    "section": "General Inquiries",
-    "text": "General Inquiries\nFor any questions about opportunities in our research group, please contact us at ucdserg@ucdavis.edu."
   },
   {
     "objectID": "people/ksjlee/bio-ksjlee.html",
