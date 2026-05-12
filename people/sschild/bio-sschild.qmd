@@ -2,7 +2,8 @@
 title: "Samuel Schildhauer, MPH"
 lastname: "Schildhauer"
 image: sschild.jpg
-about: 
+image-alt: "Portrait photo of Samuel Schildhauer"
+about:
   template: solana
 subtitle: "PhD Student, Graduate Group in Epidemiology"
 institution: "UC Davis"

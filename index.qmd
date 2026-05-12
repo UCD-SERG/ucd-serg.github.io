@@ -14,7 +14,7 @@ Currently, we focus on enteric fever (*Salmonella Typhi and Paratyphi*), Scrub T
 
 ```{=html}
 <div class="photo-album">
-<div class="photo-album-container">
+<div class="photo-album-container" tabindex="0" role="region" aria-label="Photo album">
 
  <div class="photo-item">
     <img src="figures/sam-krista-csid-thailand.jpg" alt="CSID 2025">

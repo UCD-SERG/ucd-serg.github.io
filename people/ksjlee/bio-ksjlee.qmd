@@ -2,7 +2,8 @@
 title: "Kwan Ho Lee, MS"
 lastname: "Lee"
 image: ksjlee.jpg
-about: 
+image-alt: "Portrait photo of Kwan Ho Lee"
+about:
   template: solana
 subtitle: "PhD Candidate, Graduate Group in Epidemiology"
 institution: "UC Davis"
