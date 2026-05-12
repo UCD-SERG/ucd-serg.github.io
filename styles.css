@@ -3,6 +3,37 @@
   text-transform: capitalize;
 }
 
+/* Fix color contrast for title block metadata */
+.quarto-title-meta-heading,
+.quarto-title-meta .date {
+  color: #333;
+}
+
+html[data-bs-theme="dark"] .quarto-title-meta-heading,
+html[data-bs-theme="dark"] .quarto-title-meta .date {
+  color: #ddd;
+}
+
+/* Fix color contrast for listing form-select elements */
+.form-select {
+  color: #333;
+  background-color: #fff;
+}
+
+html[data-bs-theme="dark"] .form-select {
+  color: #ddd;
+  background-color: #2b2b2b;
+}
+
+/* Fix color contrast for software listing titles */
+.listing-title strong {
+  color: #212529;
+}
+
+html[data-bs-theme="dark"] .listing-title strong {
+  color: #e9ecef;
+}
+
 /* Photo Album Carousel */
 .photo-album {
   margin: 2rem 0;
