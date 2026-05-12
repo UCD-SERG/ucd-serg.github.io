@@ -1,0 +1,39 @@
+```{=html}
+
+<div class="quarto-listing quarto-listing-container-grid">
+
+  <div class="list grid quarto-listing-cols-2">
+
+    <% for (const item of items) { %>
+
+    <div class="g-col-1">
+      <div class="quarto-grid-item card h-100">
+
+        <a href="<%- item.path %>" class="quarto-grid-link" aria-label="<%= item.title.replace(/<[^>]*>/g, '') %>">
+          <p class="card-img-top">
+            <img loading="lazy" src="<%= item.image %>" alt="<%= item['image-alt'] || item.title.replace(/<[^>]*>/g, '') %>" class="thumbnail-image card-img" style="height: 250px;">
+          </p>
+        </a>
+
+        <div class="card-body post-contents">
+          <a href="<%- item.path %>" aria-label="<%= item.title.replace(/<[^>]*>/g, '') %>">
+            <h5 class="no-anchor card-title listing-title">
+              <%- item.title %>
+            </h5>
+          </a>
+
+          <div class="card-text listing-description">
+            <%- item.description %>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <% } %>
+
+</div>
+</div>
+
+```

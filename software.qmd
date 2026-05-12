@@ -5,16 +5,18 @@ listing:
 - id: software
  # sort: "lastname asc"
   type: grid
+  template: _ejs/software-grid.ejs
   fields: [image, title, description]
   grid-item-align: center
   grid-columns: 2
   image-height: 250px
-  contents: 
+  contents:
     - software/serocalculator.yml
 
 - id: apps
  # sort: "lastname asc"
   type: grid
+  template: _ejs/software-grid.ejs
   fields: [image, title, description]
   grid-item-align: center
   grid-columns: 2

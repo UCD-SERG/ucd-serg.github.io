@@ -2,6 +2,7 @@
 title: "Kristina W. Lai, MPH"
 lastname: "Lai"
 image: headshot_Kristina Lai_cropped2.jpg
+image-alt: "Portrait photo of Kristina W. Lai"
 about:
   template: solana
 subtitle: "PhD Candidate, Graduate Group in Epidemiology"

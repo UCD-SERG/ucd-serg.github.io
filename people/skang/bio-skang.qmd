@@ -2,7 +2,8 @@
 title: "Sophie Kang"
 lastname: "Kang"
 image: skang.jpg
-about: 
+image-alt: "Portrait photo of Sophie Kang"
+about:
   template: solana
 subtitle: "PhD Student"
 institution: "University of Oxford"
