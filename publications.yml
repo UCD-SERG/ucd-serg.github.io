@@ -70,7 +70,7 @@
     from other febrile illnesses in south asia
   type: article-journal
   url: "http://dx.doi.org/10.1101/2025.06.20.25329792"
-  date: 2025
+  date: 2025-06
   path: https://doi.org/10.1101/2025.06.20.25329792
   highlight: 1
   categories: [preprint]
@@ -111,7 +111,7 @@
     burkholderia pseudomallei
   type: article-journal
   url: "http://dx.doi.org/10.2139/ssrn.5312903"
-  date: 2025
+  date: 2025-06-23
   path: https://doi.org/10.2139/ssrn.5312903
   highlight: 1
   categories: [preprint]
@@ -148,7 +148,7 @@
     cross-sectional serological data
   type: article-journal
   url: "http://dx.doi.org/10.1101/2025.06.04.25328941"
-  date: 2025
+  date: 2025-06
   path: https://doi.org/10.1101/2025.06.04.25328941
   highlight: 0
   categories: [preprint]
@@ -409,7 +409,7 @@
   url: "http://dx.doi.org/10.1038/s41467-025-60581-z"
   volume: 16
   journal-title: '*Nature Communications*'
-  date: 2025
+  date: 2025-07
   path: https://doi.org/10.1038/s41467-025-60581-z
   highlight: 0
 - author:
@@ -602,7 +602,7 @@
   url: "http://dx.doi.org/10.1016/S2214-109X(22)00119-X"
   volume: 10
   journal-title: '*The Lancet Global Health*'
-  date: 2022
+  date: 2022-07
   path: https://doi.org/10.1016/s2214-109x(22)00119-x
   highlight: 0
 - author:
@@ -777,7 +777,7 @@
   url: "http://dx.doi.org/10.1002/sim.9906"
   volume: 42
   journal-title: '*Statistics in Medicine*'
-  date: 2023
+  date: 2023-09
   path: https://doi.org/10.1002/sim.9906
   highlight: 0
 - author:
@@ -1000,7 +1000,7 @@
   url: "http://dx.doi.org/10.1371/journal.pntd.0008647"
   volume: 14
   journal-title: '*PLOS Neglected Tropical Diseases*'
-  date: 2020
+  date: 2020-09
   path: https://doi.org/10.1371/journal.pntd.0008647
   highlight: 0
 - author:
@@ -1050,81 +1050,6 @@
   url: "http://dx.doi.org/10.1515/scid-2017-0003"
   volume: 10
   journal-title: '*Statistical Communications in Infectious Diseases*'
-  date: 2018
+  date: 2018-07
   path: https://doi.org/10.1515/scid-2017-0003
   highlight: 0
-- author:
-  - family: Seidman
-    given: Jessica C.
-  - family: Aiemjoy
-    given: Kristen
-  - family: Adnan
-    given: Mehreen
-  - family: Dehraj
-    given: Irum Fatima
-  - family: Iqbal
-    given: Junaid
-  - family: Iqbal
-    given: Khalid
-  - family: Irfan
-    given: Seema
-  - family: Islam
-    given: Nahidul
-  - family: Kabir
-    given: Md. Shakiul
-  - family: Katuwal
-    given: Nishan
-  - family: Maria
-    given: Noshi
-  - family: Memon
-    given: Muhammad Ashraf
-  - family: Munira
-    given: Sira Jam
-  - family: Naga
-    given: Shiva Ram
-  - family: Pradhan
-    given: Sailesh
-  - family: Sarkar
-    given: Anik
-  - family: Shrestha
-    given: Rajeev
-  - family: Shrestha
-    given: Sony
-  - family: Al Sium
-    given: Syed Muktadir
-  - family: Vaidya
-    given: Krista
-  - family: Morrison
-    given: Douglas Ezra
-  - family: Carter
-    given: Alice S.
-  - family: Saha
-    given: Senjuti
-  - family: Tamrakar
-    given: Dipesh
-  - family: Yousafzai
-    given: Mohammad Tahir
-  - family: Garrett
-    given: Denise O.
-  - family: Luby
-    given: Stephen P.
-  - family: Qamar
-    given: Farah Naz
-  - family: Saha
-    given: Samir
-  - family: Andrews
-    given: Jason R.
-  - family: Charles
-    given: Richelle C.
-  doi: 10.1101/2025.06.20.25329792
-  id: Seidman_2025
-  issued: 2025
-  publisher: openRxiv
-  title: Evaluating the accuracy of \<i\>salmonella\</i\> typhi
-    hemolysin e and lipopolysaccharide IgA to discriminate enteric fever
-    from other febrile illnesses in south asia
-  type: article-journal
-  url: "http://dx.doi.org/10.1101/2025.06.20.25329792"
-  date: 2025
-  path: https://doi.org/10.1101/2025.06.20.25329792
-  highlight: 1
