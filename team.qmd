@@ -22,9 +22,9 @@ listing:
   grid-item-align: center
   grid-columns: 4
   image-height: 250px
-  contents: 
-    - people/demorrison/demorrison.yaml
-    - people/kaiemjoy/kaiemjoy.yaml
+  contents:
+    - people/demorrison/bio-demorrison.qmd
+    - people/kaiemjoy/bio-kaiemjoy.qmd
 ---
 
 ## Principal investigators
