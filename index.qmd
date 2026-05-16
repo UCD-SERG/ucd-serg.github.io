@@ -17,34 +17,34 @@ Currently, we focus on enteric fever (*Salmonella Typhi and Paratyphi*), Scrub T
 <div class="photo-album-container" tabindex="0" role="region" aria-label="Photo album">
 
  <div class="photo-item">
-    <img src="figures/sam-krista-csid-thailand.jpg" alt="CSID 2025">
+    <img src="figures/sam-krista-csid-thailand.jpg" alt="Krista and Sam presenting at the Open Software Tools for Climate Sensitive Infectious Diseases (CSID) workshop in Kanchanaburi, Thailand, 2025">
     <div class="photo-caption"> Krista and Sam contribution to the Open Software Tools for Climate Sensitivite Infectious Diseases (CSID) held in Kanchnaburi, Thailand, 2025 </div>
   </div>
   
   
       <div class="photo-item">
-    <img src="figures/krista-aprc4.jpg" alt="aprc4">
+    <img src="figures/krista-aprc4.jpg" alt="Krista presenting at the Asia Pacific Rickettsia Conference (APRC4) in Penang, Malaysia, 2025">
     <div class="photo-caption"> Krista presenting at the Asia Pacific Rickettsia Conference (APRC4) - Penang Malaysia, 2025 </div>
   </div>
   
   
     <div class="photo-item">
-    <img src="figures/kristen-donating blood.jpg" alt="Blood donation">
+    <img src="figures/kristen-donating blood.jpg" alt="Kristen donating blood after a blood collection event for the SURFACE study in Thailand">
     <div class="photo-caption"> Kristen donating blood after a blood collection event for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand </div>
   </div>
   
       <div class="photo-item">
-    <img src="figures/kristina-astmh.jpg" alt="astmh">
+    <img src="figures/kristina-astmh.jpg" alt="Kristina presenting at the American Society of Tropical Medicine and Hygiene (ASTMH) conference in Toronto, Canada, 2025">
     <div class="photo-caption"> Kristina Presenting at ASTMH - Toronto, Canada, 2025 </div>
   </div>
   
     <div class="photo-item">
-    <img src="figures/sam-surface teting.jpg" alt="sam dbs">
+    <img src="figures/sam-surface teting.jpg" alt="Sam collecting dried blood spots for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand">
     <div class="photo-caption"> Sam Collecting Dried Blood Spots for the SURFACE (Surveillance for Fever in Amnat Charoen) study in Thailand  </div>
   </div>
   
       <div class="photo-item">
-    <img src="figures/krista-kristen-ntds.jpg" alt="ntdss">
+    <img src="figures/krista-kristen-ntds.jpg" alt="Krista and Kristen advocating for scrub typhus to be recognized on the WHO's list of Neglected Tropical Diseases">
     <div class="photo-caption"> Krista and Kristen hoping to put scrub typhus on the WHO's list of recognized Neglected Tropical Diseases  </div>
   </div>
   

@@ -11,7 +11,7 @@
         <div class="quarto-grid-item card h-100 card-center">
           
           <p class="card-img-top">
-            <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+            <img alt="<%= item['image-alt'] || item.title %>" src="<%= item.image %>" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
           </p>
           
           <div class="card-body post-contents">
