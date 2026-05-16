@@ -767,7 +767,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = title.textContent;
     const fragment = document.createDocumentFragment();
     let remaining = text;
-    let hasItalicMarker = false;
 
     while (true) {
       const openIndex = remaining.indexOf("<i>");
@@ -793,11 +792,6 @@ document.addEventListener("DOMContentLoaded", () => {
       fragment.append(italic);
 
       remaining = remaining.slice(closeIndex + 4);
-      hasItalicMarker = true;
-    }
-
-    if (!hasItalicMarker) {
-      continue;
     }
 
     title.replaceChildren(fragment);
