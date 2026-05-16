@@ -63,111 +63,16 @@
     given: Richelle C.
   doi: 10.1101/2025.06.20.25329792
   id: Seidman_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
-  title: Evaluating the accuracy of Salmonella Typhi hemolysin e and
-    lipopolysaccharide IgA to discriminate enteric fever from other
-    febrile illnesses in south asia
+  issued: 2025
+  publisher: openRxiv
+  title: Evaluating the accuracy of \<i\>salmonella\</i\> typhi
+    hemolysin e and lipopolysaccharide IgA to discriminate enteric fever
+    from other febrile illnesses in south asia
   type: article-journal
-  url: "http://dx.doi.org/10.1101/2025.06.20.25329792"
+  url: "https://doi.org/10.1101/2025.06.20.25329792"
   date: 2025-06
   path: https://doi.org/10.1101/2025.06.20.25329792
   highlight: 1
-  categories: [preprint]
-- author:
-  - family: Khan
-    given: Aslam
-  - family: Kamenskaya
-    given: Polina
-  - family: Rezende
-    given: Izabela
-  - family: Mutuku
-    given: Francis
-  - family: Ndenga
-    given: Bryson
-  - family: Jembe
-    given: Zainab
-  - family: Maina
-    given: Priscilla
-  - family: Chebii
-    given: Philip
-  - family: Ronga
-    given: Charles
-  - family: Okuta
-    given: Victoria
-  - family: Garrett
-    given: Denise O.
-  - family: Bisanzio
-    given: Donal
-  - family: Aiemjoy
-    given: Kristen
-  - family: Andrews
-    given: Jason R.
-  - family: LaBeaud
-    given: A. Desiree
-  - family: Charles
-    given: Richelle
-  doi: 10.1101/2025.06.24.25330223
-  id: Khan_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
-  title: Seroincidence rate of typhoidal Salmonella in children in kenya
-  type: article-journal
-  url: "http://dx.doi.org/10.1101/2025.06.24.25330223"
-  date: 2025-06
-  path: https://doi.org/10.1101/2025.06.24.25330223
-  highlight: 1
-  categories: [preprint]
-- author:
-  - family: Tamrakar
-    given: Dipesh
-  - family: Naga
-    given: Shivram
-  - family: Jung
-    given: Esther
-  - family: Shrestha
-    given: Basudha
-  - family: Roka
-    given: Pratibha Bista
-  - family: Pokharel
-    given: Rabin Sharma
-  - family: Shah
-    given: Sabin Bikram
-  - family: Bajracharya
-    given: Arjya Tara
-  - family: Mahadup
-    given: Surendra K.
-  - family: Katuwal
-    given: Nishan
-  - family: Doyle
-    given: Kate
-  - family: Seidman
-    given: Jessica C.
-  - family: Carter
-    given: Alice S.
-  - family: Luby
-    given: Stephen P.
-  - family: Bogoch
-    given: Isaac I.
-  - family: Aiemjoy
-    given: Kristen
-  - family: Garrett
-    given: Denise O.
-  - family: Shrestha
-    given: Rajeev
-  - family: Andrews
-    given: Jason R.
-  doi: 10.1101/2025.06.17.25329748
-  id: Tamrakar_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
-  title: Impact of the COVID-19 pandemic and typhoid conjugate vaccine
-    introduction on typhoid fever in nepal
-  type: article-journal
-  url: "http://dx.doi.org/10.1101/2025.06.17.25329748"
-  date: 2025-06
-  path: https://doi.org/10.1101/2025.06.17.25329748
-  highlight: 0
   categories: [preprint]
 - author:
   - family: Saiprom
@@ -198,7 +103,7 @@
     given: Kristen
   doi: 10.2139/ssrn.5312903
   id: Saiprom_2025
-  issued: 2025-06-23
+  issued: 2025
   publisher: Elsevier BV
   title: "Longitudinal profiling of antibody responses to burkholderia
     pseudomallei: Implications for diagnosis and surveillance"
@@ -208,7 +113,7 @@
   url: "http://dx.doi.org/10.2139/ssrn.5312903"
   date: 2025-06-23
   path: https://doi.org/10.2139/ssrn.5312903
-  highlight: 0
+  highlight: 1
   categories: [preprint]
 - author:
   - family: Lai
@@ -237,16 +142,124 @@
     given: Douglas Ezra
   doi: 10.1101/2025.06.04.25328941
   id: Lai_2025
-  issued: 2025-06
-  publisher: Cold Spring Harbor Laboratory
+  issued: 2025
+  publisher: openRxiv
   title: Serocalculator, an r package for estimating seroincidence from
     cross-sectional serological data
   type: article-journal
-  url: "http://dx.doi.org/10.1101/2025.06.04.25328941"
-  date: 2025-06
+  url: "https://doi.org/10.1101/2025.06.04.25328941"
+  date: 2025-10
   path: https://doi.org/10.1101/2025.06.04.25328941
   highlight: 0
   categories: [preprint]
+- author:
+  - family: Munira
+    given: Sira Jam
+  - family: Kanon
+    given: Naito
+  - family: Islam
+    given: Nahidul
+  - family: Kabir
+    given: Md Shakiul
+  - family: Sarkar
+    given: Anik
+  - family: Polash
+    given: Shamsul Alam
+  - family: Rahman
+    given: Hafizur
+  - family: Carter
+    given: Alice S
+  - family: Charles
+    given: Richelle C
+  - family: Andrews
+    given: Jason R
+  - family: Luby
+    given: Stephen P
+  - family: Aiemjoy
+    given: Kristen
+  - family: Garrett
+    given: Denise O
+  - family: Saha
+    given: Samir K
+  - family: Seidman
+    given: Jessica C
+  - family: Saha
+    given: Senjuti
+  container-title: Open Forum Infectious Diseases
+  doi: 10.1093/ofid/ofag197
+  id: Munira_2026
+  issn: 2328-8957
+  issue: 5
+  issued: 2026-04
+  publisher: Oxford University Press (OUP)
+  title: Estimating enteric fever seroincidence in bangladesh using
+    rapid serosurveys
+  type: article-journal
+  url: "http://dx.doi.org/10.1093/ofid/ofag197"
+  volume: 13
+  journal-title: '*Open Forum Infectious Diseases*'
+  date: 2026-04
+  path: https://doi.org/10.1093/ofid/ofag197
+  highlight: 0
+- author:
+  - family: Tamrakar
+    given: Dipesh
+  - family: Naga
+    given: Shiva Ram
+  - family: Jung
+    given: Esther
+  - family: Shrestha
+    given: Basudha
+  - family: Bista Roka
+    given: Pratibha
+  - family: Pokharel
+    given: Rabin
+  - family: Shahi
+    given: Sabin Bikram
+  - family: Bajracharya
+    given: Aarjya Tara
+  - family: Mahadup
+    given: Surendra K.
+  - family: Katuwal
+    given: Nishan
+  - family: Doyle
+    given: Kate
+  - family: Seidman
+    given: Jessica C.
+  - family: Carter
+    given: Alice S.
+  - family: Luby
+    given: Stephen P.
+  - family: Bogoch
+    given: Isaac I.
+  - family: Aiemjoy
+    given: Kristen
+  - family: Garrett
+    given: Denise O.
+  - family: Shrestha
+    given: Rajeev
+  - family: Andrews
+    given: Jason R.
+  container-title: PLOS Neglected Tropical Diseases
+  doi: 10.1371/journal.pntd.0013242
+  editor:
+  - family: Bowen
+    given: Richard A.
+  id: Tamrakar_2026
+  issn: 1935-2735
+  issue: 1
+  issued: 2026-01
+  page: e0013242
+  publisher: Public Library of Science (PLoS)
+  title: Impact of the COVID-19 pandemic and typhoid conjugate vaccine
+    introduction on typhoid fever in nepal
+  type: article-journal
+  url: "http://dx.doi.org/10.1371/journal.pntd.0013242"
+  volume: 20
+  journal-title: '*PLOS Neglected Tropical Diseases*'
+  date: 2026-01
+  path: https://doi.org/10.1371/journal.pntd.0013242
+  highlight: 0
 - author:
   - family: Kamau
     given: Everlyn
@@ -389,7 +402,7 @@
   id: Kamau_2025
   issn: 2041-1723
   issue: 1
-  issued: 2025-07
+  issued: 2025
   publisher: Springer Science and Business Media LLC
   title: Characterizing trachoma elimination using serology
   type: article-journal
@@ -577,7 +590,7 @@
   id: Garrett_2022
   issn: 2214-109X
   issue: 7
-  issued: 2022-07
+  issued: 2022
   page: e978-e988
   publisher: Elsevier BV
   title: "Incidence of typhoid and paratyphoid fever in bangladesh,
@@ -755,7 +768,7 @@
   id: Teunis_2023
   issn: 1097-0258
   issue: 28
-  issued: 2023-09
+  issued: 2023
   page: 5160-5188
   publisher: Wiley
   title: Estimating seroconversion rates accounting for repeated
@@ -977,7 +990,7 @@
   id: Aiemjoy_2020
   issn: 1935-2735
   issue: 9
-  issued: 2020-09
+  issued: 2020
   page: e0008647
   publisher: Public Library of Science (PLoS)
   title: Seroprevalence of antibodies against chlamydia trachomatis and
@@ -1029,7 +1042,7 @@
   id: Morrison_2018
   issn: 2194-6310
   issue: 1
-  issued: 2018-07
+  issued: 2018
   publisher: Walter de Gruyter GmbH
   title: Cross-sectional HIV incidence estimation with missing
     biomarkers

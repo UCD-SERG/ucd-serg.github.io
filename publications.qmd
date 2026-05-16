@@ -48,3 +48,41 @@ listing:
 
 :::{#articles2}
 :::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  for (const title of document.querySelectorAll(".listing-title")) {
+    const text = title.textContent;
+    const fragment = document.createDocumentFragment();
+    let remaining = text;
+
+    while (true) {
+      const openIndex = remaining.indexOf("<i>");
+
+      if (openIndex === -1) {
+        fragment.append(document.createTextNode(remaining));
+        break;
+      }
+
+      const closeIndex = remaining.indexOf("</i>", openIndex + 3);
+
+      if (closeIndex === -1) {
+        fragment.append(document.createTextNode(remaining));
+        break;
+      }
+
+      if (openIndex > 0) {
+        fragment.append(document.createTextNode(remaining.slice(0, openIndex)));
+      }
+
+      const italic = document.createElement("i");
+      italic.textContent = remaining.slice(openIndex + 3, closeIndex);
+      fragment.append(italic);
+
+      remaining = remaining.slice(closeIndex + 4);
+    }
+
+    title.replaceChildren(fragment);
+  }
+});
+</script>
