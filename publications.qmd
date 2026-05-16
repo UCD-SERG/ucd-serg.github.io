@@ -56,9 +56,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const fragment = document.createDocumentFragment();
     let remaining = text;
     let hasItalicMarker = false;
-    let isMalformed = false;
 
-    while (remaining.length > 0) {
+    while (true) {
       const openIndex = remaining.indexOf("<i>");
 
       if (openIndex === -1) {
@@ -69,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const closeIndex = remaining.indexOf("</i>", openIndex + 3);
 
       if (closeIndex === -1) {
-        isMalformed = true;
+        fragment.append(document.createTextNode(remaining));
         break;
       }
 
@@ -85,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
       hasItalicMarker = true;
     }
 
-    if (!hasItalicMarker || isMalformed) {
+    if (!hasItalicMarker) {
       continue;
     }
 
