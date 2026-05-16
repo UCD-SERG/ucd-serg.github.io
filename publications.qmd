@@ -53,14 +53,14 @@ listing:
 document.addEventListener("DOMContentLoaded", () => {
   for (const title of document.querySelectorAll(".listing-title")) {
     const text = title.textContent;
-    const hasItalicMarker = /<i>(.*?)<\/i>/i.test(text);
+    const hasItalicMarker = /<i>(.*?)<\/i>/.test(text);
 
     if (!hasItalicMarker) {
       continue;
     }
 
     const fragment = document.createDocumentFragment();
-    const parts = text.split(/<i>(.*?)<\/i>/gi);
+    const parts = text.split(/<i>(.*?)<\/i>/g);
 
     for (const [index, part] of parts.entries()) {
       if (index % 2 === 0) {
