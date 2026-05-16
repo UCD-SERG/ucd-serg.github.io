@@ -53,23 +53,40 @@ listing:
 document.addEventListener("DOMContentLoaded", () => {
   for (const title of document.querySelectorAll(".listing-title")) {
     const text = title.textContent;
-    const hasItalicMarker = /<i>(.*?)<\/i>/.test(text);
+    const fragment = document.createDocumentFragment();
+    let remaining = text;
+    let hasItalicMarker = false;
+    let isMalformed = false;
 
-    if (!hasItalicMarker) {
-      continue;
+    while (remaining.length > 0) {
+      const openIndex = remaining.indexOf("<i>");
+
+      if (openIndex === -1) {
+        fragment.append(document.createTextNode(remaining));
+        break;
+      }
+
+      const closeIndex = remaining.indexOf("</i>", openIndex + 3);
+
+      if (closeIndex === -1) {
+        isMalformed = true;
+        break;
+      }
+
+      if (openIndex > 0) {
+        fragment.append(document.createTextNode(remaining.slice(0, openIndex)));
+      }
+
+      const italic = document.createElement("i");
+      italic.textContent = remaining.slice(openIndex + 3, closeIndex);
+      fragment.append(italic);
+
+      remaining = remaining.slice(closeIndex + 4);
+      hasItalicMarker = true;
     }
 
-    const fragment = document.createDocumentFragment();
-    const parts = text.split(/<i>(.*?)<\/i>/g);
-
-    for (const [index, part] of parts.entries()) {
-      if (index % 2 === 0) {
-        fragment.append(document.createTextNode(part));
-      } else {
-        const italic = document.createElement("i");
-        italic.textContent = part;
-        fragment.append(italic);
-      }
+    if (!hasItalicMarker || isMalformed) {
+      continue;
     }
 
     title.replaceChildren(fragment);
