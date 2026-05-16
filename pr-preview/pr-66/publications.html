@@ -761,6 +761,47 @@ window.Quarto = {
 </table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const italicTitlePattern = /<i>(.*?)<\/i>/gi;
+
+  for (const title of document.querySelectorAll(".listing-title")) {
+    const text = title.textContent;
+
+    if (!text.includes("<i>") || !text.includes("</i>")) {
+      continue;
+    }
+
+    const fragment = document.createDocumentFragment();
+    let lastIndex = 0;
+    let match;
+
+    while ((match = italicTitlePattern.exec(text)) !== null) {
+      if (match.index > lastIndex) {
+        fragment.append(
+          document.createTextNode(text.slice(lastIndex, match.index))
+        );
+      }
+
+      const italic = document.createElement("i");
+      italic.textContent = match[1];
+      fragment.append(italic);
+
+      lastIndex = match.index + match[0].length;
+    }
+
+    if (lastIndex === 0) {
+      continue;
+    }
+
+    if (lastIndex < text.length) {
+      fragment.append(document.createTextNode(text.slice(lastIndex)));
+    }
+
+    title.replaceChildren(fragment);
+  }
+});
+</script>
 
 
 
