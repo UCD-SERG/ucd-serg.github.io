@@ -69,7 +69,7 @@
     hemolysin e and lipopolysaccharide IgA to discriminate enteric fever
     from other febrile illnesses in south asia
   type: article-journal
-  url: "http://dx.doi.org/10.1101/2025.06.20.25329792"
+  url: "https://doi.org/10.1101/2025.06.20.25329792"
   date: 2025-06
   path: https://doi.org/10.1101/2025.06.20.25329792
   highlight: 1
@@ -147,8 +147,8 @@
   title: Serocalculator, an r package for estimating seroincidence from
     cross-sectional serological data
   type: article-journal
-  url: "http://dx.doi.org/10.1101/2025.06.04.25328941"
-  date: 2025-06
+  url: "https://doi.org/10.1101/2025.06.04.25328941"
+  date: 2025-10
   path: https://doi.org/10.1101/2025.06.04.25328941
   highlight: 0
   categories: [preprint]
