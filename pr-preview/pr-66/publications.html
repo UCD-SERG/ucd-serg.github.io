@@ -765,36 +765,23 @@ window.Quarto = {
 document.addEventListener("DOMContentLoaded", () => {
   for (const title of document.querySelectorAll(".listing-title")) {
     const text = title.textContent;
+    const hasItalicMarker = /<i>(.*?)<\/i>/i.test(text);
 
-    if (!text.includes("<i>") || !text.includes("</i>")) {
+    if (!hasItalicMarker) {
       continue;
     }
 
     const fragment = document.createDocumentFragment();
-    const italicTitlePattern = /<i>(.*?)<\/i>/gi;
-    let lastIndex = 0;
-    let match;
+    const parts = text.split(/<i>(.*?)<\/i>/gi);
 
-    while ((match = italicTitlePattern.exec(text)) !== null) {
-      if (match.index > lastIndex) {
-        fragment.append(
-          document.createTextNode(text.slice(lastIndex, match.index))
-        );
+    for (const [index, part] of parts.entries()) {
+      if (index % 2 === 0) {
+        fragment.append(document.createTextNode(part));
+      } else {
+        const italic = document.createElement("i");
+        italic.textContent = part;
+        fragment.append(italic);
       }
-
-      const italic = document.createElement("i");
-      italic.textContent = match[1];
-      fragment.append(italic);
-
-      lastIndex = match.index + match[0].length;
-    }
-
-    if (!fragment.hasChildNodes()) {
-      continue;
-    }
-
-    if (lastIndex < text.length) {
-      fragment.append(document.createTextNode(text.slice(lastIndex)));
     }
 
     title.replaceChildren(fragment);
