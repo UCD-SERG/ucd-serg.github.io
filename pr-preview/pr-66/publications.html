@@ -763,8 +763,6 @@ window.Quarto = {
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const italicTitlePattern = /<i>(.*?)<\/i>/gi;
-
   for (const title of document.querySelectorAll(".listing-title")) {
     const text = title.textContent;
 
@@ -773,6 +771,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const fragment = document.createDocumentFragment();
+    const italicTitlePattern = /<i>(.*?)<\/i>/gi;
     let lastIndex = 0;
     let match;
 
@@ -790,7 +789,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lastIndex = match.index + match[0].length;
     }
 
-    if (lastIndex === 0) {
+    if (!fragment.hasChildNodes()) {
       continue;
     }
 
