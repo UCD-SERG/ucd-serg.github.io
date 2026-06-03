@@ -74,9 +74,10 @@ but nothing more.
 5. **Iterate fixes on the reprex**, not the full app. This is the fast loop
    the whole technique exists to create.
 6. **Port the fix back** to the real code and verify it there.
-7. **Clean up.** Delete the scratch file (it lives in `/tmp`, so it never
-   touches the repo). If the bug was subtle, consider promoting the reprex
-   into a real regression test (`testthat`) instead of discarding it.
+7. **Clean up.** Delete the scratch file, or just let `/tmp` reclaim it — it
+   lives there, so it never touches the repo and cleanup isn't strictly
+   required. If the bug was subtle, consider promoting the reprex into a real
+   regression test (`testthat`) instead of discarding it.
 
 ## Minimizing the data
 
@@ -95,10 +96,11 @@ but nothing more.
   formats a reprex for sharing: it runs your code in a clean, separate R
   session (via `callr` since reprex 2.0) and emits code **plus actual
   output**.
-  Copy the code and call `reprex::reprex()` (reads the clipboard by default),
-  or point it at a file with `reprex(input = "/tmp/reprex.R")` (or a
-  `tempfile(fileext = ".R")` path on non-Unix machines) — handy from a
-  non-interactive CLI session where there's no clipboard. Use it when the
+  Interactively you can copy the code and call `reprex::reprex()` (reads the
+  clipboard by default), but in a non-interactive / CLI context (e.g. when
+  Claude Code is running this skill) there is no clipboard — always prefer the
+  file form, `reprex(input = "/tmp/reprex.R")` (or a
+  `tempfile(fileext = ".R")` path on non-Unix machines). Use it when the
   output is destined for a PR comment or an upstream issue. Useful arguments:
   - `venue =` — output format:
     - `"gh"` — GitHub-flavored Markdown (default)
