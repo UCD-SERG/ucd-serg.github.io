@@ -1,4 +1,8 @@
 if (requireNamespace("spelling", quietly = TRUE)) {
+  # error = FALSE: the vignette/.Rmd check reports spelling problems but does
+  # not fail the test run, so pre-existing/tolerated issues there don't block
+  # CI. The .qmd check below intentionally uses a hard stop() instead: .qmd
+  # spelling is newly covered and starts clean, so any new error should fail.
   spelling::spell_check_test(vignettes = TRUE, error = FALSE,
                              skip_on_cran = TRUE)
 
