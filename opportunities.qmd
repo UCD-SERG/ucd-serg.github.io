@@ -16,7 +16,7 @@ We welcome undergraduate students interested in gaining research experience in s
 - **Programming**: Experience with R or Python. 
 - **Coursework**: Coursework in statistics, biostatistics, and epidemiology is helpful.
 - **Biology/Public Health**: Interest in infectious diseases, immunology, or public health.
-- **Data Analysis**: Experience working with and anlyzing data. 
+- **Data Analysis**: Experience working with and analyzing data.
 - **Communication**: Strong written and verbal communication skills.
 
 ### How to Apply
@@ -63,7 +63,7 @@ We are seeking postdoctoral researchers to join our team and lead cutting-edge r
 
 ### Current Openings
 
-No current oppenings. 
+No current openings.
 
 <!-- **[Postdoctoral Research Fellow in Seroepidemiology to Advance Global Typhoid Burden Estimation and Open-Source Tool Development](opportunities/postdoc-typhoid-seroepi.qmd)** -->
 
