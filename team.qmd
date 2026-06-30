@@ -15,6 +15,7 @@ listing:
     - people/skang/bio-skang.qmd
     - people/ksjlee/bio-ksjlee.qmd
     - people/kvaidya/kvaidya.qmd
+    - people/yxewang/bio-yxewang.qmd
 - id: PIs
   sort: "lastname asc"
   type: grid
