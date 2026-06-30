@@ -1,12 +1,18 @@
 ---
-title: "Elaine Wang"
+title: "Elaine Yuxuan Wang"
 lastname: "Wang"
 image: yxewang.jpg
-image-alt: "Portrait photo of Elaine Wang"
+image-alt: "Portrait photo of Elaine Yuxuan Wang"
 about:
   template: solana
-subtitle: "MS Student, Applied Mathematics"
+subtitle: "MS Student, Graduate Group in Applied Mathematics"
 institution: "UC Davis"
 ---
 
-[bio 正文待补充]
+Elaine is a 1st year MS student in the Applied Mathematics program at UC Davis. Her current research focuses on developing the `serodynamics` R package, which extends the Serocalculator framework to support broader seroepidemiological modeling of antibody dynamics. Her research interests lie at the intersection of statistical and mathematical modeling and infectious disease epidemiology, with a focus on disease forecasting and prevention in global health settings.
+
+Email: yxewang@ucdavis.edu
+
+## Education
+
+BS in Information and Computing Science | Nanjing Agricultural University
