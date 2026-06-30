@@ -1,0 +1,12 @@
+---
+title: "Elaine Wang"
+lastname: "Wang"
+image: yxewang.jpg
+image-alt: "Portrait photo of Elaine Wang"
+about:
+  template: solana
+subtitle: "MS Student, Applied Mathematics"
+institution: "UC Davis"
+---
+
+[bio 正文待补充]
