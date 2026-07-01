@@ -9,9 +9,10 @@ subtitle: "MS Student, Graduate Group in Applied Mathematics"
 institution: "UC Davis"
 ---
 
-Elaine is a 1st year MS student in the Applied Mathematics program at UC Davis. Her current research focuses on developing the `serodynamics` R package, to support broader seroepidemiological modeling of  post-infection antibody dynamics. Her research interests lie at the intersection of statistical and mathematical modeling and infectious disease epidemiology, with a focus on disease forecasting and prevention in global health settings.
+Elaine is a 1st year MS student in the Applied Mathematics program at UC Davis. Her current research focuses on developing the `serodynamics` R package, to support broader seroepidemiological modeling of post-infection antibody dynamics. Her research interests lie at the intersection of statistical and mathematical modeling and infectious disease epidemiology, with a focus on disease forecasting and prevention in global health settings.
 
 Email: yxewang@ucdavis.edu
+GitHub: [@imelainew](https://github.com/imelainew)
 
 ## Education
 
