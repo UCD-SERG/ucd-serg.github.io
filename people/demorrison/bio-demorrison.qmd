@@ -1,0 +1,16 @@
+---
+title: "Ezra Morrison"
+lastname: "Morrison"
+image: demorrison.jpg
+image-alt: "Portrait photo of Ezra Morrison"
+about:
+  template: solana
+  links:
+    - icon: globe
+      text: Website
+      href: https://demorrison.ucdavis.edu
+subtitle: "Assistant Professor of Biostatistics"
+institution: "UC Davis"
+---
+
+Ezra Morrison is an Assistant Professor of Biostatistics at UC Davis. He is a co-director of the UC Davis Seroepidemiology Research Group (UCD-SeRG), contributing expertise in statistical methods for seroepidemiology research.

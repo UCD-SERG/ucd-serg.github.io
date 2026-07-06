@@ -5,6 +5,10 @@ image: headshot_Kristina Lai_cropped2.jpg
 image-alt: "Portrait photo of Kristina W. Lai"
 about:
   template: solana
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:kwlai@ucdavis.edu
 subtitle: "PhD Candidate, Graduate Group in Epidemiology"
 institution: "UC Davis"
 ---
