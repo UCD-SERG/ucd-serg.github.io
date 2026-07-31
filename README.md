@@ -18,3 +18,10 @@ References and examples:
 
 1. add new paper to `papers/DOIs.csv`
 2. re-run `data-raw/papers.R` script
+
+## How to republish this website
+
+1. Author a PR on this repo
+2. Merge changes to main (once all CI checks pass and one of the maintainers approves the PR)
+3. ssh into the lab server
+4. run ./updateHomepage 
