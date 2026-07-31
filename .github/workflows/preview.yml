@@ -10,6 +10,10 @@ on:
 
 jobs:
   build-deploy:
+    # rossjrw/pr-preview-action v1 only supports PRs within the same
+    # repository: the GITHUB_TOKEN for PRs from forks is read-only and
+    # cannot push the preview to gh-pages, so skip forked PRs entirely.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -33,5 +37,3 @@ jobs:
         with:
           source-dir: ./docs/
           pages-base-url: ucd-serg.github.io
-        
-           
