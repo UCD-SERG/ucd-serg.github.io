@@ -3,6 +3,8 @@ title: "Kristen Aiemjoy, PhD, MSc"
 lastname: "Aiemjoy"
 image: kaiemjoy-office.jpg
 image-alt: "Portrait photo of Kristen Aiemjoy"
+resources:
+  - Aiemjoy_cv_25.pdf
 about:
   template: solana
   links:
@@ -14,7 +16,7 @@ about:
       href: https://health.ucdavis.edu/phs/team/43064/kristen-aiemjoy---infectious-diseases---epidemiology/
     - icon: file-text
       text: CV
-      href: Aiemjoy_cv_25.pdf
+      href: people/kaiemjoy/Aiemjoy_cv_25.pdf
 subtitle: "Assistant Professor of Epidemiology"
 institution: "UC Davis"
 ---
