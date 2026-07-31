@@ -25,6 +25,15 @@ listing:
   contents: 
     - people/demorrison/demorrison.yaml
     - people/kaiemjoy/kaiemjoy.yaml
+- id: postdocs
+  sort: "lastname asc"
+  type: grid
+  template: _ejs/people-box.ejs
+  grid-item-align: center
+  grid-columns: 4
+  image-height: 250px
+  contents: 
+    - people/ekamau/bio-ekamau.qmd
 ---
 
 ## Principal investigators
@@ -35,4 +44,9 @@ listing:
 ## Students
 
 :::{#lab-member}
+:::
+
+## Postdocs
+
+:::{#postdocs}
 :::
