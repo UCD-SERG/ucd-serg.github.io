@@ -19,7 +19,17 @@ subtitle: "Assistant Professor of Epidemiology"
 institution: "UC Davis"
 ---
 
-Kristen Aiemjoy is an Assistant Professor of Epidemiology in the Department of Public Health Sciences at the UC Davis School of Medicine. She leads the UC Davis Seroepidemiology Research Group (UCD-SeRG). Her research focuses on developing seroepidemiologic methods to characterize infection burden for enteric fever (*Salmonella* Typhi and Paratyphi), scrub typhus (*Orientia tsutsugamushi*), melioidosis (*Burkholderia pseudomallei*), and other infectious diseases. She is supported by the NIH Fogarty International Center, the Bill and Melinda Gates Foundation, and the Department of Defense, and collaborates with partners in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America.
+Kristen Aiemjoy is an Assistant Professor of Epidemiology in the Department of Public Health Sciences at the UC Davis School of Medicine. 
+She and Dr. Morrison jointly lead the UC Davis Seroepidemiology Research Group (UCD-SeRG). 
+Dr. Aiemjoy's research focuses on developing seroepidemiologic methods to characterize infection burden for 
+enteric fever (*Salmonella* Typhi and Paratyphi), 
+scrub typhus (*Orientia tsutsugamushi*), 
+melioidosis (*Burkholderia pseudomallei*), 
+and other infectious diseases. 
+She is supported by the NIH Fogarty International Center, 
+the Bill and Melinda Gates Foundation, 
+and the Department of Defense, 
+and collaborates with partners in South Asia, Southeast Asia, Sub-Saharan Africa, and Latin America.
 
 ## Education
 
