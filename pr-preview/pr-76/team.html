@@ -135,6 +135,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-postdocs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-postdocs'] = new List('listing-postdocs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -392,6 +420,7 @@ window.Quarto = {
   <ul>
   <li><a href="#principal-investigators" id="toc-principal-investigators" class="nav-link active" data-scroll-target="#principal-investigators">Principal investigators</a></li>
   <li><a href="#students" id="toc-students" class="nav-link" data-scroll-target="#students">Students</a></li>
+  <li><a href="#postdocs" id="toc-postdocs" class="nav-link" data-scroll-target="#postdocs">Postdocs</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/team.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/team.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -666,6 +695,22 @@ window.Quarto = {
       
     </div>
   
+    
+  
+</div>
+</div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="postdocs" class="level2">
+<h2 class="anchored" data-anchor-id="postdocs">Postdocs</h2>
+<div id="listing-postdocs" class="quarto-listing quarto-listing-container-custom">
+
+<div class="quarto-listing quarto-listing-container-grid">
+  
+  <div class="list grid quarto-listing-cols-4"> 
+
     
   
 </div>
