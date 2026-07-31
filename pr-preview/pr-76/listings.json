@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/software.html",
+    "items": []
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
     "listing": "/team.html",
     "items": [
       "/people/skang/bio-skang.html",
@@ -10,13 +18,5 @@
       "/people/kaiemjoy/bio-kaiemjoy.html",
       "/people/demorrison/bio-demorrison.html"
     ]
-  },
-  {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
-    "listing": "/software.html",
-    "items": []
   }
 ]
