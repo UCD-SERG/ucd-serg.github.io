@@ -49,7 +49,12 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
           plugins: 'code-review@claude-code-plugins'
-          prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}'
+          # `--comment` is load-bearing, not decoration. The code-review
+          # plugin's step 7 reads: "If `--comment` argument was NOT provided,
+          # stop here. Do not post any GitHub comments." Without it the review
+          # runs, finds whatever it finds, prints to the job log, and posts
+          # nothing - with a green check. See issue #96.
+          prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }} --comment'
           # This must match the code-review plugin's own `allowed-tools`
           # frontmatter (plugins/code-review/commands/code-review.md in
           # anthropics/claude-code) exactly. claude_args replaces the
