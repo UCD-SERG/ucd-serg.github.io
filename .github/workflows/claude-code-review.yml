@@ -1,5 +1,10 @@
 name: Claude Code Review
 
+# Do not switch this to `pull_request_target`.
+# Anthropic's token-exchange endpoint rejects OIDC tokens minted for that
+# event, so the job fails with "401 Unauthorized - Invalid OIDC token"
+# before Claude ever runs. See
+# https://github.com/anthropics/claude-code-action/issues/713
 on:
   pull_request:
     types: [opened, synchronize, ready_for_review, reopened]
@@ -19,9 +24,15 @@ jobs:
     #   github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
 
     runs-on: ubuntu-latest
+    # pull-requests: write is safe here because this workflow uses the
+    # `pull_request` trigger (not `pull_request_target`): GitHub always
+    # forces a read-only GITHUB_TOKEN for PRs from forks regardless of what
+    # this block declares, so forked PRs stay read-only either way. Without
+    # write access here, same-repo PRs (the common case in this repo) never
+    # get their review posted even though the job itself succeeds.
     permissions:
       contents: read
-      pull-requests: read
+      pull-requests: write
       issues: read
       id-token: write
 
@@ -39,6 +50,14 @@ jobs:
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
           plugins: 'code-review@claude-code-plugins'
           prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}'
+          # This must match the code-review plugin's own `allowed-tools`
+          # frontmatter (plugins/code-review/commands/code-review.md in
+          # anthropics/claude-code) exactly. claude_args replaces the
+          # effective allowlist rather than adding to it, so a narrower list
+          # here (as a previous version of this file had) denies the
+          # plugin's own steps - e.g. `gh pr diff`/`gh pr view` calls it
+          # makes to gather context - not just the final posting step.
+          claude_args: '--allowed-tools "Bash(gh issue view:*)" "Bash(gh search:*)" "Bash(gh issue list:*)" "Bash(gh pr comment:*)" "Bash(gh pr diff:*)" "Bash(gh pr view:*)" "Bash(gh pr list:*)" "mcp__github_inline_comment__create_inline_comment"'
           # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
           # or https://code.claude.com/docs/en/cli-reference for available options
 
