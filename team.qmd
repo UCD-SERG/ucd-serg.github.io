@@ -25,15 +25,18 @@ listing:
   contents: 
     - people/demorrison/demorrison.yaml
     - people/kaiemjoy/kaiemjoy.yaml
-- id: postdocs
-  sort: "lastname asc"
-  type: grid
-  template: _ejs/people-box.ejs
-  grid-item-align: center
-  grid-columns: 4
-  image-height: 250px
-  contents: 
-    - people/ekamau/bio-ekamau.qmd
+# Postdocs listing temporarily disabled: people/ekamau/bio-ekamau.qmd
+# doesn't exist yet on this branch (added, but at the wrong path, in PR #86).
+# Restore once that PR lands with the file at the path below.
+# - id: postdocs
+#   sort: "lastname asc"
+#   type: grid
+#   template: _ejs/people-box.ejs
+#   grid-item-align: center
+#   grid-columns: 4
+#   image-height: 250px
+#   contents:
+#     - people/ekamau/bio-ekamau.qmd
 ---
 
 ## Principal investigators
@@ -46,7 +49,8 @@ listing:
 :::{#lab-member}
 :::
 
-## Postdocs
+<!-- Postdocs section temporarily disabled along with the "postdocs" listing above -->
+<!-- ## Postdocs
 
 :::{#postdocs}
-:::
+::: -->
