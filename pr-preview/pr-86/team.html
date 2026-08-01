@@ -135,6 +135,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-postdocs .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-editor','listing-engines','listing-language','listing-title','listing-lastname','listing-image','listing-image-alt','listing-about','listing-subtitle','listing-institution','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-engines","listing-language","listing-title","listing-lastname","listing-image","listing-image-alt","listing-about","listing-subtitle","listing-institution","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-postdocs'] = new List('listing-postdocs', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -392,6 +420,7 @@ window.Quarto = {
   <ul>
   <li><a href="#principal-investigators" id="toc-principal-investigators" class="nav-link active" data-scroll-target="#principal-investigators">Principal investigators</a></li>
   <li><a href="#students" id="toc-students" class="nav-link" data-scroll-target="#students">Students</a></li>
+  <li><a href="#postdocs" id="toc-postdocs" class="nav-link" data-scroll-target="#postdocs">Postdocs</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/edit/main/team.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/blob/main/team.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/UCD-SERG/ucd-serg.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -673,11 +702,54 @@ window.Quarto = {
 
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-<!-- Postdocs section temporarily disabled along with the "postdocs" listing above -->
-<!-- ## Postdocs
+</section>
+<section id="postdocs" class="level2">
+<h2 class="anchored" data-anchor-id="postdocs">Postdocs</h2>
+<div id="listing-postdocs" class="quarto-listing quarto-listing-container-custom">
 
-:::{#postdocs}
-::: -->
+<div class="quarto-listing quarto-listing-container-grid">
+  
+  <div class="list grid quarto-listing-cols-4"> 
+
+     
+    
+    <div class="g-col-1 listing-box">
+      <a href="./people/ekamau/bio-ekamau.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-center">
+          
+          <p class="card-img-top">
+            <img alt="Everlyn Kamau, DPhil" src="./people/ekamau/ekamau.jpg" class="thumbnail-image card-img listing-box-image" style="height: 250px;">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Everlyn Kamau, DPhil<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              Postdoctoral Researcher<br>
+            </div>
+            
+            <div class="listing-box-institution">
+              
+                UC Davis<br>
+              
+            </div>  
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+    
+  
+</div>
+</div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 
 
 
