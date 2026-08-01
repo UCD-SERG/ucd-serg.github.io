@@ -24,9 +24,15 @@ jobs:
     #   github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
 
     runs-on: ubuntu-latest
+    # pull-requests: write is safe here because this workflow uses the
+    # `pull_request` trigger (not `pull_request_target`): GitHub always
+    # forces a read-only GITHUB_TOKEN for PRs from forks regardless of what
+    # this block declares, so forked PRs stay read-only either way. Without
+    # write access here, same-repo PRs (the common case in this repo) never
+    # get their review posted even though the job itself succeeds.
     permissions:
       contents: read
-      pull-requests: read
+      pull-requests: write
       issues: read
       id-token: write
 
