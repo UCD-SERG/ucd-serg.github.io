@@ -50,6 +50,13 @@ jobs:
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
           plugins: 'code-review@claude-code-plugins'
           prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}'
+          # The code-review plugin posts its review via `gh pr comment` (a Bash
+          # call) and the `mcp__github_inline_comment__create_inline_comment`
+          # MCP tool. Neither is allowed by default in a non-interactive run,
+          # so without this, every attempt is silently denied (see
+          # permission_denials_count in the run's result) and no review is
+          # ever posted, even though the job itself reports success.
+          claude_args: '--allowed-tools "Bash(gh pr comment *)" "mcp__github_inline_comment__create_inline_comment"'
           # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
           # or https://code.claude.com/docs/en/cli-reference for available options
 
