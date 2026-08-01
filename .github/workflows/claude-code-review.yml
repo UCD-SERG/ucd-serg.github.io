@@ -50,17 +50,14 @@ jobs:
           plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
           plugins: 'code-review@claude-code-plugins'
           prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}'
-          # The code-review plugin posts its review via `gh pr comment` (a Bash
-          # call) and the `mcp__github_inline_comment__create_inline_comment`
-          # MCP tool. Neither is allowed by default in a non-interactive run,
-          # so without this, every attempt is silently denied (see
-          # permission_denials_count in the run's result) and no review is
-          # ever posted, even though the job itself reports success.
-          claude_args: '--allowed-tools "Bash(gh pr comment *)" "mcp__github_inline_comment__create_inline_comment"'
-          # TEMPORARY: reveals which specific tool call is still being denied
-          # (permission_denials_count was 1 on the last run, down from 17,
-          # but still zero reviews posted). Remove once diagnosed.
-          show_full_output: true
+          # This must match the code-review plugin's own `allowed-tools`
+          # frontmatter (plugins/code-review/commands/code-review.md in
+          # anthropics/claude-code) exactly. claude_args replaces the
+          # effective allowlist rather than adding to it, so a narrower list
+          # here (as a previous version of this file had) denies the
+          # plugin's own steps - e.g. `gh pr diff`/`gh pr view` calls it
+          # makes to gather context - not just the final posting step.
+          claude_args: '--allowed-tools "Bash(gh issue view:*)" "Bash(gh search:*)" "Bash(gh issue list:*)" "Bash(gh pr comment:*)" "Bash(gh pr diff:*)" "Bash(gh pr view:*)" "Bash(gh pr list:*)" "mcp__github_inline_comment__create_inline_comment"'
           # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
           # or https://code.claude.com/docs/en/cli-reference for available options
 
