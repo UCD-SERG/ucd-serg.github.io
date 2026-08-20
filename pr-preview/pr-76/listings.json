@@ -4,10 +4,6 @@
     "items": []
   },
   {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
     "listing": "/team.html",
     "items": [
       "/people/skang/bio-skang.html",
@@ -16,7 +12,12 @@
       "/people/sschild/bio-sschild.html",
       "/people/kvaidya/kvaidya.html",
       "/people/kaiemjoy/bio-kaiemjoy.html",
-      "/people/demorrison/bio-demorrison.html"
+      "/people/demorrison/bio-demorrison.html",
+      "/people/ekamau/bio-ekamau.html"
     ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
   }
 ]
