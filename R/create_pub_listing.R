@@ -24,7 +24,7 @@ create_pub_listing <- function(bib = bibtex::read.bib(bib_file),
         ),
         -3
       )
-      # Quote issued dates so YAML does not interpret year-only values as numbers
+      # Quote dates so YAML doesn't interpret year-only values as numbers
       article <- article |>
         stringr::str_replace(
           "^(\\s*issued:\\s*)(\\d{4}(?:-\\d{2}(?:-\\d{2})?)?)\\s*$",
