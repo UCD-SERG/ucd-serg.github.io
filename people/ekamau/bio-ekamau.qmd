@@ -1,0 +1,19 @@
+---
+title: "Everlyn Kamau, DPhil"
+lastname: "Kamau"
+image: ekamau.jpg
+image-alt: "Portrait photo of Everlyn Kamau"
+about:
+  template: solana
+subtitle: "Postdoctoral Researcher"
+institution: "UC Davis"
+---
+
+Everlyn leads research focusing on population-based serologic surveillance and application of mathematical modelling to study antibody dynamics and epidemiology of enteric fever infections (typhoidal and non-typhoidal Salmonella). Prior to UC Davis, Everlyn worked on large-scale serological studies at the Francis I. Proctor Foundation at UC San Francisco  where she focused on characterizing disease elimination and transmission of enteric pathogens related to diarrheal disease using antibody-based measures.
+
+Email: ekamau@ucdavis.edu
+
+## Education
+
+DPhil in Clinical Medicine | University of Oxford
+

@@ -10,6 +10,10 @@ on:
 
 jobs:
   build-deploy:
+    # rossjrw/pr-preview-action v1 only supports PRs within the same
+    # repository: the GITHUB_TOKEN for PRs from forks is read-only and
+    # cannot push the preview to gh-pages, so skip forked PRs entirely.
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -26,12 +30,16 @@ jobs:
           tinytex: true
 
       - name: Render
-        uses: quarto-dev/quarto-actions/render@v2
+        run: |
+          set -o pipefail
+          quarto render . 2>&1 | tee quarto-render.log
+          if grep -qF "doesn't match any files or folders" quarto-render.log; then
+            echo "::error::A Quarto listing references a file or folder that doesn't exist (see WARN above). Fix the listing contents or add the missing file."
+            exit 1
+          fi
 
       - name: Deploy PR Preview
         uses: rossjrw/pr-preview-action@main
         with:
           source-dir: ./docs/
           pages-base-url: ucd-serg.github.io
-        
-           

@@ -32,7 +32,7 @@ listing:
   grid-item-align: center
   grid-columns: 4
   image-height: 250px
-  contents: 
+  contents:
     - people/ekamau/bio-ekamau.qmd
 ---
 
