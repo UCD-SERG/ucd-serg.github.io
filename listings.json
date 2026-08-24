@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/software.html",
+    "items": []
+  },
+  {
     "listing": "/team.html",
     "items": [
       "/people/skang/bio-skang.html",
@@ -12,10 +16,6 @@
   },
   {
     "listing": "/publications.html",
-    "items": []
-  },
-  {
-    "listing": "/software.html",
     "items": []
   }
 ]
