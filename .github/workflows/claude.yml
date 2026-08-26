@@ -1,3 +1,46 @@
+# Caller stub for Morrison-Lab/gha's reusable claude.yml (agent mode).
+#
+# Replaces this repo's hand-rolled workflow, which called
+# anthropics/claude-code-action directly. See #100, and #99 for the two gaps
+# this closes (read-only `pull-requests` permission, and no author check on
+# who may trigger an @claude run).
+#
+# Secrets are passed explicitly rather than with `secrets: inherit`. GitHub
+# documents `inherit` as available to a caller in the same organization or
+# enterprise as the reusable workflow; this is a UCD-SERG repo calling a
+# Morrison-Lab one, so relying on it would mean relying on those two orgs
+# sharing an enterprise. Passing explicitly removes the question.
+#
+# BEHAVIOURAL CHANGE worth knowing before reading further: the reusable
+# workflow sets a `prompt:`, which puts claude-code-action in AGENT mode
+# rather than the TAG mode this repo's hand-rolled workflow used. Agent mode
+# does not run the action's built-in branch-setup / git-push / response-comment
+# machinery -- gha's own post-steps do that instead -- and it ships a default
+# `claude-args` that REPLACES the effective tool allowlist rather than adding
+# to it.
+#
+# Net effect: Bash is narrowed to an enumerated list. `git push` is denied in
+# every listed variant, with pushing owned by gha's post-steps. `quarto render`
+# is allowed; `quarto preview`, `quarto check`, and `Rscript -e` forms outside
+# the six listed are not. `gh pr create` is OMITTED from the allowlist rather
+# than denied -- unavailable either way, but the distinction matters under the
+# override note below, since an override loses denials and not omissions.
+#
+# Be precise about `gh api`: what is denied is the three prefix patterns
+# `gh api -X`, `gh api --method`, and `gh api graphql`, against an allow of
+# `gh api:*`. That is narrower than "write forms are denied". `gh api --help`
+# states the method "is `GET` normally and `POST` if any parameters were
+# added", so a `-f`/`-F`/`--input` call is a POST that no deny pattern
+# matches, and the patterns are prefix matches, so a reordered
+# `gh api -H ... -X POST <url>` is not matched either. With a write-scoped
+# GITHUB_TOKEN the residual surface is real; upstream calls the trusted-author
+# gate its primary containment, which is why the caller-side gate below
+# matters. Filed upstream as Morrison-Lab/gha#616.
+#
+# Overriding `claude-args` REPLACES both halves, so a caller that sets it to
+# add one tool silently drops all thirteen deny patterns above. If an override
+# is ever needed, copy upstream's `--disallowedTools` string verbatim and
+# extend only the allow list.
 name: Claude Code
 
 on:
@@ -6,45 +49,141 @@ on:
   pull_request_review_comment:
     types: [created]
   issues:
+    # Unchanged from the hand-rolled workflow, so this is not a new trigger.
+    # Its cost did change: `assigned` re-fires a full agent run whenever
+    # anyone is assigned to an already-open issue whose body or title mentions
+    # @claude, and that run now holds `contents: write` rather than `read`.
+    # Retained for parity rather than dropped, since narrowing the trigger set
+    # is a behaviour change this migration did not set out to make. The input
+    # that governs assignment as a trigger in its own right is
+    # `dispatch-on-assignee`, left at its '[]' default -- see the note beside
+    # it below for why setting it would need a matching caller-side clause.
     types: [opened, assigned]
   pull_request_review:
     types: [submitted]
 
 jobs:
   claude:
+    # Cheap caller-side gate: only invoke the reusable workflow when an
+    # @claude mention is present AND the author is trusted
+    # (OWNER/MEMBER/COLLABORATOR). This mirrors the reusable workflow's own
+    # trusted-author gate as defense-in-depth: without it the run is still
+    # skipped downstream, but only after invoking a workflow that was granted
+    # elevated permissions and passed secrets. The hand-rolled workflow this
+    # replaces had no author check at all -- the second half of #99.
     if: |
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude')) ||
-      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude')) ||
-      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude')) ||
-      (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')))
-    runs-on: ubuntu-latest
+      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '@claude') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) ||
+      (github.event_name == 'pull_request_review_comment' && contains(github.event.comment.body, '@claude') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association)) ||
+      (github.event_name == 'pull_request_review' && contains(github.event.review.body, '@claude') && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.review.author_association)) ||
+      (github.event_name == 'issues' && (contains(github.event.issue.body, '@claude') || contains(github.event.issue.title, '@claude')) && contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association))
     permissions:
-      contents: read
-      pull-requests: read
-      issues: read
+      contents: write        # push branches
+      pull-requests: write   # open/update PRs -- was `read`, the first half of #99
+      issues: write          # comment back on the thread
       id-token: write
-      actions: read # Required for Claude to read CI results on PRs
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: Run Claude Code
-        id: claude
-        uses: anthropics/claude-code-action@v1
-        with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-
-          # This is an optional setting that allows Claude to read CI results on PRs
-          additional_permissions: |
-            actions: read
-
-          # Optional: Give a custom prompt to Claude. If this is not specified, Claude will perform the instructions specified in the comment that tagged it.
-          # prompt: 'Update the pull request description to include a summary of changes.'
-
-          # Optional: Add claude_args to customize behavior and configuration
-          # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
-          # or https://code.claude.com/docs/en/cli-reference for available options
-          # claude_args: '--allowed-tools Bash(gh pr *)'
-
+      # Needed for the review dispatch below. That dispatch only resolves once
+      # #110 puts a `workflow_dispatch` trigger on claude-code-review.yml --
+      # until then `gh workflow run` cannot resolve the target and gha's
+      # dispatch step falls through to a `::warning::`. See the ordering note
+      # in this PR's description; merge #110 first.
+      actions: write
+    uses: Morrison-Lab/gha/.github/workflows/claude.yml@v2
+    secrets:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # unset here; empty when using OAuth
+      # LIVE as of 2026-08-24 16:35Z: a WORKFLOW_TOKEN secret exists at the
+      # UCD-SERG org level with visibility "all repositories", so this
+      # forwarding is active rather than aspirational. Confirmed reachable
+      # from this repo, and separately verified to authenticate as a user PAT
+      # that can push a commit touching .github/workflows/ -- i.e. it does
+      # carry the `workflows` scope.
+      #
+      # Forwarding it explicitly is load-bearing, not decorative. A reusable
+      # workflow only ever sees the secrets its caller passes, so an org
+      # secret this block omitted would be invisible to gha's workflow no
+      # matter how broad its visibility.
+      #
+      # Without it the integrated GITHUB_TOKEN cannot push changes under
+      # .github/workflows/ (GitHub rejects them without the `workflows`
+      # scope); gha reports the rejection and posts Claude's commits as a
+      # git format-patch so they survive. That matters here specifically:
+      # #83, #87, #89, #91, #92, #93, #94, #95 and #97 all touched
+      # .github/workflows/.
+      #
+      # One consequence, and it is the same mechanism read two ways. A
+      # GITHUB_TOKEN push creates no workflow runs at all; a PAT push does.
+      # gha pushes only to a claude/... branch or a PR head, never to `main`,
+      # so NOTHING here fires via `push` -- publish.yml, check-spelling.yaml
+      # and lint-project.yaml all filter their push trigger to main.
+      #
+      # What changes is `pull_request`: a Claude push now produces a
+      # `synchronize` event, so preview.yml, check-spelling.yaml,
+      # lint-project.yaml and claude-code-review.yml each gain a run. That is
+      # the cost (four extra runs per Claude push) and the benefit (Claude's
+      # commits get an automatic review even without the dispatch path) at
+      # once -- not two separate effects.
+      WORKFLOW_TOKEN: ${{ secrets.WORKFLOW_TOKEN }}
+      # SUBMODULES_TOKEN is deliberately omitted: this repo has no submodules.
+    with:
+      # This is a Quarto site, so give Claude the toolchain to render and
+      # check its own .qmd edits. The hand-rolled workflow installed neither
+      # Quarto nor R. Note gha's input installs TinyTeX unconditionally with
+      # no way to opt out, which this html-only site does not need -- the
+      # existing publish.yml and preview.yml already pay that cost too.
+      install-quarto: true
+      # Deliberately FALSE, against gha's default of true.
+      #
+      # This repo's own copilot-setup-steps.yml reached the same conclusion
+      # and recorded it: "R and renv setup steps are disabled for now as we
+      # don't have any R code to run yet." Confirmed still true --- zero .qmd
+      # files contain an R chunk, and _quarto.yml declares only `format: html`,
+      # so no render path needs R.
+      #
+      # The cost of enabling it is setup time on every run: gha's setup-r path
+      # runs setup-r-dependencies including `local::.`, installing this repo
+      # as an R package, and nothing on main exercises that today
+      # (lint-project.yaml installs only lintr; check-spelling.yaml runs in a
+      # rocker container).
+      #
+      # What this GIVES UP is worth naming: five of the six `Rscript -e`
+      # grants in gha's default tool allowlist are dead without R, so Claude
+      # can edit R here but cannot lint, document, or test what it edits. An
+      # R fix would land unverified, with lint-project.yaml as the first thing
+      # to catch a mistake. That is the trade being made, and it is the reason
+      # to revisit this if R work becomes routine.
+      #
+      # Note `setup-r: false` also skips pandoc, which gha gates on the same
+      # input. No impact here: `quarto render` uses Quarto's bundled pandoc,
+      # and the one pandoc shell-out in R/create_pub_listing.R is unreachable
+      # without R anyway.
+      setup-r: false
+      # Upstream defaults this repo is accepting deliberately, named rather
+      # than inherited silently -- each changes behaviour relative to the
+      # hand-rolled workflow:
+      #   use-ai-config: true         installs the Morrison-Lab/ai-config plugin
+      #   report-cost: true           appends the run's dollar cost to whichever
+      #                               comment gha already posts back to the
+      #                               thread; only posts a comment of its own on
+      #                               the commit-and-dispatch path
+      #   mark-ready-for-review: true takes Claude's draft PRs out of draft
+      #   reviewer: 'd-morrison'      re-requested as reviewer on every Claude
+      #                               push to a PR. New behaviour here; set to
+      #                               '' to suppress it.
+      #   review-workflow-file:       'claude-code-review.yml' -- the file the
+      #                               `actions: write` grant above dispatches,
+      #                               and the reason this PR depends on #110
+      #   eager-pr: false             no draft PR opened up front
+      #   dispatch-on-assignee: '[]'  assignment alone does not trigger a run.
+      #                               Setting it here alone does NOT enable it:
+      #                               the caller `if:` above has no assignment
+      #                               clause, so the reusable workflow would
+      #                               never be invoked and the input would do
+      #                               nothing. Both halves are required.
+      #   trusted-bot-logins: '[]'    same both-halves rule -- admitting an App
+      #                               bot needs the login in this input AND an
+      #                               OR'd login check in the caller `if:`.
+      #                               While both stay '[]', the caller gate
+      #                               above and gha's own trusted-author gate
+      #                               agree; they diverge as soon as either is set.
+      #   link-skills: false          not applicable; this repo has no top-level
+      #                               skills/ (its one skill is .claude/skills/)
