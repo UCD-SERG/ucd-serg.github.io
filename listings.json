@@ -4,6 +4,10 @@
     "items": []
   },
   {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
     "listing": "/team.html",
     "items": [
       "/people/skang/bio-skang.html",
@@ -11,11 +15,8 @@
       "/people/ksjlee/bio-ksjlee.html",
       "/people/sschild/bio-sschild.html",
       "/people/kvaidya/kvaidya.html",
+      "/people/yxewang/bio-yxewang.html",
       "/people/ekamau/bio-ekamau.html"
     ]
-  },
-  {
-    "listing": "/publications.html",
-    "items": []
   }
 ]
