@@ -1,5 +1,5 @@
 - path: https://ucd-serg.github.io/serocalculator/
-  image: software/serocalculator_image2.jpg
+  image: software/serocalculator_logo_copy.png
   image-alt: "Serocalculator R package logo"
-  title: "<strong style='font-size:24px;' aria-label='Serocalculator'>Serocalculator</strong>"
-  description: "Serocalculator is an [R](https://www.r-project.org/) package for estimating seroconversion rates from cross-sectional population data"
+  title: "Serocalculator"
+  description: "Serocalculator is an <a href='https://www.r-project.org/'>R</a> package for estimating seroincidence rates from cross-sectional population data"

@@ -1,0 +1,5 @@
+- path: https://ucd-serg.github.io/serodynamics/
+  image: software/fig1-dynamics.png
+  image-alt: "Serodynamics R package logo"
+  title: "Serodynamics"
+  description: "Serodynamics is an <a href='https://www.r-project.org/'>R</a> package for modeling post-infection antibody kinetics"

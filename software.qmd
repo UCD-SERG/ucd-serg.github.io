@@ -9,9 +9,10 @@ listing:
   fields: [image, title, description]
   grid-item-align: center
   grid-columns: 2
-  image-height: 250px
+  image-height: 350px
   contents:
     - software/serocalculator.yml
+    - software/serodynamics.yml
 
 - id: apps
  # sort: "lastname asc"
