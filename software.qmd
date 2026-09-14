@@ -9,7 +9,8 @@ listing:
   fields: [image, title, description]
   grid-item-align: center
   grid-columns: 2
-  image-height: 350px
+  template-params:
+    image-height: 350px
   contents:
     - software/serocalculator.yml
     - software/serodynamics.yml
@@ -21,7 +22,8 @@ listing:
   fields: [image, title, description]
   grid-item-align: center
   grid-columns: 2
-  image-height: 250px
+  template-params:
+    image-height: 250px
   contents:
     - software/serocalculator-shiny.yml
     - software/serodynamics-shiny.yml
