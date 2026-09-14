@@ -15,6 +15,7 @@ listing:
     - people/skang/bio-skang.qmd
     - people/ksjlee/bio-ksjlee.qmd
     - people/kvaidya/kvaidya.qmd
+    - people/yxewang/bio-yxewang.qmd
 - id: PIs
   sort: "lastname asc"
   type: grid
@@ -22,9 +23,9 @@ listing:
   grid-item-align: center
   grid-columns: 4
   image-height: 250px
-  contents: 
-    - people/demorrison/demorrison.yaml
-    - people/kaiemjoy/kaiemjoy.yaml
+  contents:
+    - people/demorrison/bio-demorrison.qmd
+    - people/kaiemjoy/bio-kaiemjoy.qmd
 - id: postdocs
   sort: "lastname asc"
   type: grid

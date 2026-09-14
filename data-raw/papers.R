@@ -14,7 +14,8 @@ categories <- ifelse(is_preprint, "preprint", "")
 bibtex_entries <-
   cr_cn(dois, format = "bibtex") |>
   unlist() |>
-  stringr::str_trim(side = "left")
+  stringr::str_trim(side = "left") |>
+  normalize_bibtex_months()
 
 bibtex_entries |>
   cat(file = "publications.bib")
