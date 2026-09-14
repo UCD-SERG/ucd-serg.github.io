@@ -46,14 +46,14 @@ normalize_bibtex_months <- function(entries) {
           if (field_end <= length(characters) && field_name == "month") {
             value_start <- field_end + 1L
             while (value_start <= length(characters) &&
-                   grepl("\\s", characters[[value_start]])) { # nolint: indentation_linter
+                   grepl("\\s", characters[[value_start]])) { # nolint: indentation_linter, line_length_linter.
               value_start <- value_start + 1L
             }
             if (value_start <= length(characters) &&
-                characters[[value_start]] == "=") { # nolint: indentation_linter
+                characters[[value_start]] == "=") { # nolint: indentation_linter, line_length_linter.
               value_start <- value_start + 1L
               while (value_start <= length(characters) &&
-                     grepl("\\s", characters[[value_start]])) { # nolint: indentation_linter
+                     grepl("\\s", characters[[value_start]])) { # nolint: indentation_linter, line_length_linter.
                 value_start <- value_start + 1L
               }
               value_end <- value_start
@@ -74,7 +74,7 @@ normalize_bibtex_months <- function(entries) {
               } else if (characters[[value_start]] == '"') {
                 value_end <- value_end + 1L
                 while (value_end <= length(characters) &&
-                       characters[[value_end]] != '"') { # nolint: indentation_linter
+                       characters[[value_end]] != '"') { # nolint: indentation_linter, line_length_linter.
                   value_end <- value_end + 1L
                 }
                 value <- paste0(
@@ -83,7 +83,7 @@ normalize_bibtex_months <- function(entries) {
                 )
               } else {
                 while (value_end <= length(characters) &&
-                       !characters[[value_end]] %in% c(",", "}")) { # nolint: indentation_linter
+                       !characters[[value_end]] %in% c(",", "}")) { # nolint: indentation_linter, line_length_linter.
                   value_end <- value_end + 1L
                 }
                 value_end <- value_end - 1L
