@@ -139,13 +139,13 @@
     given: Douglas Ezra
   doi: 10.1101/2025.06.04.25328941
   id: Lai_2025
-  issued: "2025"
+  issued: "2025-06"
   publisher: openRxiv
   title: Serocalculator, an r package for estimating seroincidence from
     cross-sectional serological data
   type: article-journal
   url: "http://dx.doi.org/10.1101/2025.06.04.25328941"
-  date: "2025"
+  date: "2025-06"
   path: https://doi.org/10.1101/2025.06.04.25328941
   highlight: 0
   categories: [preprint]
@@ -230,14 +230,14 @@
     given: Dipesh
   doi: 10.64898/2026.07.14.26357903
   id: Shrestha_2026
-  issued: "2026"
+  issued: "2026-07"
   publisher: openRxiv
   title: "Rising dengue burden in high-altitude central nepal: Evidence
     from a population-based longitudinal serosurvey, 2019-2023"
   title-short: Rising dengue burden in high-altitude central nepal
   type: article-journal
   url: "http://dx.doi.org/10.64898/2026.07.14.26357903"
-  date: "2026"
+  date: "2026-07"
   path: https://doi.org/10.64898/2026.07.14.26357903
   highlight: 0
   categories: [preprint]
@@ -746,14 +746,14 @@
   id: Kamau_2025
   issn: 2041-1723
   issue: 1
-  issued: "2025"
+  issued: "2025-07"
   publisher: Springer Science and Business Media LLC
   title: Characterizing trachoma elimination using serology
   type: article-journal
   url: "http://dx.doi.org/10.1038/s41467-025-60581-z"
   volume: 16
   journal-title: '*Nature Communications*'
-  date: "2025"
+  date: "2025-07"
   path: https://doi.org/10.1038/s41467-025-60581-z
   highlight: 0
 - author:
@@ -944,7 +944,7 @@
   id: Teunis_2023
   issn: 1097-0258
   issue: 28
-  issued: "2023"
+  issued: "2023-09"
   page: 5160-5188
   publisher: Wiley
   title: Estimating seroconversion rates accounting for repeated
@@ -953,7 +953,7 @@
   url: "http://dx.doi.org/10.1002/sim.9906"
   volume: 42
   journal-title: '*Statistics in Medicine*'
-  date: "2023"
+  date: "2023-09"
   path: https://doi.org/10.1002/sim.9906
   highlight: 0
 - author:
@@ -1043,14 +1043,14 @@
   id: Tedijanto_2023
   issn: 2041-1723
   issue: 1
-  issued: "2023"
+  issued: "2023-06"
   publisher: Springer Science and Business Media LLC
   title: Monitoring transmission intensity of trachoma with serology
   type: article-journal
   url: "http://dx.doi.org/10.1038/s41467-023-38940-5"
   volume: 14
   journal-title: '*Nature Communications*'
-  date: "2023"
+  date: "2023-06"
   path: https://doi.org/10.1038/s41467-023-38940-5
   highlight: 0
 - author:
@@ -1189,7 +1189,7 @@
   id: Garrett_2022
   issn: 2214-109X
   issue: 7
-  issued: "2022"
+  issued: "2022-07"
   page: e978-e988
   publisher: Elsevier BV
   title: "Incidence of typhoid and paratyphoid fever in bangladesh,
@@ -1201,7 +1201,7 @@
   url: "http://dx.doi.org/10.1016/S2214-109X(22)00119-X"
   volume: 10
   journal-title: '*The Lancet Global Health*'
-  date: "2022"
+  date: "2022-07"
   path: https://doi.org/10.1016/s2214-109x(22)00119-x
   highlight: 0
 - author:
@@ -1370,7 +1370,7 @@
   id: Aiemjoy_2020
   issn: 1935-2735
   issue: 9
-  issued: "2020"
+  issued: "2020-09"
   page: e0008647
   publisher: Public Library of Science (PLoS)
   title: Seroprevalence of antibodies against chlamydia trachomatis and
@@ -1380,7 +1380,7 @@
   url: "http://dx.doi.org/10.1371/journal.pntd.0008647"
   volume: 14
   journal-title: '*PLOS Neglected Tropical Diseases*'
-  date: "2020"
+  date: "2020-09"
   path: https://doi.org/10.1371/journal.pntd.0008647
   highlight: 0
 - author:
@@ -1421,7 +1421,7 @@
   id: Morrison_2018
   issn: 2194-6310
   issue: 1
-  issued: "2018"
+  issued: "2018-07"
   publisher: Walter de Gruyter GmbH
   title: Cross-sectional HIV incidence estimation with missing
     biomarkers
@@ -1429,6 +1429,6 @@
   url: "http://dx.doi.org/10.1515/scid-2017-0003"
   volume: 10
   journal-title: '*Statistical Communications in Infectious Diseases*'
-  date: "2018"
+  date: "2018-07"
   path: https://doi.org/10.1515/scid-2017-0003
   highlight: 0
