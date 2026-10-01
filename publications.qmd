@@ -19,3 +19,26 @@ Download the [complete bibliography](publications.bib).
 
 :::{#publications}
 :::
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const italicPattern = /\\<i\\>(.*?)\\<\/i\\>/g;
+
+  for (const title of document.querySelectorAll(".publication-title a")) {
+    const text = title.textContent;
+    const fragment = document.createDocumentFragment();
+    let lastIndex = 0;
+
+    for (const match of text.matchAll(italicPattern)) {
+      fragment.append(document.createTextNode(text.slice(lastIndex, match.index)));
+      const italic = document.createElement("i");
+      italic.textContent = match[1];
+      fragment.append(italic);
+      lastIndex = match.index + match[0].length;
+    }
+
+    fragment.append(document.createTextNode(text.slice(lastIndex)));
+    title.replaceChildren(fragment);
+  }
+});
+</script>
