@@ -232,6 +232,11 @@ html[data-bs-theme="dark"] .photo-caption {
   line-height: 1.4;
 }
 
+.publication-title-row .publication-badge {
+  align-self: flex-start;
+  margin-left: auto;
+}
+
 .publication-title a {
   color: inherit;
   text-decoration: none;
@@ -322,5 +327,9 @@ html[data-bs-theme="dark"] .publication-badge--preprint {
   .publication-title-row {
     flex-direction: column;
     gap: 0.5rem;
+  }
+
+  .publication-title-row .publication-badge {
+    align-self: flex-end;
   }
 }

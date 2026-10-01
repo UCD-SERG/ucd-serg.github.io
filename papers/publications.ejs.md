@@ -75,3 +75,4 @@ for (const item of items) {
     <% } %>
   </div>
 </section>
+```
