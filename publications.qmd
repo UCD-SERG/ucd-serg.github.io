@@ -1,88 +1,21 @@
 ---
-title: 'Publications'
+title: Publications
 page-layout: full
 title-block-banner: true
-date-format: 'MMMM,<br>YYYY'
 include-back-link: false
-toc-location: right
 listing:
-- id: preprints
-  contents:
-    - publications.yml
-  sort: 'issued desc'
-  type: table
-  fields: [date, title]
-  field-display-names:
-    date: Submitted
-    title: Title
-  include:
-    categories: [preprint]
-- id: articles2
-  # template: papers/listing.qmd
-  # template: papers/publications.js
-  contents:
-    - publications.yml
-    # - "publications/*/*/**.qmd"
-  # page-size: 10
-  sort: 'issued desc'
-  type: table
-  # categories: true
-  # sort-ui: [date, title, journal-title]
-  # filter-ui: [date, title, journal-title]
-  fields: [date, title, journal-title]
-  field-display-names:
-    date: Issued
-    title: Title
-    journal-title: Journal
-  exclude:
-    categories: [preprint]
-
+  - id: publications
+    contents:
+      - publications.yml
+    sort: 'issued desc'
+    type: custom
+    template: papers/publications.js
 ---
 
-## Preprints
+The UC Davis Seroepidemiology Research Group develops seroepidemiologic methods
+to measure infectious disease burden and inform public health decisions.
 
-:::{#preprints}
+Download the [complete bibliography](publications.bib).
+
+:::{#publications}
 :::
-
-## Publications
-
-:::{#articles2}
-:::
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  for (const title of document.querySelectorAll(".listing-title")) {
-    const text = title.textContent;
-    const fragment = document.createDocumentFragment();
-    let remaining = text;
-
-    while (true) {
-      const openIndex = remaining.indexOf("<i>");
-
-      if (openIndex === -1) {
-        fragment.append(document.createTextNode(remaining));
-        break;
-      }
-
-      const closeIndex = remaining.indexOf("</i>", openIndex + 3);
-
-      if (closeIndex === -1) {
-        fragment.append(document.createTextNode(remaining));
-        break;
-      }
-
-      if (openIndex > 0) {
-        fragment.append(document.createTextNode(remaining.slice(0, openIndex)));
-      }
-
-      const italic = document.createElement("i");
-      italic.textContent = remaining.slice(openIndex + 3, closeIndex);
-      fragment.append(italic);
-
-      remaining = remaining.slice(closeIndex + 4);
-    }
-
-    title.replaceChildren(fragment);
-  }
-});
-</script>
