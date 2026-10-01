@@ -307,7 +307,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-```{=html} &lt;% const publicationYear = (item) =&gt; { const match = String(item.date || item.issued || ““).match(//); return match ? match[0] :”Date unavailable”; }; const yearGroups = new Map(); for (const item of items) { const year = publicationYear(item); if (!yearGroups.has(year)) yearGroups.set(year, []); yearGroups.get(year).push(item); } %&gt;
+&lt;% const publicationYear = (item) =&gt; { const match = String(item.date || item.issued || ““).match(//); return match ? match[0] :”Date unavailable”; }; const yearGroups = new Map(); for (const item of items) { const year = publicationYear(item); if (!yearGroups.has(year)) yearGroups.set(year, []); yearGroups.get(year).push(item); } %&gt;
 <section class="publication-index" aria-labelledby="all-publications-heading">
 <div class="publication-index-heading">
 <pre><code>&lt;div&gt;
@@ -356,11 +356,18 @@ ul.task-list li input[type="checkbox"] {
               &lt;a href="&lt;%= item.pdf %&gt;"&gt;PDF&lt;/a&gt;
             &lt;% } %&gt;
           &lt;/div&gt;
+          &lt;details class="publication-abstract"&gt;
+            &lt;summary&gt;Abstract&lt;/summary&gt;
+            &lt;% if (item.abstract) { %&gt;
+              &lt;p&gt;&lt;%= item.abstract %&gt;&lt;/p&gt;
+            &lt;% } else { %&gt;
+              &lt;p&gt;The abstract is available from the &lt;a href="&lt;%= item.url || item.path || "#" %&gt;"&gt;publisher&lt;/a&gt;.&lt;/p&gt;
+            &lt;% } %&gt;
+          &lt;/details&gt;
         &lt;/article&gt;
       &lt;% } %&gt;
     &lt;/div&gt;
   &lt;/section&gt;
-  ```
 &lt;% } %&gt;</code></pre>
 </div>
 </section>
