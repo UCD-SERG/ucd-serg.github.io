@@ -169,3 +169,141 @@ html[data-bs-theme="dark"] .photo-caption {
     font-size: 0.85rem;
   }
 }
+
+/* Citation-style publications list */
+.publication-index {
+  margin-top: 2rem;
+}
+
+.publication-index-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.publication-list-note,
+.publication-notation {
+  color: #555;
+}
+
+.publication-notation {
+  max-width: 22rem;
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+}
+
+.publication-year-section + .publication-year-section {
+  margin-top: 2rem;
+}
+
+.publication-year-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+.publication-year-heading small {
+  color: #6c757d;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.publication-entry {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.publication-title-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.publication-title {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.publication-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  color: var(--bs-link-color);
+  text-decoration: underline;
+}
+
+.publication-authors {
+  margin: 0.5rem 0;
+}
+
+.publication-meta,
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  font-size: 0.92rem;
+}
+
+.publication-journal {
+  font-style: italic;
+}
+
+.publication-links {
+  margin-top: 0.6rem;
+}
+
+.publication-badge {
+  flex: 0 0 auto;
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  background: #e9ecef;
+  color: #343a40;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.publication-badge--preprint {
+  background: #fff3cd;
+  color: #664d03;
+}
+
+html[data-bs-theme="dark"] .publication-list-note,
+html[data-bs-theme="dark"] .publication-notation {
+  color: #aaa;
+}
+
+html[data-bs-theme="dark"] .publication-year-heading,
+html[data-bs-theme="dark"] .publication-entry {
+  border-color: #495057;
+}
+
+html[data-bs-theme="dark"] .publication-year-heading small {
+  color: #adb5bd;
+}
+
+html[data-bs-theme="dark"] .publication-badge {
+  background: #343a40;
+  color: #e9ecef;
+}
+
+html[data-bs-theme="dark"] .publication-badge--preprint {
+  background: #664d03;
+  color: #fff3cd;
+}
+
+@media (max-width: 600px) {
+  .publication-index-heading,
+  .publication-title-row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

@@ -9,7 +9,7 @@ listing:
       - publications.yml
     sort: 'issued desc'
     type: custom
-    template: papers/publications.js
+    template: papers/publications.ejs.md
 ---
 
 The UC Davis Seroepidemiology Research Group develops seroepidemiologic methods

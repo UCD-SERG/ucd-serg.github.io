@@ -1,11 +1,11 @@
+```{=html}
 <%
-const publicationYear = (item) => String(item.date || item.issued || "").slice(0, 4) || "Date unavailable";
-const sortedItems = [...items].sort((left, right) => {
-  const dateOrder = String(right.date || right.issued || "").localeCompare(String(left.date || left.issued || ""));
-  return dateOrder || String(left.title || "").localeCompare(String(right.title || ""));
-});
+const publicationYear = (item) => {
+  const match = String(item.date || item.issued || "").match(/\d{4}/);
+  return match ? match[0] : "Date unavailable";
+};
 const yearGroups = new Map();
-for (const item of sortedItems) {
+for (const item of items) {
   const year = publicationYear(item);
   if (!yearGroups.has(year)) yearGroups.set(year, []);
   yearGroups.get(year).push(item);
@@ -38,9 +38,6 @@ for (const item of sortedItems) {
                   <span class="publication-badge publication-badge--preprint">Preprint</span>
                 <% } %>
               </div>
-              <% if (item.author) { %>
-                <p class="publication-authors"><%= item.author %></p>
-              <% } %>
               <div class="publication-meta">
                 <% if (item["container-title"] || item["journal-title"] || item.publisher) { %>
                   <span class="publication-journal"><%= item["container-title"] || item["journal-title"] || item.publisher %></span>
@@ -67,6 +64,7 @@ for (const item of sortedItems) {
           <% } %>
         </div>
       </section>
+      ```
     <% } %>
   </div>
 </section>
