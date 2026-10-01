@@ -22,7 +22,7 @@ Download the [complete bibliography](publications.bib).
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const italicPattern = /\\<i\\>(.*?)\\<\/i\\>/g;
+  const italicPattern = /\\?<i\\?>(.*?)\\?<\/i\\?>/g;
 
   for (const title of document.querySelectorAll(".publication-title a")) {
     const text = title.textContent;

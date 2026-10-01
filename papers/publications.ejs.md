@@ -60,11 +60,18 @@ for (const item of items) {
                   <a href="<%= item.pdf %>">PDF</a>
                 <% } %>
               </div>
+              <details class="publication-abstract">
+                <summary>Abstract</summary>
+                <% if (item.abstract) { %>
+                  <p><%= item.abstract %></p>
+                <% } else { %>
+                  <p>The abstract is available from the <a href="<%= item.url || item.path || "#" %>">publisher</a>.</p>
+                <% } %>
+              </details>
             </article>
           <% } %>
         </div>
       </section>
-      ```
     <% } %>
   </div>
 </section>
