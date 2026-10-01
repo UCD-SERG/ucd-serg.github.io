@@ -307,69 +307,81 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-&lt;% const publicationYear = (item) =&gt; { const match = String(item.date || item.issued || ““).match(//); return match ? match[0] :”Date unavailable”; }; const yearGroups = new Map(); for (const item of items) { const year = publicationYear(item); if (!yearGroups.has(year)) yearGroups.set(year, []); yearGroups.get(year).push(item); } %&gt;
+&lt;%
+const publicationYear = (item) =&gt; {
+  const match = String(item.date || item.issued || "").match(/\d{4}/);
+  return match ? match[0] : "Date unavailable";
+};
+const yearGroups = new Map();
+for (const item of items) {
+  const year = publicationYear(item);
+  if (!yearGroups.has(year)) yearGroups.set(year, []);
+  yearGroups.get(year).push(item);
+}
+%&gt;
 <section class="publication-index" aria-labelledby="all-publications-heading">
-<div class="publication-index-heading">
-<pre><code>&lt;div&gt;
-  &lt;h2 id="all-publications-heading"&gt;All publications&lt;/h2&gt;
-  &lt;p class="publication-list-note"&gt;&lt;%= items.length %&gt; publications, listed by year with the newest work first.&lt;/p&gt;
-&lt;/div&gt;
-&lt;p class="publication-notation"&gt;&lt;span class="publication-badge publication-badge--preprint"&gt;Preprint&lt;/span&gt; identifies work that has not yet been peer reviewed.&lt;/p&gt;</code></pre>
-</div>
-<div class="publication-list">
-<pre><code>&lt;% for (const [year, yearItems] of yearGroups) { %&gt;
-  &lt;section class="publication-year-section" aria-labelledby="publication-year-&lt;%= year %&gt;"&gt;
-    &lt;h3 id="publication-year-&lt;%= year %&gt;" class="publication-year-heading"&gt;
-      &lt;span&gt;&lt;%= year %&gt;&lt;/span&gt;
-      &lt;small&gt;&lt;%= yearItems.length %&gt; publication&lt;%= yearItems.length === 1 ? "" : "s" %&gt;&lt;/small&gt;
-    &lt;/h3&gt;
-    &lt;div class="publication-year-list"&gt;
-      &lt;% for (const item of yearItems) { %&gt;
-        &lt;article class="publication-entry"&gt;
-          &lt;div class="publication-title-row"&gt;
-            &lt;h4 class="publication-title"&gt;
-              &lt;a href="&lt;%= item.path || item.url || "#" %&gt;"&gt;&lt;%= item.title %&gt;&lt;/a&gt;
-            &lt;/h4&gt;
-            &lt;% if (item.categories &amp;&amp; item.categories.includes("preprint")) { %&gt;
-              &lt;span class="publication-badge publication-badge--preprint"&gt;Preprint&lt;/span&gt;
-            &lt;% } %&gt;
-          &lt;/div&gt;
-          &lt;div class="publication-meta"&gt;
-            &lt;% if (item["container-title"] || item["journal-title"] || item.publisher) { %&gt;
-              &lt;span class="publication-journal"&gt;&lt;%= item["container-title"] || item["journal-title"] || item.publisher %&gt;&lt;/span&gt;
-            &lt;% } %&gt;
-            &lt;% if (item.date || item.issued) { %&gt;
-              &lt;span&gt;&lt;%= item.date || item.issued %&gt;&lt;/span&gt;
-            &lt;% } %&gt;
-          &lt;/div&gt;
-          &lt;div class="publication-links" aria-label="Links for &lt;%= item.title %&gt;"&gt;
-            &lt;% if (item.url || item.path) { %&gt;
-              &lt;a href="&lt;%= item.url || item.path %&gt;"&gt;Article&lt;/a&gt;
-            &lt;% } %&gt;
-            &lt;% if (item.doi) { %&gt;
-              &lt;a href="https://doi.org/&lt;%= item.doi %&gt;"&gt;DOI&lt;/a&gt;
-            &lt;% } %&gt;
-            &lt;% if (item.PMID) { %&gt;
-              &lt;a href="https://pubmed.ncbi.nlm.nih.gov/&lt;%= item.PMID %&gt;/"&gt;PubMed&lt;/a&gt;
-            &lt;% } %&gt;
-            &lt;% if (item.pdf) { %&gt;
-              &lt;a href="&lt;%= item.pdf %&gt;"&gt;PDF&lt;/a&gt;
-            &lt;% } %&gt;
-          &lt;/div&gt;
-          &lt;details class="publication-abstract"&gt;
-            &lt;summary&gt;Abstract&lt;/summary&gt;
-            &lt;% if (item.abstract) { %&gt;
-              &lt;p&gt;&lt;%= item.abstract %&gt;&lt;/p&gt;
-            &lt;% } else { %&gt;
-              &lt;p&gt;The abstract is available from the &lt;a href="&lt;%= item.url || item.path || "#" %&gt;"&gt;publisher&lt;/a&gt;.&lt;/p&gt;
-            &lt;% } %&gt;
-          &lt;/details&gt;
-        &lt;/article&gt;
-      &lt;% } %&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;% } %&gt;</code></pre>
-</div>
+  <div class="publication-index-heading">
+    <div>
+      <h2 id="all-publications-heading" class="anchored">All publications</h2>
+      <p class="publication-list-note">&lt;%= items.length %&gt; publications, listed by year with the newest work first.</p>
+    </div>
+    <p class="publication-notation"><span class="publication-badge publication-badge--preprint">Preprint</span> identifies work that has not yet been peer reviewed.</p>
+  </div>
+
+  <div class="publication-list">
+    &lt;% for (const [year, yearItems] of yearGroups) { %&gt;
+      <section class="publication-year-section" aria-labelledby="publication-year-<%= year %>">
+        <h3 id="publication-year-<%= year %>" class="publication-year-heading anchored">
+          <span>&lt;%= year %&gt;</span>
+          <small>&lt;%= yearItems.length %&gt; publication&lt;%= yearItems.length === 1 ? "" : "s" %&gt;</small>
+        </h3>
+        <div class="publication-year-list">
+          &lt;% for (const item of yearItems) { %&gt;
+            <article class="publication-entry">
+              <div class="publication-title-row">
+                <h4 class="publication-title anchored">
+                  <a href="<%= item.path || item.url || " #"="" %="">"&gt;&lt;%= item.title %&gt;</a>
+                </h4>
+                &lt;% if (item.categories &amp;&amp; item.categories.includes("preprint")) { %&gt;
+                  <span class="publication-badge publication-badge--preprint">Preprint</span>
+                &lt;% } %&gt;
+              </div>
+              <div class="publication-meta">
+                &lt;% if (item["container-title"] || item["journal-title"] || item.publisher) { %&gt;
+                  <span class="publication-journal">&lt;%= item["container-title"] || item["journal-title"] || item.publisher %&gt;</span>
+                &lt;% } %&gt;
+                &lt;% if (item.date || item.issued) { %&gt;
+                  <span>&lt;%= item.date || item.issued %&gt;</span>
+                &lt;% } %&gt;
+              </div>
+              <div class="publication-links" aria-label="Links for <%= item.title %>">
+                &lt;% if (item.url || item.path) { %&gt;
+                  <a href="<%= item.url || item.path %>">Article</a>
+                &lt;% } %&gt;
+                &lt;% if (item.doi) { %&gt;
+                  <a href="https://doi.org/<%= item.doi %>">DOI</a>
+                &lt;% } %&gt;
+                &lt;% if (item.PMID) { %&gt;
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/<%= item.PMID %>/">PubMed</a>
+                &lt;% } %&gt;
+                &lt;% if (item.pdf) { %&gt;
+                  <a href="<%= item.pdf %>">PDF</a>
+                &lt;% } %&gt;
+              </div>
+              <details class="publication-abstract">
+                <summary>Abstract</summary>
+                &lt;% if (item.abstract) { %&gt;
+                  <p>&lt;%= item.abstract %&gt;</p>
+                &lt;% } else { %&gt;
+                  <p>The abstract is available from the <a href="<%= item.url || item.path || " #"="" %="">"&gt;publisher</a>.</p>
+                &lt;% } %&gt;
+              </details>
+            </article>
+          &lt;% } %&gt;
+        </div>
+      </section>
+    &lt;% } %&gt;
+  </div>
 </section>
 
 
