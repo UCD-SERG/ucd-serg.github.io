@@ -8,11 +8,20 @@ about:
   links:
     - icon: globe
       text: Website
-      href: https://demorrison.ucdavis.edu
-subtitle: "Assistant Professor of Biostatistics"
-institution: "UC Davis"
+      href: https://d-morrison.github.io/
+    - icon: envelope
+      text: Email
+      href: mailto:morri313@wwu.edu
+    - icon: person-badge
+      text: WWU Profile
+      href: https://cs.wwu.edu/morri313
+    - icon: github
+      text: GitHub
+      href: https://github.com/d-morrison
+subtitle: "Assistant Professor of Computer Science"
+institution: "Western Washington University"
 ---
 
-Ezra Morrison is an Assistant Professor of Biostatistics at UC Davis. 
-He and Dr. Aiemjoy jointly lead the UC Davis Seroepidemiology Research Group (UCD-SeRG), 
+Ezra Morrison is an Assistant Professor in the Department of Computer Science at Western Washington University.
+He and Dr. Aiemjoy jointly lead the UC Davis Seroepidemiology Research Group (UCD-SeRG),
 contributing expertise in statistical methods for seroepidemiology research.
