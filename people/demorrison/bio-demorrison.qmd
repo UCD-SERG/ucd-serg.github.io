@@ -11,7 +11,7 @@ about:
       href: https://d-morrison.github.io/
     - icon: envelope
       text: Email
-      href: mailto:morri313@wwu.edu
+      href: mailto:ezra.morrison@wwu.edu
     - icon: person-badge
       text: WWU Profile
       href: https://cs.wwu.edu/morri313
